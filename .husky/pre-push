@@ -1,7 +1,1 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
 
-echo '코드 확인중!'
-yarn run lint
-yarn run lint:fix
-yarn lint-staged
