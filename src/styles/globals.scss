@@ -1,0 +1,12 @@
+@import "_mq.scss"; //미디어쿼리
+
+@import "_layout.scss"; // 기본 레이아웃
+@import "_common.scss"; // 공통 스타일
+
+@import "_styles.scss";
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #bbb;
+}

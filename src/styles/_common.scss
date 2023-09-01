@@ -1,0 +1,74 @@
+/* Common */
+// 스크롤 맨위로 가기
+.btn_top {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.7) url("../../public/images/btn_top.png")
+        no-repeat center 12px;
+}
+.btn_top.zero {
+    display: none;
+}
+
+// 리스트 기본 레이아웃
+.list_wrap {
+    > li {
+        @include respond-to("small") {
+            width: 100%;
+            margin: 5px 0;
+        }
+        @include respond-to("medium") {
+            width: 50%;
+            margin: 10px 0;
+        }
+        @include respond-to("large") {
+            width: 33.33%;
+            margin: 25px 0;
+        }
+        @include respond-to("wide") {
+            width: 25%;
+            margin: 25px 0;
+        }
+    }
+}
+
+// 코멘트
+.comment {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 5px rgba(62, 105, 132, 0.4);
+    background: #fff;
+    font-size: 14px;
+
+    &.sample {
+        width: 280px;
+        color: $c-suc;
+    }
+    &.comming {
+        width: 150px;
+        color: $c-pre;
+    }
+    &.close {
+        width: 280px;
+        color: $c-warn;
+    }
+}
+
+// 링크 없음
+.nolink {
+    display: inline-block;
+    font-size: 14px;
+    color: #999;
+}

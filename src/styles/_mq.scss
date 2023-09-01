@@ -1,0 +1,42 @@
+﻿$sm-w: 320px;
+$md-w: 640px;
+$lg-w: 930px;
+$w-w: 1330px;
+
+$breakpoints: (
+    "small": (
+        min-width: 320px,
+    ),
+    "medium": (
+        min-width: 640px,
+    ),
+    "large": (
+        min-width: 1000px,
+    ),
+    "wide": (
+        min-width: 1400px,
+    ),
+);
+
+/// 반응형 매니저
+/// @access public
+/// @param {String} $breakpoint - 브레이크포인트
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+
+    @if $raw-query {
+        $query: if(
+            type-of($raw-query) == "string",
+            unquote($raw-query),
+            inspect($raw-query)
+        );
+
+        @media #{$query} {
+            @content;
+        }
+    } @else {
+        @error 'No value found for `#{$breakpoint}`. '
+        + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+}

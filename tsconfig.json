@@ -16,6 +16,9 @@
     "incremental": true,
     "plugins": [
       {
+        "name": ["next", "typescript-plugin-css-modules"]
+      },
+      {
         "name": "next"
       }
     ],

@@ -1,0 +1,33 @@
+// 나눔 바른 고딕 레귤러
+@font-face {
+    font-family: "NBGR";
+    src: url("../../public/fonts/NanumBarunGothicRegular.eot");
+    src:
+        url("../../public/fonts/NanumBarunGothicRegular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../public/fonts/NanumBarunGothicRegular.woff2") format("woff2"),
+        local(※),
+        url("../../public/fonts/NanumBarunGothicRegular.woff") format("woff"),
+        url("../../public/fonts/NanumBarunGothicRegular.ttf") format("truetype"),
+        url("../../public/fonts/NanumBarunGothicRegular.svg#NanumBarunGothicRegular")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// 나눔 고딕 레귤러
+@font-face {
+    font-family: "NGR";
+    src: url("../../public/fonts/NanumGothicRegular.eot");
+    src:
+        url("../../public/fonts/NanumGothicRegular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../public/fonts/NanumGothicRegular.woff2") format("woff2"),
+        local(※),
+        url("../../public/fonts/NanumGothicRegular.woff") format("woff"),
+        url("../../public/fonts/NanumGothicRegular.ttf") format("truetype"),
+        url("../../public/fonts/NanumGothicRegular.svg#NanumGothicRegular")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
