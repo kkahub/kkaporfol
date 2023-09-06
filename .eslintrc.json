@@ -1,14 +1,12 @@
 {
   "extends": [
-    "prettier",
     "next/core-web-vitals",
     "plugin:@typescript-eslint/eslint-recommended"
   ],
-  "plugins": ["prettier", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "no-unused-vars": "off",
     "no-console": ["error"],
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
     "import/extensions": [
       "error",
@@ -19,6 +17,8 @@
     "no-empty-pattern": 2,
     "no-case-declarations": 2,
     "@typescript-eslint/no-empty-interface": 2,
-    "no-useless-catch": "off"
+    "no-useless-catch": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }

@@ -38,26 +38,25 @@ $header-h: 60px;
     top: 0;
     z-index: 100;
     height: $header-h;
-    background: rgba(0, 0, 0, 0.6);
     padding: 0 35px;
+    background: rgba(0, 0, 0, 0.6);
 
     @include respond-to("small") {
         padding: 0 10px;
-    }
-    &.zero {
-        background: transparent;
     }
     h1 {
         position: absolute;
 
         a {
-            font-size: 34px;
-            line-height: 67px;
             letter-spacing: 0.1em;
 
             @include respond-to("small") {
                 font-size: 28px;
                 line-height: 60px;
+            }
+            @include respond-to("medium") {
+                font-size: 34px;
+                line-height: 68px;
             }
         }
     }
@@ -205,7 +204,7 @@ $header-h: 60px;
                 outline: 0;
                 position: relative;
                 height: 100%;
-                padding: 22px 0 20px;
+                padding: 10px 0 8px;
                 font-size: 18px;
                 font-weight: bold;
                 letter-spacing: 0.5px;
@@ -241,6 +240,15 @@ $header-h: 60px;
     }
 }
 
+.main {
+    #header {
+        background: transparent;
+    }
+    #container {
+        padding-top: 0;
+    }
+}
+
 .inner {
     margin: 0 auto;
 
@@ -259,6 +267,8 @@ $header-h: 60px;
 }
 
 #container {
+    padding-top: $header-h;
+
     .section {
         position: relative;
     }
@@ -267,16 +277,16 @@ $header-h: 60px;
         text-align: center;
 
         @include respond-to("small") {
-            padding: 35px 5px;
+            padding: 30px 5px;
         }
         @include respond-to("medium") {
-            padding: 50px 10px;
+            padding: 25px 10px;
         }
         @include respond-to("large") {
-            padding: 80px 0;
+            padding: 40px 0;
         }
         @include respond-to("wide") {
-            padding: 100px 0;
+            padding: 50px 0;
         }
 
         .title {
@@ -324,13 +334,13 @@ $header-h: 60px;
 
     .content {
         @include respond-to("small") {
-            margin: 20px auto 0;
+            margin: 15px auto 0;
         }
         @include respond-to("medium") {
-            margin: 35px auto 0;
+            margin: 20px auto 0;
         }
         @include respond-to("large") {
-            margin: 55px auto 0;
+            margin: 35px auto 0;
         }
     }
 }
