@@ -9,15 +9,17 @@ import { usePathname } from "next/navigation";
 export const metadata: Metadata = {
   title: "프론트엔드 개발자 김근애 포트폴리오",
   description: "김근애의 프론트엔드 개발, 웹퍼블리싱 포트폴리오 사이트입니다.",
-  authors: [{ name: "김근애", url: "https://kkaporfol.github.io/" }],
+  authors: [{ name: "김근애", url: "https://kkahub.github.io/kkaporfol" }],
   openGraph: {
     type: "website",
     title: "KKA Front-end Developer Portfolio",
     description:
       "김근애의 프론트엔드 개발, 웹퍼블리싱 포트폴리오 사이트입니다.",
-    url: "https://kkaporfol.github.io/",
+    url: "https://kkahub.github.io/kkaporfol",
     siteName: "프론트엔드 개발자 김근애 포트폴리오",
-    images: [{ url: "https://kkaporfol.github.io/images/visual_bg1_m.jpg" }],
+    images: [
+      { url: "https://kkahub.github.io/kkaporfol/images/visual_bg1_m.jpg" },
+    ],
     locale: "ko_KR",
   },
 };

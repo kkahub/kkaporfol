@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
 const debug = process.env.NODE_ENV !== "production";
-const repository = "https://kkaporfol.github.io";
+const repository = "https://kkahub.github.io/kkaporfol";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
