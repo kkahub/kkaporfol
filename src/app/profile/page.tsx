@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function Profile() {
   return (
@@ -9,7 +10,7 @@ export default function Profile() {
         <h2 className="title">PROFILE</h2>
         <div className="content">
           <div className="photo">
-            <img src="./images/profile_photo.png" alt="KKA photo" />
+            <Image src="./images/profile_photo.png" alt="KKA photo" />
           </div>
           <div className="profile_con">
             <dl>

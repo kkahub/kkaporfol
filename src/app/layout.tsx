@@ -1,9 +1,9 @@
 "use client";
 
+import React from "react";
 import "../styles/globals.scss";
 import type { Metadata } from "next";
-import Header from "../components/layout/header";
-
+import Header from "@components/layout/header";
 import { usePathname } from "next/navigation";
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
 
   return (
     <html lang="ko">
-      <body className={pathname == "/" ? "main" : ""}>
+      <body className={pathname === "/" ? "main" : ""}>
         <Header />
         <div id="container">{children}</div>
       </body>

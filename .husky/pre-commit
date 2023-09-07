@@ -3,4 +3,4 @@
 
 echo '코드 확인중!'
 yarn run lint
-yarn lint-staged
+npx lint-staged

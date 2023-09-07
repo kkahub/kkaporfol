@@ -10,7 +10,6 @@
   // 탭 너비 (default: 2)
   "tabWidth": 2,
   // 세미클론 강제 여부 (default: true)
-  "semi": false
-  // 맨마지막 줄 넣는지 여부
-  //"endOfLine": "auto"
+  "semi": true,
+  "useTabs": true
 }

@@ -1,168 +1,164 @@
 /* Intro */
 .visual_group {
-    position: relative;
+	position: relative;
 
-    .swiper-wrapper > div {
-        width: 100%;
-        position: relative;
-    }
-    .swiper-slide {
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-    }
+	.swiper-wrapper > div {
+		width: 100%;
+		position: relative;
+	}
+	.swiper-slide {
+		display: flex;
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+	}
 
-    .visual1 {
-        @include respond-to("small") {
-            background: url("../../public/images/visual_bg1_m.jpg") right
-                top/cover;
-        }
-        @include respond-to("medium") {
-            background: url("../../public/images/visual_bg1_m.jpg") right
-                top/cover;
-        }
-        @include respond-to("large") {
-            background: url("../../public/images/visual_bg1.jpg") center
-                top/cover;
-        }
-        @include respond-to("wide") {
-            background: url("../../public/images/visual_bg1.jpg") center
-                top/cover;
-        }
-    }
+	.visual1 {
+		@include respond-to('small') {
+			background: url('/images/visual_bg1_m.jpg') right top/cover;
+		}
+		@include respond-to('medium') {
+			background: url('/images/visual_bg1_m.jpg') right top/cover;
+		}
+		@include respond-to('large') {
+			background: url('/images/visual_bg1.jpg') center top/cover;
+		}
+		@include respond-to('wide') {
+			background: url('/images/visual_bg1.jpg') center top/cover;
+		}
+	}
 
-    .visual_title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+	.visual_title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-        > img {
-            width: 100%;
-        }
-        svg {
-            position: absolute;
-            transform: rotate(-90deg) scaleY(-1);
+		> img {
+			width: 100%;
+		}
+		svg {
+			position: absolute;
+			transform: rotate(-90deg) scaleY(-1);
 
-            circle {
-                stroke-width: 3px;
-                stroke-linecap: round;
-                fill: transparent;
-            }
-        }
-        h1 {
-            position: relative;
-            z-index: 2;
-            font-size: 34px;
-            color: #fff;
-            text-align: center;
-            letter-spacing: 1px;
-            line-height: 1.2;
+			circle {
+				stroke-width: 3px;
+				stroke-linecap: round;
+				fill: transparent;
+			}
+		}
+		h1 {
+			position: relative;
+			z-index: 2;
+			font-size: 34px;
+			color: #fff;
+			text-align: center;
+			letter-spacing: 1px;
+			line-height: 1.2;
 
-            strong {
-                display: flex;
-                font-size: 56px;
-                justify-content: space-between;
-            }
-        }
-    }
+			strong {
+				display: flex;
+				font-size: 56px;
+				justify-content: space-between;
+			}
+		}
+	}
 
-    .visual2 {
-        background: url("../../public/images/visual_bg2.jpg") center top/cover;
-    }
-    .skill_list {
-        display: flex;
-        align-items: center;
-        width: 500px;
-        margin-top: 30px;
+	.visual2 {
+		background: url('/images/visual_bg2.jpg') center top/cover;
+	}
+	.skill_list {
+		display: flex;
+		align-items: center;
+		width: 500px;
+		margin-top: 30px;
 
-        > li {
-            margin: 0 4px;
-            padding: 4px 12px;
-            border: 1px solid #fff;
-            border-radius: 12px;
-            font-size: 15px;
-            color: #fff;
-            line-height: 1;
-        }
-    }
+		> li {
+			margin: 0 4px;
+			padding: 4px 12px;
+			border: 1px solid #fff;
+			border-radius: 12px;
+			font-size: 15px;
+			color: #fff;
+			line-height: 1;
+		}
+	}
 }
 
 /* Profile */
 .profile {
-    .photo,
-    .profile_con {
-        vertical-align: middle;
-        text-align: center;
-    }
+	.photo,
+	.profile_con {
+		vertical-align: middle;
+		text-align: center;
+	}
 
-    .photo {
-        @include respond-to("small") {
-            display: none;
-        }
-        @include respond-to("medium") {
-            display: block;
-        }
+	.photo {
+		@include respond-to('small') {
+			display: none;
+		}
+		@include respond-to('medium') {
+			display: block;
+		}
 
-        img {
-            margin-bottom: 25px;
+		img {
+			margin-bottom: 25px;
 
-            @include respond-to("small") {
-                width: 100%;
-                min-width: 200px;
-            }
-            @include respond-to("medium") {
-                width: 100%;
-                min-width: 200px;
-            }
-            @include respond-to("large") {
-                width: 240px;
-                height: 240px;
-            }
-        }
-    }
+			@include respond-to('small') {
+				width: 100%;
+				min-width: 200px;
+			}
+			@include respond-to('medium') {
+				width: 100%;
+				min-width: 200px;
+			}
+			@include respond-to('large') {
+				width: 240px;
+				height: 240px;
+			}
+		}
+	}
 
-    .profile_con {
-        @include respond-to("small") {
-            min-width: 100%;
-        }
-        @include respond-to("medium") {
-            min-width: 380px;
-        }
-        @include respond-to("large") {
-            min-width: 440px;
-        }
+	.profile_con {
+		@include respond-to('small') {
+			min-width: 100%;
+		}
+		@include respond-to('medium') {
+			min-width: 380px;
+		}
+		@include respond-to('large') {
+			min-width: 440px;
+		}
 
-        dl {
-            display: inline-block;
-            text-align: left;
+		dl {
+			display: inline-block;
+			text-align: left;
 
-            dt,
-            dd {
-                @include respond-to("small") {
-                    margin-bottom: 10px;
-                    font-size: 15px;
-                }
-                @include respond-to("medium") {
-                    margin-bottom: 25px;
-                    font-size: 18px;
-                }
-            }
-            dt {
-                clear: both;
-                float: left;
-                font-weight: bold;
+			dt,
+			dd {
+				@include respond-to('small') {
+					margin-bottom: 10px;
+					font-size: 15px;
+				}
+				@include respond-to('medium') {
+					margin-bottom: 25px;
+					font-size: 18px;
+				}
+			}
+			dt {
+				clear: both;
+				float: left;
+				font-weight: bold;
 
-                @include respond-to("small") {
-                    width: 110px;
-                }
-                @include respond-to("medium") {
-                    width: 140px;
-                }
-            }
-            dd {
-                float: left;
-            }
-        }
-    }
+				@include respond-to('small') {
+					width: 110px;
+				}
+				@include respond-to('medium') {
+					width: 140px;
+				}
+			}
+			dd {
+				float: left;
+			}
+		}
+	}
 }

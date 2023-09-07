@@ -75,19 +75,19 @@ export default function Intro() {
           prevEl: navPrevRef.current,
           nextEl: navNextRef.current,
         }}
-        onBeforeInit={(swiper: any) => {
-          // console.log(swiper);
+        onBeforeInit={(s: any) => {
+          const swiper = s;
           swiper.params.navigation.prevEl = navPrevRef.current;
           swiper.params.navigation.nextEl = navNextRef.current;
           swiper.navigation.init();
           swiper.navigation.update();
         }}
         autoplay={{
-          delay: 6000,
+          delay: 26000,
           disableOnInteraction: false,
         }}
         speed={1000}
-        loop={true}
+        loop
         onSlideChange={(swiper) => {
           setIsVisible(swiper.realIndex);
         }}
@@ -96,7 +96,7 @@ export default function Intro() {
           <div className="visual_inner">
             <div className="visual_title">
               <AnimatePresence>
-                {isVisible == 0 && (
+                {isVisible === 0 && (
                   <motion.svg
                     initial="hide"
                     animate="show"
@@ -117,7 +117,7 @@ export default function Intro() {
                 )}
               </AnimatePresence>
               <AnimatePresence>
-                {isVisible == 0 && (
+                {isVisible === 0 && (
                   <motion.h1
                     variants={varFade}
                     initial="hide"
@@ -142,7 +142,7 @@ export default function Intro() {
           <div className="visual_inner">
             <div className="visual_title">
               <AnimatePresence>
-                {isVisible == 1 && (
+                {isVisible === 1 && (
                   <motion.h1
                     variants={varFade}
                     initial="hide"
@@ -159,7 +159,7 @@ export default function Intro() {
             </div>
 
             <AnimatePresence>
-              {isVisible == 1 && (
+              {isVisible === 1 && (
                 <motion.ul
                   className="skill_list"
                   variants={varFade}

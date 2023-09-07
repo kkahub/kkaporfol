@@ -5,48 +5,60 @@
   "homepage": "https://kkaporfol.github.io/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx} --cache --fix",
-    "prepare": "husky install"
+    "serve": "npx http-server out",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "prepare": "husky install",
+    "deploy": "next build && next export && type NUL > out/.nojekyll && git add ."
   },
   "dependencies": {
-    "@types/node": "20.4.5",
-    "@types/react": "18.2.17",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.4.1",
-    "eslint": "^8.47.0",
+    "@typescript-eslint/eslint-plugin": "5",
+    "@typescript-eslint/parser": "5",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-next": "^13.4.19",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "framer-motion": "^10.16.2",
-    "husky": "^8.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "framer-motion": "^10.16.4",
+    "gh-pages": "^6.0.0",
+    "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "next": "13.4.12",
-    "prettier": "^3.0.2",
+    "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scripts": "^5.0.1",
     "sass": "^1.64.2",
     "swiper": "^10.2.0",
-    "typescript": "5.1.6",
+    "typescript": "5",
     "typescript-plugin-css-modules": "^5.0.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*.{js, jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix"
+      "eslint --cache --fix",
+      "prettier --write"
     ],
     "*.{json,js,ts,jsx,tsx,html}": [
       "prettier --write"
     ]
   },
   "devDependencies": {
-    "husky": "^8.0.0"
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
   }
 }
