@@ -12,7 +12,7 @@ const nextConfig = {
   // assetPrefix: !debug ? `.` : "", // production 일때 prefix 경로
   basePath: "/kkaporfol",
   assetPrefix: !debug ? `${repository}/` : "", // production 일때 prefix 경로
-  trailingSlash: true, //  빌드 시 폴더 구조 동일
+  // trailingSlash: true, //  빌드 시 폴더 구조 동일
   //   loader: "custom",
   //   loaderFile: "./imgloader.js",
   output: "export",

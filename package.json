@@ -11,7 +11,8 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",
-    "deploy": "next build && next export && type NUL > out/.nojekyll && git add ."
+    "predeploy": "next build && next export && type NUL > out/.nojekyll && git add .",
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@babel/plugin-syntax-flow": "^7.14.5",
