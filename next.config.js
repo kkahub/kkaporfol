@@ -9,8 +9,8 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "src/styles")],
   },
-  assetPrefix: !debug ? `.` : "", // production 일때 prefix 경로
-  // assetPrefix: !debug ? `/${repository}/` : '', // production 일때 prefix 경로
+  // assetPrefix: !debug ? `.` : "", // production 일때 prefix 경로
+  assetPrefix: !debug ? `${repository}/` : "", // production 일때 prefix 경로
   // trailingSlash: true, //  빌드 시 폴더 구조 동일
   //   loader: "custom",
   //   loaderFile: "./imgloader.js",
