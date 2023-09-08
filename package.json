@@ -7,7 +7,6 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "serve": "npx http-server out",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",

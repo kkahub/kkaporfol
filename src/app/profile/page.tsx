@@ -10,7 +10,10 @@ export default function Profile() {
         <h2 className="title">PROFILE</h2>
         <div className="content">
           <div className="photo">
-            <Image src="./images/profile_photo.png" alt="KKA photo" />
+            <Image
+              src="../../../public/images/profile_photo.png"
+              alt="KKA photo"
+            />
           </div>
           <div className="profile_con">
             <dl>

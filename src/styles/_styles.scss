@@ -14,17 +14,17 @@
 	}
 
 	.visual1 {
-		@include respond-to('small') {
-			background: url('/images/visual_bg1_m.jpg') right top/cover;
+		@include respond-to("small") {
+			background: url("../../public/images/visual_bg1_m.jpg") right top/cover;
 		}
-		@include respond-to('medium') {
-			background: url('/images/visual_bg1_m.jpg') right top/cover;
+		@include respond-to("medium") {
+			background: url("../../public/images/visual_bg1_m.jpg") right top/cover;
 		}
-		@include respond-to('large') {
-			background: url('/images/visual_bg1.jpg') center top/cover;
+		@include respond-to("large") {
+			background: url("../../public/images/visual_bg1.jpg") center top/cover;
 		}
-		@include respond-to('wide') {
-			background: url('/images/visual_bg1.jpg') center top/cover;
+		@include respond-to("wide") {
+			background: url("../../public/images/visual_bg1.jpg") center top/cover;
 		}
 	}
 
@@ -64,7 +64,7 @@
 	}
 
 	.visual2 {
-		background: url('/images/visual_bg2.jpg') center top/cover;
+		background: url("../../public/images/visual_bg2.jpg") center top/cover;
 	}
 	.skill_list {
 		display: flex;
@@ -93,25 +93,25 @@
 	}
 
 	.photo {
-		@include respond-to('small') {
+		@include respond-to("small") {
 			display: none;
 		}
-		@include respond-to('medium') {
+		@include respond-to("medium") {
 			display: block;
 		}
 
 		img {
 			margin-bottom: 25px;
 
-			@include respond-to('small') {
+			@include respond-to("small") {
 				width: 100%;
 				min-width: 200px;
 			}
-			@include respond-to('medium') {
+			@include respond-to("medium") {
 				width: 100%;
 				min-width: 200px;
 			}
-			@include respond-to('large') {
+			@include respond-to("large") {
 				width: 240px;
 				height: 240px;
 			}
@@ -119,13 +119,13 @@
 	}
 
 	.profile_con {
-		@include respond-to('small') {
+		@include respond-to("small") {
 			min-width: 100%;
 		}
-		@include respond-to('medium') {
+		@include respond-to("medium") {
 			min-width: 380px;
 		}
-		@include respond-to('large') {
+		@include respond-to("large") {
 			min-width: 440px;
 		}
 
@@ -135,11 +135,11 @@
 
 			dt,
 			dd {
-				@include respond-to('small') {
+				@include respond-to("small") {
 					margin-bottom: 10px;
 					font-size: 15px;
 				}
-				@include respond-to('medium') {
+				@include respond-to("medium") {
 					margin-bottom: 25px;
 					font-size: 18px;
 				}
@@ -149,10 +149,10 @@
 				float: left;
 				font-weight: bold;
 
-				@include respond-to('small') {
+				@include respond-to("small") {
 					width: 110px;
 				}
-				@include respond-to('medium') {
+				@include respond-to("medium") {
 					width: 140px;
 				}
 			}
