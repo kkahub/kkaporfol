@@ -29,7 +29,7 @@ export default function Skill() {
                 custom={skill.id}
               >
                 <Image
-                  src={`/images/skill/skill_num${skill.id}.png`}
+                  src={`./images/skill/skill_num${skill.id}.png`}
                   alt={`${skill.id}`}
                   width={50}
                   height={35}

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { BasicFade } from "@styles/motion.tsx";
+import { BasicFade } from "@styles/motion";
 
 export default function Profile() {
   return (
@@ -26,7 +26,7 @@ export default function Profile() {
               custom={0.8}
             >
               <Image
-                src="/images/profile_photo.png"
+                src="./images/profile_photo.png"
                 alt="KKA photo"
                 width={240}
                 height={240}
