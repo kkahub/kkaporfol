@@ -2,33 +2,75 @@
 
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { BasicFade } from "@styles/motion.tsx";
 
 export default function Profile() {
   return (
-    <div id="Profile" className="section profile">
+    <section id="Profile" className="profile">
       <div className="inner">
-        <h2 className="title">PROFILE</h2>
+        <motion.h2
+          className="title"
+          variants={BasicFade}
+          animate="show"
+          custom={0.2}
+        >
+          PROFILE
+        </motion.h2>
         <div className="content">
           <div className="photo">
-            <Image
-              src="../../../public/images/profile_photo.png"
-              alt="KKA photo"
-            />
+            <motion.div
+              variants={BasicFade}
+              initial="hide"
+              animate="show"
+              custom={0.8}
+            >
+              <Image
+                src="/images/profile_photo.png"
+                alt="KKA photo"
+                width={240}
+                height={240}
+              />
+            </motion.div>
           </div>
           <div className="profile_con">
-            <dl>
-              <dt>Name</dt>
-              <dd>김근애</dd>
-              <dt>E&#45;mail</dt>
-              <dd>oceco@naver.com</dd>
-              <dt>Web Designer</dt>
-              <dd>2012.04~</dd>
-              <dt>Web Publisher</dt>
-              <dd>2014.04~</dd>
-            </dl>
+            <motion.ul variants={BasicFade}>
+              <motion.li
+                variants={BasicFade}
+                initial="hide"
+                animate="show"
+                custom={1.2}
+              >
+                <b>Name</b> 김근애
+              </motion.li>
+              <motion.li
+                variants={BasicFade}
+                initial="hide"
+                animate="show"
+                custom={1.4}
+              >
+                <b>E&#45;mail</b> oceco@naver.com
+              </motion.li>
+              <motion.li
+                variants={BasicFade}
+                initial="hide"
+                animate="show"
+                custom={1.6}
+              >
+                <b>Web Designer</b> 2012.04~
+              </motion.li>
+              <motion.li
+                variants={BasicFade}
+                initial="hide"
+                animate="show"
+                custom={1.8}
+              >
+                <b>Web Publisher</b> 2014.04~
+              </motion.li>
+            </motion.ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

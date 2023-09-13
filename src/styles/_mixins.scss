@@ -1,0 +1,114 @@
+/* 믹스인 */
+// 컨텐츠 박스 기본 설정
+@mixin area {
+	position: relative;
+	min-width: 1900px;
+	width: 100%;
+}
+@mixin con {
+	width: $full-w - 300px;
+}
+@mixin shadow-box {
+	margin: 30px 30px 20px 0;
+	padding: 20px;
+	box-shadow: $c-box-shadow;
+	background: #fff;
+}
+
+// clearfix
+@mixin clearfix {
+	&::before,
+	&::after {
+		content: " ";
+		display: table;
+		box-sizing: border-box;
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+// 한 줄로 아이템 정렬
+@mixin inline-group {
+	font-size: 0;
+	letter-spacing: 0;
+	word-spacing: 0;
+}
+@mixin inline-item {
+	display: inline-block;
+}
+
+// ... 말줄임
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+// transition 벤더프리픽스
+@mixin prefix-transi($value) {
+	-o-transition: $value;
+	-ms-transition: $value;
+	-moz-transition: $value;
+	-webkit-transition: $value;
+	transition: $value;
+}
+
+// 버튼
+%full-btn {
+	display: block;
+	width: 90%;
+	padding: 0 12px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+@mixin btn($name) {
+	@include btn-common;
+
+	@if $name == basic {
+		@include btn-basic;
+	} @else if $name == second {
+		@include btn-second;
+	} @else if $name == warn {
+		@include btn-warn;
+	}
+}
+@mixin btn-common {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	width: 90px;
+	height: 30px;
+	padding: 6px 10px;
+	border-radius: 13px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 100%;
+}
+@mixin btn-basic {
+	border: 1px solid $c-key;
+	background: $c-key;
+	color: #fff;
+
+	&:hover {
+		border: 1px solid $c-suc;
+		background: $c-suc;
+	}
+}
+@mixin btn-second {
+	border: 1px solid $c-btn-line;
+	color: $c-btn-line;
+
+	&:hover {
+		background: $c-btn-line;
+		color: $c-txt;
+	}
+}
+@mixin btn-warn {
+	border: 1px solid $c-warn;
+	background: $c-warn;
+	color: #fff;
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 import { motion, Variants, AnimatePresence } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
@@ -83,7 +84,7 @@ export default function Intro() {
           swiper.navigation.update();
         }}
         autoplay={{
-          delay: 26000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         speed={1000}
@@ -150,9 +151,7 @@ export default function Intro() {
                     exit="hide"
                     custom={1}
                   >
-                    이렇게
-                    <br />
-                    만들었어요
+                    이렇게 만들었어요
                   </motion.h1>
                 )}
               </AnimatePresence>
@@ -166,24 +165,78 @@ export default function Intro() {
                   initial="hide"
                   animate="show"
                   exit="hide"
-                  custom={1.5}
+                  custom={1}
                 >
-                  <motion.li variants={varFade} custom={0.2}>
-                    React.js
+                  <motion.li variants={varFade} custom={1}>
+                    <h2>View</h2>
+                    <ul className="pill_group">
+                      <li>React.js</li>
+                      <li>Next.js</li>
+                    </ul>
                   </motion.li>
-                  <motion.li variants={varFade} custom={0.4}>
-                    Next.js
+                  <motion.li variants={varFade} custom={1.1}>
+                    <h2>State Management</h2>
+                    <ul className="pill_group">
+                      <li>Redux-Saga</li>
+                    </ul>
                   </motion.li>
-                  <motion.li variants={varFade} custom={0.6}>
-                    typescript
+                  <motion.li variants={varFade} custom={1.2}>
+                    <h2>Javascript</h2>
+                    <ul className="pill_group">
+                      <li>ES6</li>
+                      <li>typescript</li>
+                    </ul>
                   </motion.li>
-                  <motion.li variants={varFade} custom={0.2}>
-                    반응형
+                  <motion.li variants={varFade} custom={1.3}>
+                    <h2>CSS</h2>
+                    <ul className="pill_group">
+                      <li>SASS(SCSS)</li>
+                      <li>반응형</li>
+                    </ul>
                   </motion.li>
-                  <motion.li variants={varFade} custom={0.2}>
-                    SASS(SCSS)
+                  <motion.li variants={varFade} custom={1.4}>
+                    <h2>Build Tool</h2>
+                    <ul className="pill_group">
+                      <li>Webpack</li>
+                    </ul>
+                  </motion.li>
+                  <motion.li variants={varFade} custom={1.5}>
+                    <h2>Coding Convention</h2>
+                    <ul className="pill_group">
+                      <li>Husky</li>
+                      <li>lint-staged</li>
+                      <li>ESLint</li>
+                      <li>Prettier</li>
+                    </ul>
+                  </motion.li>
+                  <motion.li variants={varFade} custom={1.6}>
+                    <h2>Configuration Management</h2>
+                    <ul className="pill_group">
+                      <li>Git</li>
+                      <li>Github</li>
+                    </ul>
                   </motion.li>
                 </motion.ul>
+              )}
+            </AnimatePresence>
+
+            <AnimatePresence>
+              {isVisible === 1 && (
+                <motion.div
+                  variants={varFade}
+                  initial="hide"
+                  animate="show"
+                  exit="hide"
+                  custom={1.8}
+                >
+                  <Link
+                    className="btn md basic"
+                    href="https://github.com/kkahub/kkaporfol"
+                    target="blank"
+                  >
+                    Github로 소스보기
+                  </Link>
+                </motion.div>
               )}
             </AnimatePresence>
           </div>
