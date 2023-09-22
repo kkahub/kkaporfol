@@ -53,7 +53,7 @@
     {
       "id": "11",
       "title": "기타",
-      "desc": "Git 형상관리툴에 대한 기초스킬(SVN, GitLab, GitHub).\\nwebpack, babel, gulp 사용.\\n액셀 기초"
+      "desc": "Git 형상관리툴에 대한 기초스킬(SVN, GitLab, GitHub).\nwebpack, babel, gulp 사용.\n액셀 기초"
     }
   ]
 }

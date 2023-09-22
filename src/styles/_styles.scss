@@ -7,6 +7,7 @@
 		position: relative;
 	}
 	.swiper-slide {
+		overflow-y: auto;
 		display: flex;
 		height: 100vh;
 		align-items: center;
@@ -83,6 +84,9 @@
 		background: url("../../public/images/visual_bg2.jpg") center top/cover;
 		text-align: center;
 
+		.visual_inner {
+			min-height: 750px;
+		}
 		.btn {
 			display: inline-block;
 			margin-top: 30px;

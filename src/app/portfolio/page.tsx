@@ -35,6 +35,7 @@ export default function Portfolio() {
           PORTFOLIO
         </motion.h2>
         <motion.p
+          className="title_desc"
           variants={BasicFade}
           initial="hide"
           animate="show"
