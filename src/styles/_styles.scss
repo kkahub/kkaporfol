@@ -85,7 +85,15 @@
 		text-align: center;
 
 		.visual_inner {
-			min-height: 750px;
+			@include respond-to("small") {
+				min-height: 750px;
+				margin-top: 20px;
+			}
+			@include respond-to("medium") {
+				min-height: auto;
+			}
+			@include respond-to("large") {
+			}
 		}
 		.btn {
 			display: inline-block;
@@ -160,13 +168,6 @@
 	}
 
 	.photo {
-		@include respond-to("small") {
-			display: none;
-		}
-		@include respond-to("medium") {
-			display: block;
-		}
-
 		img {
 			margin-bottom: 25px;
 
@@ -349,6 +350,61 @@
 .portfolio {
 	background: #d5e4df url("../../public/images/pattern_bg2.png");
 
+	.search_wrap {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		margin-top: 5px;
+
+		@include respond-to("small") {
+			padding-right: 12px;
+			margin-bottom: 10px;
+		}
+		@include respond-to("medium") {
+			padding-right: 12px;
+		}
+		@include respond-to("large") {
+			padding-right: 10px;
+		}
+		@include respond-to("wide") {
+			padding-right: 20px;
+		}
+
+		input {
+			width: 240px;
+			height: 36px;
+			padding-right: 40px;
+		}
+		.btn_search {
+			position: absolute;
+			height: 36px;
+			width: 40px;
+			font-size: 0;
+
+			@include respond-to("small") {
+				right: 12px;
+			}
+			@include respond-to("medium") {
+				right: 12px;
+			}
+			@include respond-to("large") {
+				right: 10px;
+			}
+			@include respond-to("wide") {
+				right: 20px;
+			}
+
+			&:after {
+				content: "⌕";
+				display: block;
+				height: 36px;
+				font-size: 32px;
+				color: $c-sub;
+				line-height: 34px;
+				transform: scaleX(-1);
+			}
+		}
+	}
 	.portfolio_wrap {
 		display: flex;
 		flex-wrap: wrap;

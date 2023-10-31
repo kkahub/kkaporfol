@@ -4,7 +4,7 @@ import { Variants } from "framer-motion";
 
 const BasicFade: Variants = {
   show: (i) => {
-    const delay = 0.2 + i * 0.2;
+    const delay = i * 0.2;
     return {
       opacity: 1,
       transition: {

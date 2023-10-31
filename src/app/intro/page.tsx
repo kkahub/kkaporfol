@@ -10,7 +10,7 @@ import useResize from "@hooks/useResize";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "../../styles/plugin.scss";
+import "../../styles/swiper.scss";
 
 const swiperFade: Variants = {
   show: (i) => {
@@ -94,7 +94,7 @@ export default function Intro() {
           swiper.navigation.update();
         }}
         autoplay={{
-          delay: 36000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         speed={1000}
@@ -187,7 +187,9 @@ export default function Intro() {
                   <motion.li variants={swiperFade} custom={1.1}>
                     <h2>State Management</h2>
                     <ul className="pill_group">
-                      <li>Redux-Saga</li>
+                      <li>Redux</li>
+                      {/* <li>Redux-Saga</li> */}
+                      <li>Redux-toolkit</li>
                     </ul>
                   </motion.li>
                   <motion.li variants={swiperFade} custom={1.2}>

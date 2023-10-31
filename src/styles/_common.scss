@@ -38,7 +38,7 @@
 		}
 		@include respond-to("large") {
 			width: 33.33%;
-			margin: 25px 0;
+			margin: 15px 0;
 		}
 		@include respond-to("wide") {
 			width: 25%;
@@ -79,6 +79,22 @@
 	display: inline-block;
 	font-size: 14px;
 	color: #999;
+}
+
+// 입력
+input[type="text"] {
+	outline: 0;
+	height: 30px;
+	padding: 0 10px;
+	border: 0;
+	border-bottom: 2px solid $c-key;
+	background: rgba(255, 255, 255, 0.4);
+	line-height: 1;
+	transition: all 0.6s;
+
+	&:focus {
+		background: rgba(255, 255, 255, 1);
+	}
 }
 
 // 버튼
@@ -177,4 +193,12 @@
 	.modal_content {
 		padding: 20px;
 	}
+}
+
+// 게시판 - 데이터 없음
+.no_data {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
 }

@@ -1,5 +1,8 @@
+/* eslint no-underscore-dangle: 0 */
 /** @type {import('next').NextConfig} */
-const path = require("path");
+import path from "path";
+
+const __dirname = path.resolve();
 const debug = process.env.NODE_ENV !== "production";
 const repository = "https://kkahub.github.io/kkaporfol";
 
@@ -16,4 +19,4 @@ const nextConfig = {
   output: "export",
 };
 
-module.exports = nextConfig;
+export default nextConfig;

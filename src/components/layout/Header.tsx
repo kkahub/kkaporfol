@@ -41,35 +41,40 @@ export default function Header() {
 							variants={BasicFade}
 							animate={windowSize > 1000 || isOpen ? "show" : "hide"}
 							custom={0.1}
-							className={pathname === "/" ? "on" : ""}>
+							className={pathname === "/" ? "on" : ""}
+							onClick={() => setNavToggle(!isOpen)}>
 							<Link href="/">INTRO</Link>
 						</motion.li>
 						<motion.li
 							variants={BasicFade}
 							animate={windowSize > 1000 || isOpen ? "show" : "hide"}
 							custom={0.2}
-							className={pathname === "/profile" ? "on" : ""}>
+							className={pathname === "/profile" ? "on" : ""}
+							onClick={() => setNavToggle(!isOpen)}>
 							<Link href="/profile">PROFILE</Link>
 						</motion.li>
 						<motion.li
 							variants={BasicFade}
 							animate={windowSize > 1000 || isOpen ? "show" : "hide"}
 							custom={0.3}
-							className={pathname === "/skill" ? "on" : ""}>
+							className={pathname === "/skill" ? "on" : ""}
+							onClick={() => setNavToggle(!isOpen)}>
 							<Link href="/skill">SKILL</Link>
 						</motion.li>
 						<motion.li
 							variants={BasicFade}
 							animate={windowSize > 1000 || isOpen ? "show" : "hide"}
 							custom={0.4}
-							className={pathname === "/portfolio" ? "on" : ""}>
+							className={pathname === "/portfolio" ? "on" : ""}
+							onClick={() => setNavToggle(!isOpen)}>
 							<Link href="/portfolio">PORTFOLIO</Link>
 						</motion.li>
 						<motion.li
 							variants={BasicFade}
 							animate={windowSize > 1000 || isOpen ? "show" : "hide"}
 							custom={0.5}
-							className={pathname === "/preview" ? "on" : ""}>
+							className={pathname === "/preview" ? "on" : ""}
+							onClick={() => setNavToggle(!isOpen)}>
 							<Link href="/preview">PREVIEW</Link>
 						</motion.li>
 					</motion.ul>

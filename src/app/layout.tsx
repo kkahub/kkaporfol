@@ -3,8 +3,9 @@
 import React from "react";
 import "../styles/globals.scss";
 import type { Metadata } from "next";
-import Header from "@components/layout/header";
+import Header from "@/components/layout/header";
 import { usePathname } from "next/navigation";
+import Providers from "@modules/provider";
 
 export const metadata: Metadata = {
   title: "프론트엔드 개발자 김근애 포트폴리오",
@@ -34,8 +35,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={pathname === "/" ? "main" : ""}>
-        <Header />
-        <div id="container">{children}</div>
+        <Providers>
+          <Header />
+          <div id="container">{children}</div>
+        </Providers>
       </body>
     </html>
   );
