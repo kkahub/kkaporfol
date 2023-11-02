@@ -14,24 +14,19 @@ interface PortfolioType {
 
 interface SearchType {
   keyword: string;
-  result: PortfolioType;
+  result: PortfolioType[];
   totalPage: number;
   page: number;
-  sliceList: PortfolioType;
+  sliceList: PortfolioType[];
 }
 
 const pageUnit = 12;
-const pageCount = (item: PortfolioType) => {
-  if (item.length % pageUnit === 0) {
-    parseInt(item.length / pageUnit, 10);
-  }
-  return parseInt(item.length / pageUnit, 10) + 1;
-};
+const pageCount = (item: number) => Math.ceil(item / pageUnit);
 
 const initialState: SearchType = {
   keyword: "",
   result: PortfolioList.portfolios,
-  totalPage: pageCount(PortfolioList.portfolios),
+  totalPage: pageCount(PortfolioList.portfolios.length),
   page: 1,
   sliceList: PortfolioList.portfolios.slice(0, pageUnit),
 };
@@ -59,16 +54,16 @@ export const searchSlice = createSlice({
     }),
     setTotalPage: (state) => ({
       ...state,
-      totalPage: pageCount(state.result),
+      totalPage: pageCount(state.result.length),
     }),
     setPage: (state, action) => ({
       ...state,
       page: action.payload,
     }),
-    setSliceList: (state) => ({
+    setSliceList: (state: SearchType) => ({
       ...state,
       sliceList:
-        state.page === state.totalPage
+        state.totalPage === 1
           ? state.result.slice(pageUnit * (state.page - 1))
           : state.result.slice(
               pageUnit * (state.page - 1),

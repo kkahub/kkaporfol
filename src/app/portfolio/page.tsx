@@ -19,19 +19,20 @@ export default function Portfolio() {
   const dispatch = useAppDispatch();
   const searchData = useAppSelector((state) => state.searchReducer);
 
-  const handlePage = (e, p) => {
+  const handlePage = (e: React.ChangeEvent<unknown>, p: number) => {
     dispatch(setPage(p));
     dispatch(setSliceList());
   };
 
-  const searchValChange = (e) => {
+  const searchValChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setKeyword(e.target.value.toLowerCase()));
   };
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(searchList(e.target.keyword.value.toLowerCase()));
-    dispatch(setSliceList());
+    dispatch(searchList());
+    dispatch(setPage(1));
     dispatch(setTotalPage());
+    dispatch(setSliceList());
   };
 
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -141,6 +142,7 @@ export default function Portfolio() {
                 <Pagination
                   count={searchData.totalPage}
                   defaultPage={1}
+                  page={searchData.page}
                   boundaryCount={6}
                   variant="outlined"
                   color="primary"
