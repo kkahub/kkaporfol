@@ -1,7 +1,7 @@
 1:HL["https://kkahub.github.io/kkaporfol/_next/static/css/42f0141369ef4bf7.css",{"as":"style"}]
-0:["nCQYrXsfP8xtRKHmG0S8b",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"https://kkahub.github.io/kkaporfol/_next/static/css/42f0141369ef4bf7.css","precedence":"next"}]],"$L3"]]]]
+0:["cQlQbeo_uv2vy2XfTVEze",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"https://kkahub.github.io/kkaporfol/_next/static/css/42f0141369ef4bf7.css","precedence":"next"}]],"$L3"]]]]
 4:HL["https://kkahub.github.io/kkaporfol/_next/static/css/0d6b656a240d085a.css",{"as":"style"}]
-5:I{"id":17,"chunks":["703:static/chunks/703-5a3ed4df5776a707.js","396:static/chunks/396-cc529fb53d5cee93.js","73:static/chunks/73-a5c8446d52b373ec.js","185:static/chunks/app/layout-f8e6669a2678ff05.js"],"name":"","async":false}
+5:I{"id":17,"chunks":["703:static/chunks/703-5a3ed4df5776a707.js","396:static/chunks/396-cc529fb53d5cee93.js","73:static/chunks/73-a5c8446d52b373ec.js","185:static/chunks/app/layout-a0ca2a620a4fd148.js"],"name":"","async":false}
 6:I{"id":7767,"chunks":["272:static/chunks/webpack-b1703d79f7ed2b71.js","971:static/chunks/fd9d1056-eb77432ae4f49175.js","596:static/chunks/596-ab48a17f93c249cc.js"],"name":"default","async":false}
 7:I{"id":7920,"chunks":["272:static/chunks/webpack-b1703d79f7ed2b71.js","971:static/chunks/fd9d1056-eb77432ae4f49175.js","596:static/chunks/596-ab48a17f93c249cc.js"],"name":"default","async":false}
 9:I{"id":1386,"chunks":["703:static/chunks/703-5a3ed4df5776a707.js","396:static/chunks/396-cc529fb53d5cee93.js","886:static/chunks/886-6d84fd96eccd6969.js","894:static/chunks/894-c8525be540fbfd97.js","931:static/chunks/app/page-cdacf0da0de6506b.js"],"name":"","async":false}
