@@ -186,7 +186,7 @@ $header-h: 60px;
 			float: right;
 		}
 
-		li {
+		> li {
 			cursor: pointer;
 			position: relative;
 			height: $header-h;
@@ -201,10 +201,12 @@ $header-h: 60px;
 				margin: 0;
 			}
 			@include respond-to("large") {
-				display: inline-block;
+				display: inline-flex;
+				align-items: flex-start;
+				justify-content: center;
 				margin-left: 50px;
 			}
-			a {
+			> a {
 				outline: 0;
 				position: relative;
 				height: 100%;
@@ -236,9 +238,62 @@ $header-h: 60px;
 
 			&:hover,
 			&.on {
-				a {
+				> a {
 					&::after {
 						width: 100%;
+					}
+				}
+			}
+		}
+		.sub_menu {
+			display: none;
+
+			@include respond-to("small") {
+				position: static;
+			}
+			@include respond-to("medium") {
+				position: static;
+			}
+			@include respond-to("large") {
+				position: absolute;
+				top: 60px;
+			}
+
+			&.show {
+				display: block;
+			}
+			> li {
+				opacity: 0;
+				padding: 8px 10px;
+				color: rgba(255, 255, 255, 0.6);
+				white-space: nowrap;
+				text-align: center;
+
+				&:hover,
+				&.on {
+					> a {
+						color: rgba(255, 255, 255, 1);
+					}
+				}
+				a {
+					color: rgba(255, 255, 255, 0.6);
+					white-space: nowrap;
+
+					&::before {
+						@include respond-to("small") {
+							content: "- ";
+						}
+						@include respond-to("medium") {
+							content: "- ";
+						}
+					}
+					&::after {
+						@include respond-to("small") {
+							content: " -";
+						}
+						@include respond-to("medium") {
+							content: " -";
+						}
 					}
 				}
 			}

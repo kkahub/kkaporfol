@@ -86,7 +86,7 @@
 
 		.visual_inner {
 			@include respond-to("small") {
-				min-height: 750px;
+				min-height: 500px;
 				margin-top: 20px;
 			}
 			@include respond-to("medium") {

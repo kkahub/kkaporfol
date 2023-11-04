@@ -11,6 +11,7 @@ export default function Header() {
   const pathname = usePathname();
   const [windowSize, setWindowSize] = useState<number>(0);
   const [isOpen, setNavToggle] = useState<boolean>(false);
+  const [isSubOpen, setSubNavToggle] = useState<boolean>(false);
 
   useLayoutEffect(() => {
     setWindowSize(window.innerWidth);
@@ -18,7 +19,13 @@ export default function Header() {
 
   useResize((w: number) => {
     setWindowSize(w);
-    return w > 1000 ? setNavToggle(true) : setNavToggle(false);
+    if (w > 1000) {
+      setNavToggle(true);
+      setSubNavToggle(false);
+    } else {
+      setNavToggle(false);
+      setSubNavToggle(true);
+    }
   });
 
   return (
@@ -80,8 +87,30 @@ export default function Header() {
               custom={0.5}
               className={pathname === "/preview" ? "on" : ""}
               onClick={() => setNavToggle(!isOpen)}
+              onMouseEnter={() => setSubNavToggle(true)}
+              onMouseLeave={() => setSubNavToggle(false)}
             >
               <Link href="/preview">PREVIEW</Link>
+              <motion.ul
+                className={`sub_menu ${
+                  windowSize < 1000 || isSubOpen ? "show" : ""
+                }`}
+              >
+                <motion.li
+                  variants={BasicFade}
+                  animate={windowSize < 1000 || isSubOpen ? "show" : "hide"}
+                  custom={0.1}
+                >
+                  preparing
+                </motion.li>
+                {/* <motion.li
+									variants={BasicFade}
+									animate={windowSize < 1000 || isSubOpen ? "show" : "hide"}
+									custom={0.2}
+									className={pathname === "/chart" ? "on" : ""}>
+									<Link href="/chart">Chart</Link>
+								</motion.li> */}
+              </motion.ul>
             </motion.li>
           </motion.ul>
         </motion.nav>
