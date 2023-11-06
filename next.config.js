@@ -13,6 +13,9 @@ const nextConfig = {
     includePaths: [path.join(__dirname, "src/styles")],
   },
   images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
+  },
   basePath: !debug ? "/kkaporfol" : "", // 빌드 시 경로 : 데브 시 경로
   assetPrefix: !debug ? `${repository}/` : "", // production 일때 prefix 경로
   // trailingSlash: true, //  빌드 시 폴더 구조 동일

@@ -26,21 +26,24 @@
       }
     ],
     "baseUrl": "./",
+    "types": ["@types/gtag.js"],
     "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@modules/*": ["src/modules/*"]
+      "@modules/*": ["src/modules/*"],
+      "@lib/*": ["src/lib/*"]
     }
   },
   "include": [
-    "next-env.d.ts",
-    "next.config.js",
     "**/*.ts",
     "**/*.tsx",
+    ".eslintrc.cjs",
+    "next-env.d.ts",
+    "next.config.js",
     ".next/types/**/*.ts",
-    ".eslintrc.cjs"
+    "next-sitemap.config.js"
   ],
   "exclude": ["node_modules"]
 }

@@ -71,6 +71,7 @@
     ]
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.17",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "next-sitemap": "^4.2.3",

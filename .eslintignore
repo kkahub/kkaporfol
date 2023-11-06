@@ -7,3 +7,4 @@ public
 !next.config.js
 out/_next/static/*
 !.eslintrc.js
+*.d.ts
