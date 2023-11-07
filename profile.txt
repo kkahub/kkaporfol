@@ -1,5 +1,5 @@
 1:HL["https://kkahub.github.io/kkaporfol/_next/static/css/89d082eac8d7bdba.css",{"as":"style"}]
-0:["wQ6OUk2RVDnU_LCSjMOm6",[[["",{"children":["profile",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"https://kkahub.github.io/kkaporfol/_next/static/css/89d082eac8d7bdba.css","precedence":"next"}]],"$L3"]]]]
+0:["N0OhQMUxGj78MCTE-s2s1",[[["",{"children":["profile",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"https://kkahub.github.io/kkaporfol/_next/static/css/89d082eac8d7bdba.css","precedence":"next"}]],"$L3"]]]]
 4:I{"id":2090,"chunks":["703:static/chunks/703-5a3ed4df5776a707.js","396:static/chunks/396-cc529fb53d5cee93.js","73:static/chunks/73-a5c8446d52b373ec.js","719:static/chunks/719-39637b32290bbf88.js","185:static/chunks/app/layout-c8ca802cc065fba8.js"],"name":"","async":false}
 5:I{"id":7767,"chunks":["272:static/chunks/webpack-ee13ba51ac3155e4.js","971:static/chunks/fd9d1056-eb77432ae4f49175.js","596:static/chunks/596-ab48a17f93c249cc.js"],"name":"default","async":false}
 6:I{"id":7920,"chunks":["272:static/chunks/webpack-ee13ba51ac3155e4.js","971:static/chunks/fd9d1056-eb77432ae4f49175.js","596:static/chunks/596-ab48a17f93c249cc.js"],"name":"default","async":false}
