@@ -250,13 +250,16 @@ $header-h: 60px;
 
 			@include respond-to("small") {
 				position: static;
+				background: transparent;
 			}
 			@include respond-to("medium") {
 				position: static;
+				background: transparent;
 			}
 			@include respond-to("large") {
 				position: absolute;
 				top: 60px;
+				background: $c-dim;
 			}
 
 			&.show {
@@ -264,7 +267,7 @@ $header-h: 60px;
 			}
 			> li {
 				opacity: 0;
-				padding: 8px 10px;
+				padding: 10px 25px;
 				color: rgba(255, 255, 255, 0.6);
 				white-space: nowrap;
 				text-align: center;
@@ -305,6 +308,12 @@ $header-h: 60px;
 	#header {
 		box-shadow: none;
 		background: transparent;
+
+		.gnb {
+			.sub_menu {
+				background: transparent;
+			}
+		}
 	}
 }
 
