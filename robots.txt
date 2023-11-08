@@ -1,0 +1,20 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /ignore-pages
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /api*/
+
+# Yeti
+User-agent: Yeti
+Allow: /
+Disallow: /api*/
+
+# Host
+Host: https://kkahub.github.io/kkaporfol
+
+# Sitemaps
+Sitemap: https://kkahub.github.io/kkaporfol/sitemap.xml
