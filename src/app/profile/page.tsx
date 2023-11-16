@@ -47,14 +47,6 @@ export default function Profile() {
                 variants={BasicFade}
                 initial="hide"
                 animate="show"
-                custom={1.4}
-              >
-                <b>E&#45;mail</b> oceco@naver.com
-              </motion.li>
-              <motion.li
-                variants={BasicFade}
-                initial="hide"
-                animate="show"
                 custom={1.6}
               >
                 <b>Web Designer</b> 2012.04~

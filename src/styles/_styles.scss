@@ -599,3 +599,51 @@
 		}
 	}
 }
+
+/* Preview */
+.preview {
+	background: #d5e4df url("../../public/images/pattern_bg2.png");
+
+	.preview_menu {
+		padding-top: 30px;
+
+		> li {
+			padding: 20px 30px;
+		}
+		.preview_item {
+			position: relative;
+			padding: 0 15px;
+			font-size: 20px;
+			font-weight: 600;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 5px;
+				right: 0;
+				width: 11px;
+				height: 2px;
+				background: $c-txt;
+				transform: rotate(45deg);
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 9px;
+				right: 0;
+				width: 11px;
+				height: 2px;
+				background: $c-txt;
+				transform: rotate(-45deg);
+			}
+			&:hover {
+				color: $c-sub;
+
+				&::before,
+				&::after {
+					background: $c-sub;
+				}
+			}
+		}
+	}
+}

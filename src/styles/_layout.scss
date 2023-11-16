@@ -247,6 +247,7 @@ $header-h: 60px;
 		}
 		.sub_menu {
 			display: none;
+			padding: 7px 0;
 
 			@include respond-to("small") {
 				position: static;
@@ -267,7 +268,6 @@ $header-h: 60px;
 			}
 			> li {
 				opacity: 0;
-				padding: 10px 25px;
 				color: rgba(255, 255, 255, 0.6);
 				white-space: nowrap;
 				text-align: center;
@@ -279,6 +279,8 @@ $header-h: 60px;
 					}
 				}
 				a {
+					display: block;
+					padding: 6px 25px;
 					color: rgba(255, 255, 255, 0.6);
 					white-space: nowrap;
 
@@ -289,6 +291,9 @@ $header-h: 60px;
 						@include respond-to("medium") {
 							content: "- ";
 						}
+						@include respond-to("large") {
+							content: "";
+						}
 					}
 					&::after {
 						@include respond-to("small") {
@@ -296,6 +301,9 @@ $header-h: 60px;
 						}
 						@include respond-to("medium") {
 							content: " -";
+						}
+						@include respond-to("large") {
+							content: "";
 						}
 					}
 				}

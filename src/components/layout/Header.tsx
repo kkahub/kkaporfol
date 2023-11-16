@@ -9,7 +9,7 @@ import useResize from "@hooks/useResize";
 
 export default function Header() {
   const pathname = usePathname();
-  const [windowSize, setWindowSize] = useState<number>(0);
+  const [windowSize, setWindowSize] = useState<number>(1000);
   const [isOpen, setNavToggle] = useState<boolean>(false);
   const [isSubOpen, setSubNavToggle] = useState<boolean>(false);
 
@@ -98,18 +98,13 @@ export default function Header() {
               >
                 <motion.li
                   variants={BasicFade}
+                  initial="hide"
                   animate={windowSize < 1000 || isSubOpen ? "show" : "hide"}
-                  custom={0.1}
+                  custom={0.2}
+                  className={pathname === "/chart" ? "on" : ""}
                 >
-                  preparing
+                  <Link href="/preview/chart">Chart</Link>
                 </motion.li>
-                {/* <motion.li
-									variants={BasicFade}
-									animate={windowSize < 1000 || isSubOpen ? "show" : "hide"}
-									custom={0.2}
-									className={pathname === "/chart" ? "on" : ""}>
-									<Link href="/chart">Chart</Link>
-								</motion.li> */}
               </motion.ul>
             </motion.li>
           </motion.ul>
