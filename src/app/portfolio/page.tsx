@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Image from "next/image";
 import {
   setKeyword,
@@ -19,10 +19,13 @@ export default function Portfolio() {
   const dispatch = useAppDispatch();
   const searchData = useAppSelector((state) => state.searchReducer);
 
-  const handlePage = (e: React.ChangeEvent<unknown>, p: number) => {
-    dispatch(setPage(p));
-    dispatch(setSliceList());
-  };
+  const handlePage = useCallback(
+    (e: React.ChangeEvent<unknown>, p: number) => {
+      dispatch(setPage(p));
+      dispatch(setSliceList());
+    },
+    [dispatch],
+  );
 
   const searchValChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setKeyword(e.target.value.toLowerCase()));

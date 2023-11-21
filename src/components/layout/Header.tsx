@@ -11,7 +11,7 @@ export default function Header() {
   const pathname = usePathname();
   const [windowSize, setWindowSize] = useState<number>(1000);
   const [isOpen, setNavToggle] = useState<boolean>(false);
-  const [isSubOpen, setSubNavToggle] = useState<boolean>(false);
+  // const [isSubOpen, setSubNavToggle] = useState<boolean>(false);
 
   useLayoutEffect(() => {
     setWindowSize(window.innerWidth);
@@ -21,10 +21,10 @@ export default function Header() {
     setWindowSize(w);
     if (w > 1000) {
       setNavToggle(true);
-      setSubNavToggle(false);
+      // setSubNavToggle(false);
     } else {
       setNavToggle(false);
-      setSubNavToggle(true);
+      // setSubNavToggle(true);
     }
   });
 
@@ -81,7 +81,7 @@ export default function Header() {
             >
               <Link href="/portfolio">PORTFOLIO</Link>
             </motion.li>
-            <motion.li
+            {/* <motion.li
               variants={BasicFade}
               animate={windowSize > 1000 || isOpen ? "show" : "hide"}
               custom={0.5}
@@ -106,7 +106,7 @@ export default function Header() {
                   <Link href="/preview/chart">Chart</Link>
                 </motion.li>
               </motion.ul>
-            </motion.li>
+            </motion.li> */}
           </motion.ul>
         </motion.nav>
       </div>
