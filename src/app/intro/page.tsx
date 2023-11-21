@@ -94,7 +94,7 @@ export default function Intro() {
           swiper.navigation.update();
         }}
         autoplay={{
-          delay: 6000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         speed={1000}
@@ -231,6 +231,7 @@ export default function Intro() {
                   <motion.li variants={swiperFade} custom={1.8}>
                     <h2>그 외</h2>
                     <ul className="pill_group">
+                      <li>MUI</li>
                       <li>Lodash</li>
                     </ul>
                   </motion.li>
