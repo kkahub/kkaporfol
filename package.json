@@ -11,8 +11,8 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",
-    "predeploy": "next build && next-sitemap && next export && type NUL > out/.nojekyll && git add .",
-    "deploy": "gh-pages -d out --dotfiles",
+    "predeploy": "next-sitemap && next build && next export && shx type nul > out/.nojekyll && git add out/",
+    "deploy": "git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "sitemap": "next-sitemap  --config next-sitemap.config.js"
   },
   "dependencies": {

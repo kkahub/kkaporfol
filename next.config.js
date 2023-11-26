@@ -23,6 +23,7 @@ const nextConfig = {
   basePath: !debug ? "/kkaporfol" : "", // 빌드 시 경로 : 데브 시 경로
   assetPrefix: !debug ? `${repository}/` : "", // production 일때 prefix 경로
   // trailingSlash: true, //  빌드 시 폴더 구조 동일
+  output: "export"
 };
 
 export default nextConfig;
