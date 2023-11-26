@@ -49,13 +49,21 @@ export default function Profile() {
                 animate="show"
                 custom={1.6}
               >
-                <b>Web Designer</b> 2012.04~
+                <b>E-Main</b> oceco@naver.com
               </motion.li>
               <motion.li
                 variants={BasicFade}
                 initial="hide"
                 animate="show"
                 custom={1.8}
+              >
+                <b>Web Designer</b> 2012.04~
+              </motion.li>
+              <motion.li
+                variants={BasicFade}
+                initial="hide"
+                animate="show"
+                custom={2}
               >
                 <b>Web Publisher</b> 2014.04~
               </motion.li>

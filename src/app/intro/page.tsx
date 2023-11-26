@@ -188,7 +188,6 @@ export default function Intro() {
                     <h2>State Management</h2>
                     <ul className="pill_group">
                       <li>Redux</li>
-                      {/* <li>Redux-Saga</li> */}
                       <li>Redux-toolkit</li>
                     </ul>
                   </motion.li>
@@ -203,6 +202,7 @@ export default function Intro() {
                     <h2>CSS</h2>
                     <ul className="pill_group">
                       <li>SASS(SCSS)</li>
+                      <li>styled-components</li>
                       <li>반응형</li>
                     </ul>
                   </motion.li>
@@ -231,7 +231,7 @@ export default function Intro() {
                   <motion.li variants={swiperFade} custom={1.8}>
                     <h2>그 외</h2>
                     <ul className="pill_group">
-                      <li>MUI</li>
+                      <li>MUI (Material UI)</li>
                       <li>Lodash</li>
                     </ul>
                   </motion.li>

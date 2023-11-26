@@ -173,6 +173,7 @@ export default function BarChart(props: { data: DataProps[] }) {
     chartSortData,
     colorScale,
     xMax,
+    windowSize,
     chartHeight,
     chartWidth,
     margin.bottom,
@@ -187,7 +188,13 @@ export default function BarChart(props: { data: DataProps[] }) {
   }, [windowSize, drawBarChart]);
 
   return (
-    <motion.div className="barchart_group" variants={BasicFade} custom={0.8}>
+    <motion.div
+      className="barchart_group"
+      variants={BasicFade}
+      initial="hide"
+      animate="show"
+      custom={1}
+    >
       <div className="barchart">
         {/* 그래프 */}
         <svg ref={svgRef} width={chartWidth} height={chartHeight}>

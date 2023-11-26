@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { BasicFade } from "@styles/motion";
 import Link from "next/link";
-
 import { asyncCountries } from "@modules/chartSlice";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
 import BarChart from "@/components/chart/bar";
@@ -52,7 +51,7 @@ export default function Chart() {
           variants={BasicFade}
           initial="hide"
           animate="show"
-          custom={0.3}
+          custom={0.4}
         >
           {total}개의 국가 중에 {count}개 국가를 랜덤으로 데이터를 불러와 인구
           수를 그래프로 그렸습니다.
@@ -64,60 +63,24 @@ export default function Chart() {
           variants={BasicFade}
           initial="hide"
           animate="show"
-          custom={0.3}
+          custom={0.4}
         >
           <p>
             <b>핵심 기술</b>
           </p>
-          <motion.ul className="pill_group">
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={0.5}
-            >
-              D3.js
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={0.5}
-            >
-              SVG
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={0.5}
-            >
-              반응형
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={0.5}
-            >
-              styled-components
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={0.5}
-            >
-              Redux
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={0.5}
-            >
-              Redux-Toolkit
-            </motion.li>
+          <motion.ul
+            className="pill_group"
+            variants={BasicFade}
+            initial="hide"
+            animate="show"
+            custom={0.6}
+          >
+            <motion.li>D3.js</motion.li>
+            <motion.li>SVG</motion.li>
+            <motion.li>반응형</motion.li>
+            <motion.li>styled-components</motion.li>
+            <motion.li>Redux</motion.li>
+            <motion.li>Redux-Toolkit</motion.li>
           </motion.ul>
         </motion.div>
         <motion.p
@@ -125,7 +88,7 @@ export default function Chart() {
           variants={BasicFade}
           initial="hide"
           animate="show"
-          custom={0.4}
+          custom={0.6}
         >
           <b>데이터 출저</b>
           <Link
@@ -143,7 +106,7 @@ export default function Chart() {
           variants={BasicFade}
           initial="hide"
           animate="show"
-          custom={0.5}
+          custom={0.6}
         >
           <b>Github</b>
           <Link
