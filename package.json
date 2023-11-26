@@ -6,13 +6,13 @@
   "homepage": "https://kkahub.github.io/kkaporfol/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",
-    "predeploy": "next-sitemap && next build && next export && shx type nul > out/.nojekyll && git add out/",
-    "deploy": "git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "predeploy": "next build && next-sitemap && type NUL > out/.nojekyll && git add .",
+    "deploy": "gh-pages -d out --dotfiles",
     "sitemap": "next-sitemap  --config next-sitemap.config.js"
   },
   "dependencies": {
@@ -56,6 +56,7 @@
     "redux-saga": "^1.2.3",
     "sass": "^1.64.2",
     "sharp": "^0.32.6",
+    "styled-components": "^6.1.1",
     "swiper": "^10.2.0",
     "typescript": "5",
     "typescript-plugin-css-modules": "^5.0.1"

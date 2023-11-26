@@ -727,15 +727,22 @@
 			}
 		}
 	}
-	.barchart {
+	.barchart_group {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	.barchart {
+		position: relative;
+
+		.bar {
+			cursor: pointer;
+		}
+	}
 	.bar_legend {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: flex-end;
+		justify-content: center;
 
 		@include respond-to("small") {
 			width: 90%;

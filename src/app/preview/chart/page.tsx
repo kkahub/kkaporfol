@@ -54,34 +54,17 @@ export default function Chart() {
           animate="show"
           custom={0.3}
         >
-          {total}개의 국가 중에 {count}개 국가를 랜덤으로 선택해 인구 수를
-          그래프로 그렸습니다.
+          {total}개의 국가 중에 {count}개 국가를 랜덤으로 데이터를 불러와 인구
+          수를 그래프로 그렸습니다.
           <br />
-        </motion.p>
-        <motion.p
-          className="title_desc"
-          variants={BasicFade}
-          initial="hide"
-          animate="show"
-          custom={0.3}
-        >
-          <b>데이터 출저</b>
-          <Link
-            href="https://restcountries.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            passHref
-            className="link"
-          >
-            https://restcountries.com
-          </Link>
+          그래프 바에 마우스를 올리면 정보가 표시됩니다.
         </motion.p>
         <motion.div
           className="title_desc skill_point"
           variants={BasicFade}
           initial="hide"
           animate="show"
-          custom={0.4}
+          custom={0.3}
         >
           <p>
             <b>핵심 기술</b>
@@ -117,6 +100,14 @@ export default function Chart() {
               animate="show"
               custom={0.5}
             >
+              styled-components
+            </motion.li>
+            <motion.li
+              variants={BasicFade}
+              initial="hide"
+              animate="show"
+              custom={0.5}
+            >
               Redux
             </motion.li>
             <motion.li
@@ -129,6 +120,42 @@ export default function Chart() {
             </motion.li>
           </motion.ul>
         </motion.div>
+        <motion.p
+          className="title_desc"
+          variants={BasicFade}
+          initial="hide"
+          animate="show"
+          custom={0.4}
+        >
+          <b>데이터 출저</b>
+          <Link
+            href="https://restcountries.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            passHref
+            className="link"
+          >
+            https://restcountries.com
+          </Link>
+        </motion.p>
+        <motion.p
+          className="title_desc"
+          variants={BasicFade}
+          initial="hide"
+          animate="show"
+          custom={0.5}
+        >
+          <b>Github</b>
+          <Link
+            href="https://github.com/kkahub/kkaporfol/blob/main/src/components/chart/bar.tsx"
+            target="_blank"
+            rel="noopener noreferrer"
+            passHref
+            className="link"
+          >
+            코드 소스 보기
+          </Link>
+        </motion.p>
 
         {chartData[0] !== undefined && <BarChart data={chartData} />}
       </div>

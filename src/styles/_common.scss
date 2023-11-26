@@ -18,8 +18,7 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 100%;
-	background: $c-dim url("../../public/images/btn_top.png") no-repeat center
-		12px;
+	background: $c-dim url("../../public/images/btn_top.png") no-repeat center 12px;
 }
 .btn_top.zero {
 	display: none;
@@ -83,6 +82,10 @@
 // 링크
 .link {
 	color: $c-pre;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 // 입력
