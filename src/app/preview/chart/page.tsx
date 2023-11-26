@@ -81,6 +81,7 @@ export default function Chart() {
             <motion.li>styled-components</motion.li>
             <motion.li>Redux</motion.li>
             <motion.li>Redux-Toolkit</motion.li>
+            <motion.li>Typescript</motion.li>
           </motion.ul>
         </motion.div>
         <motion.p

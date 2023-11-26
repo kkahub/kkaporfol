@@ -79,7 +79,7 @@ export default function BarChart(props: { data: DataProps[] }) {
     const xScale = d3
       .scaleBand()
       .domain(chartSortData.map((d) => d.translations.kor.common))
-      .range([margin.left, chartWidth - margin.left])
+      .range([margin.left, chartWidth])
       .padding(0.2);
 
     // Y스케일 설정
@@ -181,7 +181,7 @@ export default function BarChart(props: { data: DataProps[] }) {
     margin.top,
   ]);
   useEffect(() => {
-    setChartWidth(windowSize > 1000 ? 800 : windowSize * 0.8);
+    setChartWidth(windowSize > 1000 ? 800 : windowSize * 0.9);
     setChartHeight(windowSize > 1000 ? 500 : 350);
 
     drawBarChart();

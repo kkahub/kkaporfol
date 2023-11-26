@@ -6,7 +6,6 @@ import { motion, Variants, AnimatePresence } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import useResize from "@hooks/useResize";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
