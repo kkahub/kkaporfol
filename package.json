@@ -11,7 +11,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",
-    "predeploy": "next build && next-sitemap && type NUL > out/.nojekyll && git add .",
+    "predeploy": "next build && next-sitemap && next export && type NUL > out/.nojekyll && git add .",
     "deploy": "gh-pages -d out --dotfiles",
     "sitemap": "next-sitemap  --config next-sitemap.config.js"
   },
@@ -55,6 +55,7 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.2.3",
     "sass": "^1.64.2",
+    "sharp": "^0.32.6",
     "swiper": "^10.2.0",
     "typescript": "5",
     "typescript-plugin-css-modules": "^5.0.1"

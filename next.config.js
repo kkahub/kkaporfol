@@ -8,11 +8,15 @@ const repository = "https://kkahub.github.io/kkaporfol";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   sassOptions: {
     includePaths: [path.join(__dirname, "src/styles")],
   },
-  images: { unoptimized: true },
+  images: { 
+    unoptimized: true,
+    domains: ["https://kkahub.github.io/kkaporfol"],
+    minimumCacheTTL: 31536000 
+  },
   env: {
     NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
   },

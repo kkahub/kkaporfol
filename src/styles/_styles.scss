@@ -647,3 +647,120 @@
 		}
 	}
 }
+
+/* Preview BarChart */
+.preview_chart {
+	.title_desc {
+		b::after {
+			@include respond-to("small") {
+				content: "";
+			}
+			@include respond-to("medium") {
+				content: " : ";
+			}
+			@include respond-to("large") {
+				content: " : ";
+			}
+			@include respond-to("wide") {
+				content: " : ";
+			}
+		}
+		a {
+			@include respond-to("small") {
+				display: block;
+			}
+			@include respond-to("medium") {
+				display: inline-block;
+			}
+			@include respond-to("large") {
+				display: inline-block;
+			}
+			@include respond-to("wide") {
+				display: inline-block;
+			}
+		}
+	}
+	.skill_point {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 0 10px;
+
+		@include respond-to("small") {
+			display: block;
+		}
+		@include respond-to("medium") {
+			display: flex;
+		}
+		@include respond-to("large") {
+			display: flex;
+		}
+		@include respond-to("wide") {
+			display: flex;
+		}
+
+		p {
+			line-height: 1;
+		}
+		.pill_group {
+			flex-wrap: wrap;
+
+			@include respond-to("small") {
+				padding: 5px 0;
+				justify-content: center;
+			}
+			@include respond-to("medium") {
+				padding: 5px 0;
+				justify-content: flex-start;
+			}
+			@include respond-to("large") {
+				padding: 0;
+				justify-content: flex-start;
+			}
+			@include respond-to("wide") {
+				padding: 0;
+				justify-content: flex-start;
+			}
+			li {
+				white-space: nowrap;
+				margin: 1px 3px;
+			}
+		}
+	}
+	.barchart {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.bar_legend {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+
+		@include respond-to("small") {
+			width: 90%;
+		}
+		@include respond-to("medium") {
+			width: 90%;
+		}
+		@include respond-to("large") {
+			width: 90%;
+		}
+		@include respond-to("wide") {
+			width: 800px;
+		}
+
+		> li {
+			display: flex;
+			align-items: center;
+			padding-left: 20px;
+		}
+		.color_table {
+			margin-right: 5px;
+		}
+		.countries_name {
+			white-space: nowrap;
+			font-size: 14px;
+		}
+	}
+}

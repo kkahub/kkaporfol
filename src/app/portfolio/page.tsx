@@ -13,7 +13,9 @@ import { useAppDispatch, useAppSelector } from "@modules/hooks";
 import Pagination from "@mui/material/Pagination";
 import { motion, AnimatePresence } from "framer-motion";
 import { BasicFade } from "@styles/motion";
-import Modal from "@components/modal/modal-contents";
+// eslint-disable-next-line import/newline-after-import
+import dynamic from "next/dynamic";
+const Modal = dynamic(() => import("@components/modal/modal-contents"));
 
 export default function Portfolio() {
   const dispatch = useAppDispatch();
