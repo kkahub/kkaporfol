@@ -29,7 +29,7 @@ export default function Header() {
   });
 
   return (
-    <header id="header">
+    <header id="header" className={pathname === "/" ? "main" : ""}>
       <div className="inner">
         <h1>
           <Link href="/">KKA</Link>

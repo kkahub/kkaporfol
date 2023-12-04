@@ -6,8 +6,8 @@
 	z-index: 1000;
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.9) url("../../public/images/loader.gif") no-repeat center
-		center/60px;
+	background: rgba(255, 255, 255, 0.9) url("../../public/images/loader.gif") no-repeat
+		center center/60px;
 
 	& + #wrap {
 		overflow: hidden;
@@ -311,10 +311,7 @@ $header-h: 60px;
 			}
 		}
 	}
-}
-
-.main {
-	#header {
+	&.main {
 		box-shadow: none;
 		background: transparent;
 

@@ -231,6 +231,7 @@ export default function Intro() {
                     <h2>그 외</h2>
                     <ul className="pill_group">
                       <li>MUI (Material UI)</li>
+                      <li>Swiper</li>
                       <li>Lodash</li>
                     </ul>
                   </motion.li>

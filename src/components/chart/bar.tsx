@@ -8,12 +8,12 @@ import React, {
   useCallback,
 } from "react";
 import * as d3 from "d3";
+import useResize from "@hooks/useResize";
 import { motion } from "framer-motion";
 import { BasicFade } from "@styles/motion";
 import styled from "styled-components";
 import { sortData } from "@modules/chartSlice";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
-import useResize from "@hooks/useResize";
 import { DataProps } from "@/app/preview/chart/types";
 
 // 툴팁  스타일
@@ -137,9 +137,7 @@ export default function BarChart(props: { data: DataProps[] }) {
       })
       .style("fill", (d) => d3.interpolateGnBu(colorScale(d.population)))
       .on("mouseenter", (e, d) => {
-        if (windowSize < 1000) {
-          return;
-        }
+        if (windowSize < 1000) return;
         tooltip
           .html(
             `<p>국가 : ${
@@ -161,9 +159,7 @@ export default function BarChart(props: { data: DataProps[] }) {
         d3.select(e.target).transition().duration(200).style("opacity", 0.6);
       })
       .on("mouseleave", (e) => {
-        if (windowSize < 1000) {
-          return;
-        }
+        if (windowSize < 1000) return;
         tooltip.style("opacity", 0);
         d3.select(e.target).transition().duration(50).style("opacity", 1);
       })
