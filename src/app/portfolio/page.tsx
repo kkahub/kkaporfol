@@ -56,117 +56,115 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="Portfolio" className="portfolio">
-      <div className="inner">
-        <motion.h2
-          className="title"
-          variants={BasicFade}
-          initial="hide"
-          animate="show"
-          custom={0.2}
-        >
-          PORTFOLIO
-        </motion.h2>
-        <motion.p
-          className="title_desc"
-          variants={BasicFade}
-          initial="hide"
-          animate="show"
-          custom={0.3}
-        >
-          * 로그인을 해야 볼 수 있거나 더 이상 볼 수 없는 사이트의 경우 샘플
-          페이지로 대체했습니다.
-        </motion.p>
-        <div className="content">
-          <form onSubmit={onSubmit}>
-            <motion.div
-              className="search_wrap"
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={0.4}
-            >
-              <input
-                type="text"
-                name="keyword"
-                placeholder="제목으로 검색하기"
-                onChange={searchValChange}
-              />
-              <button className="btn_search" type="submit">
-                검색
-              </button>
-            </motion.div>
-            {/* Portfolio List */}
-            {searchData.sliceList.length > 0 && (
-              <>
-                <motion.ul className="list_wrap portfolio_wrap grid">
-                  <AnimatePresence>
-                    {searchData.sliceList.map((portfolio, index) => (
-                      <motion.li
-                        className={`item${portfolio.id} grid-item`}
-                        key={portfolio.id}
-                        variants={BasicFade}
-                        initial="hide"
-                        animate="show"
-                        exit="hide"
-                        custom={index}
+    <>
+      <motion.h2
+        className="title"
+        variants={BasicFade}
+        initial="hide"
+        animate="show"
+        custom={0.2}
+      >
+        PORTFOLIO
+      </motion.h2>
+      <motion.p
+        className="title_desc"
+        variants={BasicFade}
+        initial="hide"
+        animate="show"
+        custom={0.3}
+      >
+        * 로그인을 해야 볼 수 있거나 더 이상 볼 수 없는 사이트의 경우 샘플
+        페이지로 대체했습니다.
+      </motion.p>
+      <div className="content">
+        <form onSubmit={onSubmit}>
+          <motion.div
+            className="search_wrap"
+            variants={BasicFade}
+            initial="hide"
+            animate="show"
+            custom={0.4}
+          >
+            <input
+              type="text"
+              name="keyword"
+              placeholder="제목으로 검색하기"
+              onChange={searchValChange}
+            />
+            <button className="btn_search" type="submit">
+              검색
+            </button>
+          </motion.div>
+          {/* Portfolio List */}
+          {searchData.sliceList.length > 0 && (
+            <>
+              <motion.ul className="list_wrap portfolio_wrap grid">
+                <AnimatePresence>
+                  {searchData.sliceList.map((portfolio, index) => (
+                    <motion.li
+                      className={`item${portfolio.id} grid-item`}
+                      key={portfolio.id}
+                      variants={BasicFade}
+                      initial="hide"
+                      animate="show"
+                      exit="hide"
+                      custom={index}
+                    >
+                      <div
+                        className="list_con"
+                        tabIndex={index}
+                        onClick={() => onClickModal(portfolio.id)}
+                        onKeyDown={(e) => keyModal(e, portfolio.id)}
+                        role="button"
                       >
-                        <div
-                          className="list_con"
-                          tabIndex={index}
-                          onClick={() => onClickModal(portfolio.id)}
-                          onKeyDown={(e) => keyModal(e, portfolio.id)}
-                          role="button"
-                        >
-                          <div className="thum_wrap">
-                            <Image
-                              className="responsive_size"
-                              src={portfolio.view}
-                              alt={portfolio.alt}
-                              fill
-                            />
-                          </div>
-                          <div className="info_wrap">
-                            <h3> {portfolio.title} </h3>
-                            {portfolio.skills && (
-                              <ul className="keyword">
-                                {portfolio.skills.map((skill) => (
-                                  <li className="pill" key={skill}>
-                                    {skill}
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
+                        <div className="thum_wrap">
+                          <Image
+                            className="responsive_size"
+                            src={portfolio.view}
+                            alt={portfolio.alt}
+                            fill
+                          />
                         </div>
-                      </motion.li>
-                    ))}
-                  </AnimatePresence>
-                </motion.ul>
-                {/* Pagination */}
-                <Pagination
-                  count={searchData.totalPage}
-                  defaultPage={1}
-                  page={searchData.page}
-                  boundaryCount={6}
-                  variant="outlined"
-                  color="primary"
-                  sx={{ margin: 2 }}
-                  onChange={handlePage}
-                />
-                {/* //Pagination  */}
-              </>
-            )}
-            {searchData.sliceList.length === 0 && (
-              <div className="no_data">검색 결과가 없습니다.</div>
-            )}
-            {/* //Portfolio List */}
-          </form>
-        </div>
+                        <div className="info_wrap">
+                          <h3> {portfolio.title} </h3>
+                          {portfolio.skills && (
+                            <ul className="keyword">
+                              {portfolio.skills.map((skill) => (
+                                <li className="pill" key={skill}>
+                                  {skill}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      </div>
+                    </motion.li>
+                  ))}
+                </AnimatePresence>
+              </motion.ul>
+              {/* Pagination */}
+              <Pagination
+                count={searchData.totalPage}
+                defaultPage={1}
+                page={searchData.page}
+                boundaryCount={6}
+                variant="outlined"
+                color="primary"
+                sx={{ margin: 2 }}
+                onChange={handlePage}
+              />
+              {/* //Pagination  */}
+            </>
+          )}
+          {searchData.sliceList.length === 0 && (
+            <div className="no_data">검색 결과가 없습니다.</div>
+          )}
+          {/* //Portfolio List */}
+        </form>
       </div>
       {showModal && (
         <Modal onClickModal={onClickModal} modalIndex={modalIndex} />
       )}
-    </section>
+    </>
   );
 }

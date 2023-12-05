@@ -650,6 +650,8 @@
 
 /* Preview BarChart */
 .preview_chart {
+	background: #fff;
+
 	.title_desc {
 		b::after {
 			@include respond-to("small") {
