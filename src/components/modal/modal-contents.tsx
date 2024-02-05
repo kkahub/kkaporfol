@@ -10,7 +10,6 @@ interface ModalProps {
   onClickModal: OnClickModal;
   modalIndex: string;
 }
-
 interface PortfolioType {
   id: string;
   title: string;
@@ -18,7 +17,7 @@ interface PortfolioType {
   alt: string;
   skills?: string[];
   participation: string;
-  url: { sample?: string; service?: string };
+  url: { sample?: string[]; service?: string[] };
   desc?: string;
 }
 
@@ -51,7 +50,14 @@ export default function ModalContent(props: ModalProps) {
           </div>
           <div className="content_wrap">
             <h2 className="modal_title">{subject.title}</h2>
-            <p className="desc">{subject.desc}</p>
+            <p className="desc">
+              {subject.desc?.split("\\n").map((desc) => (
+                <span key={desc}>
+                  {desc}
+                  <br />
+                </span>
+              ))}
+            </p>
             {subject.skills && <h3>핵심 기술</h3>}
             {subject.skills && (
               <ul className="keyword">
@@ -65,22 +71,28 @@ export default function ModalContent(props: ModalProps) {
             <h3>참여도</h3>
             <p className="use_skill">{subject.participation}</p>
             <h3>사이트 보기</h3>
-            <ul className="sitepath">
-              {subject.url.service && (
-                <li>
-                  <Link href={subject.url.service} target="_blank">
-                    {subject.url.service}
-                  </Link>
-                </li>
-              )}
-              {subject.url.sample && (
-                <li>
-                  <Link href={subject.url.sample} target="_blank">
-                    Sample Page
-                  </Link>
-                </li>
-              )}
-            </ul>
+            {subject.url.service && (
+              <ul className="sitepath">
+                {subject.url.service.map((service) => (
+                  <li key={service}>
+                    <Link href={service} target="_blank">
+                      {service}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {subject.url.sample && (
+              <ul className="sitepath">
+                {subject.url.sample.map((sample) => (
+                  <li key="sample">
+                    <Link href={sample} target="_blank">
+                      Sample Page
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>

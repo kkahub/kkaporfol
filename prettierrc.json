@@ -1,6 +1,6 @@
 {
   // 한 줄이 이 글자수를 넘게 되면 들여쓰기되어 코드가 세로로 정리된다. (default: 80)
-  "printWidth": 90,
+  "printWidth": 100,
   // 홑따옴표를 쓸건지 설정. 기본값은 쌍따옴표. 코딩을 하면서 홑따옴표를 썼다면 강제로 쌍따옴표로 변경. (default: false)
   "jsxSingleQuote": true,
   // JSX의 마지막 `>`를 다음 줄로 내릴지 여부
