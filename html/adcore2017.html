@@ -1,0 +1,704 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="ko"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="ko"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="ko"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="ko"><![endif]-->
+<head>
+<!-- META DATA -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+<title>AD CORE</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/pofol/adcore/favicon.ico">
+<link rel="stylesheet" href="../css/adcore/dbp2017/reset.css" type="text/css">
+<link rel="stylesheet" href="../css/adcore/dbp2017/home.css" type="text/css">
+
+<link id="animate" href="../css/adcore/dbp/animate.css" rel="stylesheet" type="text/css">
+<link id="layout_color" href="../css/adcore/dbp/scroll/jquery.custom-scrollbar.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- Header -->
+		<div id="header">
+			<div class="header_inner">
+				<h1 class="logo">
+					<a href="/adcore">
+						<img src="../images/pofol/adcore/logo.png" alt="logo" title="logo">
+					</a>
+				</h1>
+				<div id="nav">
+					<ul id="gnb">
+						<li class="on">
+							<span class="anchorbar"></span>
+							<a href="main/intro.do">Home</a>
+						</li>
+						<li>
+							<span class="anchorbar"></span>
+							<a href="main/intro.do">olleh TV</a>
+						</li>
+						<li>
+							<span class="anchorbar"></span>
+							<a href="#">
+								Product
+								<span class="carrot">
+									<img src="../images/pofol/adcore/carrot_gray.png" alt="Product 메뉴 보기">
+								</span>
+							</a>
+							<ul class="depth2 menu_product">
+								<li>
+									<a href="ollehtv.do">olleh tv</a>
+								</li>
+								<li>
+									<a href="bundangline.do">신분당선</a>
+								</li>
+								<li>
+									<a href="busshelter.do">버스쉘터</a>
+								</li>
+								<li>
+									<a href="townboard.do">타운보드</a>
+								</li>
+								<li>
+									<a href="bigsite.do">빅사이트</a>
+								</li>
+								<li>
+									<a href="megabox.do">메가박스</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="anchorbar"></span>
+							<a href="#Targeting" target="_blank">Targeting</a>
+						</li>
+						<li>
+							<span class="anchorbar"></span>
+							<a href="#">Campaign</a>
+						</li>
+						<li>
+							<span class="anchorbar"></span>
+							<a href="#">
+								Notice
+								<span class="carrot">
+									<img src="../images/pofol/adcore/carrot_gray.png" alt="Product 메뉴 보기">
+								</span>
+							</a>
+							<ul class="depth2 menu_notice">
+								<li>
+									<a href="#공지">공지</a>
+								</li>
+								<li>
+									<a href="#기사">기사</a>
+								</li>
+								<li>
+									<a href="#칼럼">칼럼</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span class="anchorbar"></span>
+							<a href="#">Contact us</a>
+						</li>
+					</ul>
+					<div class="tnb">
+						<ul class="mem_attr">
+							<li>
+								<a href="logInPage.do">LOG IN</a>
+								<div class="log">
+									<form class="frmpopjoin">
+										<ul class="identity_input">
+											<li>
+												<input type="text" id="pop_mem_id" name="MEMB_ID" placeholder="ID or E-mail" />
+											</li>
+											<li>
+												<input type="password" id="pop_mem_pwd" name="MEMB_PWD" placeholder="password">
+											</li>
+										</ul>
+										<ul class="identity_search">
+											<li><a href="#email">이메일</a></li>
+											<li>/</li>
+											<li><a href="passwd.do">비밀번호 찾기</a></li>
+										</ul>
+										<div class="identity_btn btn1">
+											<input type="submit" class="pop btn_pop_login" value="확인">
+										</div>
+									</form>
+									<div class="log_alert">
+										<span class="kred">!</span> ID 또는 비밀번호 입력정보를 확인해주세요.
+									</div>
+								</div>
+
+								<!-- Email 인증 부분 -->
+								<div class="log_confirm">
+									<p class="txt_gray">
+										고객님께서는 아직 E-mail인증을 완료하지 않았습니다.<br>
+										E-mail인증 후 다시 로그인해 주시기 바랍니다.
+									</p>
+									<form>
+										<input class="resend" type="submit" value="인증메일 다시 보내기">
+									</form>
+									<p class="txt_gray">
+										<b>관리자 문의:</b> <a href="mailto:help@abcdefg.co.kr">help@abcdefg.co.kr</a>
+									</p>
+								</div>
+							</li>
+							<li><a href="join.do">JOIN</a></li>
+						</ul>
+						<ul class="log_menu">
+							<li class="new_notice">
+								<a href="#" class="carrot">
+									<img src="../images/pofol/adcore/bell.png" alt="공지사항">
+									<span class="r_count">3</span>
+								</a>
+								<div class="notice_inner">
+									<h3 class="notice_tit">Notification</h3>
+									<div id="vertical-horizontal-scrollbar-demo" class="notice_current default-skin demo scrollable">
+										<ul>
+											<!-- 기본 공지사항 -->
+											<li class="notice_list cate1">
+												<div class="tit_wrap">
+													<p class="tit_inner">
+														AD CORE의 기본 업데이트 공지사항 제목입니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<!-- //기본 공지사항 -->
+
+											<!-- 일반회원가입 -->
+											<li class="notice_list cate2">
+												<div class="tit_wrap">
+													<p class="tit_inner">
+														<span class="kred">abcabc@naver.com</span>
+														으로 비밀번호 재설정 링크를 보냈습니다. 해당 메일에서 확인하시기 바랍니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<!-- //일반회원가입 -->
+
+											<!-- 광고주 회원가입 -->
+											<li class="notice_list cate3">
+												<div class="tit_wrap">
+													<p class="tit_inner">
+														광고주 가입이 완료되었습니다. 광고주 메뉴 접근 권한 부여는 영업일 3일~5일이 소요될 수 있습니다. 권한 부여 후 광고주 메뉴 접근이 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<!-- //광고주 회원가입 -->
+
+											<!-- 청약 -->
+											<li class="notice_list cate4">
+												<div class="tit_wrap">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<!-- //청약 -->
+
+											<!-- 읽었을 때 tit_wrap에 read 클래스 추가-->
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<!-- //읽었을 때 -->
+
+											<!-- 예시용 -->
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<li class="notice_list cate3">
+												<div class="tit_wrap read">
+													<p class="tit_inner">
+														10건의 청약을 요청했습니다. 청약에 대한 회신 결과는 최대 영업일 3일이 소요될 수 있으며&#44; 결과는 청약조회 페이지에서 확인 가능합니다.
+													</p>
+													<p class="n_date">2015.11.23</p>
+												</div>
+												<img class="notice_x" src="../images/pofol/adcore/notice_x.png" alt="닫기">
+											</li>
+											<!-- //예시용 -->
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="user line">
+								<a href="#" class="log_me carrot">
+								Hi, ${sessionScope.MEMB_ID}
+									<span class="carrot">
+										<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NTFERjFFMzg5Q0UxMUU1QjZBM0EwQUQ0OEQzQTEyMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NTFERjFFNDg5Q0UxMUU1QjZBM0EwQUQ0OEQzQTEyMiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjc1MURGMUUxODlDRTExRTVCNkEzQTBBRDQ4RDNBMTIyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc1MURGMUUyODlDRTExRTVCNkEzQTBBRDQ4RDNBMTIyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+fn67kwAAALpJREFUeNpiNLX3l2aAgKcM+IEeEN9jAhJTgfg4EIviUWwHxOeAOBGkoRGIhYF4ORAzY1EMcsEqIL4NxAtAGs4DcTYQOwNxK5piNqhiLiAOAuLPLFCJBUBsDsRlQHwKiNdBxXuA2BKIw4D4OkiABcm0fCA2BOJ5QHwViE2BOBeIe4F4DUwRsoZfQBwC9dxmqNsPAnE5shuZ0Nz8BIgjgFgJiN9BnfIXWQELllDZB8TeQPwYiF+hSwIEGAAgZSCCvJNd2gAAAABJRU5ErkJggg==" alt="계정 정보, 서비스 메뉴 보기">
+									</span>
+								</a>
+								<ul class="log_current depth2">
+									<li>
+										<a href="http://14.49.38.153:8080/ktarget">Ktarget</a>
+									</li>
+									<li>
+										<a href="campaign.html">Campaign</a>
+										<ul class="depth3">
+											<li><a href="campaign_sub.html">소재관리</a></li>
+											<li><a href="campaign_sub.html">인벤토리 조회</a></li>
+											<li><a href="campaign_sub.html">계약</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="account_userInfo.html">계정관리</a>
+									</li>
+									<li>
+										<a href="#" class="log_out">로그아웃</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Header -->
+
+		<!-- Container -->
+		<div id="container">
+			<!-- Visual Group -->
+			<div class="visual_group">
+				<ol class="slide_nav">
+					<li class="on">1</li>
+					<li>2</li>
+					<li>3</li>
+				</ol>
+				<ul class="visual_slide">
+					<li class="item1 on">
+						<div class="txt_wrap">
+							<h2>No.1 IPTV olleh tv</h2>
+							<p>
+								VOD 광고&#44; 양방향 광고&#44; Home play&#44; 브랜드 채널<br>
+								국내 최고의 디지털 Media olleh tv 광고를 확인하세요.
+							</p>
+						</div>
+						<ul class="visual fade">
+							<li class="wow tv" data-wow-delay=".7s"><span></span></li>
+							<li class="wow best" data-wow-delay="1s"><span></span></li>
+							<li class="wow balloon1" data-wow-delay="1.3s"><span></span></li>
+							<li class="wow balloon2" data-wow-delay="1.6s"><span></span></li>
+						</ul>
+					</li>
+					<li class="item2">
+						<div class="txt_wrap">
+							<h2>BigData Analysis + AD Tech</h2>
+							<p>
+								통신&#44; 신용카드 기반 빅데이터를 활용한 광고 매체 분석<br>
+								AD CORE 내 Ktarget 분석메뉴를 통해 고객 관점에서 다양한 매체 분석이 가능합니다.
+							</p>
+						</div>
+						<ul class="visual fade">
+							<li class="wow map" data-wow-delay=".7s"><span></span></li>
+							<li class="wow area1" data-wow-delay="1s"><span></span></li>
+							<li class="wow area2" data-wow-delay="1.3s"><span></span></li>
+							<li class="wow area3" data-wow-delay="1.6s"><span></span></li>
+							<li class="wow line" data-wow-delay="1.9s"><span></span></li>
+							<li class="wow point1" data-wow-delay="2.2s"><span></span></li>
+							<li class="wow point2" data-wow-delay="2.5s"><span></span></li>
+						</ul>
+					</li>
+					<li class="item3">
+						<div class="txt_wrap">
+							<h2>OOH Targeting Solution &#45; ktarget</h2>
+							<p>
+								지하철&#44; 버스 쉘터&#44; 타운보드&#44; 전광판 등<br>
+								옥외광고 매체 대상의 빅데이터 타겟팅 분석 솔루션 Ktarget을 소개합니다.
+							</p>
+						</div>
+						<ul class="visual fade">
+							<li class="wow graph1" data-wow-delay=".7s"><span></span></li>
+							<li class="wow graph2" data-wow-delay="1s"><span></span></li>
+							<li class="wow graph3" data-wow-delay="1.3s"><span></span></li>
+							<li class="wow magnify" data-wow-delay="1.6s"><span></span></li>
+							<li class="wow point" data-wow-delay="1.9s"><span></span></li>
+							<li class="wow arrow" data-wow-delay="2.2s"><span></span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- //Visual Group -->
+			<!-- ollehtv Spec -->
+			<div class="ollehtv_spec">
+				<ul class="spec_nav">
+					<li class="item1 on">
+						<a href="#">
+							<div class="icon_wrap">
+								<div class="icon_inner">
+								</div>
+							</div>
+							<h2>최다 가입자&#44;<br>최다 컨텐츠 보유</h2>
+							<p>
+								olleh tv는 IPTV 3사 중&#44;<br>
+								가장 많은 가입가구와 VOD 콘텐츠를 보유하고 있습니다.
+							</p>
+						</a>
+					</li>
+					<li class="item2">
+						<a href="#">
+							<div class="icon_wrap">
+								<div class="icon_inner">
+								</div>
+							</div>
+							<h2>전수조사기반<br>광고효과 측정</h2>
+							<p>
+								olleh tv는 전수 조사 방식을 토대로<br>
+								세밀하고 정확한 광고 효과 분석 데이터를 제공합니다.
+							</p>
+						</a>
+					</li>
+					<li class="item3">
+						<a href="#">
+							<div class="icon_wrap">
+								<div class="icon_inner">
+								</div>
+							</div>
+							<h2>프리미엄 타겟층<br>대상의 광고집행</h2>
+							<p>
+								olleh tv는 실 구매력과 경쟁력을 갖춘<br>
+								프리미엄 타겟&#40;시청자군&#41;을 보유하고 있습니다.
+							</p>
+						</a>
+					</li>
+				</ul>
+				<div class="spec_con_wrap">
+					<ul class="spec_con">
+						<li class="on">
+							<table class="tb_spec">
+								<caption>olleh tv 특장점</caption>
+								<colgroup>
+									<col style="width:270px">
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>최다 가입가구 보유</th>
+										<th>최다 채널·콘텐츠 보유</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<span class="wow bounce_in best" data-wow-delay=".7s">best</span>
+											olleh tv
+											<span class="small">677만 가구&#40;52%&#41;</span>
+										</td>
+										<td>
+											<div class="graph_people">
+												<span class="bar"></span>
+												<span class="people"></span>
+											</div>
+										</td>
+										<td>
+											<div class="graph_box">
+												<ul>
+													<li><div class="kt_live">라이브 채널 242개</div></li>
+													<li><div class="kt_con">콘텐츠 보유 19만</div></li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<div class="spec_diagram">
+								<ol class="fade">
+									<li class="wow item1" data-wow-delay=".2s">
+										<img src="../images/pofol/adcore/spec_diagram1.png" alt="olleh tv 시청가구">
+									</li>
+									<li class="wow item2" data-wow-delay=".5s">
+										<img src="../images/pofol/adcore/spec_diagram2.png" alt="AD SERVER">
+									</li>
+									<li class="wow item3" data-wow-delay=".8s">
+										<img src="../images/pofol/adcore/spec_diagram3.png" alt="AD REPORT">
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>
+							<ul class="spec_target fade">
+								<li class="wow people_2030" data-wow-delay=".2s">
+									<h3>2030 시청자군</h3>
+									<p class="percent">36%</p>
+									<p class="con">
+										최신 콘텐츠의 활발한 이용<br>
+										시청점유율 36%
+									</p>
+								</li>
+								<li class="wow people_3040" data-wow-delay=".4s">
+									<h3>40대 시청자군</h3>
+									<p class="percent">32%</p>
+									<p class="con">
+										평균 소비성향 지수 1위<br>
+										시청점유율 32%
+									</p>
+								</li>
+								<li class="wow people_hi" data-wow-delay=".6s">
+									<h3>여유가 있는 고소득층</h3>
+									<p class="percent">63%</p>
+									<p class="con">
+										월소득 400만원 이상<br>
+										새로운 미디어 소비에 여유
+									</p>
+								</li>
+								<li class="wow people_city" data-wow-delay=".8s">
+									<h3>수도권, 대도시 거주자</h3>
+									<p class="percent">64%</p>
+									<p class="con">
+										초고속 인터넷망이 발달<br>
+										시청점유율 64%
+									</p>
+								</li>
+								<li class="wow people_homemaker" data-wow-delay="1s">
+									<h3>주부 시청자군</h3>
+									<p class="con">
+										낮 시간대 활발한 이용<br>
+										지상파 콘텐츠 주소비자
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //ollehtv Spec -->
+			<!-- AD Tech-->
+			<div class="adtech_wrap">
+				<div class="adtech_inner">
+					<div class="compass">
+						<div class="adtech_nav">
+							<div class="first on"><a href="#">1</a></div>
+							<div class="second"><a href="#">2</a></div>
+							<div class="third"><a href="#">3</a></div>
+							<span class="niddle"></span>
+						</div>
+					</div>
+					<div class="adtech_slide">
+						<ul>
+							<li class="on">
+								<div class="fade">
+									<h2>Addressable TV advertising based<br>on Big Data Analysis</h2>
+									<p class="wow" data-wow-delay=".3s">
+										olleh tv는 시청자의 시청 패턴 및 성향을 분석하여 최적의 맞춤형 타겟팅 광고를 할 수 있는<br>
+										Addressable tv 광고 서비스 환경을 제공합니다.<br>
+										olleh tv addressable tv 광고는 VOD 광고 외에 실시간 채널에도 적용할 수 있으며&#44;<br>
+										TV&amp;Mobile을 융합한 Cross screen 광고도 집행할 수 있습니다.
+									</p>
+									<a class="wow" data-wow-delay=".7s" href="#Ktarget">Go Ktarget</a>
+								</div>
+							</li>
+							<li>
+								<div class="fade">
+									<h2>AD consulting based<br>on data analysis</h2>
+									<p class="wow" data-wow-delay=".3s">
+										광고주가 집행하고 있는 전 채널의 TV 광고의 정확한 효과를 분석하여&#44;<br>
+										최적화된 캠페인 설계를 위한 컨설팅 서비스를  제공합니다.<br>
+										&#40;olleh tv  전 가입자를 대상으로 GRP&#44; 광고 시청률 등을 분석하여<br>
+										프리미엄 리포트를 제공합니다.&#41;
+									</p>
+									<a class="wow" data-wow-delay=".7s" href="#FreeReview">Free Review</a>
+								</div>
+							</li>
+							<li>
+								<div class="fade">
+									<h2>OOH Targeting Solution Ktarget</h2>
+									<p class="wow" data-wow-delay=".3s">
+										Ktarget은 유동인구&#44; 상권정보&#44; 카드데이터&#44; 인문/사회 데이터 등을 분석하여<br>
+										옥외광고 매체의 노출도 및 효과를 수치적으로 분석해주는 솔루션입니다. <br>
+										연령&#44; 성별&#44; 지역 등 다양한 조건에 맞는 타겟팅을 통해 효과적인 광고집행 전략을 제시합니다.
+									</p>
+									<a class="wow" data-wow-delay="1s" href="#GetItTouch">Get it touch</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //AD Tech-->
+			<!-- Recent Articles -->
+			<div class="articles_wrap">
+				<div class="articles_inner">
+					<h2>Recent Articles</h2>
+					<ul class="article_list">
+						<li>
+							<a href="#">
+								<span class="title">
+									[공지] 신규 상품 소개 ‘Olleh홈 Wifi 페이지’ olleh홈 Wifi 페이지 내 브랜드 브랜드브랜드
+								</span>
+								<span class="date">2016.06.25</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="title">
+									[칼럼] 신규 상품 소개 ‘Olleh홈 Wifi 페이지’ olleh홈 Wifi 페이지 내 브랜드 브랜드
+								</span>
+								<span class="date">2016.06.25</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="title">
+									[기사] 신규 상품 소개 ‘Olleh홈 Wifi 페이지’ olleh홈 Wifi 페이지 내 브랜드 브랜드
+								</span>
+								<span class="date">2016.06.25</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="title">
+									[공지] 신규 상품 소개 ‘Olleh홈 Wifi 페이지’ olleh홈 Wifi 페이지 내 브랜드 브랜드
+								</span>
+								<span class="date">2016.06.25</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="title">
+									[공지] 신규 상품 소개 ‘Olleh홈 Wifi 페이지’ olleh홈 Wifi 페이지 내 브랜드 브랜드
+								</span>
+								<span class="date">2016.06.25</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //Recent Articles -->
+		</div>
+		<!-- //Container -->
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="copyright">
+				<div class="container clearfix">
+					<div class="sixteen columns">
+						<ul class="foot_info">
+							<li>
+								<a href="http://www.kt.com" title="새창으로 회사소개 이동하기" target="_blank">회사소개</a>
+							</li>
+							<li class="line">
+								<a href="http://dev.adat.co.kr/TAP/FOOTER/basis_terms.html" title="새창으로 이용약관 이동하기" target="_blank">이용약관</a>
+							</li>
+							<li class="line">
+								<a href="http://dev.adat.co.kr/TAP/FOOTER/legal_notify.html" title="새창으로 법적고지 이동하기" target="_blank">법적고지</a>
+							</li>
+							<li class="line">
+								<a href="http://dev.adat.co.kr/TAP/FOOTER/private_policy.html" title="새창으로 개인정보 취급방침 이동하기" target="_blank">개인정보 취급방침</a>
+							</li>
+							<li class="line">
+								<a href="http://dev.adat.co.kr/TAP/FOOTER/teenage_policy.html" title="새창으로 청소년 보호 정책 이동하기" target="_blank">청소년 보호 정책</a>
+							</li>
+							<li class="line">
+								<a href="http://dev.adat.co.kr/TAP/FOOTER/mail_policy.html" title="새창으로 이메일 무단 수집 거부 이동하기" target="_blank">이메일 무단 수집 거부</a>
+							</li>
+						</ul>
+						<p>
+							㈜ 케이티 대표이사: 황창규  사업자 등록번호: 102-81-42945  통신판매업신고: 2002-경기성남-0048<br />
+							주소: 경기도 성남시 분당구 불정로 90 (정자동 206번지) Tel: 국번없이 100
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+
+	<div id="back-to-top">
+		<a href="#">Back to Top</a>
+	</div>
+
+	<div class="full_bg"></div>
+
+	<!-- JARVIS THEME SCRIPTS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/adcore/dbp/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="../js/adcore/dbp/wow.min.js"></script>
+	<script type="text/javascript" src="../js/adcore/dbp/scroll/jquery.custom-scrollbar.js"></script>
+	<script type="text/javascript" src="../js/adcore/dbp2017/home.js"></script>
+	<script type="text/javascript">
+		wow = new WOW({
+		  offset:"-100"          // default
+		}).init();
+
+
+		// new WOW().init();
+		//스크롤바
+		$('.demo').customScrollbar();
+	</script>
+</body>
+</html>

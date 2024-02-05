@@ -4,10 +4,10 @@
 	font-family: 'NanumGothic';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../../../font/NanumGothic.eot);
-	src: url(../../../font/NanumGothic.eot?#iefix) format('embedded-opentype'),
-		url(../../../font/NanumGothic.woff) format('woff'),
-		url(../../../font/NanumGothic.ttf) format('truetype');
+	src: url(../../../fonts/NanumGothicRegular.eot);
+	src: url(../../../fonts/NanumGothicRegular.eot?#iefix) format('embedded-opentype'),
+		url(../../../fonts/NanumGothicRegular.woff) format('woff'),
+		url(../../../fonts/NanumGothicRegular.ttf) format('truetype');
 }
 
 body {
