@@ -50,14 +50,16 @@ export default function ModalContent(props: ModalProps) {
           </div>
           <div className="content_wrap">
             <h2 className="modal_title">{subject.title}</h2>
-            <p className="desc">
-              {subject.desc?.split("\\n").map((desc) => (
-                <span key={desc}>
-                  {desc}
-                  <br />
-                </span>
-              ))}
-            </p>
+            {subject.desc && (
+              <p className="desc">
+                {subject.desc?.split("\\n").map((desc) => (
+                  <span key={desc}>
+                    {desc}
+                    <br />
+                  </span>
+                ))}
+              </p>
+            )}
             {subject.skills && <h3>핵심 기술</h3>}
             {subject.skills && (
               <ul className="keyword">

@@ -48,8 +48,7 @@
         "service": [
           "https://play.google.com/store/apps/details?id=kr.firstmall.live"
         ]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "4",
@@ -61,8 +60,7 @@
       "url": {
         "service": ["https://www.esellers.co.kr/introduce/sms"],
         "sample": ["http://peelwork.com/esMsgIndex.html"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "5",
@@ -73,8 +71,7 @@
       "participation": "웹퍼블리싱 100%",
       "url": {
         "service": ["http://responsive-sample32.firstmall.kr"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "6",
@@ -85,8 +82,7 @@
       "participation": "웹퍼블리싱 100%",
       "url": {
         "service": ["http://responsive-sample31.firstmall.kr"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "7",
@@ -97,8 +93,7 @@
       "participation": "웹퍼블리싱 100%",
       "url": {
         "service": ["http://responsive-sample30.firstmall.kr"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "8",
@@ -109,8 +104,7 @@
       "participation": "웹퍼블리싱 70%",
       "url": {
         "service": ["https://www.esellers.co.kr"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "9",
@@ -122,8 +116,7 @@
       "url": {
         "service": ["https://wave.diad.co.kr"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "10",
@@ -135,8 +128,7 @@
       "url": {
         "service": ["https://service.diad.co.kr"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "11",
@@ -148,8 +140,7 @@
       "url": {
         "service": ["https://m.diad.co.kr"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "12",
@@ -161,8 +152,7 @@
       "url": {
         "service": ["https://diad.co.kr"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "13",
@@ -174,8 +164,7 @@
       "url": {
         "service": ["https://admin.diad.co.kr"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "14",
@@ -187,8 +176,7 @@
       "url": {
         "service": [""],
         "sample": ["http://peelwork.com/minishopTrendy.html"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "15",
@@ -200,8 +188,7 @@
       "url": {
         "service": ["http://peelwork.com/minishopStory.html"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "16",
@@ -213,8 +200,7 @@
       "url": {
         "service": [""],
         "sample": ["http://peelwork.com/minishopSimple.html"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "17",
@@ -226,8 +212,7 @@
       "url": {
         "service": [""],
         "sample": ["http://peelwork.com/adcore2017.html"]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "18",
@@ -238,8 +223,7 @@
       "url": {
         "service": ["http://tpimegaline.astroweb.co.kr/"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "19",
@@ -250,8 +234,7 @@
       "url": {
         "service": ["http://www.bypair.com/download"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "20",
@@ -263,8 +246,7 @@
       "url": {
         "service": ["https://www.dbstars.or.kr/dbstars/main.star"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "21",
@@ -275,8 +257,7 @@
       "url": {
         "service": ["http://global.solguest.com/html"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "22",
@@ -287,8 +268,7 @@
       "url": {
         "service": ["http://global.solguest.com/m"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "23",
@@ -299,8 +279,7 @@
       "url": {
         "service": ["http://www.booketing.co.kr"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "24",
@@ -311,8 +290,7 @@
       "url": {
         "service": ["https://www.datastore.or.kr/m/main.do"],
         "sample": [""]
-      },
-      "desc": ""
+      }
     },
     {
       "id": "25",
