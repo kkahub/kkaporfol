@@ -1,0 +1,916 @@
+﻿@charset "UTF-8";
+.hide{display:none !important;}
+.kred{color:#f15e66; font-weight:bold;}
+.notice_kred{color:#f15e66; font-weight:bold;}
+.full_bg{
+	display:none;
+	position:fixed; top:0; left:0; z-index:100;
+	width:100%; height:100%;
+	background:rgba(0,0,0,0.5);
+}
+
+#wrap,#header,#container,#footer{
+	position:relative;
+	box-sizing:border-box;
+	width:100%; min-width:1200px; margin:0 auto;
+}
+/* .header_inner,.copyright{width:1200px; margin:0 auto;} */
+.header_inner{width:95%; min-width: 1200px; margin:0 auto;}
+.copyright{width:1200px; margin:0 auto;}
+
+
+/* Header */
+	#header{height:80px;}
+	h1{position:absolute; line-height:80px;}
+	#nav{
+		box-sizing:border-box;
+		width:100%; min-width:1200px; padding:25px 0 0 200px;
+	}
+	#gnb>li{float:left; position:relative; margin-right:30px;}
+	.tnb{float:right;}
+	#gnb>li>a{
+		opacity:.7;
+		display:block;
+		padding:5px 0;
+		color:#575757;
+		font-weight:bold; letter-spacing: -.5px;
+	}
+	#gnb>li.on>a{opacity:1;	}
+	#gnb>li>a:hover{
+		opacity:1;
+		-o-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		-webkit-transition: all .2s ease;
+		transition: all .2s ease;
+	}
+	#gnb>li>.anchorbar{
+		display:block;
+		height:5px; width:0px; margin:0 auto 2px;
+		background:url(../../../images/pofol/adcore/gnb_ani.png) no-repeat;
+	}
+	#gnb>li:hover>.anchorbar,
+	#gnb>li.on>.anchorbar{
+		width:39px;
+	}
+	.depth2{
+		display:none;
+		position: absolute;	top:35px; left:-15px; z-index: 1000;
+		min-width:150px; padding:15px 0;
+		border-radius: 5px;
+		box-shadow: 0 5px 10px rgba(0,0,0,.2);
+		background-color: #353f4f;
+	}
+	#gnb>li:hover .depth2{display:block;}
+	.depth2>li>a{
+		opacity:1;
+		display:block;
+		padding:3px 15px;
+		font-size:14px; color:#fff; white-space:nowrap;
+	}
+	.depth2>li>a:hover{color:#ff5a5f;}
+
+	.tnb{margin-bottom:10px;}
+
+	.mem_attr{
+		display:none;
+		position: absolute; right:2%; z-index: 100;
+		height: 70px; padding-top:13px; padding-right: 30px;
+	}
+	/*
+	.mem_attr{
+		display:none;
+		position: relative;	bottom: 10px;
+		height: 70px; padding-right: 30px;
+	}
+	 */
+	.mem_attr>li{position:relative; float:left;}
+	.mem_attr>li:not(:last-child):after{
+		content:"│";
+		padding-right:3px;
+		font-size:12px; color:#515A5F;
+	}
+	.mem_attr>li>a{font-size:13px; color:#515A5F; font-weight:bold;}
+	.mem_attr .log{
+		position:absolute; right:10px;
+		width:350px; padding:10px;
+		box-shadow:rgba(0,0,0,.2); border-radius:5px;
+		background:#353f4f;
+		font-family:"NanumGothic";
+	}
+	.identity_input input{
+		width: 180px; max-width: 100%;
+		margin: 0px 0px 5px; padding: 8px;
+		border-radius: 2px; border: 1px solid rgb(232, 232, 232);
+		background: rgb(255, 255, 255);
+		font-size: 14px; color: rgb(153, 153, 153);
+	}
+	.identity_input input[type="text"],
+	.identity_input input[type="password"]{
+		width:300px; margin-bottom:10px;
+	}
+	.identity_search{float:left; margin:12px 0; padding-left:15px; color:#fff;}
+	.identity_search>li{float:left; padding:0 2px;}
+	.identity_search a{font-size:13px; color:#fff; font-weight:bold;}
+	.identity_search a:hover{color:#f15e66;}
+	.identity_btn{float:right; padding-right:15px;}
+	.identity_btn .btn_pop_login{
+		cursor:pointer;
+		width:120px; height:34px;
+		padding:8px 20px;
+		border:0;
+		background:#f15e66;
+		font-size:14px; color:#fff;
+		font-weight:bold; text-align:center;
+	}
+	.identity_btn .btn_pop_login:hover{color:#fff;}
+	.identity_input{width:318px; margin:20px auto 0; padding:0;}
+	.log_alert{
+		clear:both;
+		box-sizing:border-box;
+		border-top:1px solid #fff;
+		padding:15px 15px 10px;
+		font-size:12px; color:#fff;
+	}
+	.log_confirm{
+		position: absolute; right:15px;
+		box-sizing:border-box;
+		width:360px; height:165px;
+		border-radius:5px;
+		background:#353f4f;
+		color:#fff;
+	}
+	.log_confirm .resend{
+		cursor: pointer;
+		width:180px; height:34px; padding:8px 20px; margin:0 auto;
+		border:0;
+		background:#f15e66;
+		font-size:13px; color:#fff;
+	}
+	.log_confirm form{display:block; text-align:center;}
+	.log_confirm .txt_gray{margin:20px; font-size:12px;}
+	.log_confirm a{font-size:13px; color:#fff; text-decoration: underline;}
+
+	/* notice */
+	.new_notice{
+		position:relative; z-index:9;
+		width:25px;
+	}
+	.new_notice>.carrot{position:relative;}
+	.new_notice>.carrot>img{vertical-align: bottom; padding:3px;}
+	.notice_inner{
+		display:none;
+		overflow:hidden;
+		position:absolute; top:20px; right:-15px; z-index:1000;
+		width:350px; padding-top:0;
+		border:1px solid #535d6c; border-radius:5px;
+		background:#353f4f;
+		font-size:18px; color:#fff;
+		font-weight:bold; text-indent:15px; line-height:24px;
+	}
+	.new_notice:hover .notice_inner{display:block;}
+	.notice_tit{
+		margin-bottom:0; padding:10px 0 !important;
+		background:#445165;
+		font-family:'NanumGothic'; font-size:16px; color:#fff;
+		font-weight:bold; text-indent:15px; line-height:24px;
+	}
+	.notice_current{overflow:auto; height:570px;}
+	.notice_list{
+		position:relative; overflow:hidden;
+		padding:15px 40px 15px 45px;
+		border-bottom:1px solid #535d6c;
+		font-size:16px; font-weight:normal;
+	}
+	.notice_list.cate1{background:url("../../../images/pofol/adcore/new_notice1.png") no-repeat 16px 20px;}
+	.notice_list.cate2{background:url("../../../images/pofol/adcore/new_notice2.png") no-repeat 16px 20px;}
+	.notice_list.cate3{background:url("../../../images/pofol/adcore/new_notice3.png") no-repeat 16px 20px;}
+	.notice_list.cate4{background:url("../../../images/pofol/adcore/new_notice4.png") no-repeat 16px 20px;}
+	.notice_list>.tit_wrap{float:left; margin-bottom:0;}
+	.notice_list>.tit_wrap>.tit_inner,.notice_list>.tit_wrap>.n_date{text-indent:0;}
+	.notice_list>.tit_wrap>.tit_inner{overflow:hidden; max-height:96px;}
+	.n_date{display:block; margin:5px 0 1px; font-size:13px; color:#91aad3;}
+	.notice_x{cursor:pointer; float:left; position:absolute; top:50%; right:10px; margin-top:-8px;}
+
+	.open>.notice_inner{visibility:visible !important;}
+
+	.scrollable>.viewport>.overview>ul{overflow:hidden; padding-left:0;}
+	.scroll-bar{overflow:hidden;}
+
+	.read>p{color:#999 !important;}
+	.read>p>span{color:#999 !important;}
+
+	/* login */
+	.log_menu{position:relative; right:0; bottom:0; padding-top:5px;}
+	.log_menu>li{display:inline-block; vertical-align: bottom;}
+	.r_count{
+		position:absolute; top:-7px; right:-10px; display:block;
+		width:18px; height:18px;
+		border-radius:100%;
+		background:#f15e66; color:#fff;
+		font-size:10px; text-align:center; font-weight:normal; line-height:18px;
+	}
+	.log_menu .line::before{content:'│'; margin-left:3px; color:#333;}
+
+	/* user*/
+	.log_menu .user{position:relative; padding-top:6px;}
+	.log_menu .user:hover .depth2{display:block;}
+	.log_menu .user .log_me{
+		cursor:pointer;
+		padding:3px;
+		color:#353f4f; font-weight:bold;
+	}
+	.log_menu .user .log_current>li,
+	.log_current>li>ul>li>a{
+		text-align:left;
+	}
+	.log_menu .log_current.depth2{
+		top:23px; left:auto; right:0;
+	}
+	.log_current .depth3{margin-bottom:10px;}
+	.log_current .depth3>li{padding-left:30px; text-align:left; line-height:25px;}
+	.log_current .depth3>li>a{
+		cursor:pointer;
+		font-size:12px; color:#fff; font-weight:normal;
+	}
+	.log_current .depth3>li>a:hover{color:#f15e66;}
+
+/* Container */
+	#container>div{
+		overflow:hidden;
+		position:relative;
+		box-sizing:border-box;
+		width:100%; min-width:1200px;
+		padding:70px 0;
+	}
+
+	/* Visual */
+		#container>div.visual_group{
+			position:relative;
+			height:500px; padding:0;
+			color:#353f4f;
+		}
+		.visual_group .txt_wrap{
+			position:relative; top:70px;
+			width:1200px; margin:0 auto;
+		}
+		.visual_group .txt_wrap h2{margin-bottom:20px; font-size:48px;}
+		.visual_group .txt_wrap p{font-size:18px;}
+		.slide_nav{
+			position:absolute; left:50%; bottom:15px; z-index:100;
+			margin-left:-600px;
+		}
+		.slide_nav>li{
+			cursor:pointer;
+			display:inline-block;
+			width:20px; height:20px;
+			background:url('../../../images/pofol/adcore/slide_dot.png') no-repeat;
+			text-indent:-999em;
+		}
+		.slide_nav>li.on{cursor:default; background-position:-20px 0;}
+		.visual_slide{min-width:1200px;}
+		.visual_slide>li{
+			position:absolute; left:100%;
+			width:100%; min-width: 1200px; height:500px;
+		}
+		.visual_slide>li.item1{
+			background:#f9c0c4 url('../../../images/pofol/adcore/bg_grid.png');
+		}
+		.visual_slide>li.item2{
+			background:#c2d6f6 url('../../../images/pofol/adcore/bg_grid.png');
+		}
+		.visual_slide>li.item3{
+			background:#c9e1b4 url('../../../images/pofol/adcore/bg_grid.png');
+		}
+		.visual_slide .visual{
+			position:absolute; right:50%;
+			margin-right:-50px;
+		}
+		.visual_slide .item1 .visual{top:140px;}
+		.visual_slide .item2 .visual{top:70px;}
+		.visual_slide .item3 .visual{top:90px;}
+		.visual_slide .visual>li{position:relative;}
+		.visual_slide .visual>li>span{display:block; position:absolute;}
+		/* left / top: TV 기준 */
+		.item1 .visual .tv span{
+			width:387px; height:273px;
+			background: url('../../../images/pofol/adcore/main_01_tv.png') no-repeat;
+		}
+		.item1 .visual .best span{
+			top:-15px; left:-35px;
+			width:92px; height:145px;
+			background: url('../../../images/pofol/adcore/label_best.png') no-repeat;
+		}
+		.item1 .visual .balloon1 span{
+			top:30px; left:260px;
+			width:192px; height:145px;
+			background: url('../../../images/pofol/adcore/main_01_graph01.png') no-repeat;
+		}
+		.item1 .visual .balloon2 span{
+			top:-55px; left:340px;
+			width:182px; height:137px;
+			background: url('../../../images/pofol/adcore/main_01_graph02.png') no-repeat;
+		}
+		/* left / top: 지도 기준 */
+		.item2 .visual .map span{
+			width:517px; height:367px;
+			background: url('../../../images/pofol/adcore/main_02_map.png') no-repeat;
+		}
+		.item2 .visual .area1 span{
+			top:62px; left:266px;
+			width:144px; height:103px;
+			background: url('../../../images/pofol/adcore/main_02_area01.png') no-repeat;
+		}
+		.item2 .visual .area2 span{
+			top:35px; left:365px;
+			width:116px; height:102px;
+			background: url('../../../images/pofol/adcore/main_02_area02.png') no-repeat;
+		}
+		.item2 .visual .area3 span{
+			top:205px; left:352px;
+			width:101px; height:116px;
+			background: url('../../../images/pofol/adcore/main_02_area03.png') no-repeat;
+		}
+		.item2 .visual .line span{
+			top:0; left:233px;
+			width:240px; height:240px;
+			background: url('../../../images/pofol/adcore/main_02_line.png') no-repeat;
+		}
+		.item2 .visual .point1 span{
+			top:-3px; left:383px;
+			width:52px; height:68px;
+			background: url('../../../images/pofol/adcore/main_02_pointer01.png') no-repeat;
+		}
+		.item2 .visual .point2 span{
+			top:165px; left:98px;
+			width:50px; height:67px;
+			background: url('../../../images/pofol/adcore/main_02_pointer02.png') no-repeat;
+		}
+		/* left: 그래프 / top: 돋보기 기준 */
+		.item3 .visual .graph1 span{
+			top:100px;
+			width:510px; height:230px;
+			background: url('../../../images/pofol/adcore/main_03_line01.png') no-repeat;
+		}
+		.item3 .visual .graph2 span{
+			top:230px;
+			width:510px; height:82px;
+			background: url('../../../images/pofol/adcore/main_03_line02.png') no-repeat;
+		}
+		.item3 .visual .graph3 span{
+			top:77px;
+			width:511px; height:169px;
+			background: url('../../../images/pofol/adcore/main_03_line03.png') no-repeat;
+		}
+		.item3 .visual .magnify span{
+			left:230px;
+			width:244px; height:288px;
+			background: url('../../../images/pofol/adcore/main_03_magnify.png') no-repeat;
+		}
+		.item3 .visual .point span{
+			top:72px; left:303px;
+			width:32px; height:32px;
+			background: url('../../../images/pofol/adcore/main_03_point.png') no-repeat;
+		}
+		.item3 .visual .arrow span{
+			top:-23px; left:315px;
+			width:163px; height:116px;
+			background: url('../../../images/pofol/adcore/main_03_arrow.png') no-repeat;
+		}
+
+	/* olleh tv Spec */
+		/* Slide Nav */
+			.spec_nav{
+				position:relative;
+				width:830px; height:310px; margin:0 auto 50px;
+				background:url('../../../images/pofol/adcore/bg_curve.png') no-repeat center 40px;
+			}
+			.spec_nav>li{
+				position:absolute;
+				width:380px; height:280px;
+			}
+			.spec_nav>li.item1{top:70px; left:-190px;}
+			.spec_nav>li.item2{top:0; left:50%; margin-left:-190px;}
+			.spec_nav>li.item3{top:70px; right:-190px;}
+			.spec_nav>li>a{display:block; text-align:center;}
+			.spec_nav .icon_wrap{display:inline-block;}
+			.spec_nav .icon_inner{
+				overflow: hidden;
+				display:table-cell;
+				position:relative;
+				box-sizing:border-box;
+				width:90px; height:90px; margin:0 auto;
+				border-radius: 100%;
+				text-align:center; vertical-align:middle;
+
+				-o-transition: top .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out, background-size .2s ease-in-out;
+				-ms-transition: top .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out, background-size .2s ease-in-out;
+				-moz-transition: top .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out, background-size .2s ease-in-out;
+				-webkit-transition: top .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out, background-size .2s ease-in-out;
+				transition: top .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out, background-size .2s ease-in-out;
+			}
+			.spec_nav>li.item1 .icon_inner{
+				background:#45536a url('../../../images/pofol/adcore/spec_icon_01.png') no-repeat right top/180px;
+			}
+			.spec_nav>li.item2 .icon_inner{
+				background:#45536a url('../../../images/pofol/adcore/spec_icon_02.png') no-repeat right top/180px;
+			}
+			.spec_nav>li.item3 .icon_inner{
+				background:#45536a url('../../../images/pofol/adcore/spec_icon_03.png') no-repeat right top/180px;
+			}
+			.spec_nav h2{
+				margin-bottom:10px;
+				font-size:20px; color:#353f4f; text-align:center; font-weight: normal;
+
+				-o-transition: all .3s ease-in;
+				-ms-transition: all .3s ease-in;
+				-moz-transition: all .3s ease-in;
+				-webkit-transition: all .3s ease-in;
+				transition: all .3s ease-in;
+			}
+			.spec_nav p{
+				opacity: 0;
+				font-size:16px; color:#888;
+				text-align:center; letter-spacing: -.05em;
+
+				-o-transition: all .3s ease-in .2s;
+				-ms-transition: all .3s ease-in .2s;
+				-moz-transition: all .3s ease-in .2s;
+				-webkit-transition: all .3s ease-in .2s;
+				transition: all .3s ease-in .2s;
+			}
+			.spec_nav>li.on a{cursor: default;}
+			.spec_nav>li.on .icon_inner{
+				top:-15px;
+				width:120px; height:120px;
+				background-size: 240px; background-position: left top;
+			}
+			.spec_nav>li.on h2{font-size:25px; font-weight:bold;}
+			.spec_nav>li.on p{opacity:1;}
+
+		/* Slide Content */
+		.spec_con_wrap{
+			overflow: hidden;
+			position:relative;
+			width:1200px; margin:0 auto;
+		}
+		.spec_con_wrap .spec_con{
+			position:relative;
+			height:270px !important; width:3000px;
+		}
+		.spec_con>li{
+			position:absolute; top:0; left:100%;
+			width:1200px;
+		}
+
+		/* Spec Content1 */
+			.tb_spec{
+				width:1000px; height:170px; margin:0 auto;
+				background:url('../../../images/pofol/adcore/spec_table.gif') no-repeat;
+			}
+			.tb_spec th,.tb_spec td{position:relative; text-align:center;}
+			.tb_spec th{
+				vertical-align: middle;
+				height:55px;
+				font-size:22px; color:#353f4f; font-weight:bold;
+			}
+			.tb_spec td{font-size:22px; color:#353f4f; font-weight:bold;}
+			.tb_spec td .best{
+				display:block;
+				position:absolute; top:0; left:-15px;
+				width:63px; height:95px;
+				background:url('../../../images/pofol/adcore/label_best.png') no-repeat left top/63px;
+				text-indent:-999em;
+			}
+			.tb_spec td .small{
+				display:block;
+				margin-top:10px;
+				font-size:14px; color:#888; text-align:center; font-weight:normal;
+			}
+			/* Graph People */
+			.graph_people{
+				position:relative; left:50%;
+				width:207px; height:59px; margin-left:-103px;
+				background:#eee;
+			}
+			.graph_people>span{
+				display:inline-block;
+				position:absolute; top:0;
+				width:207px; height:59px;
+			}
+			.graph_people .people{
+				background:url('../../../images/pofol/adcore/spec_graphbar.png') no-repeat;
+			}
+			.graph_people>span.bar{
+				width:10%;
+				background:#353f4f;
+
+				-o-transition: width .8s ease-in-out .8s;
+				-ms-transition: width .8s ease-in-out .8s;
+				-moz-transition: width .8s ease-in-out .8s;
+				-webkit-transition: width .8s ease-in-out .8s;
+				transition: width .8s ease-in-out .8s;
+			}
+			.spec_con .on .graph_people>span.bar{width:92%;}
+
+			/* Graph Bar */
+			.graph_box{margin-top:15px;}
+			.graph_box ul{width:285px; margin:0 auto;}
+			.graph_box li{
+				overflow:hidden;
+				width:285px; height: 35px; margin-bottom:10px;
+				background: #eee;
+				border-radius:3px;
+			}
+			.graph_box li div{
+				height:35px;
+				border-radius:3px;
+				font-size:18px; color:#fff;
+				font-weight:bold; line-height:35px; text-indent:10px;
+
+				-o-transition: width .8s ease-in-out .8s;
+				-ms-transition: width .8s ease-in-out .8s;
+				-moz-transition: width .8s ease-in-out .8s;
+				-webkit-transition: width .8s ease-in-out .8s;
+				transition: width .8s ease-in-out .8s;
+			}
+			.kt_live,.kt_con{width:10%; background:#353f4f;}
+			.spec_con .on .graph_box .kt_live{width:95%;}
+			.spec_con .on .graph_box .kt_con{width:90%;}
+
+		/* Spec Content2 */
+			.spec_diagram{
+				width:1005px; height:233px; margin:0 auto;
+				text-indent:-999em;
+			}
+			.spec_diagram>ol{position: relative;}
+			.spec_diagram>ol>li{
+				position: absolute;
+				width:192px; height:233px;
+			}
+			.spec_diagram>ol>.item1{
+				left:0;
+				background:url('../../../images/pofol/adcore/spec_diagram1.png') no-repeat;
+			}
+			.spec_diagram>ol>.item2{
+				left:50%; margin-left:-96px;
+				background:url('../../../images/pofol/adcore/spec_diagram2.png') no-repeat;
+			}
+			.spec_diagram>ol>.item3{
+				right:0;
+				background:url('../../../images/pofol/adcore/spec_diagram3.png') no-repeat;
+			}
+			.spec_diagram>ol>li>img{position: relative; z-index:1000;}
+			.spec_diagram>ol>.item1:after,
+			.spec_diagram>ol>.item2:before,
+			.spec_diagram>ol>.item2:after{
+				content: "";
+				opacity: 0;
+				display:block;
+				position: absolute; z-index:0;
+				width:220px; height:18px;
+
+				-o-transition: opacity .8s ease-in-out .8s;
+				-ms-transition: opacity .8s ease-in-out .8s;
+				-moz-transition: opacity .8s ease-in-out .8s;
+				-webkit-transition: opacity .8s ease-in-out .8s;
+				transition: opacity .8s ease-in-out .8s;
+			}
+			.spec_diagram>ol>.item1:after{
+				content:"olleh tv 시청 가구에서 로그 수집해 AD SERVER에 전달";
+				top:65px; left:190px;
+				background:url('../../../images/pofol/adcore/txt_log.gif') no-repeat;
+			}
+			.spec_diagram>ol>.item2:before{
+				content:"AD SERVER에서 광고 효과 분석해 AD REPORT 작성";
+				top:100px; right:190px;
+				background:url('../../../images/pofol/adcore/txt_ad_outgoing.gif') no-repeat;
+			}
+			.spec_diagram>ol>.item2:after{
+				content:"분석된 데이터로 AD SERVER에서 olleh tv 시청 가구에게 광고 송출";
+				top:85px; left:190px;
+				background:url('../../../images/pofol/adcore/txt_ad_effect.gif') no-repeat;
+			}
+			.spec_con .on .spec_diagram .item1:after,
+			.spec_con .on .spec_diagram .item2:before,
+			.spec_con .on .spec_diagram .item2:after{opacity:1;}
+
+		/* Spec Content3 */
+			.spec_target{
+				overflow: hidden;
+				font-size:0; word-spacing:0; letter-spacing:0; text-align:center;
+			}
+			.spec_target>li{
+				position:relative;
+				box-sizing:border-box;
+				display:inline-block;
+				width:240px; height:270px; padding-top:180px;
+			}
+			.spec_target>li h3{
+				margin-bottom:20px;
+				font-size:24px; color:#555; text-align:center;
+			}
+			.spec_target>li .percent{
+				position:absolute; top:100px; right:20px;
+				width:60px; height:60px;
+				border-radius: 100%;
+				background:#f15e66;
+				font-size:20px; color:#fff;
+				line-height:60px; text-align:center; font-weight:bold;
+			}
+			.spec_target>li .con{font-size:16px; color:#888;text-align:center;}
+			.spec_target .people_2030,
+			.spec_target .people_3040{
+				background:url('../../../images/pofol/adcore/spec_icon_21.png') no-repeat center top/154px;
+			}
+			.spec_target .people_hi{
+
+				background:url('../../../images/pofol/adcore/spec_icon_33.png') no-repeat center top/154px;
+			}
+			.spec_target .people_city{
+				background:url('../../../images/pofol/adcore/spec_icon_34.png') no-repeat center top;
+			}
+			.spec_target .people_homemaker{
+				background:url('../../../images/pofol/adcore/spec_icon_35.png') no-repeat center top;
+			}
+
+	/* AD Tech */
+		.adtech_wrap{
+			background:#f9c0c4 url('../../../images/pofol/adcore/bg_grid.png');
+		}
+		.adtech_inner{
+			vertical-align: middle;
+			width:1200px; margin:0 auto;
+		}
+		/* Compass */
+		.compass{
+			position:relative;
+			display:inline-block; vertical-align: middle;
+			width:376px; height:376px; margin:20px 0;
+			background:url('../../../images/pofol/adcore/compass.png') no-repeat;
+		}
+		.compass .adtech_nav .niddle{
+			content:"";
+			position:absolute; top:0; right:0;
+			display:inline-block;
+			width:376px; height:376px;
+			background:url('../../../images/pofol/adcore/niddle.png') no-repeat;
+
+			-o-transform:rotate(40deg);
+			-ms-transform:rotate(40deg);
+			-moz-transform:rotate(40deg);
+			-webkit-transform:rotate(40deg);
+			transform:rotate(40deg);
+
+			transition:all .4s ease-in-out;
+			/* 1:40deg; 2:90deg; 3:140deg; */
+		}
+		.compass .adtech_nav{position: absolute; right:0;}
+		.compass .adtech_nav>div{
+			position: absolute; z-index: 1;
+			box-sizing:border-box;
+			width:42px; height:42px;
+			border:5px solid #353f4f;
+			border-radius: 100%;
+			background:#353f4f;
+			text-align:center;
+		}
+		.compass .adtech_nav>.first{top:30px; right:50px;}
+		.compass .adtech_nav>.second{top:165px; right:-12px;}
+		.compass .adtech_nav>.third{top:303px; right:50px;}
+		.compass .adtech_nav>div>a{
+			display:block;
+			width:100%; height:100%;
+			font-size:25px; color:#fff;
+			text-align:center; line-height:32px; font-weight:bold;
+		}
+		.compass .adtech_nav>div.on{background:#fff;}
+		.compass .adtech_nav>div.on>a{cursor:default; color:#353f4f;}
+
+		/* AD Tech Slide */
+		.adtech_slide{
+			overflow: hidden;
+			display:inline-block; vertical-align: middle;
+			width:730px; margin-left:80px;
+		}
+		.adtech_slide>ul{
+			position:relative;
+			height:inherit;
+		}
+		.adtech_slide>ul>li{
+			position:absolute; top:0; left:100%;
+			width:730px; height:380px;
+		}
+		.adtech_slide h2{
+			margin-bottom:40px;
+			font-size:48px; color:#353f4f; letter-spacing:-.03em;
+		}
+		.adtech_slide p{
+			font-size:18px; color:#353f4f;
+			line-height:150%; font-weight:bold;
+		}
+		.adtech_slide a{
+			display:inline-block;
+			box-sizing:border-box;
+			margin-top:50px;
+			padding:12px 40px;
+			border:3px solid #353f4f;
+			font-size:20px; color:#353f4f; font-weight:bold;
+		}
+
+	/* Recent Articles */
+		.articles_wrap{
+			background:#e0e0e0 url('../../../images/pofol/adcore/bg_grid.png');
+		}
+		.articles_inner{
+			width:1200px; margin:0 auto;
+			text-align: center;
+		}
+		.articles_inner h2{font-size:48px; color:#353f4f; text-align:center;}
+		.article_list{
+			display:inline-block;
+			box-sizing:border-box;
+			margin-top:30px; padding-left:130px;
+			background:url('../../../images/pofol/adcore/icon_notice.png') no-repeat left 16px;
+		}
+		.article_list>li{
+			height:42px; padding-left:25px;
+			background:url('../../../images/pofol/adcore/notice_list.png') no-repeat left 15px;
+			color:#353f4f; line-height:42px;
+		}
+		.article_list>li:hover{
+			background:url('../../../images/pofol/adcore/notice_list.png') no-repeat left -14px;
+		}
+		.article_list>li:hover .title,.article_list>li:hover .date{
+			text-decoration: underline;
+		}
+		.article_list>li .title{
+			float:left;
+			display:block;
+			overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+			box-sizing:border-box;
+			width:550px;
+			color:#353f4f; line-height: 42px;
+		}
+		.article_list>li .date{
+			float:left;
+			display:block;
+			padding-left:15px;
+			line-height: 42px;
+		}
+
+/* footer */
+	#footer{
+		position:absolute;
+		box-sizing:border-box;
+		width:100%; min-width:1200px; height:100px; padding:15px 50px;
+		background:#353f4f;
+	}
+	.foot_info:after{content:""; clear:both; display:block;}
+	.foot_info>li{float:left; height:12px; margin-top:5px; font-size:12px;}
+	.foot_info>li>a{color:#fff; font-size:12px; font-weight:bold;}
+	.foot_info>.line::before{content:'│'; margin-left:3px; color:#fff;}
+	.copyright{
+		height:50px;
+		margin-top:0;padding:0;
+		background:none;
+		line-height:50px; text-align:center;
+	}
+	.copyright p{
+		clear:both;
+		margin-top:15px;
+		font-size:12px; color:#fff; line-height:18px; text-align:left;
+	}
+
+/* Top Go */
+	#back-to-top a {
+		display: block;
+		width: 40px; height: 40px;
+		border-radius: 100px;
+		background: url("../../../images/pofol/adcore/backtotop.png") no-repeat center rgb(81, 90, 95);
+		text-indent: -9999px;
+
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		transition:0.2s linear;
+		-o-transition: 0.2s all linear;
+		-moz-transition: 0.2s all linear;
+		-webkit-transition: 0.2s all linear;
+	}
+	#back-to-top a:hover{background-color: rgb(34, 34, 34);}
+
+/* Notice */
+	#container>div.articles_head{
+		width:100%; min-width: 1200px; height:155px; padding-top:45px;
+		background:#f9c0c4 url('../../../images/pofol/adcore/bg_grid.png');
+		text-align:center;
+	}
+	.articles_head h2{
+		font-size:35px; color:#353f4f; text-align:center;
+	}
+	.articles_nav{
+		overflow:hidden;
+		display:inline-block;
+		margin:0 auto; padding-left:0;
+	}
+	.articles_nav li{display:inline-block; margin:0 5px; margin-top:15px;}
+	.articles_nav li a{
+		opacity: .7;
+		padding:5px 15px;
+		color:#353f4f; font-size:18px; font-weight:bold;
+	}
+	.articles_nav li .anchorbar{
+		display:block;
+		height:5px; width:0px; margin:0 auto 7px;
+		background:url(../../../images/pofol/adcore/gnb_ani.png) no-repeat;
+		-webkit-transition: width .2s ease;
+		-o-transition: width .2s ease;
+		-ms-transition: width .2s ease;
+		-moz-transition: width .2s ease;
+		transition: width .2s ease;
+	}
+	.articles_nav li:hover .anchorbar,.articles_nav .action .anchorbar{width:39px;}
+	.articles_nav li:hover a,.articles_nav .action a{opacity:1;}
+
+	.articles_tb{display:none;}
+	.articles_tb.on{display:block;}
+
+	/* 테이블 스타일 */
+		.table_style{
+			width:1000px; margin:0 auto 20px;
+			border-top:3px solid #5a6c89; border-bottom:3px solid #5a6c89;
+			font-family:"NanumGothic"; color:#445165; font-size:16px; text-align:center;
+		}
+		.table_style tr{border-top:1px solid #94b1e1; border-bottom:1px solid #94b1e1;}
+		.table_style th{
+			height:40px;
+			background:#dae5f7;
+			font-size:16px; color:#353f4f; font-weight:bold; line-height:40px;
+		}
+		.table_style td,.table_style td a{height:40px; font-size:16px; color:#6982ab;}
+		.table_style th,.table_style td{vertical-align:middle; text-align:center;}
+		.table_style text{padding:5px 0;}
+		.table_style td a:hover{text-decoration: underline;}
+		.table_style td a.file{
+			display:inline-block;
+			width:17px; height:17px;
+			background:url('../../../images/pofol/adcore/icon_file.png') no-repeat center -38px;
+			text-indent:-999em;
+		}
+		.table_style td a.file:hover{background-position:center 2px;}
+		.table_style .title a{
+			overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+			display:inline-block;
+			width:680px;
+			text-align:left; line-height: 43px;
+		}
+		.pagenation{width:100%; min-width: 1200px; text-align:center;}
+		.pagenation>strong,.pagenation>a{padding:0 5px;}
+		.pagenation>strong{color:#353f4f;}
+		.pagenation .prev,.pagenation .next{
+			display:inline-block;
+			background:url('../../../images/pofol/adcore/page_arrow.png') no-repeat;
+			text-indent:-999em;
+		}
+		.pagenation .prev.off{background-position: left 1px;}
+		.pagenation .prev.on{background-position: -40px 1px;}
+		.pagenation .next.off{background-position: -80px 1px;}
+		.pagenation .next.on{background-position: -120px 1px;}
+		.pagenation a.prev.off,.pagenation a.next.off{opacity:1; cursor: default;}
+		.pagenation a{opacity:.8;}
+		.pagenation a:hover{opacity:1;}
+
+		/* Notice 상세페이지 */
+		#container>div.articles_detail{
+			width:1200px; margin:40px auto; padding:0;
+			border-top:3px solid #5a6c89; border-bottom:3px solid #5a6c89;
+		}
+		.articles_info{
+			overflow:hidden;
+			border-bottom:1px solid #94b1e1;
+			background:#dae5f7;
+		}
+		.articles_info dt,.articles_info dd{
+			box-sizing:border-box;
+			height:40px; padding:0 15px;
+			color:#353f4f; line-height:40px;
+		}
+		.articles_info dd a{color:#353f4f;}
+		.articles_info dt{
+			width:60px;
+			font-size:16px; font-weight:bold;
+		}
+		.articles_info dt.title{float:left;}
+		.articles_info dd.title{float:left; width:900px;height:auto;}
+		.articles_info dt.date{float:left;}
+		.articles_info dd.date{float:left; width:130px;}
+		.articles_info dt.file{clear:both; float:left;}
+		.articles_info dd.file{float:left; width:900px;}
+		.articles_info dd.file a:hover{text-decoration: underline;}
+
+		.articles_detail .articles_con{
+			box-sizing:border-box;
+			width:1160px; min-height:300px; margin:20px;
+			font-size:14px; line-height:150%;
+			white-space: pre-wrap;
+		}

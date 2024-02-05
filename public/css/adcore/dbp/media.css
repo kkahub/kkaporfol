@@ -1,0 +1,336 @@
+@media only screen and (max-width:960px)
+{
+#portfolio-wrap .one-third {
+	width: 33.33%;
+}
+.home-quote {
+	margin: 0px 10px;
+}
+.rnr-icon-middle h3 {
+	font-size: 24px;
+}
+}
+@media only screen and (orientation:landscape) and (max-device-width:1024px) and (min-device-width:768px)
+{
+.parallax-bg {
+	background-position: top !important; background-attachment: scroll; background-size: cover;
+}
+.home-parallax {
+	background-position: top !important; background-attachment: scroll; background-size: cover;
+}
+}
+@media only screen and (orientation:portrait) and (max-device-width:1024px) and (min-device-width:768px)
+{
+.parallax-bg {
+	background-position: top !important; background-attachment: scroll; background-size: cover;
+}
+.home-parallax {
+	background-position: top !important; background-attachment: scroll; background-size: cover;
+}
+}
+@media only screen and (max-width:959px) and (min-width:768px)
+{
+h1 {
+	font-size: 80px;
+}
+.main-menu li {
+	margin-left: 20px;
+}
+.iconic.main-menu li {
+	margin-left: 20px;
+}
+.main-menu a {
+	font-size: 18px;
+}
+.testimonial-slider .flex-direction-nav li .flex-next {
+	right: 44%;
+}
+.twitter-slider .flex-direction-nav li .flex-next {
+	right: 44%;
+}
+.testimonial-slider .flex-direction-nav li .flex-prev {
+	left: 44%;
+}
+.twitter-slider .flex-direction-nav li .flex-prev {
+	left: 44%;
+}
+.team-two.team-member {
+	width: 50%;
+}
+.team-four.team-member {
+	width: 50%;
+}
+}
+@media only screen and (max-width:767px)
+{
+h1 {
+	line-height: 1; font-size: 54px;
+}
+.title h1 {
+	font-size: 40px;
+}
+.subtitle {
+	font-size: 18px; margin-bottom: 0px;
+}
+.modal {
+	top: 0px; position: absolute;
+}
+.home-logo {
+	margin: 40px 0px 50px;
+}
+.home-logo-text {
+	margin: 40px 0px 50px;
+}
+.main-menu {
+	display: none;
+}
+.large.main-menu {
+	height: 60px;
+}
+.large.logo {
+	height: 60px;
+}
+.selectnav {
+	background-position: right; padding: 0px 10px; border-radius: 0px; border: 1px solid transparent; border-image: none; width: 180px; color: rgb(61, 61, 61); /* text-transform: uppercase; */ line-height: 1; font-family: "BebasNeueRegular", sans-serif; font-size: 24px; margin-top: 13px; display: block; min-width: auto; box-shadow: none; background-image: url("../../images/dbp/selectmenu.png"); background-repeat: no-repeat; background-size: 30px; background-color: transparent; -moz-border-radius: 0; -webkit-border-radius: 0; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-appearance: none;
+}
+#home {
+	padding: 60px 0px; height: auto !important;
+}
+.page {
+	padding-top: 90px; padding-bottom: 40px;
+}
+#slidecaption {
+	display: none;
+}
+#prevslide {
+	left: 34%;
+}
+#nextslide {
+	right: 34%;
+}
+.container .columns {
+	margin-bottom: 40px;
+}
+.container .column {
+	margin-bottom: 40px;
+}
+nav .container .columns {
+	margin: 0px;
+}
+nav .cotainer .column {
+	margin: 0px;
+}
+#ajaxpage .columns {
+	margin: 0px;
+}
+#ajaxpage .column {
+	margin: 0px;
+}
+.project-media {
+	margin: 0px;
+}
+.caption {
+	margin: 0px; left: 0px; bottom: 5px; position: relative;
+}
+.testimonial-slider .flex-direction-nav li .flex-next {
+	right: 36%;
+}
+.twitter-slider .flex-direction-nav li .flex-next {
+	right: 36%;
+}
+.testimonial-slider .flex-direction-nav li .flex-prev {
+	left: 36%;
+}
+.twitter-slider .flex-direction-nav li .flex-prev {
+	left: 36%;
+}
+.testimonial-slider {
+	width: 100%;
+}
+.twitter-slider {
+	width: 100%;
+}
+.contact-details {
+	width: 100%;
+}
+#contact-input {
+	width: 100%;
+}
+#contact-textarea {
+	margin: 0px 1%; width: 93%; float: left;
+}
+#contact-submit input[type='submit'] {
+	margin: 1%; width: 94%; float: left;
+}
+.copyright .social-icons .social-icon {
+	margin-bottom: 10px;
+}
+.copyright p {
+	font-size: 11px; margin-top: 20px;
+}
+.parallax {
+	height: 400px;
+}
+.parallax-content {
+	height: 400px;
+}
+.parallax .overlay {
+	height: 400px;
+}
+.color-block {
+	height: 400px;
+}
+.color-block-content {
+	height: 400px;
+}
+.team-member {
+	width: 100%; margin-bottom: 40px; float: none;
+}
+.testimonial-icon {
+	display: none;
+}
+.twitter-feed-icon {
+	display: none;
+}
+#filters {
+	margin-top: 40px;
+}
+#filters ul li a {
+	margin: 0px; padding: 0px;
+}
+#portfolio-wrap .one-third {
+	width: 50%;
+}
+.project-media {
+	margin-top: 70px !important;
+}
+#filters ul li a h3 {
+	margin-bottom: 5px;
+}
+.home3 .home-text-wrapper .container {
+	width: 440px; height: 440px;
+}
+.one_half {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.one_third {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.two_third {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.one_fourth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.three_fourth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.one_fifth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.two_fifth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.three_fifth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.four_fifth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.one_sixth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.five_sixth {
+	margin: 0px 0px 40px; width: 100%; float: none;
+}
+.parallax-bg {
+	background-position: top !important; background-attachment: scroll; background-size: cover;
+}
+.home-parallax {
+	background-position: top !important; background-attachment: scroll; background-size: cover;
+}
+p.quote {
+	font-size: 30px;
+}
+.contact-details h2 {
+	font-size: 30px;
+}
+#twitter-feed ul.slides > li {
+	font-size: 16px; margin-bottom: 25px;
+}
+a#button-newsletter {
+	width: 66%;
+}
+.home-newsletter .home-quote h3 {
+	font-size: 20px;
+}
+}
+@media only screen and (max-width:479px)
+{
+.home-logo-text a {
+	font-size: 32px;
+}
+.large.main-menu {
+	height: 60px;
+}
+.large.logo {
+	height: 60px;
+}
+.selectnav {
+	width: 150px; font-size: 24px; margin-top: 13px; min-width: auto; background-size: 30px;
+}
+#portfolio-wrap .one-third {
+	width: 100%;
+}
+.home3 .home-text-wrapper .container {
+	width: 280px; height: 280px;
+}
+.home3#home h1 {
+	margin: 0px 20px; font-size: 15px;
+}
+#prevslide {
+	left: 30%;
+}
+#nextslide {
+	right: 30%;
+}
+a#button-newsletter {
+	width: 92%;
+}
+}
+@media only screen and (min-width:1200px)
+{
+nav .container {
+	width: 96%; display: block;
+}
+.home-logo-text a {
+	font-size: 90px;
+}
+.slider-text {
+	width: 100%;
+}
+.parallax {
+	height: 580px;
+}
+.parallax .parallax-content {
+	height: 580px;
+}
+.parallax .overlay {
+	height: 580px;
+}
+#project-navigation {
+	margin: -20px -40px 0px; left: 0px; top: 50%; width: 1040px; height: 40px; z-index: 0;
+}
+#project-navigation ul li#prevProject a {
+	margin-right: 0px; float: left;
+}
+#project-navigation ul li#nextProject a {
+	margin-right: 0px; float: right;
+}
+#closeProject {
+	top: 10px; right: -40px;
+}
+.home4 .home-text-wrapper .container {
+	width: 65%;
+}
+}

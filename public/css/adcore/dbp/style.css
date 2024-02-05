@@ -1,0 +1,1474 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@font-face {
+	font-family: 'NanumGothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../../font/NanumGothic.eot);
+	src: url(../../../font/NanumGothic.eot?#iefix) format('embedded-opentype'),
+	url(../../../font/NanumGothic.woff) format('woff'),
+	url(../../../font/NanumGothic.ttf) format('truetype');
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+html {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+body {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+div {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+span {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+applet {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+object {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+iframe {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h1 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h2 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h3 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h4 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h5 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h6 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+p {
+	font: 'NanumGothic'; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+blockquote {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+pre {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+a {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+abbr {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+acronym {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+address {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+big {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+cite {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+code {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+del {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dfn {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+em {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+img {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+ins {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+kbd {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+q {
+	font: 'NanumGothic'; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+s {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+samp {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+small {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+strike {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+strong {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+sub {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+sup {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+tt {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+var {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+b {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+u {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+i {
+	font-family: 'Glyphicons Halflings'; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+center {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dl {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dt {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dd {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+ol {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+ul {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+li {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+fieldset {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+form {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+label {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+legend {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+table {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+caption {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+tbody {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+tfoot {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+thead {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+tr {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+th {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+td {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+article {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+aside {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+canvas:not(canvas[class='chart']) {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+details {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+embed {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+figure {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+figcaption {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+/*
+footer {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+*/
+header {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+hgroup {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+menu {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+nav {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+output {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+ruby {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+section {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+summary {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+time {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+mark {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+audio {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+video {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+article {
+	display: block;
+}
+aside {
+	display: block;
+}
+details {
+	display: block;
+}
+figcaption {
+	display: block;
+}
+figure {
+	display: block;
+}
+footer {
+	display: block;
+}
+header {
+	display: block;
+}
+hgroup {
+	display: block;
+}
+menu {
+	display: block;
+}
+nav {
+	display: block;
+}
+section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+q {
+	quotes: none;
+}
+blockquote::before {
+	content: none;
+}
+blockquote::after {
+	content: none;
+}
+q::before {
+	content: none;
+}
+q::after {
+	content: none;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+::selection {
+	color: #0dcdbd;
+}
+a {
+	
+}
+a:visited {
+	
+}
+a:hover {
+	
+}
+/*
+body {
+	background: white; font: 300 13px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(81, 90, 95); -ms-overflow-x: hidden; font-size-adjust: none; font-stretch: normal; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%;
+}
+*/
+.embed-container {
+	height: 0px; overflow: hidden; padding-top: 30px; padding-bottom: 56.25%; position: relative;
+}
+.embed-container iframe {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.embed-container object {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.embed-container embed {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+img.responsive {
+	width: 100%; height: auto;
+}
+.hidden {
+	display: none;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+small {
+	font-size: 80%;
+}
+hr {
+	border-width: 1px 0px 0px; border-style: solid; border-color: rgb(238, 238, 238); margin: 10px 0px 30px; border-image: none; height: 0px; clear: both;
+}
+pre {
+	background: rgb(250, 250, 250); margin: 0px 0px 20px; padding: 10px 20px; border-radius: 2px; border: 1px solid rgb(240, 240, 240); border-image: none; height: auto; font-family: Consolas, monospace; -ms-overflow-x: auto; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+}
+.hidden {
+	display: none !important;
+}
+.responsive img {
+	width: 100%; height: auto;
+}
+.responsive iframe {
+	width: 100%; height: auto;
+}
+.responsive object {
+	width: 100%; height: auto;
+}
+.responsive embed {
+	width: 100%; height: auto;
+}
+img {
+	height: auto; max-width: 100%;
+}
+a {
+	outline: 0px; transition:0.2s; color: #575757; text-decoration: none; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+.highlight {
+	color: rgb(255, 214, 0);
+}
+a:hover {
+	color: rgb(102, 102, 102);
+}
+a:focus {
+	color: rgb(102, 102, 102);
+}
+a:focus {
+	outline-offset: 0;
+}
+p a {
+	line-height: inherit;
+}
+p a:visited {
+	line-height: inherit;
+}
+ul {
+	margin-bottom: 20px;
+}
+ol {
+	margin-bottom: 20px;
+}
+ul {
+	list-style: none;
+}
+ul.styled-list {
+	padding: 0px;
+}
+ol {
+	margin: 0px; padding: 0px 0px 0px 30px;
+}
+ul {
+	margin: 0px; padding: 0px 0px 0px 30px;
+}
+ol {
+	list-style: decimal;
+}
+ul li ul {
+	margin-bottom: 0px;
+}
+ol li ul {
+	margin-bottom: 0px;
+}
+ol li ul {
+	margin-bottom: 0px;
+}
+ol li ol {
+	margin-bottom: 0px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.alignleft {
+	text-align: left;
+}
+.alignright {
+	text-align: right;
+}
+.aligncenter {
+	text-align: center; display: block;
+}
+h1 {
+	/* text-transform: uppercase; */ font-weight: 400; margin-bottom: 10px;
+}
+h2 {
+	/* text-transform: uppercase; */ font-weight: 400; margin-bottom: 10px;
+}
+h3 {
+	/* text-transform: uppercase; */ font-weight: 400; margin-bottom: 10px;
+}
+h4 {
+	/* text-transform: uppercase; */ font-weight: 400; margin-bottom: 10px;
+}
+h5 {
+	/* text-transform: uppercase; */ font-weight: 400; margin-bottom: 10px;
+}
+h6 {
+	/* text-transform: uppercase; */ font-weight: 400; margin-bottom: 10px;
+}
+body #load {
+	width: 100%; height: 100%; overflow: hidden; position: fixed; z-index: 1001; background-color: rgb(255, 255, 255);
+}
+#qLpercentage {
+	line-height: 1; font-family: "NanumGothic"; font-size: 60px !important;
+}
+h1 {
+	/* text-transform: uppercase; */ font-family: "NanumGothic"; font-size: 80px; margin-bottom: 0px; position: relative;
+	letter-spacing:-0.03em;
+}
+h2 {
+	/* text-transform: uppercase; */ font-family: "NanumGothic"; font-size: 50px; position: relative;
+}
+h3 {
+	font-family: "NanumGothic", sans-serif; font-size: 30px;
+}
+h4 {
+	font-family: "NanumGothic"; font-size: 22px;
+}
+h5 {
+	font-family: "NanumGothic"; font-size: 20px;
+}
+h6 {
+	font-family: "NanumGothic"; font-size: 18px;
+}
+p {
+	margin-bottom: 10px;
+}
+p.lead {
+	padding: 0px; line-height: 1.2; font-family: "NanumGothic"; font-size: 16px; font-weight: 600; margin-bottom: 20px; position: relative; z-index: 1;
+}
+nav {
+	width: 100%; position: relative; z-index: 100; opacity: 0;
+}
+body.multipage nav {
+	opacity: 1;
+}
+nav.dark {
+	background: rgb(21, 21, 21); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid;
+}
+nav.light {
+	background: rgb(255, 255, 255); transition:0.5s; border-bottom-color: rgb(240, 240, 240); border-bottom-width: 1px; border-bottom-style: solid; box-shadow: 0px 4px 15px rgba(0,0,0,0.07); -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s;
+}
+nav.sticky.light {
+	background: rgba(255, 255, 255, 0.95);
+}
+nav.transparent {
+	background: none; top: 0px; width: 100%; border-bottom-color: transparent; border-bottom-width: 1px; border-bottom-style: solid; position: fixed; box-shadow: none;
+}
+nav.transparent a {
+	color: rgb(255, 255, 255);
+}
+nav.scroll.transparent {
+	background: rgba(255, 255, 255, 0.95);
+}
+nav.scroll.transparent a {
+	color: rgb(81, 90, 95);
+}
+nav .container .columns.four {
+	width: auto; float: left;
+}
+nav .container .columns.twelve {
+	/* width: auto; float: right; */width: auto; float: left;
+}
+.main-menu {
+	height: 50px; vertical-align: middle;
+}
+.logo {
+	height: 50px; vertical-align: middle; display: table-cell;
+}
+.large.main-menu {
+	height: 80px;
+}
+.large.logo {
+	height: 80px;
+}
+.logo a {
+	margin: auto; display: block; height:30px;
+}
+.main-menu li {
+	margin-left: 30px; display: inline;
+}
+.main-menu a {
+	color: white; font-family: "BebasNeueRegular", sans-serif; font-size: 22px; text-decoration: none;
+}
+//*
+nav.light .main-menu a {
+	color: inherit;
+}
+
+nav.light .main-menu a:hover {
+	transition:color 0.5s; color: rgb(255, 214, 0); -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s;
+}
+nav.dark .main-menu a:hover {
+	transition:color 0.5s; color: rgb(255, 214, 0); -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s;
+}
+
+nav.light .main-menu li.active a {
+	color: rgb(255, 214, 0);
+}
+nav.dark .main-menu li.active a {
+	color: rgb(255, 214, 0);
+}*//
+.main-menu a i {
+	font-size: 22px; margin-right: 3px;
+}
+.iconic.main-menu li {
+	margin-left: 40px;
+}
+.iconic.main-menu a {
+	display: inline-block;
+}
+.iconic.main-menu a i {
+	margin: 8px auto 4px; text-align: center; font-size: 25px; display: block;
+}
+.selectnav {
+	display: none;
+}
+.home-text-wrapper {
+	margin: auto; vertical-align: middle; display: table-cell;
+}
+.home1 .slabtextdone {
+	color: rgb(255, 255, 255);
+}
+.home1 .slabtextdone .second-child.slabtext {
+	background: rgb(255, 214, 0); padding: 15px 10px 0px; width: auto; color: rgb(0, 0, 0); margin-bottom: 10px; margin-left: -10px; display: inline-block;
+}
+.home-gradient.home1 .slabtextdone .second-child.slabtext {
+	background: none;
+}
+.home-slide .home-slide-content {
+	text-align: center; line-height: 1; font-family: "BebasNeueRegular", sans-serif; font-size: 90px; margin-bottom: 0px; position: relative;
+}
+.home-parallax .home-slide-content {
+	background: rgba(0, 0, 0, 0.3); padding: 55px 10px 50px; color: rgb(255, 255, 255);
+}
+.home-gradient .home-slide-content {
+	color: rgb(255, 255, 255);
+}
+.home-gradient .highlight {
+	color: inherit;
+}
+.home3 .home-text-wrapper .container {
+	background: rgba(0, 0, 0, 0.81); border-radius: 50%; transition:0.3s; width: 500px; height: 500px; text-align: center; overflow: hidden; box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.24); -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease;
+}
+.home3 .home-text-wrapper .no-safari.container {
+	backface-visibility: hidden; -webkit-backface-visibility: hidden;
+}
+.home3 .home-quote {
+	transition:0.3s ease-in-out; width: inherit; height: inherit; text-align: center; color: white; overflow: hidden; vertical-align: middle; display: table-cell; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;
+}
+.home3 .slabtextdone {
+	color: rgb(255, 255, 255);
+}
+.home3 .slabtextdone .second-child.slabtext {
+	width: auto; color: rgb(255, 214, 0); overflow: hidden; display: inline-block; text-shadow: none;
+}
+.home3 .home-text-wrapper .container:hover {
+	overflow: hidden; box-shadow: 0px 0px 0px 15px rgba(255,255,255,0.24); transform: scale(1.09); -webkit-transform: scale(1.09); -moz-transform: scale(1.09); -o-transform: scale(1.09); -webkit-transform-style: preserve-3d;
+}
+.home3#home h1 {
+	margin: 0px 50px; overflow: hidden; font-size: 30px;
+}
+.home4 .slabtextdone {
+	text-shadow: none;
+}
+.home4 .home-quote {
+	background: rgba(255, 255, 255, 0.63); padding: 10px 10px 0px; transition:0.3s ease-in-out; box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.32); -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;
+}
+.home-gradient.home4 .home-quote {
+	background: rgb(255, 255, 255);
+}
+.home4 .home-quote:hover {
+	box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.32);
+}
+.home4 .slabtextdone .second-child.slabtext {
+	background: rgb(255, 214, 0); padding: 15px 10px 0px; width: auto; color: rgb(255, 255, 255); margin-left: -10px; display: inline-block;
+}
+.home-fullscreenslider#home {
+	background: url("../../../images/count_pattern.png"); height: 100%; overflow: hidden; position: relative;
+}
+.home-fullscreenslider#home .container {
+	height: 100%;
+}
+.parallax {
+	background: rgb(248, 248, 248); width: 100%; height: 400px; color: rgb(255, 255, 255); overflow: hidden; position: relative; z-index: 0;
+}
+.parallax .container {
+	overflow: hidden; display: table;
+}
+.parallax .parallax-content {
+	height: 400px;
+}
+.parallax .overlay {
+	height: 400px;
+}
+.parallax-content {
+	text-align: center; overflow: hidden; vertical-align: middle; display: table-cell;
+}
+.overlay {
+	background: url("../../../images/count_pattern.png"); width: 100%; overflow: hidden; position: absolute;
+}
+.parallax-bg {
+	background-position: top; margin: 0px auto; width: 100%; height: 100%; position: absolute; background-attachment: fixed; background-repeat: repeat-y; background-size: cover;
+}
+p.quote {
+	margin: 0px 5%; text-align: center; color: white; line-height: 1; font-family: "BebasNeueRegular", sans-serif; font-size: 48px; z-index: 200;
+}
+.quote i {
+	margin: 0px 5px; font-size: 25px; vertical-align: top; display: inline-table;
+}
+.parallax .quote i {
+	color: rgb(255, 214, 0);
+}
+.quote-author {
+	width: auto; height: 24px; text-align: center; color: rgb(255, 255, 255); font-size: 17px; font-style: italic; font-weight: 600; margin-top: 25px; position: relative; z-index: 200;
+}
+.twitter-slider {
+	margin: 0px auto !important; width: 85%;
+}
+#twitter-feed {
+	padding: 10px 0px; text-align: center;
+}
+#twitter-feed li {
+	margin-bottom: 20px;
+}
+.twitter-feed-icon i {
+	background: rgb(255, 214, 0); padding: 17px; border-radius: 50%; width: 23px; color: rgb(255, 255, 255); font-size: 22px; display: inline-block; box-shadow: 0px 0px 0px 4px rgb(255,255,255);
+}
+.twitter-author {
+	font-family: "BebasNeueRegular", sans-serif; font-size: 25px;
+}
+#twitter-feed ul.slides > li {
+	margin: 5px auto 30px; padding: 15px 0px; color: rgb(255, 255, 255); line-height: 1.4; font-family: "Oswald", sans-serif; font-size: 20px; border-top-color: rgba(255, 255, 255, 0.3); border-bottom-color: rgba(255, 255, 255, 0.3); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.twitter#twitter-feed {
+	text-align: left;
+}
+.twitter ul {
+	padding: 0px;
+}
+.twitter .twitter-feed-icon i {
+	display: none;
+}
+.twitter .twitter-author {
+	display: none;
+}
+.twitter li {
+	padding: 0px; border: currentColor; border-image: none; width: auto; color: inherit; line-height: inherit; font-family: "HelveticaNeue Light", sans-serif; font-size: 13px; margin-bottom: 20px;
+}
+.testimonial-slider {
+	margin: 0px auto !important; width: 85%; position: relative;
+}
+.testimonial-slider ul {
+	padding: 10px 0px; text-align: center;
+}
+.testimonial-icon i {
+	background: rgb(255, 214, 0); padding: 17px; border-radius: 50%; width: 23px; color: rgb(255, 255, 255); font-size: 22px; display: inline-block; box-shadow: 0px 0px 0px 4px rgb(255,255,255);
+}
+.testimonial-slide .client-testimonial {
+	margin: 5px auto 10px; padding: 15px; color: white; line-height: 1.67; font-family: "Oswald", sans-serif; font-size: 16px; border-top-color: rgba(255, 255, 255, 0.3); border-bottom-color: rgba(255, 255, 255, 0.3); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.client-info {
+	color: rgb(255, 255, 255); font-size: 14px; font-style: italic; font-weight: 600; margin-bottom: 20px;
+}
+.client-info::before {
+	margin: 0px 3px; content: "--";
+}
+.client-info::after {
+	margin: 0px 3px; content: "--";
+}
+.color-block {
+	background: -ms-radial-gradient(center, circle, rgb(255, 214, 0) 0%, rgb(226, 190, 1) 100%); width: 100%; height: 450px; color: rgb(255, 255, 255); overflow: hidden; position: relative;
+}
+.color-block .parallax-bg {
+	display: none;
+}
+.color-block .container {
+	display: table;
+}
+.color-block-content {
+	height: 450px; text-align: center; vertical-align: middle; display: table-cell;
+}
+.color-block a {
+	color: rgb(0, 0, 0);
+}
+.color-block .quote i {
+	color: rgb(0, 0, 0);
+}
+.color-block .quote-author {
+	color: rgb(0, 0, 0);
+}
+.color-block .twitter-date a {
+	color: rgb(0, 0, 0);
+}
+.color-block .twitter-author a {
+	color: rgb(0, 0, 0);
+}
+.color-block .testimonial-slider .title span {
+	color: rgb(0, 0, 0);
+}
+.color-block .client-info {
+	color: rgb(0, 0, 0);
+}
+.page {
+	background: rgb(255, 255, 255); padding: 60px 0px; text-align: center; overflow: hidden; position: relative; z-index: 6;
+}
+.multipage.page {
+	padding: 30px 0px 0px; text-align: left;
+}
+.multipage.page .copyright {
+	text-align: center;
+}
+.page#team {
+	position: static;
+}
+.title {
+	text-align: center;
+}
+.title h1 {
+	background: rgb(255, 214, 0); padding: 10px 10px 3px; border: 4px solid rgb(255, 255, 255); border-image: none; color: rgb(255, 255, 255); line-height: 0.8; margin-bottom: 20px; display: inline-block; box-shadow: 0px 0px 0px 3px #ffd600;
+}
+.multipage .title h1 {
+	margin: 60px 0px 40px; line-height: 0.8;
+}
+.subtitle {
+	padding: 0px; text-transform: uppercase; line-height: 1.2; font-family: "Open Sans", "Times New Roman", Times, serif; font-size: 25px; font-weight: 700; margin-bottom: 40px; position: relative; z-index: 1;
+}
+/*
+#home {
+	width: 100%; height: 100%; color: rgb(1, 1, 1); overflow: hidden; display: table; position: relative; z-index: 10;
+}
+*/
+.home-gradient {
+	background: -ms-radial-gradient(center, circle, rgb(255, 214, 0) 0%, rgb(226, 190, 1) 100%);
+}
+#home h1 {
+	font-size: 60px;
+}
+.home-logo {
+	margin: 30px 0px 100px; width: 100%; text-align: center; display: block; position: relative;
+}
+.home-logo-text {
+	margin: 30px 0px 100px; width: 100%; text-align: center; display: block; position: relative;
+	color: #ffffff;
+}
+.home-fullscreenslider .home-logo {
+	margin: 60px 0px 100px; font-size: 80px;
+}
+.home-fullscreenslider .home-logo-text {
+	margin: 60px 0px 100px; font-size: 80px;
+}
+.home-logo-text a {
+	padding: 5px 25px 0px; border: 5px solid currentColor; border-image: none; text-align: center; color: inherit; line-height: 1; font-family: "BebasNeueRegular", sans-serif; font-size: 60px; margin-bottom: 0px; position: relative;
+}
+.light.home-logo-text a {
+	color: rgba(255, 255, 255, 0.9);
+}
+.home-logo-text a:hover {
+	color: rgb(255, 255, 255);
+}
+.slabtextdone {
+	color: rgb(2, 2, 2); line-height: 0.8; text-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
+.slabtexted .slabtext {
+	display: inline-block; white-space: nowrap;
+}
+.slabtextinactive .slabtext {
+	letter-spacing: inherit !important; font-size: 1em !important; word-spacing: inherit !important; display: inline; white-space: normal;
+}
+.slabtextdone .slabtext {
+	display: block;
+}
+#portfolio {
+	padding-bottom: 0px;
+}
+#filters {
+	text-align: center; margin-top: 10px; margin-bottom: 0px; float: none; display: block; position: relative; z-index: 2;
+}
+#filters ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+#filters ul li {
+	display: inline-block;
+}
+#filters ul li a {
+	padding: 2px 5px; color: inherit; font-weight: bold; margin-right: 5px; margin-bottom: 5px; float: left; display: block;
+}
+#filters ul li a h3 {
+	padding: 2px 6px 0px; border-image: none; font-size: 18px;
+}
+#project-navigation {
+	margin: 0px; left: 0px; top: 10px; width: 100%; height: 40px; position: absolute; z-index: 1;
+}
+#project-navigation ul {
+	list-style: none; margin: 0px; padding: 0px; float: none; display: none;
+}
+#project-navigation ul li#prevProject a {
+	background: url("../../images/arrow_left.png") no-repeat center; margin-right: 64px; float: right;
+}
+#project-navigation ul li#nextProject a {
+	background: url("../../images/arrow_right.png") no-repeat center; margin-right: 10px; float: right;
+}
+#project-navigation ul li#prevProject a {
+	background-size: 30px; background-color: rgb(21, 21, 21);
+}
+#project-navigation ul li#nextProject a {
+	background-size: 30px; background-color: rgb(21, 21, 21);
+}
+#project-navigation ul li a {
+	border-radius: 3px; transition:0.3s ease-in-out; width: 40px; height: 40px; float: left; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;
+}
+#project-navigation ul li#prevProject a:hover {
+	background-color: rgb(255, 214, 0);
+}
+#project-navigation ul li#nextProject a:hover {
+	background-color: rgb(255, 214, 0);
+}
+#project-navigation ul li a:hover {
+	background-color: rgb(255, 214, 0);
+}
+#project-navigation ul li a.disabled {
+	cursor: default; background-color: rgba(0, 0, 0, 0.2) !important;
+}
+#project-navigation ul li a.disabled:hover {
+	cursor: default; background-color: rgba(0, 0, 0, 0.2) !important;
+}
+#closeProject {
+	top: 10px; right: 62px; position: absolute; z-index: 1;
+}
+#closeProject a {
+	background: rgb(21, 21, 21); border-radius: 3px; width: 40px; height: 40px; text-align: center; right: 0px; display: none; position: absolute; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+#closeProject a:hover {
+	background: rgb(255, 214, 0);
+}
+#closeProject a i {
+	color: rgb(255, 255, 255); line-height: 40px; font-size: 14px; vertical-align: middle; display: inline-table;
+}
+#ajax-section {
+	background: rgb(248, 248, 248); padding: 0px; text-align: left; position: relative;
+}
+#ajax-section #loader {
+	top: -30px; width: 100%; height: 20px; display: none; position: absolute;
+}
+#ajax-section .projectError#loader {
+	background-position: top; height: auto !important; text-align: center;
+}
+#ajax-section .projectError#loader p {
+	padding-top: 16px; display: none;
+}
+#ajax-section #loader {
+	background: url("../../images/loader.gif") no-repeat center;
+}
+#ajax-section .projectError#loader p {
+	color: rgb(102, 102, 102) !important;
+}
+#ajax-content-outer {
+	width: 100%; overflow: hidden; position: relative;
+}
+#ajax-content-inner {
+	height: 0px; float: left; opacity: 0;
+}
+#ajaxpage {
+	float: left; display: block;
+}
+.project-media {
+	overflow: hidden; margin-top: 70px; margin-bottom: 30px; display: block;
+}
+.project-info {
+	margin-top: 60px; margin-bottom: 30px;
+}
+.project-info {
+	height: auto; margin-bottom: 30px; float: left;
+}
+.project-description {
+	margin-bottom: 30px;
+}
+.project-details {
+	margin-bottom: 30px;
+}
+.project-description h3 {
+	margin-bottom: 10px;
+}
+.project-details h3 {
+	margin-bottom: 10px;
+}
+.project-details p {
+	padding-bottom: 7px; border-bottom-color: rgb(232, 232, 232); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.project-details p span {
+	font-weight: bold;
+}
+#portfolio-wrap {
+	margin: 0px auto; padding: 0px; width: 100.1%; display: block; position: relative;
+}
+#portfolio-wrap .one-third {
+	margin: 0px; padding: 0px; width: 20%; line-height: 0; overflow: hidden;
+}
+.current.portfolio-item {
+	z-index: 101; box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.37);
+}
+.portfolio-item {
+	padding: 0px; overflow: hidden; position: relative;
+}
+.portfolio-item .portfolio-image {
+	overflow: hidden; display: block; position: relative;
+}
+.portfolio-item .portfolio-image img {
+	width: 100%; height: auto;
+}
+.portfolio .portfolio-overlay {
+	background: rgb(255, 140, 146); transition:0.3s ease-in-out; left: 0px; top: 0px; width: 100%; height: 100%; display: block; position: absolute; z-index: 4; opacity: 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-opacity: 0;
+}
+.portfolio > a {
+	color: rgb(255, 255, 255);
+}
+.portfolio > a:hover {
+	color: rgb(255, 255, 255);
+}
+.portfolio-item .portfolio > a:hover > .portfolio-overlay {
+	opacity: 1; -moz-opacity: 1;
+}
+.portfolio > a img {
+	transition:0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out;
+}
+.portfolio > a:hover img {
+	transition:0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out;
+}
+.portfolio .thumb-info {
+	transition:0.3s ease-in-out; width: 100%; height: 100%; position: absolute; opacity: 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-opacity: 0;
+}
+.portfolio a:hover .portfolio-overlay .thumb-info {
+	opacity: 1; -moz-opacity: 1;
+}
+.portfolio-overlay .thumb-info i {
+	top: 58%; font-size: 50px;
+}
+.portfolio-overlay .thumb-info h3 {
+	top: 38%; font-size: 30px;
+}
+.portfolio-overlay .thumb-info p {
+	top: 50%; font-size: 13px;
+}
+.portfolio-overlay .thumb-info h3 {
+	width: 100%; text-align: center; color: rgb(255, 255, 255); position: absolute;
+}
+.portfolio-overlay .thumb-info p {
+	width: 100%; text-align: center; color: rgb(255, 255, 255); font-weight: bold; position: absolute;
+}
+.portfolio-overlay .thumb-info i {
+	width: 100%; text-align: center; color: rgb(255, 255, 255); display: block; position: absolute;
+}
+.isotope {
+	transition-duration: 0.8s; -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -o-transition-duration: 0.8s;
+}
+.isotope .isotope-item {
+	transition-duration: 0.8s; -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -o-transition-duration: 0.8s;
+}
+.isotope {
+	transition-property: height, width; -webkit-transition-property: height, width; -moz-transition-property: height, width; -o-transition-property: height, width;
+}
+.isotope .isotope-item {
+	transition-property: transform, opacity; -webkit-transition-property: -webkit-transform, opacity; -moz-transition-property: -moz-transform, opacity; -o-transition-property: -o-transform, opacity;
+}
+.no-transition.isotope {
+	transition-duration: 0s; -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -o-transition-duration: 0s;
+}
+.no-transition.isotope .isotope-item {
+	transition-duration: 0s; -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -o-transition-duration: 0s;
+}
+.isotope .no-transition.isotope-item {
+	transition-duration: 0s; -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -o-transition-duration: 0s;
+}
+.post {
+	margin-bottom: 100px;
+}
+.post-media {
+	margin-bottom: 30px;
+}
+.post-title {
+	line-height: 1; font-family: "BebasNeueRegular", sans-serif; font-size: 36px; margin-bottom: 10px;
+}
+.post-title a {
+	color: rgb(21, 21, 21);
+}
+.post-title a:hover {
+	color: rgb(255, 214, 0);
+}
+.post-tags {
+	margin-top: 20px;
+}
+.post-tags i {
+	color: rgb(134, 137, 145); font-size: 16px; margin-right: 4px; vertical-align: middle; display: inline-table;
+}
+.post-tags ul {
+	padding: 0px; display: inline-block;
+}
+.post-tags li {
+	text-transform: uppercase; font-size: 11px; display: inline-block; position: relative;
+}
+.post-tags li::after {
+	content: " . ";
+}
+.post-tags li:last-child::after {
+	content: "";
+}
+.post-tags li a {
+	color: rgb(134, 137, 145); text-decoration: none;
+}
+.post-tags li a:hover {
+	color: rgb(255, 214, 0);
+}
+.post-meta {
+	padding: 5px 0px; font-size: 11px; margin-bottom: 20px; border-top-color: rgb(240, 242, 245); border-bottom-color: rgb(240, 242, 245); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.post-meta span {
+	text-align: right; float: right;
+}
+.sidebar {
+	padding-left: 10px;
+}
+.widget {
+	margin-bottom: 40px;
+}
+.widget-title {
+	text-transform: uppercase; line-height: 1; font-family: "BebasNeueRegular", sans-serif; font-size: 30px; margin-bottom: 10px;
+}
+.tags-list li {
+	padding: 3px 9px; border: 1px solid rgb(232, 232, 232); border-image: none; font-size: 11px; margin-top: 5px; display: inline-block;
+}
+.tags-list li:first-child {
+	margin-top: 0px;
+}
+.tags-list li a {
+	color: rgb(21, 21, 21); text-decoration: none;
+}
+.tags-list li a:hover {
+	color: rgb(255, 214, 0);
+}
+.blog-tweet {
+	font-size: 11px; margin-top: 16px;
+}
+.blog-tweet span {
+	color: rgb(134, 137, 145); font-size: 10px; margin-top: 7px; display: block;
+}
+.pagination {
+	width: 100%; border-top-color: rgb(240, 240, 240); border-bottom-color: rgb(240, 240, 240); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+}
+.pages {
+	text-align: center;
+}
+.pages li {
+	display: inline-block;
+}
+.pages li {
+	margin: 0px 2px 0px 0px; display: inline-block;
+}
+.pages li a {
+	padding: 5px; color: rgb(21, 21, 21); font-size: 13px; display: block;
+}
+.pages li a.current {
+	color: rgb(28, 31, 38); border-top-color: rgb(255, 214, 0); border-bottom-color: rgb(255, 214, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid;
+}
+.pages li a:hover {
+	color: rgb(255, 214, 0);
+}
+.pagination a.previous {
+	margin: 2px 0px; border-radius: 2px; width: 24px; height: 24px; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 14px; display: block; background-color: rgb(21, 21, 21); -moz-border-radius: 4px; -webkit-border-radius: 2px;
+}
+.pagination a.next {
+	margin: 2px 0px; border-radius: 2px; width: 24px; height: 24px; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 14px; display: block; background-color: rgb(21, 21, 21); -moz-border-radius: 4px; -webkit-border-radius: 2px;
+}
+.pagination a.previous:hover {
+	color: white; background-color: rgb(255, 214, 0);
+}
+.pagination a.next:hover {
+	color: white; background-color: rgb(255, 214, 0);
+}
+.pagination a.previous {
+	left: 0px; top: 0px; position: absolute;
+}
+.pagination a.next {
+	top: 0px; right: 0px; position: absolute;
+}
+.pagination a i {
+	line-height: 24px;
+}
+#blog-author {
+	padding-bottom: 40px; margin-bottom: 20px; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 3px; border-bottom-style: solid; position: relative;
+}
+#blog-author .container {
+	padding-bottom: 40px; margin-bottom: 20px; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 3px; border-bottom-style: solid;
+}
+#blog-author img {
+	padding: 4px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 100%; margin-right: 10px; position: absolute; max-width: 100px;
+}
+#blog-author p {
+	margin-left: 120px;
+}
+.blog h1 a {
+	font-weight: normal;
+}
+.commentlist {
+	list-style: none; margin: 0px 0px 65px; padding: 0px;
+}
+.commentlist li {
+	margin: 0px; padding: 0px;
+}
+.commentlist .the-comment {
+	padding-bottom: 35px; margin-bottom: 35px; border-bottom-color: rgb(231, 230, 230); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.commentlist .the-comment .comment-text *:last-child {
+	margin-bottom: 0px;
+}
+.commentlist div.avatar {
+	padding: 4px; border: 1px solid rgb(232, 232, 232); border-image: none; line-height: 0; margin-right: 15px; float: left;
+}
+.commentlist .comment-text p {
+	margin: 0px;
+}
+.commentlist .comment-author strong {
+	padding-right: 5px;
+}
+#comment-input {
+	overflow: hidden; margin-bottom: 13px;
+}
+#comment-input input {
+	padding: 8px 2%; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 28%; color: rgb(116, 116, 116); font-size: 13px; margin-right: 1%; float: left;
+}
+#comment-textarea textarea {
+	padding: 8px 11px; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 96%; height: 150px; color: rgb(116, 116, 116); font-size: 13px;
+}
+#comment-input input:last-child {
+	margin-right: 0px;
+}
+#comment-input input:-ms-input-placeholder {
+	color: rgb(153, 153, 153);
+}
+#comment-textarea textarea:-ms-input-placeholder {
+	color: rgb(153, 153, 153);
+}
+#contact {
+	padding-bottom: 0px;
+}
+.contact-box {
+	padding: 45px 0px 60px; width: 100%; text-align: center;
+}
+.contact-details {
+	margin: 0px auto 10px; padding: 5px 0px; width: 70%;
+}
+.contact-details h2 {
+	margin-bottom: 0px;
+}
+.contact-details h1 {
+	background: rgba(255, 255, 255, 0.5); color: black;
+}
+.copyright {
+	background: rgb(255, 214, 0); padding: 40px 0px; width: 100%; color: rgba(0, 0, 0, 0.7); font-size: 11px; margin-top: 30px;
+}
+.copyright a {
+	color: inherit;
+}
+.copyright-logo a {
+	text-align: center; margin-bottom: 30px; display: inline-block;
+}
+.copyright .social-icons {
+	text-align: center;
+}
+.copyright .social-icons .social-icon {
+	margin: 0px 5px 30px 0px; border-radius: 3px; float: none; display: inline-block; background-color: rgba(0, 0, 0, 0.05) !important; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+#contact-input {
+	width: 50%; overflow: hidden; margin-bottom: 13px; float: left;
+}
+#contact-input input {
+	margin: 0px 1% 2%; padding: 20px 2%; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 90%; color: rgb(116, 116, 116); font-size: 13px; float: left;
+}
+#contact-textarea textarea {
+	padding: 20px 11px 10px; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 95%; height: 92px; color: rgb(116, 116, 116); font-size: 13px; margin-bottom: 10px;
+}
+#contact-input input:-ms-input-placeholder {
+	color: rgb(153, 153, 153);
+}
+#contact-textarea textarea:-ms-input-placeholder {
+	color: rgb(153, 153, 153);
+}
+#contact-textarea {
+	width: 50%; float: right;
+}
+#contact-input label {
+	text-align: left; padding-left: 2%; font-weight: bold; display: block;
+}
+#contact-textarea label {
+	text-align: left; padding-left: 2%; font-weight: bold; display: block;
+}
+input[type='text'] {
+	background: rgb(255, 255, 255); margin: 0px 0px 5px; padding: 8px; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 180px; color: rgb(153, 153, 153); font-family: 'NanumGothic'; font-size: 14px; display: block; max-width: 100%; box-shadow: inset 0px 1px 4px #ececec, -5px -5px 0px 0px #f8f8f8, 5px 5px 0px 0px #f8f8f8, 5px 0px 0px 0px #f8f8f8, 0px 5px 0px 0px #f8f8f8, 5px -5px 0px 0px #f8f8f8, -5px 5px 0px 0px #f8f8f8; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px; -webkit-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
+}
+input[type='password'] {
+	background: rgb(255, 255, 255); margin: 0px 0px 5px; padding: 8px; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 180px; color: rgb(153, 153, 153); font-family: 'NanumGothic'; font-size: 14px; display: block; max-width: 100%; box-shadow: inset 0px 1px 4px #ececec, -5px -5px 0px 0px #f8f8f8, 5px 5px 0px 0px #f8f8f8, 5px 0px 0px 0px #f8f8f8, 0px 5px 0px 0px #f8f8f8, 5px -5px 0px 0px #f8f8f8, -5px 5px 0px 0px #f8f8f8; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px; -webkit-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
+}
+input[type='email'] {
+	background: rgb(255, 255, 255); margin: 0px 0px 5px; padding: 8px; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 180px; color: rgb(153, 153, 153); font-family: 'NanumGothic'; font-size: 14px; display: block; max-width: 100%; box-shadow: inset 0px 1px 4px #ececec, -5px -5px 0px 0px #f8f8f8, 5px 5px 0px 0px #f8f8f8, 5px 0px 0px 0px #f8f8f8, 0px 5px 0px 0px #f8f8f8, 5px -5px 0px 0px #f8f8f8, -5px 5px 0px 0px #f8f8f8; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px; -webkit-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
+}
+textarea {
+	background: rgb(255, 255, 255); margin: 0px 0px 5px; padding: 8px; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 180px; color: rgb(153, 153, 153); font-family: 'NanumGothic'; font-size: 14px; display: block; max-width: 100%; box-shadow: inset 0px 1px 4px #ececec, -5px -5px 0px 0px #f8f8f8, 5px 5px 0px 0px #f8f8f8, 5px 0px 0px 0px #f8f8f8, 0px 5px 0px 0px #f8f8f8, 5px -5px 0px 0px #f8f8f8, -5px 5px 0px 0px #f8f8f8; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px; -webkit-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
+}
+select {
+	background: rgb(255, 255, 255); margin: 0px 0px 5px; padding: 8px; border-radius: 2px; border: 1px solid rgb(232, 232, 232); border-image: none; width: 180px; color: rgb(153, 153, 153); font-family: 'NanumGothic'; font-size: 14px; display: block; max-width: 100%; box-shadow: inset 0px 1px 4px #ececec, -5px -5px 0px 0px #f8f8f8, 5px 5px 0px 0px #f8f8f8, 5px 0px 0px 0px #f8f8f8, 0px 5px 0px 0px #f8f8f8, 5px -5px 0px 0px #f8f8f8, -5px 5px 0px 0px #f8f8f8; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px; -webkit-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
+}
+input[type='text']:focus {
+	border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(51, 51, 51);
+}
+input[type='password']:focus {
+	border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(51, 51, 51);
+}
+input[type='email']:focus {
+	border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(51, 51, 51);
+}
+textarea:focus {
+	border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(51, 51, 51);
+}
+.one_half {
+	width: 48%;
+}
+.one_third {
+	width: 30.66%;
+}
+.two_third {
+	width: 65.33%;
+}
+.one_fourth {
+	width: 22%;
+}
+.three_fourth {
+	width: 74%;
+}
+.one_fifth {
+	width: 16.8%;
+}
+.two_fifth {
+	width: 37.6%;
+}
+.three_fifth {
+	width: 58.4%;
+}
+.four_fifth {
+	width: 67.2%;
+}
+.one_sixth {
+	width: 13.33%;
+}
+.five_sixth {
+	width: 82.67%;
+}
+.no-margin.one_half {
+	width: 50%; margin-right: 0px;
+}
+.no-margin.one_third {
+	width: 33.33%; margin-right: 0px;
+}
+.no-margin.two_third {
+	width: 66.66%; margin-right: 0px;
+}
+.no-margin.one_fourth {
+	width: 25%; margin-right: 0px;
+}
+.no-margin.three_fourth {
+	width: 75%; margin-right: 0px;
+}
+.no-margin.one_fifth {
+	width: 20%; margin-right: 0px;
+}
+.no-margin.two_fifth {
+	width: 40%; margin-right: 0px;
+}
+.no-margin.three_fifth {
+	width: 60%; margin-right: 0px;
+}
+.no-margin.four_fifth {
+	width: 80%; margin-right: 0px;
+}
+.no-margin.one_sixth {
+	width: 16.66%; margin-right: 0px;
+}
+.no-margin.five_sixth {
+	width: 83.33%; margin-right: 0px;
+}
+.one_half {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.one_third {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.two_third {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.three_fourth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.one_fourth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.one_fifth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.two_fifth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.three_fifth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.four_fifth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.one_sixth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.five_sixth {
+	margin-right: 4%; margin-bottom: 30px; float: left; position: relative;
+}
+.last {
+	margin-right: 0px !important;
+}
+.fittext-content {
+	line-height: 0.8;
+}
+* html .title h1 {
+	display: inline;
+}
+* + html .title h1 {
+	display: inline;
+}
+#back-to-top {
+	right: 20px; bottom: 20px; display: none; position: fixed; z-index: 1000;
+}
+#back-to-top a {
+	background: url("../../images/backtotop.png") no-repeat center rgb(81, 90, 95); border-radius: 100px; transition:0.2s linear; width: 40px; height: 40px; text-indent: -9999px; display: block; -moz-border-radius: 100px; -webkit-border-radius: 100px; -webkit-transition: 0.2s all linear; -moz-transition: 0.2s all linear; -o-transition: 0.2s all linear;
+}
+#back-to-top a:hover {
+	background-color: rgb(34, 34, 34);
+}
+.home-fullscreenvideo {
+	background: rgb(31, 34, 36);
+}
+.background-video {
+	left: 0px; top: 0px; overflow: hidden; position: absolute; z-index: 1; min-height: 100%; min-width: 100%; box-sizing: border-box;
+}
+.home-banner {
+	padding: 150px 0px; height: auto !important; color: rgb(255, 255, 255) !important;
+}
+.home-banner .slabtextdone {
+	text-shadow: none;
+}
+.home-newsletter {
+	color: rgb(255, 255, 255) !important;
+}
+.home-newsletter .slabtextdone {
+	color: rgb(255, 255, 255); text-shadow: none;
+}
+nav.colored {
+	background: rgb(255, 214, 0); border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; box-shadow: 0px 4px 15px rgba(0,0,0,0.07);
+}
+nav.colored.light {
+	background: rgb(255, 214, 0); border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; box-shadow: 0px 4px 15px rgba(0,0,0,0.07);
+}
+nav.colored a {
+	color: rgb(255, 255, 255) !important;
+}
+nav.colored li.active a {
+	color: rgb(81, 90, 95) !important;
+}
+#newsletterform {
+	text-align: center; margin-top: 0px; display: block;
+}
+#newsletterform div {
+	display: inline-block;
+}
+#newsletterform input {
+	background: rgba(255, 255, 255, 0.5); margin: 8px 4px; padding: 0px 10px; border-radius: 1px; border: 1px solid rgba(255, 255, 255, 0.09); border-image: none; width: 250px; height: 50px; color: rgb(58, 56, 56); font-weight: bold; display: inline-block; box-shadow: 0px 0px 0px 3px rgba(255,255,255,0.1); -moz-border-radius: 1px; -webkit-border-radius: 1px;
+}
+#newsletterform label {
+	color: rgb(255, 255, 255); font-size: 12px; text-shadow: 1px 1px rgba(0,0,0,0.25);
+}
+a#button-newsletter {
+	margin: 5px auto 0px; padding: 5px 0px; width: 99%; text-align: center; color: rgb(255, 255, 255); font-size: 16px; display: block;
+}
+.video_slide {
+	width: 100%;
+}
+.video_slide .full_slide {
+	width: 100% !important; height: 100% !important; position: absolute;
+}

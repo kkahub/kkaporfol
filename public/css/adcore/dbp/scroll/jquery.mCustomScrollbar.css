@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.scrollable {position: relative;}
+.scrollable:focus {outline: 0;}
+.scrollable .viewport {position: relative;overflow-y: hidden;}
+.scrollable .viewport .overview {position: absolute;width: 100%;}
+.scrollable .scroll-bar {display: none;}
+.scrollable .scroll-bar.vertical {position: absolute;right: 6px;}
+.ly_analy .scrollable .scroll-bar.vertical {right: 2px;}
+.detail_info .scrollable .scroll-bar.vertical {right: 20px;z-index: 9;}
+.scrollable .scroll-bar.horizontal {position: relative;width: 100%;}
+.scrollable .scroll-bar .thumb {position: absolute;}
+.scrollable .scroll-bar.vertical .thumb {width: 100%;min-height: 10px;}
+.scrollable .scroll-bar.horizontal .thumb {height: 100%;min-width: 10px;left: 0;}
+.not-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Default skin */
+.scrollable.default-skin {padding-right: 15px;}
+.scrollable.default-skin .scroll-bar.vertical {width: 3px;}
+.scrollable.default-skin .scroll-bar .thumb {background: #f64060;opacity: 0.9;}
+.scrollable.default-skin .scroll-bar:hover .thumb {opacity: 0.6;}

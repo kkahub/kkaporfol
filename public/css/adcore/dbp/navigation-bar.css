@@ -1,0 +1,159 @@
+﻿@charset "UTF-8";
+
+nav.light {
+	border-bottom:0;
+}
+//*nav.light .main-menu li.active .dropdown-menu  a {color:#666666;}
+ nav.light .main-menu a:hover {color:#666666;} *//
+nav .container {margin:0 50px;}
+hr.nav_bar {margin:0;border:1px #d0d0d0 solid;}
+
+.logo.direct {
+	margin:auto;height:80px;
+}
+.columns.logo {
+	margin:auto;
+	width:auto;
+}
+.main-menu.direct {
+	position:relative;padding-left:30px;padding-bottom:7px; height:56px;vertical-align:bottom;bottom:5px;
+}
+.main-menu a {
+	font:600 16px NanumGothic;
+}
+.dropdown-menu a {text-transform:none;}
+.dropdown b {
+	margin:0;padding:0;border:0 currentColor;border-image:none;font:800 12pt Arial;font-stretch:inherit;
+}
+.logo.large a,
+.logo.large a:hover,
+.logo.large a:active,
+.logo.large a:link {
+	color:#515A5F;
+}
+.logo.large>a>img {width:100px;}
+.logo.large>a>span {position:absolute;bottom:8px;}
+.main-menu-wrapper {
+	height:0px;
+}
+.main-menu li {
+	display:inline-block;
+}
+.main-menu2 {
+	float: right;
+}
+.memAttr {
+	position:relative;
+	display: table-cell;
+	height: 70px;
+	vertical-align: bottom;
+	padding-right: 30px;
+	bottom:10px;
+}
+.memAttr li {
+	display: inline-block;font:600 10pt Arial;
+}
+.memAttr a {
+	font-family:"NanumGothic"; color:#515A5F;
+}
+
+
+/* 로그인 시작 */
+	.identity_btn input[type="submit"].pop{
+		width:120px; height:34px; padding:8px 20px; margin:5px; margin-bottom:20px;
+		border:0;
+		background:#f15e66;
+		font-family:"NanumGothic"; color:#fff !important; font-size:14px; font-weight:bold; text-align:center;
+	}
+	.identity_btn input[type="submit"]:hover{color:#fff;}
+	.identity_input{width:318px; margin:20px auto 0; padding:0;}
+	.identity_input input[type="text"],.identity_input input[type="password"]{
+		width:300px; margin-bottom:10px;
+		box-shadow:none;
+		font-family:"NanumGothic";
+	}
+	.txt_login {display:block !important;cursor:pointer;}
+	.memAttr .log{
+		position:absolute; top:78px; right:65px;
+		width:350px; padding:10px;
+		box-shadow:rgba(0,0,0,.2); border-radius:5px;
+		background:#353f4f;
+		font-family:"NanumGothic";
+	}
+	
+	/* E-mail 미인증시 재인증 요청팝업 시작 - 2015.08.24 */
+		.log_confirm {
+			position: absolute; top:78px; right:65px;
+			width:360px; height:190px;
+			box-shadow:rgba(0,0,0,.2); border-radius:5px;
+			background:#353f4f;
+			font-family:"NanumGothic";
+			color:#fff;
+		}
+		.log_confirm .identity_btn input[type="submit"] {
+			width:180px; height:34px; padding:8px 20px; margin:5px;
+			border:0;
+			background:#f15e66;
+			font-family:"NanumGothic"; color:#fff !important; font-size:14px; text-align:center;
+		}
+		.log_confirm .txt_gray {margin:20px;}
+		.log_confirm a {color:#fff !important;}
+		.log_confirm a:hover {color:#f15e66 !important;}
+	/* E-mail 미인증시 재인증 요청팝업 끝 */
+	
+	.log_confirm p,.identity_btn p{font-family:"NanumGothic";}
+	.identity_search{float:left; margin-top:12px; padding-left:18px; color:#fff;}
+	.identity_search a{color:#fff;}
+	.identity_search a:hover{color:#f15e66 !important;}
+	.identity_btn ul{padding-left:0;}
+	.identity_btn.btn1{float:right; margin-right:12px;}
+	.red{color:red; font-weight:bold;}
+	.txt_gray{margin:10px 15px; color:#fff; font-weight:normal;}
+	.txt_gray b{float:left; font-family:"NanumGothic"; font-size:13px;}
+	.log_confirm a{float:left; margin-left:5px; color:#ffd600; text-decoration:underline;}
+	.log_confirm .identity_btn{clear:both; width:180px; margin:30px auto; font-weight:normal;}
+
+	.log_alert{
+		display:none;
+		position:relative;
+		font-family:"NanumGothic";
+	}
+
+	.log_current p,.identity_btn p{font-family:"NanumGothic";}
+	.log_current .identity_btn{clear:both; width:175px; margin:0 auto; margin-top:30px;}
+
+	.log_current ul{padding-left:0;}
+	.log_current li{clear:both; width:160px; text-align:center; line-height:30px;}
+	.log_current input[type="submit"]{
+		height:30px; padding:2px 20px;
+		border:0;
+		background:none;
+		font-family:"NanumGothic"; color:#666; font-size:14px; font-weight:bold; text-align:center;
+	}
+	.log_current input[type="submit"]:hover,.log_current a:hover{color:#ffd600;}
+	.dropdown-menu.log a,.dropdown-menu.log a:visited,.dropdown-menu.log a:hover,.dropdown-menu.log a:active,.dropdown-menu.log a:focus{display:block !important;}
+
+/* 로그인 끝 */
+/* 로그인 성공 시작 */
+.log_menu {
+	position:relative;
+	display: table-cell;
+	height: 70px;
+	padding-right: 30px;
+	font-size:16px;
+	font-weight:bold;
+	vertical-align: bottom;
+	bottom:10px;
+}
+.log_menu a {
+	font-family:"NanumGothic"; color:#353f4f; cursor:pointer;
+}
+.log_menu .carrot_up:before {content : " ▼";}
+/* 로그인 성공 끝 */
+
+@media only screen and (max-width:767px)
+{
+	.memAttr {
+		position:absolute;width:100px;height:15px;bottom:10px;
+	}
+}
