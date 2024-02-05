@@ -8,7 +8,7 @@ interface PortfolioType {
   alt: string;
   skills?: string[];
   participation: string;
-  url: { sample?: string; service?: string };
+  url: { sample?: string[]; service?: string[] };
   desc?: string;
 }
 
