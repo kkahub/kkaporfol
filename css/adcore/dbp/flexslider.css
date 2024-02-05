@@ -1,0 +1,153 @@
+.slides {
+	list-style: none; margin: 0px; padding: 0px; float: none; position: relative;
+}
+.flex-control-nav {
+	list-style: none; margin: 0px; padding: 0px; float: none; position: relative;
+}
+.flex-direction-nav {
+	list-style: none; margin: 0px; padding: 0px; float: none; position: relative;
+}
+.flexslider {
+	margin: 0px; padding: 0px;
+}
+.flexslider .slides > li {
+	display: none;
+}
+.flexslider .slides img {
+	display: block; max-width: 100%;
+}
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+.slides::after {
+	height: 0px; line-height: 0; clear: both; display: block; visibility: hidden; content: ".";
+}
+html[xmlns] .slides {
+	display: block;
+}
+* html .slides {
+	height: 1%;
+}
+.no-js .slides > li:first-child {
+	display: block;
+}
+.flexslider {
+	border-radius: 5px; border: 4px solid rgb(255, 255, 255); border-image: none; position: relative; -ms-zoom: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px;
+}
+.flexslider .slides {
+	-ms-zoom: 1;
+}
+.flexslider .slides > li {
+	margin-bottom: 0px; position: relative;
+}
+.flex-container {
+	position: relative; -ms-zoom: 1;
+}
+.flex-caption {
+	background: none; -ms-zoom: 1;
+}
+.flex-caption {
+	background: rgba(0, 0, 0, 0.3); margin: 0px; padding: 2%; left: 0px; width: 96%; bottom: 0px; color: rgb(255, 255, 255); line-height: 18px; font-size: 14px; position: absolute; text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+}
+.flex-direction-nav {
+	
+}
+.flex-direction-nav li a {
+	background: url("theme/bg_direction_nav.png") no-repeat; top: 50%; width: 52px; height: 52px; text-indent: -999em; display: block; position: absolute; cursor: pointer;
+}
+.flex-direction-nav li .flex-next {
+	background-position: -52px 0px; right: -21px;
+}
+.flex-direction-nav li .flex-prev {
+	left: -20px;
+}
+.flex-direction-nav li .disabled {
+	cursor: default; opacity: 0.3;
+}
+.flex-control-nav {
+	width: 100%; text-align: center; bottom: -30px; position: absolute; z-index: 500;
+}
+.flex-control-nav li {
+	margin: 0px 0px 0px 5px; display: inline-block; -ms-zoom: 1;
+}
+.flex-control-nav li:first-child {
+	margin: 0px;
+}
+.flex-control-nav li a {
+	background: url("theme/bg_control_nav.png") no-repeat; width: 13px; height: 13px; text-indent: -999em; display: block; cursor: pointer;
+}
+.flex-control-nav li a:hover {
+	background-position: 0px -13px;
+}
+.flex-control-nav li a.flex-active {
+	background-position: 0px -26px; cursor: default;
+}
+.flexslider {
+	border-radius: 0px; border: currentColor; border-image: none; -moz-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0;
+}
+.flex-direction-nav li a {
+	top: auto; width: 40px; height: 40px; bottom: 1px; text-indent: -999em; display: block; position: absolute; z-index: 500; cursor: pointer;
+}
+.flex-direction-nav li .flex-prev {
+	background: url("../../../images/arrow_left.png") no-repeat center rgba(0, 0, 0, 0.8);
+}
+.flex-direction-nav li .flex-next {
+	background: url("../../../images/arrow_right.png") no-repeat center rgba(0, 0, 0, 0.8);
+}
+.flex-direction-nav li .flex-prev {
+	left: 0px;
+}
+.flex-direction-nav li .flex-next {
+	left: 41px; right: auto;
+}
+.flex-direction-nav li .disabled {
+	cursor: default; opacity: 0.3;
+}
+.flex-control-nav {
+	left: -25px; top: 15px; width: 100%; text-align: right; bottom: auto; padding-right: 25px; position: absolute;
+}
+.flex-control-nav li {
+	margin: 0px 0px 0px 5px; display: inline-block; -ms-zoom: 1;
+}
+.flex-control-nav li a {
+	background: rgb(34, 34, 34); border-radius: 50%; border: 2px solid rgb(238, 238, 238); border-image: none; width: 10px; height: 10px; text-indent: 999em; display: block; cursor: pointer;
+}
+.flex-control-nav li a:hover {
+	background: rgb(255, 214, 0);
+}
+.flex-control-nav li a.flex-active {
+	background: rgb(255, 214, 0); cursor: default;
+}
+.flex-caption {
+	background: rgba(0, 0, 0, 0.8); margin: 0px !important; padding: 0px 15px; left: 82px; width: auto; bottom: 0px; color: rgb(255, 255, 255) !important; line-height: 40px; font-size: 14px; position: absolute; text-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+.testimonial-slider .flex-direction-nav li a {
+	border-radius: 50%; border: 2px solid rgb(255, 255, 255); border-image: none; width: 32px; height: 32px; bottom: 0px; text-indent: -999em; display: block; position: absolute; cursor: pointer; background-size: 20px; background-color: rgb(255, 214, 0);
+}
+.twitter-slider .flex-direction-nav li a {
+	border-radius: 50%; border: 2px solid rgb(255, 255, 255); border-image: none; width: 32px; height: 32px; bottom: 0px; text-indent: -999em; display: block; position: absolute; cursor: pointer; background-size: 20px; background-color: rgb(255, 214, 0);
+}
+.testimonial-slider .flex-direction-nav li .flex-prev {
+	left: 45%;
+}
+.twitter-slider .flex-direction-nav li .flex-prev {
+	left: 45%;
+}
+.testimonial-slider .flex-direction-nav li .flex-next {
+	left: auto; right: 45%;
+}
+.twitter-slider .flex-direction-nav li .flex-next {
+	left: auto; right: 45%;
+}
+#home-slider .flex-control-nav {
+	left: auto; top: auto; text-align: center; bottom: 0px;
+}
+#home-slider .flex-control-nav li a {
+	width: 8px; height: 8px;
+}
+#home-slider .flex-control-nav li a:hover {
+	background: white;
+}
+#home-slider .flex-control-nav li a.flex-active {
+	background: white; cursor: default;
+}

@@ -1,0 +1,340 @@
+.social-icon {
+	margin: 0px 5px 5px 0px; border-radius: 1px; width: 40px; height: 40px; overflow: hidden; display: inline-block; background-color: rgb(248, 248, 248) !important; -moz-border-radius: 1px; -webkit-border-radius: 1px;
+}
+.social-icon a {
+	background-position: 0px 0px; transition:0.2s; width: 40px; height: 40px; text-indent: -9999px; display: inline-block; background-repeat: no-repeat; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s;
+}
+.social-icon a:hover {
+	background-position: 0px -40px !important; background-color: rgb(68, 68, 68);
+}
+.social-icons ul {
+	list-style: none; margin: 0px 0px -1px; float: right;
+}
+.social-icons ul li {
+	margin: 0px; padding: 0px; float: left; display: block;
+}
+.social-icons ul li a {
+	background-position: 0px 0px; transition:0.2s; width: 40px; height: 40px; text-indent: -9999px; display: block; background-repeat: no-repeat; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s;
+}
+.social-icons a:hover {
+	background-position: 0px -40px !important; opacity: 1; background-color: rgb(204, 204, 204);
+}
+
+.social-email a {
+	background: url("..images/social/icons/email.png") no-repeat 0px 0px;
+}
+.social-email a:hover {
+	background-color: rgb(102, 102, 102);
+}
+.social-aim a {
+	background: url("..images/social/icons/aim.png") no-repeat 0px 0px;
+}
+.social-aim a:hover {
+	background-color: rgb(233, 90, 0);
+}
+.social-apple a {
+	background: url("..images/social/icons/apple.png") no-repeat 0px 0px;
+}
+.social-apple a:hover {
+	background-color: rgb(96, 96, 96);
+}
+.social-behance a {
+	background: url("..images/social/icons/behance.png") no-repeat 0px 0px;
+}
+.social-behance a:hover {
+	background-color: rgb(24, 163, 254);
+}
+.social-blogger a {
+	background: url("..images/social/icons/blogger.png") no-repeat 0px 0px;
+}
+.social-blogger a:hover {
+	background-color: rgb(251, 145, 63);
+}
+.social-cargo a {
+	background: url("..images/social/icons/cargo.png") no-repeat 0px 0px;
+}
+.social-cargo a:hover {
+	background-color: rgb(0, 196, 98);
+}
+.social-delicious a {
+	background: url("..images/social/icons/delicious.png") no-repeat 0px 0px;
+}
+.social-delicious a:hover {
+	background-color: rgb(50, 116, 209);
+}
+.social-deviantart a {
+	background: url("..images/social/icons/deviantart.png") no-repeat 0px 0px;
+}
+.social-deviantart a:hover {
+	background-color: rgb(208, 222, 33);
+}
+.social-digg a {
+	background: url("..images/social/icons/digg.png") no-repeat 0px 0px;
+}
+.social-digg a:hover {
+	background-color: rgb(40, 130, 198);
+}
+.social-dopplr a {
+	background: url("..images/social/icons/dopplr.png") no-repeat 0px 0px;
+}
+.social-dopplr a:hover {
+	background-color: rgb(153, 204, 102);
+}
+.social-dribbble a {
+	background: url("..images/social/icons/dribbble.png") no-repeat 0px 0px;
+}
+.social-dribbble a:hover {
+	background-color: rgb(239, 91, 146);
+}
+.social-ember a {
+	background: url("..images/social/icons/ember.png") no-repeat 0px 0px;
+}
+.social-ember a:hover {
+	background-color: rgb(251, 157, 0);
+}
+.social-evernote a {
+	background: url("..images/social/icons/evernote.png") no-repeat 0px 0px;
+}
+.social-evernote a:hover {
+	background-color: rgb(119, 186, 47);
+}
+.social-facebook a {
+	background: url("..images/social/icons/facebook.png") no-repeat 0px 0px;
+}
+.social-facebook a:hover {
+	background-color: rgb(59, 89, 152);
+}
+.social-flickr a {
+	background: url("..images/social/icons/flickr.png") no-repeat 0px 0px;
+}
+.social-flickr a:hover {
+	background-color: rgb(241, 98, 139);
+}
+.social-forrst a {
+	background: url("..images/social/icons/forrst.png") no-repeat 0px 0px;
+}
+.social-forrst a:hover {
+	background-color: rgb(91, 154, 104);
+}
+.social-github a {
+	background: url("..images/social/icons/github.png") no-repeat 0px 0px;
+}
+.social-github a:hover {
+	background-color: rgb(114, 146, 162);
+}
+.social-google a {
+	background: url("..images/social/icons/google.png") no-repeat 0px 0px;
+}
+.social-google a:hover {
+	background-color: rgb(221, 75, 57);
+}
+.social-googleplus a {
+	background: url("..images/social/icons/googleplus.png") no-repeat 0px 0px;
+}
+.social-googleplus a:hover {
+	background-color: rgb(217, 74, 57);
+}
+.social-gowalla a {
+	background: url("..images/social/icons/gowalla.png") no-repeat 0px 0px;
+}
+.social-gowalla a:hover {
+	background-color: rgb(255, 146, 13);
+}
+.social-grooveshark a {
+	background: url("..images/social/icons/grooveshark.png") no-repeat 0px 0px;
+}
+.social-grooveshark a:hover {
+	background-color: rgb(248, 142, 0);
+}
+.social-html5 a {
+	background: url("..images/social/icons/html5.png") no-repeat 0px 0px;
+}
+.social-html5 a:hover {
+	background-color: rgb(243, 100, 44);
+}
+.social-icloud a {
+	background: url("..images/social/icons/icloud.png") no-repeat 0px 0px;
+}
+.social-icloud a:hover {
+	background-color: rgb(251, 145, 63);
+}
+.social-lastfm a {
+	background: url("..images/social/icons/lastfm.png") no-repeat 0px 0px;
+}
+.social-lastfm a:hover {
+	background-color: rgb(210, 19, 9);
+}
+.social-linkedin a {
+	background: url("..images/social/icons/linkedin.png") no-repeat 0px 0px;
+}
+.social-linkedin a:hover {
+	background-color: rgb(113, 178, 208);
+}
+.social-metacafe a {
+	background: url("..images/social/icons/metacafe.png") no-repeat 0px 0px;
+}
+.social-metacafe a:hover {
+	background-color: rgb(239, 64, 53);
+}
+.social-mixx a {
+	background: url("..images/social/icons/mixx.png") no-repeat 0px 0px;
+}
+.social-mixx a:hover {
+	background-color: rgb(216, 3, 48);
+}
+.social-myspace a {
+	background: url("..images/social/icons/myspace.png") no-repeat 0px 0px;
+}
+.social-myspace a:hover {
+	background-color: rgb(0, 51, 152);
+}
+.social-netvibes a {
+	background: url("..images/social/icons/netvibes.png") no-repeat 0px 0px;
+}
+.social-netvibes a:hover {
+	background-color: rgb(98, 158, 97);
+}
+.social-newsvine a {
+	background: url("..images/social/icons/newsvine.png") no-repeat 0px 0px;
+}
+.social-newsvine a:hover {
+	background-color: rgb(91, 150, 90);
+}
+.social-orkut a {
+	background: url("..images/social/icons/orkut.png") no-repeat 0px 0px;
+}
+.social-orkut a:hover {
+	background-color: rgb(237, 37, 144);
+}
+.social-paypal a {
+	background: url("..images/social/icons/paypal.png") no-repeat 0px 0px;
+}
+.social-paypal a:hover {
+	background-color: rgb(50, 104, 154);
+}
+.social-picasa a {
+	background: url("..images/social/icons/picasa.png") no-repeat 0px 0px;
+}
+.social-picasa a:hover {
+	background-color: rgb(68, 68, 68);
+}
+.social-pinterest a {
+	background: url("..images/social/icons/pinterest.png") no-repeat 0px 0px;
+}
+.social-pinterest a:hover {
+	background-color: rgb(203, 32, 39);
+}
+.social-plurk a {
+	background: url("..images/social/icons/plurk.png") no-repeat 0px 0px;
+}
+.social-plurk a:hover {
+	background-color: rgb(243, 91, 54);
+}
+.social-posterous a {
+	background: url("..images/social/icons/posterous.png") no-repeat 0px 0px;
+}
+.social-posterous a:hover {
+	background-color: rgb(249, 213, 96);
+}
+.social-reddit a {
+	background: url("..images/social/icons/reddit.png") no-repeat 0px 0px;
+}
+.social-reddit a:hover {
+	background-color: rgb(205, 226, 249);
+}
+.social-rss a {
+	background: url("..images/social/icons/rss.png") no-repeat 0px 0px;
+}
+.social-rss a:hover {
+	background-color: rgb(254, 153, 0);
+}
+.social-skype a {
+	background: url("..images/social/icons/skype.png") no-repeat 0px 0px;
+}
+.social-skype a:hover {
+	background-color: rgb(24, 183, 241);
+}
+.social-stumbleupon a {
+	background: url("..images/social/icons/stumbleupon.png") no-repeat 0px 0px;
+}
+.social-stumbleupon a:hover {
+	background-color: rgb(235, 73, 36);
+}
+.social-technorati a {
+	background: url("..images/social/icons/technorati.png") no-repeat 0px 0px;
+}
+.social-technorati a:hover {
+	background-color: rgb(122, 200, 79);
+}
+.social-tumblr a {
+	background: url("..images/social/icons/tumblr.png") no-repeat 0px 0px;
+}
+.social-tumblr a:hover {
+	background-color: rgb(58, 89, 118);
+}
+.social-twitter a {
+	background: url("..images/social/icons/twitter.png") no-repeat 0px 0px;
+}
+.social-twitter a:hover {
+	background-color: rgb(72, 196, 210);
+}
+.social-vimeo a {
+	background: url("..images/social/icons/vimeo.png") no-repeat 0px 0px;
+}
+.social-vimeo a:hover {
+	background-color: rgb(98, 160, 173);
+}
+.social-wordpress a {
+	background: url("..images/social/icons/wordpress.png") no-repeat 0px 0px;
+}
+.social-wordpress a:hover {
+	background-color: rgb(70, 70, 70);
+}
+.social-yahoo a {
+	background: url("..images/social/icons/yahoo.png") no-repeat 0px 0px;
+}
+.social-yahoo a:hover {
+	background-color: rgb(171, 100, 188);
+}
+.social-yelp a {
+	background: url("..images/social/icons/yelp.png") no-repeat 0px 0px;
+}
+.social-yelp a:hover {
+	background-color: rgb(196, 18, 0);
+}
+.social-youtube a {
+	background: url("..images/social/icons/youtube.png") no-repeat 0px 0px;
+}
+.social-youtube a:hover {
+	background-color: rgb(244, 87, 80);
+}
+.social-zerply a {
+	background: url("..images/social/icons/zerply.png") no-repeat 0px 0px;
+}
+.social-zerply a:hover {
+	background-color: rgb(141, 178, 89);
+}
+.social-zootool a {
+	background: url("..images/social/icons/zootool.png") no-repeat 0px 0px;
+}
+.social-zootool a:hover {
+	background-color: rgb(38, 38, 38);
+}
+.social-instagram a {
+	background: url("..images/social/icons/instagram.png") no-repeat 0px 0px;
+}
+.social-instagram a:hover {
+	background-color: rgb(81, 127, 164);
+}
+.social-xing a {
+	background: url("..images/social/icons/xing.png") no-repeat 0px 0px;
+}
+.social-xing a:hover {
+	background-color: rgb(214, 216, 0);
+}
+.social-angellist a {
+	background: url("..images/social/icons/angellist.png") no-repeat 0px 0px;
+}
+.social-angellist a:hover {
+	background-color: rgb(214, 216, 0);
+}

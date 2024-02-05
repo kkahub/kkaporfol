@@ -1,0 +1,555 @@
+﻿@charset "utf-8";
+*{font-family:NanumGothic;}
+html{min-width:1200px;}
+h2{font-family:"NanumGothic";}
+h4{font-family:"NanumGothic"; font-size:16px; font-weight:800; text-align:center;}
+ul{padding:0;}
+ol{list-style:none; /*float:right;*/ margin-right:135px; padding:0;}
+ol li{float:left; margin-right:10px;}
+
+.hide{display:none !important;}
+.kred{color:#f15e66;}
+.notice_kred{color:#f15e66; font-weight:bold;}
+.hover {color:#f15e66 !important;}
+
+.log_menu{bottom:0 !important;}
+.page.wow {padding:0 0 100px;}
+.title {margin-bottom:100px;}
+.title h1 {font:700 70px "NanumGothic";padding:0;border:0;border-image:none;background:transparent;color:#555555;box-shadow:none;line-height:70px;}
+.media-box {margin:0;padding:20px 10px;background:#ffffff;text-align:center;}
+.media-box .media-icon {display:block;margin:15px auto;background:#35CFCD;border-radius:50%;width:180px;height:180px;}
+.media-box>div {margin-bottom:15px;}
+.media-box img {position:relative;margin-top:50%;top:-25%;}
+.media-box span {font:800 22px "NanumGothic";}
+.portfolio-title {position:absolute;display:table;width:100%;height:100%;min-height:213px;top:0;left:0;}
+.portfolio-title div {display:table-cell;font:800 35px "NanumGothic";color:#fff;vertical-align:middle;text-align:center;}
+.portfolio-title div span{display:block; margin-top:10px; font-size:18px;}
+
+.prj-bar {margin:30px 0;width:20%;border:2px solid #fff;}
+.milestone-count.highlight {color:#fff;}
+.txt-line {font-size:18px;line-height:32px;}
+
+.display {display:none;}
+.overlay-wrap {
+	position:absolute; top:0;left:0;
+	width:100%;height:100%;min-height:213px;
+	background-color:#ff8c92;opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;
+	}
+.scale {transform:scale(1.2);-webkit-transform:scale(1.2);-moz-transform:scale(1.2);}
+
+/* 추가CSS 시작 */
+	.main-menu{margin-top:15px;}
+	.main-menu>li{padding-top:15px;}
+	.main-menu a{opacity:.7; letter-spacing:-.5px; color:#575757;}
+	.main-menu>li>a:hover{
+		opacity:1;
+		-webkit-transition: all .2s ease;
+		-o-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		transition: all .2s ease;
+	}
+	li>.anchorbar{
+		display:block;
+		height:5px; width:0px; margin:0 auto 7px;
+		background:url(../../../images/gnb_ani.png) no-repeat;
+		-webkit-transition: width .2s ease;
+		-o-transition: width .2s ease;
+		-ms-transition: width .2s ease;
+		-moz-transition: width .2s ease;
+		transition: width .2s ease;
+	}
+	.dropdown-menu{padding:15px 0 !important;}
+	.dropdown-menu>li>a{color:#fff; opacity:1; font-weight:normal;}
+	.dropdown-menu>li>a:hover{color:#ff5a5f;}
+	.dropdown-menu.product>li>a{padding-left:16px;}
+
+	.dropdown-menu.blog{left:-30%; min-width:150px;}
+	.dropdown-menu.blog>li>a{padding-right:50px; letter-spacing:0;}
+	.dropdown-menu.log_current{left:auto; right:0; z-index:1000;}
+
+	.menuover>li>a{opacity:.7; letter-spacing:-.5px; color:#575757;}
+	.menuover>li>a:hover{
+		opacity:1;
+		-webkit-transition: all .2s ease;
+		-o-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		transition: all .2s ease;
+	}
+	/* notice */
+	.full_bg{position:fixed; top:0; left:0; z-index:99; width:100%; height:100%;}
+	.new_notice{position:relative; z-index:9; width:25px;}
+	.new_notice>.carrot{display:block; height:35px; padding:10px 0 5px;}
+	.notice_inner{
+		overflow:hidden;
+		position:absolute; top:78%; left:-1250%; z-index:1000;
+		width:350px; padding-top:0 !important;
+		border:1px solid #535d6c; border-radius:5px;
+		background:#353f4f;
+		font-family:'NanumGothic'; font-size:18px; color:#fff;
+		font-weight:bold; text-indent:15px; line-height:24px;
+	}
+	.notice_tit{
+		margin-bottom:0; padding:10px 0 !important;
+		background:#445165;
+		font-family:'NanumGothic'; font-size:16px; color:#fff;
+		font-weight:bold; text-indent:15px; line-height:24px;
+	}
+	.notice_current{overflow:auto; height:570px;}
+	.notice_list{
+		position:relative; overflow:hidden;
+		padding:15px 40px 15px 45px;
+		border-bottom:1px solid #535d6c;
+		font-size:16px; font-weight:normal;
+	}
+	.notice_list.cate1{background:url("../../../images/new_notice1.png") no-repeat 16px 20px;}
+	.notice_list.cate2{background:url("../../../images/new_notice2.png") no-repeat 16px 20px;}
+	.notice_list.cate3{background:url("../../../images/new_notice3.png") no-repeat 16px 20px;}
+	.notice_list.cate4{background:url("../../../images/new_notice4.png") no-repeat 16px 20px;}
+	.notice_list>.tit_wrap{float:left; margin-bottom:0;}
+	.notice_list>.tit_wrap>.tit_inner,.notice_list>.tit_wrap>.n_date{text-indent:0;}
+	.notice_list>.tit_wrap>.tit_inner{overflow:hidden; max-height:96px;}
+	.n_date{display:block; margin:5px 0 1px; font-size:13px; color:#91aad3;}
+	.notice_x{cursor:pointer; float:left; position:absolute; top:50%; right:10px; margin-top:-8px;}
+
+	.open>.notice_inner{visibility:visible !important;}
+
+	.scrollable>.viewport>.overview>ul{overflow:hidden; padding-left:0;}
+	.scroll-bar{overflow:hidden;}
+
+	.read>p{color:#999 !important;}
+	.read>p>span{color:#999 !important;}
+
+	/* user*/
+	.user{padding-top:6px;}
+	.user .log_current>li,.log_current>li>ul>li>a{text-align:left;}
+	.log_current>li>ul{margin-bottom:10px;}
+	.log_current>li>ul>li{padding-left:30px; text-align:left; line-height:25px;}
+	.log_current>li>ul>li>a{cursor:pointer; font-size:12px; color:#fff; font-weight:normal;}
+	.log_current>li>ul>li>a:hover{color:#f15e66;}
+
+	/* login */
+	.log_menu{position:relative; right:0; bottom:0; padding-top:10px;}
+	.log_menu>li{float:left;}
+	.r_count{
+		position:relative; top:-30px; right:-10px; display:block; 
+		width:18px; height:18px; 
+		border-radius:100%; 
+		background:#f15e66; color:#fff; 
+		font-size:10px; text-align:center; font-weight:normal; line-height:18px;
+	}
+	.dropdown.line::before{content:'│'; margin-left:3px; color:#333;}	
+
+	h2{font-family:'NanumGothic'; font-weight:bold;}
+	.pad1{margin-top:300px;}
+	.pad2{margin-top:100px;}
+	.pad3{margin-top:50px;}
+	.pad4{margin-top:30px;}
+	.main_btn{
+		display:inline-block; 
+		margin-top:50px; padding:12px 35px; border:3px solid #fff;
+		font-size:18px; 
+	}
+	.main_btn>a{color:#fff;}
+	.carousel li{border:0;}
+
+
+/* ollehTV 헤더 */
+	.page{padding:0;}
+	.ollehtv_header{
+		position: relative;
+		width:100%; height:200px;
+		background: url("../../../images/head_bg/bg_olleh.jpg") no-repeat 100% 10%;
+		background-size: cover;
+		padding:0;
+		overflow: hidden;
+	}
+	.overlay3 {
+		position: absolute;
+		width: 100%; height: 200px;
+		padding-top:30px;
+		background-size: cover;
+		z-index: 1;
+		font-family:"NanumGothic"; color:white;
+	}
+
+
+/* ollehTV menu */
+	.ollehtv_snb{height:155px; background:#eee;}
+	.ollehtv_snb .container{width:100% !important; height:1px;}
+	.ollehtv_snb .media_nav{width:700px; margin:0 auto;}
+	.ollehtv_snb .media_nav>li{
+		float:left; cursor:pointer;
+		width:155px; padding:20px 10px; 
+		text-align:center; font-weight:bold; 
+	}
+	.ollehtv_snb ul li img{width:95px; height:117px;}
+	.ollehtv_snb ul li p{font-family:"NanumGothic"; color:#555; font-size:14px; font-weight:bold;}
+
+	.ollehtv_snb .menu_2depth{position:absolute; margin-left:30px; width:420px;}
+	.ollehtv_snb .menu_2depth>li{
+		float:left; display:table;
+		width:90px; height:90px; margin-right:10px; 
+		border:5px solid #6982ab; border-radius:100%;
+		background:#353f4f;
+	 }
+	.ollehtv_snb .menu_2depth>li>a{
+		display:table-cell; vertical-align:middle; 
+		font-size:14px; color:#fff; font-weight:400;
+	}
+
+
+/* 테이블 스타일 공통 시작 */
+	.table_style{
+		width:1000px; margin:0 auto 20px;
+		border-top:3px solid #5a6c89; border-bottom:3px solid #5a6c89;
+		font-family:"NanumGothic"; color:#445165; font-size:16px; text-align:center;
+	}
+
+	.table_style th{height:40px; line-height:40px; background:#dae5f7; font-size:16px; font-weight:bold;}
+	.table_style td{height:35px; color:#6982ab;}
+	.table_style th,.table_style td{border:1px solid #94b1e1; vertical-align:middle;}
+	.table_style text{padding:5px 0;}
+
+	.tb_wd_1{width:100px;}
+	.tb_wd_2{width:120px;}
+	.tb_wd_3{width:200px;}
+
+	.tb_hi_1{height:55px !important;}
+
+	.bor_left{border-left:0 !important;}
+	.bor_right{border-right:0 !important;}
+	.tb_notice{font-size:14px; color:#f15e66;}
+	.tb_notice dt,.tb_notice dd{float:left;}
+	.tb_notice dd{margin-left:5px;}
+/* 테이블 스타일 공통 끝 */
+	.table_style.etc td,.table_style.both td{padding:5px;}
+
+/* ollehTV 1위 */
+	.ollehTV{padding:100px 0;}
+	.comment{
+		clear:both;
+		padding-bottom:50px;
+		font-size:35px; text-align:center; font-weight:bold; line-height:125%;
+	}
+	.comment>p,.graph h4{color:#353f4f;}
+	.graph{width:1080px; margin:0 auto;}
+	.container .graph .columns.five{width:290px; padding:0 25px;}
+	.container .graph .columns.five h4{font-size:25px; color:#555;}
+	.graph p{color:#888; text-align:center;}
+
+	.graph_box{margin-top:35px;}
+	.graph_box ul{padding:0;}
+	.graph_box li{
+		overflow:hidden;
+		width:100%; height: 35px; margin-bottom:10px; 
+		background: #eee;
+		border-radius:3px;
+	}
+
+	.graph_box li div{
+		width:20%; height:35px;
+		border-radius:3px;
+		line-height:35px; text-indent:10px;
+		font-family:"NanumGothic"; color:#fff; font-size:18px;
+		font-weight:bold;
+	}
+	.join2,.join3,.chanel2,.chanel3,.con2,.con3{background:#353f4f;}
+	.join1,.chanel1,.con1{background:#f15e66;}
+
+/* KEY FACTOR */
+	.title h1{
+		padding-top:80px; margin-bottom:10px;
+		background:none; border:0;
+		color:#555; font-weight:bold;
+		text-transform:none;
+		box-shadow:none;
+	}
+
+	.icon_box{width:220px; height:220px; border-radius:100%; margin:0 auto 30px;}
+	.icon_box img{margin:0 auto;}
+
+	.service-description{color:#888; text-align:center;}
+	.key_box h2{font-family:"NanumGothic"; font-size:25px; font-weight:800; color:#555555; text-align:center;}
+
+/* SPECIAL 광고 PLAN */
+	.special{width:1200px; margin:0 auto; padding:100px 0 0;}
+	.title p{margin:0; color:#353f4f; font-size:35px; font-weight:bold;}
+	.special h1{padding-top:0; color:#353f4f;}
+	.special h2{
+		width:600px;
+		font-size:25px; color:#353f4f; font-weight:bold; text-transform:none;
+	}
+	.special ol{overflow:hidden; margin:0 auto; clear:both;}
+	.special il{height:200px; margin-top:50px; line-height:200px;}
+	.tit_num{font-size:38px; color:#f15e66;}
+	.category_wrap p{font-size:16px; color:#888;}
+	.category_t>li{display:table; width:1200px; margin:0 auto 100px;}
+	.category_wrap{display:table-cell; vertical-align:middle; width:1000px; height:250px; margin:50px 0; padding:0 100px;}
+	.special_img{float:left; margin:25px 0 25px 100px;}
+	.category_wrap.ct1{background:url("../../../images/ollehtv/special_img01.png") no-repeat 850px center;}
+	.category_wrap.ct2{
+		padding-left:600px;
+		background:url("../../../images/ollehtv/special_img02.png") no-repeat 200px center;
+	}
+	.category_wrap.ct3{background:url("../../../images/ollehtv/special_img03.png") no-repeat 850px center;}
+	.category_wrap.space h2{width:360px; margin-top:25px;}
+
+	/* 04 PACK 시작 */
+		.pack{margin:0 auto; padding:50px 0 0 20px; text-align:center;}
+		.pack h2{margin:0 auto; margin-bottom:50px;}
+		.pack h3{height:45px; background:#35cfcd; color:#fff; font-size:16px; font-weight:bold;}
+		.pack .accordion1,.pack .accordion2,.pack .accordion3,.pack .accordion4{
+			overflow:hidden; cursor:pointer; float:left; width:285px; border:1px solid #d9d9d9;
+		}
+		.pack dl{
+			overflow:hidden;
+			background:#fff; letter-spacing:-0.08em;
+		}
+		.pack dt:first-child{height:65px; border:0;}
+		.pack dt{
+			height:45px; margin-bottom:1px;
+			border-top:1px solid #c9c9c9; border-bottom:1px solid #d9d9d9;
+			background:#f9f9f9;
+			color:#353f4f; font-size:18px; font-weight:bold; line-height:45px; 
+		}
+		.dt_tit{
+			display:block; 
+			width:100%; height:55px !important; padding-top:10px;
+			color:#fff !important; font-size:28px;
+		}
+		.pack .accordion1>dl>dt>.dt_tit,.pack .accordion1>a{background:#f9908b;}
+		.pack .accordion2>dl>dt>.dt_tit,.pack .accordion2>a{background:#f87e7e;}
+		.pack .accordion3>dl>dt>.dt_tit,.pack .accordion3>a{background:#f36b6e;}
+		.pack .accordion4>dl>dt>.dt_tit,.pack .accordion4>a{background:#f15e66;}
+
+		.pack dd{padding:20px; color:#666; text-align:left;}
+		.pack dd:nth-child(4){height:180px;}
+		.pack dd:nth-child(6){height:70px;}
+
+		.pack img{display:block; width:220px; margin:0 auto;}
+		.center{margin:10px 0 0 0; text-align:center;}
+		.pack dd.pack_mean{position:relative;}
+		.pack dd.pack_mean .mean_txt{position:absolute; left:20px; bottom:20px;}
+		.pack dd ul{height:145px;}
+		.pack dd ul li:first-child{margin-bottom:10px;}
+
+		.pack .accordion1>a,.pack .accordion2>a,.pack .accordion3>a,.pack .accordion4>a{
+			display:block; height:41px; padding-top:9px; font-size:22px; color:#fff; font-weight:bold;
+		}
+
+		.pack .accordion2,.pack .accordion3,.pack .accordion4{
+			-webkit-transform:scale(0.93,0.93);
+		}
+	/* 04 PACK 끝 */
+
+
+/* OLLEH TV 노출형광고 */
+	#productA .fullwidth{padding:0 0px 20px !important;}
+	.productA .container{width:100%;}
+	.productA .title{width:100%; height:270px; background:#353f4f;}
+
+	.productA h1{color:#fff; font-size:35px; font-weight:bold;}
+	.slide_btn{width:360px; height:10px; margin:0 auto; padding-left:0;}
+	.slide_btn li{float:left; margin:0 5px; margin-top:45px;}
+	.slide_btn li a{
+		padding:5px 15px;
+		color:#fff; font-size:18px; font-weight:bold;
+	}
+
+	.olleh_1{width:1000px; margin:0 auto 80px;}
+
+	/* preplay 이미지로 순서 설명 시작 */
+		.turn1{width:1000px; margin:0 auto;}
+		.turn_info{position:absolute; width:1px; text-indent:-9999em;}
+	/* preplay 이미지로 순서 설명 끝 */
+
+
+	.pre_list{
+		width:960px; margin:30px 20px 0;
+		list-style:square;
+		color:#555; font-size:16px; font-weight:bold;
+	}
+	.olleh_1 b{color:#666; font-weight:bold;}
+	.olleh_1 .cate_info dt{
+		clear:both; float:left; 
+		margin-right:5px; 
+		color:#666; font-size:14px; font-weight:bold;
+	}
+	.olleh_1 .cate_info dd{
+		float:left;
+		font-size:14px; color:#888; 
+	}
+	.olleh_1 p{
+		clear:both;
+		width:860px; margin-bottom:0;
+		font-size:14px; color:#888;
+	}
+
+	/* 노출형 슬라이드 CSS 시작 */
+		.olleh_1{position:relative; overflow:hidden;}
+		.olleh_1>ul{width:3000px; padding:0;}
+		.olleh_1>ul>li{float:left; width:1000px;}
+	/* 노출형 슬라이드 CSS 끝 */
+
+
+
+/* OLLEH TV 노출형광고 단가 */
+	.productA .title2{width:100%; height:150px; background:#6bddd7;}
+	.productA .title2 h1{
+		padding-top:50px;
+		background:none; border:0;
+		color:#fff; font-weight:bold; text-align:center;
+	}
+	.productA h3{margin-bottom:20px; color:#353f4f; font-weight:bold;}
+	.slide_btn2{width:740px; height:10px; margin:0 auto; padding-left:0;}
+	.slide_btn2 li{float:left; margin:0 5px; margin-top:45px;}
+	.slide_btn2 li a{
+		padding:5px 15px;
+		color:#fff; font-size:18px; font-weight:bold;
+	}
+
+
+	/* 노출형단가 슬라이드 CSS 시작 */
+		.olleh_2{overflow:hidden; width:1000px; margin:0 auto 80px;}
+		.olleh_2>ul{overflow:hidden; width:5000px; padding:0;}
+		.olleh_2>ul>li{float:left; overflow:hidden; width:1000px;}
+	/* 노출형단가 슬라이드 CSS 끝 */
+
+	/* 노출형광고 단가 기본상품 테이블 시작 */
+		.exposure th:first-child,.exposure th:nth-child(2),.exposure th:nth-child(3){width:130px;}
+		.exposure th:nth-child(4),.li_r_w{width:100px;}
+		.exposure th:last-child{width:200px;}
+		.exposure p{width:auto;}
+	/* 노출형광고 단가 기본상품 테이블 끝 */
+
+	/* 노출형광고 단가 PrePlay타깃팅상품 테이블 시작 */
+		.pre_tar th:nth-child(4){width:260px;}
+		.pre_tar th:last-child{width:130px;}
+		.pre_tar p{width:auto;}
+	/* 노출형광고 단가 PrePlay타깃팅상품 테이블 끝 */
+
+	/* 노출형광고 단가 PrePlay타깃팅상품 테이블 시작 */
+		.pre_tar th:nth-child(4){width:260px;}
+		.pre_tar th:last-child{width:130px;}
+		.pre_tar p{width:auto;}
+	/* 노출형광고 단가 PrePlay타깃팅상품 테이블 끝 */
+
+
+
+/* OLLEH TV 양방향광고 */
+	.productB .container{width:100%;}
+	.productB .title{width:100%; height:270px; background:#353f4f;}
+	.productB .title h1{
+		background:none; border:0;
+		color:#fff; font-size:35px; font-weight:bold; text-align:center;
+		box-shadow:none;
+	}
+	.productB h3{margin-bottom:20px; color:#353f4f; font-weight:bold;}
+	.slide_btn3{width:650px; height:10px; margin:0 auto; padding-left:0;}
+	.slide_btn3 li{float:left; margin:0 5px; margin-top:45px;}
+	.slide_btn3 li a{
+		padding:5px 15px;
+		color:#fff; font-size:18px; font-weight:bold;
+	}
+	.slide_btn li.action>.anchorbar,
+	.slide_btn2 li.action>.anchorbar,
+	.slide_btn3 li.action>.anchorbar{
+		width:39px;
+	}
+	.slide_btn li:hover>.anchorbar,
+	.slide_btn2 li:hover>.anchorbar,
+	.slide_btn3 li:hover>.anchorbar{
+		width:39px;
+	}
+
+/*	.productA h1{color:#fff; font-size:35px; font-weight:bold;}*/
+
+
+	/* 양방향 슬라이드 CSS 시작 */
+		.olleh_3{position:relative; overflow:hidden; width:1000px; margin:0 auto;}
+		.olleh_3>ul{overflow:hidden; width:5000px; margin-bottom:50px; padding:0;}
+		.olleh_3>ul>li{float:left; overflow:hidden; width:1000px;}
+	/* 양방향 슬라이드 CSS 끝 */
+
+
+	/* 양방향 이미지로 순서 설명 시작 */
+		.turn2{width:1000px; margin:0 auto;}
+		.turn2>li{position:relative;}
+		.turn2>li:last-child{top:-333px; left:425px;}
+
+		.turn3{width:1000px; margin:0 auto;}
+		.turn3>li{position:relative;}
+		.turn3>li:nth-child(2){top:-237px; left:300px;}
+		.turn3>li:last-child{top:-474px; left:600px;}
+
+		.turn4{width:1000px; margin:0 auto;}
+		.turn4>li{position:relative;}
+		.turn4>li:last-child{top:-318px; left:425px;}
+
+		.turn5{width:1000px; margin:0 auto;}
+		.turn5>li{position:relative;}
+		.turn5>li:last-child{top:-318px; left:424px;}
+
+		.turn6{width:1000px; margin:0 auto;}
+		.turn6>li{position:relative;}
+		.turn6>li:last-child{top:-319px; left:425px;}
+	/* 양방향 이미지로 순서 설명 끝 */
+
+	.both_list{
+		width:960px; margin:30px 20px;
+		list-style:square;
+		color:#555;
+		font-size:14px; font-weight:bold;
+	}
+
+
+
+
+/* OLLEH TV 양방향광고 단가 */
+	.productB .title2{width:100%; height:235px; margin-bottom:80px; background:#353f4f;}
+	.title2 h1{
+		color:#fff; font-size:35px; 
+		font-weight:bold; line-height:235px; text-align:center;
+	}
+
+
+	/* 양방향광고 단가 테이블 시작 */
+		.both{margin-bottom:0;}
+		.both p{width:auto;}
+	/* 양방향광고 단가 테이블 끝 */
+
+
+	.both_price_list{
+		width:960px; margin:0 auto; padding:20px 20px 80px;
+		list-style:square;
+		font-size:14px; color:#555;
+	}
+	.both_price_list li:last-child{color:red;}
+
+
+/* 구매요청, 소개서다운로드, 광고 문의하기 */
+	.bot_btn{width:540px; height:10px; margin:0 auto; padding-left:0;}
+	.bot_btn li{float:left; margin:0 5px; margin-bottom:100px;}
+	.bot_btn li a{
+		display:block;
+		width:170px; height:24px; padding:8px 0;
+		background:#0dcdbd;
+		color:#fff; font-size:16px; font-weight:bold; text-align:center;
+	}
+
+/* footer */
+		#footer{height:100px; background:#353f4f;}
+		.foot_info{padding-left:0; letter-spacing:1px;}
+		.foot_info>li{float:left; height:12px; margin-top:5px; font-size:12px;}
+		.foot_info>li>a{font-weight:bold; color:#fff;}
+		.foot_info>.line::before{content:'│'; margin-left:3px; color:#fff;}
+		.copyright{height:50px; margin-top:0;padding:0; background:none; line-height:50px; text-align:center;}
+		.copyright>.container>.sixteen.columns{height:auto;}
+		.copyright>.container{margin:0; margin-left:2%;}
+		.copyright p{clear:both; margin-top:50px; font-size:12px; color:#fff; line-height:18px; text-align:left;}
+
+@media only screen and (max-width: 959px) and (min-width: 768px){
+	.container{min-width:1200px;}
+}

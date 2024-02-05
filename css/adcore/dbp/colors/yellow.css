@@ -1,0 +1,185 @@
+::selection {
+	background: rgb(255, 140, 146);
+}
+nav.colored {
+	background-color: rgb(255, 214, 0);
+}
+nav.colored.light {
+	background-color: rgb(255, 214, 0);
+}
+.twitter-feed-icon i {
+	background-color: rgb(255, 214, 0);
+}
+.testimonial-icon i {
+	background-color: rgb(255, 214, 0);
+}
+.home-gradient {
+	background-color: rgb(255, 214, 0);
+}
+.home-parallax {
+	background-color: rgb(255, 214, 0);
+}
+#project-navigation ul li#prevProject a:hover {
+	background-color: rgb(255, 214, 0);
+}
+#project-navigation ul li#nextProject a:hover {
+	background-color: rgb(255, 214, 0);
+}
+#project-navigation ul li a:hover {
+	background-color: rgb(255, 214, 0);
+}
+#closeProject a:hover {
+	background-color: rgb(255, 214, 0);
+}
+.portfolio .portfolio-overlay {
+	background-color: rgb(255, 140, 146);
+}
+.pagination a.previous:hover {
+	background-color: rgb(255, 214, 0);
+}
+.pagination a.next:hover {
+	background-color: rgb(255, 214, 0);
+}
+.rnr-icon-middle:hover {
+	background-color: rgb(255, 214, 0);
+}
+.service-box:hover {
+	background-color: rgb(255, 214, 0);
+}
+.button {
+	background-color: rgb(255, 214, 0);
+}
+.skillbar .skill-percentage {
+	background-color: rgb(255, 214, 0);
+}
+.flex-control-nav li a:hover {
+	background-color: rgb(255, 214, 0);
+}
+.flex-control-nav li a.flex-active {
+	background-color: rgb(255, 214, 0);
+}
+.testimonial-slider .flex-direction-nav li a {
+	background-color: rgb(255, 214, 0);
+}
+.twitter-slider .flex-direction-nav li a {
+	background-color: rgb(255, 214, 0);
+}
+.color-block {
+	background-color: rgb(255, 214, 0);
+}
+.home1 .slabtextdone .second-child.slabtext {
+	background-color: rgb(255, 214, 0);
+}
+.home4 .slabtextdone .second-child.slabtext {
+	background-color: rgb(255, 214, 0);
+}
+.caption {
+	background-color: rgb(255, 214, 0);
+}
+.copyright {
+	background-color: rgb(255, 214, 0);
+}
+.title h1 {
+	background-color: rgb(255, 214, 0);
+}
+.service-features .img-container {
+	background-color: rgb(255, 214, 0);
+}
+.service-features .img-container {
+	background-color: rgb(255, 214, 0);
+}
+.view-profile {
+	background-color: rgb(255, 214, 0);
+}
+.team-member:hover .team-desc {
+	background-color: rgb(255, 214, 0);
+}
+.service-box .service-icon {
+	background-color: rgb(255, 214, 0);
+}
+.modal .close {
+	background-color: rgb(255, 214, 0);
+}
+.title h1 {
+	box-shadow: 0px 0px 0px 3px #ffd600;
+}
+.service-box .service-icon {
+	box-shadow: 0px 0px 0px 3px #ffd600;
+}
+.tab a.selected {
+	box-shadow: 0px -3px 0px 0px #ffd600;
+}
+a {
+	color: rgb(255, 214, 0);
+}
+.highlight {
+	color: rgb(255, 214, 0);
+}
+//*
+nav.light .main-menu a:hover {
+	color: rgb(255, 214, 0);
+}
+nav.dark .main-menu a:hover {
+	color: rgb(255, 214, 0);
+}
+
+nav.light .main-menu li.active a {
+	color: rgb(255, 214, 0);
+}*//
+nav.transparent .main-menu li.active a {
+	color: rgb(255, 214, 0);
+}
+nav.dark .main-menu li.active a {
+	color: rgb(255, 214, 0);
+}
+.parallax .quote i {
+	color: rgb(255, 214, 0);
+}
+.post-title a:hover {
+	color: rgb(255, 214, 0);
+}
+.post-tags li a:hover {
+	color: rgb(255, 214, 0);
+}
+.tags-list li a:hover {
+	color: rgb(255, 214, 0);
+}
+.pages li a:hover {
+	color: rgb(255, 214, 0);
+}
+.home3 .slabtextdone .second-child.slabtext {
+	color: rgb(255, 214, 0);
+}
+.service-box:hover .service-icon {
+	color: rgb(255, 214, 0);
+}
+.pages li a.current {
+	border-color: rgb(255, 214, 0);
+}
+.pages li a.current {
+	border-color: rgb(255, 214, 0);
+}
+.service-features .img-container::after {
+	border-color: rgb(255, 214, 0);
+}
+.service-box:hover .service-icon {
+	border-color: rgb(255, 214, 0);
+}
+.callout {
+	border-color: rgb(255, 214, 0);
+}
+blockquote p {
+	border-color: rgb(255, 214, 0);
+}
+.align-right.pullquote {
+	border-color: rgb(255, 214, 0);
+}
+.align-left.pullquote {
+	border-color: rgb(255, 214, 0);
+}
+.home-gradient {
+	background: -ms-radial-gradient(center, circle, rgb(255, 214, 0) 0%, rgb(226, 190, 1) 100%);
+}
+.color-block {
+	background: -ms-radial-gradient(center, circle, rgb(255, 214, 0) 0%, rgb(226, 190, 1) 100%);
+}
