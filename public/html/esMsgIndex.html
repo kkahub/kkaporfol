@@ -1,0 +1,2092 @@
+﻿<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8">
+    <title>이셀러스 메세징 서비스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/esmsg/css.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/plugin/timepicker/jquery.timepicker.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <div id="header">
+            <div class="left_area">
+                <h1>
+                    <a class="esellers_logo" href="https://www.esellers.co.kr/"><img src="../images/pofol/esMsg/logo.png" alt="이셀러스"></a>
+                    <a class="esellers_msg"href="index.html">메세징서비스</a>
+                </h1>
+                <ul>
+                    <li>잔여포인트 = 1,500,000 원</li>
+                    <li>
+                        전송가능수 =
+                        <dl class="quick_info">
+                            <dt class="pill blue">SMS</dt><dd><span>68,112</span>건</dd>
+                            <dt class="pill pink">LMS</dt><dd>68,112건</dd>
+                            <dt class="pill yellow">알림톡</dt><dd>68,112건</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right_area">
+                <p class="user_name"><span>김근애</span>님</p>
+                <div class="btn_group">
+                    <a class="btn basic" href="#" target="_blank">이용가이드</a>
+                    <a class="btn basic" href="#" target="_blank">충전하기</a>
+                </div>
+            </div>
+        </div>
+        <!-- // Header -->
+
+        <!-- Container  -->
+        <div id="container">
+            <!-- Left -->
+            <div id="lnb">
+                <div id="nav">
+                    <ul class="gnb">
+                        <li class="on"><a href="01문자(SMSLMS).html">문자(SMS/LMS)</a></li>
+                        <li><a href="02카카오알림톡.html">카카오 알림톡</a></li>
+                        <li><a href="03내문자함.html">내 문자함</a></li>
+                        <li><a href="04발송이력-발송이력.html">발송이력</a></li>
+                        <li><a href="05주소록.html">주소록</a></li>
+                        <li><a href="06설정.html">설정</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // Left -->
+
+            <!-- content -->
+            <div id="content">
+                <div class="con_wrap sms">
+                    <div class="mobile_area">
+                        <div class="send_view send_text">
+                            <div class="mobile_content">
+                                <div class="line">
+                                    <span class="pill basic">SMS</span>
+                                    <span class="pill warn">LMS</span>
+                                    <span class="pill inert">즉시</span>
+                                    <span class="pill warn">즉시</span>
+                                </div>
+                                <div class="line">
+                                    <p class="byte_info">내용 <span>10</span>/<span>90</span></p>
+                                    <button class="btn border refresh" type="button"><img src="../images/pofol/esMsg/icon/refresh.png" alt="새로고침">새로쓰기</button>
+                                </div>
+
+                                <textarea name="" id="" cols="30" rows="10" placeholder="입력하신 내용이 90 바이트(한글 45자)를 초과하시면 자동으로 LMS로 전환됩니다. LMS는 발송 비용이 SMS와 다르니 주의하세요."></textarea>
+
+                                <ul class="text_menu">
+                                    <li><button type="button">인사말</button></li>
+                                    <li><button type="button">맺음말</button></li>
+                                    <li><button type="button">특수문자</button></li>
+                                    <li><button type="button">비고입력</button></li>
+                                </ul>
+                                <div class="btn_group">
+                                    <button class="btn point" type="button">불러오기</button>
+                                    <button class="btn point" type="button">저장하기</button>
+                                    <button class="btn point" type="button">미리보기</button>
+                                </div>
+                                <label class="headline" for="msgTitle">제목</label>
+                                <input id="msgTitle" type="text" placeholder="제목은 LMS 발송 시에만 입력 가능합니다." />
+                                <div class="calling">
+                                    <label class="headline" for="">발신번호</label>
+                                    <button class="btn sub sm" type="button">번호관리/추가</button>
+                                </div>
+                                <select name="" id="">
+                                    <option value="" selected>0212345678 (기본번호)</option>
+                                    <option value="">0212345678</option>
+                                    <option value="">0212345678</option>
+                                </select>
+                                <div class="head_option">
+                                    <label class="headline" for="">발송시간</label>
+                                    <div class="line radio_option">
+                                        <div class="radio_wrap">
+                                            <input id="instant" type="radio" name="sms_send" value="" checked>
+                                            <label for="instant">즉시발송</label>
+                                        </div>
+                                        <div class="radio_wrap">
+                                            <input id="reserve" type="radio" name="sms_send" value="">
+                                            <label for="reserve">예약발송</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <div class="calendar"><input type="text"></div>
+                                    <div class="clock"><input type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <h3 class="headline">대량 등록</h3>
+                        <div class="btn_group">
+                            <button class="btn border arrow" type="button">XLS업로드</button>
+                            <button class="btn border arrow" type="button">주소록</button>
+                            <button class="btn border arrow" type="button">최근발송</button>
+                            <button class="btn border arrow" type="button">텍스트입력</button>
+                        </div>
+                        <div class="btn_group">
+                            <button class="btn point" type="button">XLS양식 다운로드</button>
+                        </div>
+                    </div>
+                    <div class="con contact_address">
+                        <h3 class="headline">개별 등록</h3>
+                        <div class="line">
+                            <input type="text" class="ipt_name" placeholder="이름">
+                            <input type="text" class="ipt_num" placeholder="전화번호(-없이 숫자만)">
+                            <button class="btn point" type="button">등록</button>
+                        </div>
+                        <p class="warn_note">
+                            전화번호는 <em class="point">필수</em>로 입력해야 합니다. 이름 항목은 <em class="point">선택</em> 입력사항입니다.<br />
+                            문자 내 비고 입력을 원하시면 XLS업로드를 눌러 양식을 다운로드하여 입력해주세요.<br />
+                            050 안심번호는 통신사 문제로 정상적으로 문자를 수신하지 못할 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="con">
+                        <div class="line">
+                            <h2 class="headline">수신자 목록</h2>
+                            <div class="total">총 <span class="point">5</span>건</div>
+                            <p class="expect_price">예상 발송 비용 SMS <span class="point">5</span>건 <span class="warn">88</span>원</p>
+                            <div class="right_area">
+                                <div class="check_wrap multi">
+                                    <input id="noStack" type="checkbox" value="">
+                                    <label for="noStack">중복번호 삭제</label>
+                                </div>
+                                <button class="btn sub sm" type="button">전체삭제</button>
+                            </div>
+                        </div>
+                        일반 테이블<br />
+                        <table class="tb_style" id="receiverList">
+                            <caption>수신자 목록</caption>
+                            <thead>
+                            <tr style="display:block;">
+                                <th style="width:115px;">이름</th>
+                                <th style="width:150px;">전화번호</th>
+                                <th style="width:80px;">비고1</th>
+                                <th style="width:80px;">비고2</th>
+                                <th style="width:80px;">비고3</th>
+                                <th style="width:80px;">비고4</th>
+                                <th style="width:80px;">비고5</th>
+                                <th style="width:135px;">기능</th>
+                                <th style="width:10px;"></th>
+                            </tr>
+                            </thead>
+                            <tbody id="listArea" style="height: 320px; overflow-y: scroll; display: block;">
+                            <tr data-id="24d6b68d-9631-4091-a3e1-2113d0696627">
+                                <td style="width:115px;">김근애</td>
+                                <td style="width:150px;">01012345678</td>
+                                <td style="width:80px;"></td>
+                                <td style="width:80px;"></td>
+                                <td style="width:80px;"></td>
+                                <td style="width:80px;"></td>
+                                <td style="width:80px;"></td>
+                                <td id="editBtn" style="width:135px;">
+                                    <button class="btn basic" onclick="ReceiverList.setEditMode('24d6b68d-9631-4091-a3e1-2113d0696627');">수정</button>
+                                    <button class="btn sub" onclick="ReceiverList.remove('24d6b68d-9631-4091-a3e1-2113d0696627');">삭제</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tbody id="noData" style="display: none;">
+                                <tr class="no_data"><td colspan="8">현재 수신자 목록이 존재하지 않습니다.</td></tr>
+                            </tbody>
+                            <script id="dataRaw" type="text/template">
+                            <tr data-id="<%=id%>">
+                                <td style="width:90px;"><%=name%></td>
+                                <!-- <td style="width:120px;"><%=Common.Validation.displayPhoneNumber(number)%></td> -->
+                                <td style="width:120px;"><%=number%></td>
+                                <td style="width:80px;"><%=replace_0%></td>
+                                <td style="width:80px;"><%=replace_1%></td>
+                                <td style="width:80px;"><%=replace_2%></td>
+                                <td style="width:80px;"><%=replace_3%></td>
+                                <td style="width:80px;"><%=replace_4%></td>
+                                <td id='editBtn' style="width:135px;">
+                                    <button class="btn basic" onclick="ReceiverList.setEditMode('<%=id%>');">수정</button>
+                                    <button class="btn sub" onclick="ReceiverList.remove('<%=id%>');">삭제</button>
+                                </td>
+                            </tr>
+                            </script>
+
+                            <script id="dataEditRaw" type="text/template">
+                                <tr data-id="<%= id %>">
+                                    <!-- <td><input id="editNumber" type="text" data-name="number" value="<%=Common.Validation.cleanPhoneNumber(number)%>" style="width: 122.22222px;"></td> -->
+                                    <td><input type="text" data-name="name" value="<%=name%>" style="width: 70px;"></td>
+                                    <td><input id="editNumber" type="text" data-name="number" value="<%=number%>" style="width: 120px;"></td>
+                                    <td><input type="text" data-name="replace_0" value="<%=replace_0%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_1" value="<%=replace_1%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_2" value="<%=replace_2%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_3" value="<%=replace_3%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_4" value="<%=replace_4%>" style="width: 60px;"></td>
+                                    <td>
+                                        <button class="btn basic" style="width: 100px;" onclick="ReceiverList.editData('<%= id %>');">완료</button>
+                                    </td>
+                                </tr>
+                            </script>
+
+                        </table>
+                        수정 중 테이블<br />
+                        <table class="tb_style" id="receiverList">
+                            <caption>수신자 목록</caption>
+                            <colgroup>
+                                <col style="width:50px;">
+                                <col span="2" style="width:160px;">
+                                <col style="width:100px;">
+                                <col style="width:110px;">
+                                <col style="width:65px;">
+                            </colgroup>
+                            <thead>
+                            <tr style="display:block;">
+                                <th style="width:115px;">이름</th>
+                                <th style="width:150px;">전화번호</th>
+                                <th style="width:80px;">비고1</th>
+                                <th style="width:80px;">비고2</th>
+                                <th style="width:80px;">비고3</th>
+                                <th style="width:80px;">비고4</th>
+                                <th style="width:80px;">비고5</th>
+                                <th style="width:135px;">기능</th>
+                                <th style="width:10px;"></th>
+                            </tr>
+                            </thead>
+                            <tbody id="listArea" style="height: 320px; overflow-y: scroll; display: block;">
+
+                                <tr data-id="a2fcc412-1fa4-43bc-a56a-711e10cadae9">
+                                    <!-- <td><input id="editNumber" type="text" data-name="number" value="01012345678" style="width: 122.22222px;"></td> -->
+                                    <td><input type="text" data-name="name" value="a" style="width: 92px;"></td>
+                                    <td><input id="editNumber" type="text" data-name="number" value="01012345678" style="width: 120px;"></td>
+                                    <td><input type="text" data-name="replace_0" value="" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_1" value="" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_2" value="" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_3" value="" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_4" value="" style="width: 60px;"></td>
+                                    <td>
+                                        <button class="btn basic" style="width: 100px;" onclick="ReceiverList.editData('a2fcc412-1fa4-43bc-a56a-711e10cadae9');">완료</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody id="noData" style="display: none;">
+                                <tr class="no_data"><td colspan="8">현재 수신자 목록이 존재하지 않습니다.</td></tr>
+                            </tbody>
+                            <script id="dataRaw" type="text/template">
+                            <tr data-id="<%=id%>">
+                                <td style="width:90px;"><%=name%></td>
+                                <!-- <td style="width:120px;"><%=Common.Validation.displayPhoneNumber(number)%></td> -->
+                                <td style="width:120px;"><%=number%></td>
+                                <td style="width:80px;"><%=replace_0%></td>
+                                <td style="width:80px;"><%=replace_1%></td>
+                                <td style="width:80px;"><%=replace_2%></td>
+                                <td style="width:80px;"><%=replace_3%></td>
+                                <td style="width:80px;"><%=replace_4%></td>
+                                <td id='editBtn' style="width:135px;">
+                                    <button class="btn basic" onclick="ReceiverList.setEditMode('<%=id%>');">수정</button>
+                                    <button class="btn sub" onclick="ReceiverList.remove('<%=id%>');">삭제</button>
+                                </td>
+                            </tr>
+                            </script>
+
+                            <script id="dataEditRaw" type="text/template">
+                                <tr data-id="<%= id %>">
+                                    <!-- <td><input id="editNumber" type="text" data-name="number" value="<%=Common.Validation.cleanPhoneNumber(number)%>" style="width: 122.22222px;"></td> -->
+                                    <td><input type="text" data-name="name" value="<%=name%>" style="width: 70px;"></td>
+                                    <td><input id="editNumber" type="text" data-name="number" value="<%=number%>" style="width: 120px;"></td>
+                                    <td><input type="text" data-name="replace_0" value="<%=replace_0%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_1" value="<%=replace_1%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_2" value="<%=replace_2%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_3" value="<%=replace_3%>" style="width: 60px;"></td>
+                                    <td><input type="text" data-name="replace_4" value="<%=replace_4%>" style="width: 60px;"></td>
+                                    <td>
+                                        <button class="btn basic" style="width: 100px;" onclick="ReceiverList.editData('<%= id %>');">완료</button>
+                                    </td>
+                                </tr>
+                            </script>
+
+                        </table>
+                        <table class="tb_style">
+                            <caption>수신자 목록</caption>
+                            <colgroup>
+                                <col style="width:70px;">
+                                <col style="width:125px;">
+                                <col span="5" style="width:85px;">
+                                <col style="width:140px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>이름</th>
+                                    <th>전화번호</th>
+                                    <th>비고1</th>
+                                    <th>비고2</th>
+                                    <th>비고3</th>
+                                    <th>비고4</th>
+                                    <th>비고5</th>
+                                    <th>기능</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="tb_scroll">
+                            <table class="tb_style">
+                                <caption>수신자 목록</caption>
+                                <colgroup>
+                                    <col style="width:70px;">
+                                    <col style="width:125px;">
+                                    <col span="5" style="width:85px;">
+                                    <col style="width:140px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td>
+                                            <button class="btn basic" type="button">수정</button>
+                                            <button class="btn sub" type="button">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>01012345678</td>
+                                        <td>주문주문주문</td>
+                                        <td>s10 블랙</td>
+                                        <td>접수</td>
+                                        <td>해외배송송 파송송송</td>
+                                        <td>여러 줄 채워 봅니다<br /> ๑•‿•๑</td>
+                                        <td>
+                                            <button class="btn basic" type="button">수정</button>
+                                            <button class="btn sub" type="button">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>01012345678</td>
+                                        <td>주문주문주문</td>
+                                        <td>s10 블랙</td>
+                                        <td>접수</td>
+                                        <td>해외배송송 파송송송</td>
+                                        <td>여러 줄 채워 봅니다<br /> ๑•‿•๑</td>
+                                        <td>
+                                            <button class="btn basic" type="button">수정</button>
+                                            <button class="btn sub" type="button">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>01012345678</td>
+                                        <td>주문</td>
+                                        <td>s10 블랙</td>
+                                        <td></td>
+                                        <td>해외배송</td>
+                                        <td>대기자</td>
+                                        <td>
+                                            <button class="btn basic" type="button">수정</button>
+                                            <button class="btn sub" type="button">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>01012345678</td>
+                                        <td>주문</td>
+                                        <td></td>
+                                        <td>접수</td>
+                                        <td>해외배송</td>
+                                        <td>대기자</td>
+                                        <td>
+                                            <button class="btn basic" type="button">수정</button>
+                                            <button class="btn sub" type="button">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>01012345678</td>
+                                        <td>주문</td>
+                                        <td>s10 블랙</td>
+                                        <td>접수</td>
+                                        <td>해외배송</td>
+                                        <td>대기자</td>
+                                        <td>
+                                            <button class="btn basic" type="button">수정</button>
+                                            <button class="btn sub" type="button">삭제</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>01012345678</td>
+                                        <td>주문</td>
+                                        <td>s10 블랙</td>
+                                        <td>접수</td>
+                                        <td>해외배송</td>
+                                        <td>대기자</td>
+                                        <td>
+                                            <button class="btn basic" type="button">수정</button>
+                                            <button class="btn sub" type="button">삭제</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-container">
+                            <ul class="pagination">
+                                <li class="first"><a href="#">처음</a></li>
+                                <li class="prev"><a href="#">이전</a></li>
+                                <li class="active"><a>1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="next"><a href="#">다음</a></li>
+                                <li class="last"><a href="#">마지막</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn fin">문자 발송하기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+        </div>
+        <!-- // Container  -->
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="foot_con">
+                ⓒ esllers Inc. All Rights Reserved.
+            </div>
+        </div>
+        <!-- // Footer -->
+    </div>
+
+    <!-- pop 특수문자 -->
+    <div class="pop_wrap special_character">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>특수문자</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <ul>
+                        <li><button type="button">☆</button></li>
+                        <li><button type="button">★</button></li>
+                        <li><button type="button">♡</button></li>
+                        <li><button type="button">♥</button></li>
+                        <li><button type="button">☆</button></li>
+                        <li><button type="button">★</button></li>
+                        <li><button type="button">♡</button></li>
+                        <li><button type="button">♥</button></li>
+                        <li><button type="button">☆</button></li>
+                        <li><button type="button">★</button></li>
+                        <li><button type="button">♡</button></li>
+                        <li><button type="button">♥</button></li>
+                        <li><button type="button">☆</button></li>
+                        <li><button type="button">★</button></li>
+                        <li><button type="button">♡</button></li>
+                        <li><button type="button">♥</button></li>
+                        <li><button type="button">☆</button></li>
+                        <li><button type="button">★</button></li>
+                        <li><button type="button">♡</button></li>
+                        <li><button type="button">♥</button></li>
+                        <li><button type="button">☆</button></li>
+                        <li><button type="button">★</button></li>
+                        <li><button type="button">♡</button></li>
+                        <li><button type="button">♥</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 특수문자 -->
+
+    <!-- pop 비고입력 -->
+    <div class="pop_wrap record_note">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>비고입력</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <div class="btn_group">
+                        <button class="btn basic" type="button">{이름}</button>
+                        <button class="btn basic" type="button">{전화번호}</button>
+                    </div>
+                    <div class="btn_group">
+                        <button class="btn basic" type="button">{비고1}</button>
+                        <button class="btn basic" type="button">{비고2}</button>
+                        <button class="btn basic" type="button">{비고3}</button>
+                        <button class="btn basic" type="button">{비고4}</button>
+                        <button class="btn basic" type="button">{비고5}</button>
+                    </div>
+                    <h4 class="pop_title">사용방법</h4>
+                    <p class="warn_note">
+                        내용 입력칸에 비고를 입력하고 싶은 위치에서 버튼을 누르거나 글자를 직접 입력해주세요.<br />
+                        입력한 내용을 지우고 싶으시면 내용에서 해당 글자를 삭제하시면 됩니다.<br />
+                        문자 발송시 수신자 목록의 해당 칸의 글자로 자동으로 바뀌어 전송됩니다.
+                    </p>
+                    <p class="warn_note">
+                        예) <em class="point">{이름}</em>님 안녕하세요. 주문하신 <em class="point">{비고1}</em> 상품이 내일 발송됩니다.
+                    </p>
+                    <p class="warn_note">
+                        <b>&#10140; 실제 발송 문자내용</b><br />
+                        <em class="point">홍길동</em>님 안녕하세요. 주문하신 <em class="point">A셔츠 남성용 레드컬러</em> 상품이 내일 발송됩니다.
+                    </p>
+                    <h4 class="pop_title">주의사항</h4>
+                    <p class="warn_note">
+                        비고란을 입력하지 않은 경우 공백으로 표시됩니다.<br />
+                        비고 내용이 길 경우 <em class="point">90바이트 초과</em>로 SMS가 아닌 LMS로 발송될 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 비고입력 -->
+
+    <!-- pop 불러오기 -->
+    <div class="pop_wrap sms_newest">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>불러오기</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <ul class="tab_menu">
+                        <li class="on"><button type="button">최근 문자</button></li>
+                        <li><button type="button">저장 문자</button></li>
+                        <li><button type="button">알림톡 템플릿</button></li>
+                    </ul>
+                    <div class="tab_con">
+                        <!-- 최근 문자 -->
+                        <div class="item newest_list on">
+                            <p class="warn_note">
+                                최근 문자 사용시 수신자 목록은 불러오지 않습니다. 수신자 정보는 발송이력에서 불러올 수 있습니다.<br />
+                                자동 입력 항목의 길이에 따라 SMS/LMS 여부가 달라질 수 있으니 주의 바랍니다.
+                            </p>
+                            <ul class="text_menu">
+                                <li class="on"><button type="button">내용보기</a></li>
+                                <li><button type="button">목록보기</a></li>
+                            </ul>
+                            <div class="search_area">
+                                <input class="search" type="text" placeholder="내용 검색">
+                                <button><img src="../images/pofol/esMsg/icon/search.png" alt="찾기"></button>
+                            </div>
+                            <div class="text_con">
+                                <!-- 내용보기 -->
+                                <div class="item on">
+                                    <ul class="msg_temp">
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill blue">SMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <h4 class="title">이셀러스몰 근하 신년 인사</h4>
+                                                <pre>
+{이름} 고객님 안녕하세요.
+항상 행복만을 전달 해드리는 OO몰입니다. 새해 복 많이 받으시고 하시는 모든 일이  번창하시길 바랍니다.
+저희도 더 나은 OO몰이 되도록 노력하겠습니다. 새해 복 많이 받으시고 하시는 모든 일이 번창하시길 바랍니다.
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill blue">SMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+{비고3}
+{비고4}
+{비고5}
+{비고1}
+{비고2}
+{비고2}
+{비고2}
+{비고2}
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="pagination-container">
+                                        <ul class="pagination">
+                                            <li class="first"><a href="#">처음</a></li>
+                                            <li class="prev"><a href="#">이전</a></li>
+                                            <li class="active"><a>1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li class="next"><a href="#">다음</a></li>
+                                            <li class="last"><a href="#">마지막</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- // 내용보기 -->
+
+                                <!-- 목록보기 -->
+                                <div class="item">
+                                    <table class="tb_style">
+                                        <caption>최근 문자 목록 보기</caption>
+                                        <colgroup>
+                                            <col style="width:50px;">
+                                            <col span="2" style="width:160px;">
+                                            <col style="width:100px;">
+                                            <col style="width:110px;">
+                                            <col style="width:65px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>종류</th>
+                                                <th>발송일시</th>
+                                                <th>내용</th>
+                                                <th>발신번호</th>
+                                                <th>플러스ID</th>
+                                                <th>기능</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>LMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>LMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명</span></td>
+                                                <td>01012345678</td>
+                                                <td>esellers1234</td>
+                                                <td><button class="btn basic" type="button">사용</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination-container">
+                                        <ul class="pagination">
+                                            <li class="first"><a href="#">처음</a></li>
+                                            <li class="prev"><a href="#">이전</a></li>
+                                            <li class="active"><a>1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li class="next"><a href="#">다음</a></li>
+                                            <li class="last"><a href="#">마지막</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- // 목록보기 -->
+                            </div>
+                        </div>
+                        <!-- // 최근 문자 -->
+
+                        <!-- 저장 문자 -->
+                        <div class="item save_list">
+                            <p class="warn_note">저장을 원하시면 왼쪽의 문자 창에 원하는 내용을 작성하신 후 저장하기를 누르세요.</p>
+                            <ul class="text_menu">
+                                <li class="on"><button type="button">내용보기</a></li>
+                                <li><button type="button">목록보기</a></li>
+                            </ul>
+                            <div class="search_area">
+                                <input class="search" type="text" placeholder="내용 검색">
+                                <button><img src="../images/pofol/esMsg/icon/search.png" alt="찾기"></button>
+                            </div>
+                            <div class="text_con">
+                                <!-- 내용보기 -->
+                                <div class="item on">
+                                    <ul class="msg_temp">
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill blue">SMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <h4 class="title">이셀러스몰 근하 신년 인사</h4>
+                                                <pre>
+{이름} 고객님 안녕하세요.
+항상 행복만을 전달 해드리는 OO몰입니다. 새해 복 많이 받으시고 하시는 모든 일이  번창하시길 바랍니다.
+저희도 더 나은 OO몰이 되도록 노력하겠습니다. 새해 복 많이 받으시고 하시는 모든 일이 번창하시길 바랍니다.
+                                                </pre>
+                                                <div class="btn_group">
+                                                    <button class="btn sub md" type="button">삭제</button>
+                                                    <button class="btn basic md" type="button">사용하기</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill blue">SMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="pill pink">LMS</p>
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+{비고3}
+{비고4}
+{비고5}
+{비고1}
+{비고2}
+{비고2}
+{비고2}
+{비고2}
+                                                </pre>
+                                                <button class="btn basic md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="pagination-container">
+                                        <ul class="pagination">
+                                            <li class="first"><a href="#">처음</a></li>
+                                            <li class="prev"><a href="#">이전</a></li>
+                                            <li class="active"><a>1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li class="next"><a href="#">다음</a></li>
+                                            <li class="last"><a href="#">마지막</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- // 내용보기 -->
+
+                                <!-- 목록보기 -->
+                                <div class="item">
+                                    <table class="tb_style save_list">
+                                        <caption>저장 문자 목록 보기</caption>
+                                        <colgroup>
+                                            <col style="width:70px;">
+                                            <col style="width:180px;">
+                                            <col style="width:280px;">
+                                            <col style="width:140px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>종류</th>
+                                                <th>저장일시</th>
+                                                <th>내용</th>
+                                                <th>기능</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>LMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>LMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination-container">
+                                        <ul class="pagination">
+                                            <li class="first"><a href="#">처음</a></li>
+                                            <li class="prev"><a href="#">이전</a></li>
+                                            <li class="active"><a>1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li class="next"><a href="#">다음</a></li>
+                                            <li class="last"><a href="#">마지막</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- // 목록보기 -->
+                            </div>
+                        </div>
+                        <!-- // 저장 문자 -->
+
+                        <!-- 알림톡 템플릿 -->
+                        <div class="item inform_list">
+                            <p class="warn_note">알림톡은 사전 등록이 완료되어야 사용가능합니다.<br />등록 후에는 수정이 불가능하므로 주의하세요.</p>
+                            <a href="https://www.esellers.co.kr/KakaoAlimTalk/ServiceAsk" class="btn sub sm btn_inform_manage" target="_blank">알림톡 관리</a>
+                            <ul class="text_menu">
+                                <li class="on"><button type="button">내용보기</a></li>
+                                <li><button type="button">목록보기</a></li>
+                            </ul>
+                            <div class="search_area">
+                                <input class="search" type="text" placeholder="내용 검색">
+                                <button><img src="../images/pofol/esMsg/icon/search.png" alt="찾기"></button>
+                            </div>
+                            <div class="text_con">
+                                <!-- 내용보기 -->
+                                <div class="item on">
+                                    <ul class="msg_temp kakao">
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <h4 class="title">이셀러스몰 근하 신년 인사</h4>
+                                                <pre>
+{이름} 고객님 안녕하세요.
+항상 행복만을 전달 해드리는 OO몰입니다. 새해 복 많이 받으시고 하시는 모든 일이  번창하시길 바랍니다.
+저희도 더 나은 OO몰이 되도록 노력하겠습니다. 새해 복 많이 받으시고 하시는 모든 일이 번창하시길 바랍니다.
+                                                </pre>
+                                                <button class="btn kakao md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn kakao md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn kakao md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <h4 class="title">이셀러스몰 근하 신년 인사</h4>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn kakao md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+택배사 = 한진택배
+
+문의사항 = 1588-0000
+                                                </pre>
+                                                <button class="btn kakao md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list_wrap">
+                                                <div class="top_area">
+                                                    <p class="date_info"><span>2020-07-08</span> 발송</p>
+                                                </div>
+                                                <pre>
+OO몰 배송안내
+상품명 = {비고1}
+송장번호 = {비고2}
+{비고3}
+{비고4}
+{비고5}
+{비고1}
+{비고2}
+{비고2}
+{비고2}
+{비고2}
+                                                </pre>
+                                                <button class="btn kakao md" type="button">사용하기</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="pagination-container">
+                                        <ul class="pagination">
+                                            <li class="first"><a href="#">처음</a></li>
+                                            <li class="prev"><a href="#">이전</a></li>
+                                            <li class="active"><a>1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li class="next"><a href="#">다음</a></li>
+                                            <li class="last"><a href="#">마지막</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- // 내용보기 -->
+
+                                <!-- 목록보기 -->
+                                <div class="item">
+                                    <table class="tb_style save_list">
+                                        <caption>알림톡 템플릿 목록 보기</caption>
+                                        <colgroup>
+                                            <col style="width:70px;">
+                                            <col style="width:180px;">
+                                            <col style="width:280px;">
+                                            <col style="width:140px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>종류</th>
+                                                <th>저장일시</th>
+                                                <th>내용</th>
+                                                <th>기능</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>알림톡</td>
+                                                <td>2020-09-30 오전 11:00</td>
+                                                <td><span class="ellip">배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명배송안내 상품명</span></td>
+                                                <td>
+                                                    <button class="btn sub" type="button">삭제</button>
+                                                    <button class="btn basic" type="button">사용</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination-container">
+                                        <ul class="pagination">
+                                            <li class="first"><a href="#">처음</a></li>
+                                            <li class="prev"><a href="#">이전</a></li>
+                                            <li class="active"><a>1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li class="next"><a href="#">다음</a></li>
+                                            <li class="last"><a href="#">마지막</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- // 목록보기 -->
+                            </div>
+                        </div>
+                        <!-- // 알림톡 템플릿 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 불러오기 -->
+
+    <!-- pop 미리보기 -->
+    <div class="pop_wrap pop_preview">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>미리보기</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <div class="preview sms">
+                        <div class="mobile_con">
+                            <div class="view_head">
+                                <span>01012345678</span>
+                            </div>
+                            <div class="view_con">
+                                <p class="sms_date">2020년 05월 31일(금) 오전 09:17</p>
+                                <div class="view_msg">
+                                    <div class="view_text">
+                                        <pre>
+<span>{이름}</span> 고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.
+새해 복 많이 받으시고 하시는 모든 일이 번창하시길 바랍니다.
+저희 OO몰도 더 나은 상품으로 계속 찾아뵙겠습니다.</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view_footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 미리보기 -->
+
+    <!-- pop XLS 업로드 -->
+    <div class="pop_wrap xls_upload">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>XLS 업로드</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <div class="xls_notice">
+                        <p class="warn_note">
+                            양식을 다운로드 후 각 항목을 입력하여 등록해주세요.<br />
+                            전화번호는 <em class="point">필수</em>로 입력해야 합니다.<br />
+                            050 안심번호는 통신사 문제로 문자 발송이 실패할 수 있습니다.
+                        </p>
+                        <button class="btn point" type="button">문자 양식 받기</button>
+                    </div>
+                    <button class="btn fin" type="button">파일 등록</button>
+                    <div class="line">
+                        <div class="total">총 <span class="point">5</span>건</div>
+                    </div>
+                    <table class="tb_style">
+                        <caption>수신자 목록</caption>
+                        <colgroup>
+                            <col style="width:70px;">
+                            <col style="width:120px;">
+                            <col span="5" style="width:110px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>이름</th>
+                                <th>전화번호</th>
+                                <th>비고1</th>
+                                <th>비고2</th>
+                                <th>비고3</th>
+                                <th>비고4</th>
+                                <th>비고5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>홍길동</td>
+                                <td>01012345678</td>
+                                <td>주문주문주문</td>
+                                <td>s10 블랙</td>
+                                <td>접수</td>
+                                <td>해외배송송 파송송송</td>
+                                <td>여러 줄 채워 봅니다<br /> ๑•‿•๑</td>
+                            </tr>
+                            <tr>
+                                <td>홍길동</td>
+                                <td>01012345678</td>
+                                <td>주문</td>
+                                <td>s10 블랙</td>
+                                <td></td>
+                                <td>해외배송</td>
+                                <td>대기자</td>
+                            </tr>
+                            <tr>
+                                <td>홍길동</td>
+                                <td>01012345678</td>
+                                <td>주문</td>
+                                <td></td>
+                                <td>접수</td>
+                                <td>해외배송</td>
+                                <td>대기자</td>
+                            </tr>
+                            <tr>
+                                <td>홍길동</td>
+                                <td>01012345678</td>
+                                <td>주문</td>
+                                <td>s10 블랙</td>
+                                <td>접수</td>
+                                <td>해외배송</td>
+                                <td>대기자</td>
+                            </tr>
+                            <tr>
+                                <td>홍길동</td>
+                                <td>01012345678</td>
+                                <td>주문</td>
+                                <td>s10 블랙</td>
+                                <td>접수</td>
+                                <td>해외배송</td>
+                                <td>대기자</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination-container">
+                        <ul class="pagination">
+                            <li class="first"><a href="#">처음</a></li>
+                            <li class="prev"><a href="#">이전</a></li>
+                            <li class="active"><a>1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next"><a href="#">다음</a></li>
+                            <li class="last"><a href="#">마지막</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn fin">수신 목록에 추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop XLS 업로드 -->
+
+    <!-- pop 주소록 불러오기 -->
+    <div class="pop_wrap address_call">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>주소록 불러오기</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <p class="warn_note">
+                        주소록 내용의 확인 및 편집은 주소록 메뉴에서 가능합니다.<br />
+                        주소록에 비고 항목이 입력된 경우 수신목록에 추가시 자동으로 입력됩니다.<br />
+                        제외를 원하시면 아래 체크를 해제한 후 추가를 눌러주세요. 단 <span class="point">알림톡</span>은 비고가 입력되지 않습니다.
+                    </p>
+                    <div class="line">
+                        <div class="text_menu sort">
+                            <li class="on"><button type="button">전체</button></li>
+                            <li><button type="button">ㄱ</button></li>
+                            <li><button type="button">ㄴ</button></li>
+                            <li><button type="button">ㄷ</button></li>
+                            <li><button type="button">ㄹ</button></li>
+                            <li><button type="button">ㅁ</button></li>
+                            <li><button type="button">ㅂ</button></li>
+                            <li><button type="button">ㅅ</button></li>
+                            <li><button type="button">ㅇ</button></li>
+                            <li><button type="button">ㅈ</button></li>
+                            <li><button type="button">ㅊ</button></li>
+                            <li><button type="button">ㅋ</button></li>
+                            <li><button type="button">ㅌ</button></li>
+                            <li><button type="button">ㅍ</button></li>
+                            <li><button type="button">ㅎ</button></li>
+                            <li><button type="button">A-Z</button></li>
+                            <li><button type="button">0-9</button></li>
+                        </div>
+                        <div class="line right_area">
+                            <select name="" id="">
+                                <option value="" selected>전화번호</option>
+                                <option value="">이름</option>
+                            </select>
+                            <div class="search_area">
+                                <input class="search" type="text" placeholder="내용 검색">
+                                <button><img src="../images/pofol/esMsg/icon/search.png" alt="찾기"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address_area">
+                        <div class="edit_area">
+                            <h4 class="edit_title">주소록</h4>
+                            <div class="edit_box">
+                                <div class="edit_head">
+                                    <div class="check_wrap multi">
+                                        <input id="allFolder" type="checkbox" value="">
+                                        <label for="allFolder"></label>
+                                    </div>
+                                </div>
+                                <div class="edit_list">
+                                    <ul class="address_folder">
+                                        <li>
+                                            <div class="check_wrap">
+                                                <input id="folder1" type="checkbox" value="">
+                                                <label for="folder1"></label>
+                                            </div>
+                                            <button class="folder on" type="button"><span>서울지역</span> (<span>120</span>)</button>
+                                            <ul class="address_list">
+                                                <li class="item">
+                                                    <div class="check_wrap">
+                                                        <input id="addressItem1" type="checkbox" value="">
+                                                        <label for="addressItem1">홍길동 / 01012345678</label>
+                                                    </div>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="check_wrap">
+                                                        <input id="addressItem2" type="checkbox" value="">
+                                                        <label for="addressItem2">원종홍 / 01012345678</label>
+                                                    </div>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="check_wrap">
+                                                        <input id="addressItem3" type="checkbox" value="">
+                                                        <label for="addressItem3">공경원 / 01012345678</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="check_wrap">
+                                                <input id="folder1" type="checkbox" value="">
+                                                <label for="folder1"></label>
+                                            </div>
+                                            <button class="folder" type="button"><span>인천지역</span> (<span>120</span>)</button>
+                                        </li>
+                                        <li>
+                                            <div class="check_wrap">
+                                                <input id="folder1" type="checkbox" value="">
+                                                <label for="folder1"></label>
+                                            </div>
+                                            <button class="folder" type="button"><span>test</span> (<span>120</span>)</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit_btn">
+                            <button class="btn border arrow" type="button">추가</button>
+                            <button class="btn border back_arrow" type="button">제거</button>
+                        </div>
+                        <div class="edit_area">
+                            <h4 class="edit_title">선택항목 총 <span>4</span>건</h4>
+                            <div class="edit_box">
+                                <div class="edit_head">
+                                    <div class="column">
+                                        <div class="check_wrap multi">
+                                            <input id="allItem" type="checkbox" value="">
+                                            <label for="allItem"></label>
+                                        </div>
+                                    </div>
+                                    <div class="column">이름</div>
+                                    <div class="column">전화번호</div>
+                                    <div class="column">그룹명</div>
+                                </div>
+                                <div class="edit_list">
+                                    <ul class="select_address">
+                                        <li>
+                                            <div class="column">
+                                                <div class="check_wrap">
+                                                    <input id="selectItem" type="checkbox" value="">
+                                                    <label for="selectItem"></label>
+                                                </div>
+                                            </div>
+                                            <div class="column">홍길동</div>
+                                            <div class="column">01012345678</div>
+                                            <div class="column" title="서울지역 30세 이상 고객">서울지역 30세 이상 고객</div>
+                                        </li>
+                                        <li>
+                                            <div class="column">
+                                                <div class="check_wrap">
+                                                    <input id="selectItem" type="checkbox" value="">
+                                                    <label for="selectItem"></label>
+                                                </div>
+                                            </div>
+                                            <div class="column">홍길동</div>
+                                            <div class="column">01012345678</div>
+                                            <div class="column" title="서울지역">서울지역</div>
+                                        </li>
+                                        <li>
+                                            <div class="column">
+                                                <div class="check_wrap">
+                                                    <input id="selectItem" type="checkbox" value="">
+                                                    <label for="selectItem"></label>
+                                                </div>
+                                            </div>
+                                            <div class="column">홍길동</div>
+                                            <div class="column">01012345678</div>
+                                            <div class="column" title="서울지역">서울지역</div>
+                                        </li>
+                                        <li>
+                                            <div class="column">
+                                                <div class="check_wrap">
+                                                    <input id="selectItem" type="checkbox" value="">
+                                                    <label for="selectItem"></label>
+                                                </div>
+                                            </div>
+                                            <div class="column">홍길동</div>
+                                            <div class="column">01012345678</div>
+                                            <div class="column" title="서울지역">서울지역</div>
+                                        </li>
+                                        <li>
+                                            <div class="column">
+                                                <div class="check_wrap">
+                                                    <input id="selectItem" type="checkbox" value="">
+                                                    <label for="selectItem"></label>
+                                                </div>
+                                            </div>
+                                            <div class="column">홍길동</div>
+                                            <div class="column">01012345678</div>
+                                            <div class="column" title="서울지역">서울지역</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn fin">수신 목록에 추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 주소록 불러오기 -->
+
+    <!-- pop 최근발송 -->
+    <div class="pop_wrap newest_send">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>최근발송</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <p class="warn_note">
+                        최근발송항목은 최대 30건까지 표시됩니다.<br />
+                        해당 발송건을 선택하여 추가하시면 발송에 사용된 모든 전화번호와 이름, 비고 또는 변수 항목이 입력됩니다.
+                    </p>
+                    <h4 class="pop_title">최근 발송항목 <span>30</span>건</h4>
+                    <table class="tb_style">
+                        <caption>최근 발송 항목</caption>
+                        <colgroup>
+                            <col style="width:50px">
+                            <col style="width:180px;">
+                            <col style="width:280px;">
+                            <col style="width:190px;">
+                            <col span="2" style="width:80px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><div class="check_wrap multi"><input id="" type="checkbox" value=""><label for=""></label></div></th>
+                                <th>번호</th>
+                                <th>발송내용</th>
+                                <th>발송일시</th>
+                                <th>성공</th>
+                                <th>실패</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="tb_scroll">
+                        <table class="tb_style">
+                            <caption>최근 발송 목록</caption>
+                            <colgroup>
+                                <col style="width:50px">
+                                <col style="width:180px;">
+                                <col style="width:280px;">
+                                <col style="width:190px;">
+                                <col span="2" style="width:80px;">
+                            </colgroup>
+                            <tbody>
+                                <!--30건이라 페이징x -->
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요.</td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span class="ellip">{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span>{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span>{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="check_wrap"><input id="" type="checkbox" value=""><label for=""></label></div></td>
+                                    <td>01012345678 외 19건</td>
+                                    <td><span>{이름}고객님 안녕하세요. 항상 행복만을 전달 해드리는 OO몰입니다.</span></td>
+                                    <td>2020-05-10<br />오후 12=25</td>
+                                    <td>16</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn fin">수신 목록에 추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 최근발송 -->
+
+    <!-- pop 텍스트입력(복사-붙여넣기) -->
+    <div class="pop_wrap text_ipt">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>텍스트입력(복사-붙여넣기)</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <p class="warn_note">
+                        줄바꿈으로 각 항목을 구분합니다. <span class="point">한줄당 1개의 번호</span>만 입력해주세요.<br />
+                        텍스트 입력은 <span class="point">전화번호</span>만 입력이 가능합니다.<br />
+                        성명 및 기타 항목을 입력하시려면 XLS업로드를 이용해주세요.
+                    </p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="한줄당 1개의 번호를 숫자만 입력해주세요.&#13;&#10;&#13;&#10;(예시) &#13;&#10;01012345678&#13;&#10;01012345679&#13;&#10;01023456789&#13;&#10;"></textarea>
+                    <button class="btn fin">수신 목록에 추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 텍스트입력(복사-붙여넣기) -->
+
+    <!-- pop 발송요청중 -->
+    <div class="pop_wrap send_req">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>발송요청중</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <div class="loader"></div>
+                    <p class="warn_note">주의 : 중간에 창을 닫으시면  문자 발송이<br />중단될 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 발송요청중 -->
+
+    <!-- pop 발송요청완료 -->
+    <div class="pop_wrap send_fin">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>발송요청완료</h3>
+                    <button class="close" type="button"><img src="../images/pofol/esMsg/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <div class="fin"><img src="../images/pofol/esMsg/icon/finish.png" alt="완료"></div>
+                    <p class="warn_note">
+                        발송건수가 많을 경우 발송 완료까지 시간이 걸릴 수 있습니다.<br />
+                        발송 결과는 발송 이력에서 확인하실 수 있습니다.
+                    </p>
+                    <div class="btn_group">
+                        <button class="btn point" type="button">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //pop 발송요청완료 -->
+
+    <script>
+        $(function(){
+            /* 스크립트는 전부 삭제하셔도 무방 퍼블, 기획 등 확인용입니다. */
+            // 날짜 시간
+            var today = new Date();
+            var sendCalendar = $('.calendar input').datepicker({
+                dateFormat: 'yy-mm-dd',
+                changeMonth: true,
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                yearSuffix: '년',
+                todayHighlight: true,
+                selectOtherMonths : false
+            });
+            $('.calendar input').datepicker('setDate', today);
+
+            var sendCalendar = $('.clock input').timepicker({
+                timeFormat: 'hh:mm p',
+                interval: 15,
+                defaultTime: today.getHours()+'',
+                dropdown: false
+            });
+
+            // 텝메뉴
+            $(".tab_menu").on("click", "li", function(){
+                var i = $(this).index();
+                $(this).siblings().removeClass("on");
+                $(this).addClass("on");
+                $(this).parent().siblings(".tab_con").children(".item").removeClass("on");
+                $(this).parent().siblings(".tab_con").children(".item").eq(i).addClass("on");
+            });
+
+            $(".text_menu").on("click", "li", function(){
+                var i = $(this).index();
+                $(this).siblings().removeClass("on");
+                $(this).addClass("on");
+                $(this).parent().siblings(".text_con").children(".item").removeClass("on");
+                $(this).parent().siblings(".text_con").children(".item").eq(i).addClass("on");
+            });
+
+
+            // 테이블 스크롤 생길 때 너비 조절 스타일 - 삭제 X
+            $('.tb_scroll').each(function(){
+                if( $(this).find('tr').length > 5 ){
+                    var xScrollWidth = $(this).get(0).scrollWidth - $(this).outerWidth();
+                    $(this).css('margin-right', xScrollWidth +"px");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

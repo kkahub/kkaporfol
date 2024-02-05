@@ -59,7 +59,7 @@
       "participation": "웹퍼블리싱 100%",
       "url": {
         "service": ["https://www.esellers.co.kr/introduce/sms"],
-        "sample": ["http://peelwork.com/esMsgIndex.html"]
+        "sample": ["/html/esMsgIndex.html"]
       }
     },
     {
@@ -174,8 +174,7 @@
       "skills": ["SCSS", "css animation"],
       "participation": "웹퍼블리싱 100%",
       "url": {
-        "service": [""],
-        "sample": ["http://peelwork.com/minishopTrendy.html"]
+        "sample": ["/html/minishopTrendy.html"]
       }
     },
     {
@@ -186,8 +185,7 @@
       "skills": ["SCSS", "css animation"],
       "participation": "웹퍼블리싱 100%",
       "url": {
-        "service": ["http://peelwork.com/minishopStory.html"],
-        "sample": [""]
+        "sample": ["/html/minishopStory.html"]
       }
     },
     {
@@ -198,8 +196,7 @@
       "skills": ["SCSS", "css animation"],
       "participation": "웹퍼블리싱 100%",
       "url": {
-        "service": [""],
-        "sample": ["http://peelwork.com/minishopSimple.html"]
+        "sample": ["/html/minishopSimple.html"]
       }
     },
     {
@@ -211,7 +208,7 @@
       "participation": "웹디자인/웹퍼블리싱 100%",
       "url": {
         "service": [""],
-        "sample": ["http://peelwork.com/adcore2017.html"]
+        "sample": ["/html/adcore2017.html"]
       }
     },
     {
@@ -347,7 +344,7 @@
       "participation": "웹디자인 100% / 웹퍼블리싱 100%",
       "url": {
         "service": [""],
-        "sample": ["http://peelwork.com/adcore2016.html"]
+        "sample": ["/html/adcore2016.html"]
       }
     },
     {

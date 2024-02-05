@@ -24,7 +24,7 @@ export default function Portfolio() {
   const handlePage = useCallback(
     (e: React.ChangeEvent<unknown>, p: number) => {
       dispatch(setPage(p));
-      dispatch(setSliceList);
+      dispatch(setSliceList());
     },
     [dispatch],
   );
@@ -34,10 +34,10 @@ export default function Portfolio() {
   };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(searchList);
+    dispatch(searchList());
     dispatch(setPage(1));
-    dispatch(setTotalPage);
-    dispatch(setSliceList);
+    dispatch(setTotalPage());
+    dispatch(setSliceList());
   };
 
   const [showModal, setShowModal] = useState<boolean>(false);
