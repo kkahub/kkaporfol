@@ -1,0 +1,1067 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>다이애드 WAVE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="../images/pofol/diad/wave/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../css/diad/wave/style.min.css">
+
+    <!-- Head Js-->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="../js/diad/wave/jquery-3.3.1.min.js"></script> -->
+    <script src="../js/diad/wave/common.js"></script>
+</head>
+
+<body>
+    <div class="scale_trim">
+        <div id="wrap">
+            <!-- Lnb -->
+            <div class="lnb">
+                <div id="header">
+                    <h1 class="logo"><a href="index.html">다이애드 <span>WAVE</span></a></h1>
+                    <dl class="text_zoom">
+                        <dt>화면크기</dt>
+                        <dd>
+                            <ul>
+                                <li><button class="minus" type="button">축소</button></li>
+                                <li><button class="plus" type="button">확대</button></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <a class="logout" href="login.html">로그아웃</a>
+                </div>
+                <div id="nav">
+                    <nav>
+                        <ul class="gnb depth1">
+                            <li class="toggle_down">
+                                <a href="#판매이력" title="판매이력">
+                                    판매이력<span class="toggle_icon"></span>
+                                </a>
+                                <ul class="depth2">
+                                    <li class="nav_item"><a href="이베이판매이력.html" title="이베이 판매이력">이베이 판매이력</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item">
+                                <a href="마케팅일지.html" title="마케팅 일지">마케팅 일지</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="알림설정.html" title="알림설정">알림설정</a>
+                            </li>
+                            <li class="toggle_down">
+                                <a href="#WAVE매뉴얼" title="WAVE 매뉴얼">
+                                    WAVE 매뉴얼<span class="toggle_icon"></span>
+                                </a>
+                                <ul class="depth2 ">
+                                    <li class="nav_item"><a href="#이베이매뉴얼" title="이베이 매뉴얼">이베이 매뉴얼</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- // Lnb -->
+
+            <!-- Container  -->
+            <div id="container">
+                <div class="sale_history ebay">
+                    <div class="con">
+                        <div class="content_header">
+                            <h2>이베이 판매이력</h2>
+
+                            <dl class="service_state">
+                                <dt>서비스 타입</dt>
+                                <dd><i class="icon basic">A</i> (총 수집개수 30개)</dd>
+                                <dt>서비스 등급</dt>
+                                <dd><i class="icon rating purple"></i> 퍼플(수집주기 1일)</dd>
+                                <dt>서비스 이용기간</dt>
+                                <dd><i class="icon basic">D-30</i> 2019.12.20 ~ 2020.01.20</dd>
+                            </dl>
+                            <!-- <div class="need_payment">
+                                <p>※ 서비스 기간이 만료했거나 서비스 정보가 없습니다. 결제 후 이용해 주시기 바랍니다.</p>
+                                <a class="btn warn md" href="#">결제하기</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="sale_list">
+                            <p class="warn sale_notice">※ 데이터 수집은 <strong>매일 오전 6시 ~ 8시</strong> 사이에 진행됩니다. 수집 완료 이후 오늘의 데이터가 노출됩니다.</p>
+                            <div class="detail_search detail_option_box">
+                                <button class="btn_detail_search" type="button">상세검색 열기</button>
+                                <div class="detail_option">
+                                    <ul class="divide">
+                                        <li>
+                                            <div class="group_line">
+                                                <div class="line">
+                                                    <h3>조회그룹</h3>
+                                                    <div class="select_list_wrap">
+                                                        <div class="chk_wrap">
+                                                            <input id="groupAll" class="chk_all" type="checkbox" checked>
+                                                            <span class="chk_img"></span>
+                                                        </div>
+                                                        <label for="groupAll">모두선택</label>
+                                                    </div>
+                                                </div>
+                                                <ul class="select_list">
+                                                    <li>
+                                                        <div class="chk_wrap">
+                                                            <input id="item1" name="item1" type="checkbox" checked>
+                                                            <span class="chk_img"></span>
+                                                        </div>
+                                                        <label for="item1">최대 판매-지마켓-생활용품</label>
+                                                    </li>
+                                                    <li>
+                                                        <div class="chk_wrap">
+                                                            <input id="item2" name="item2" type="checkbox" checked>
+                                                            <span class="chk_img"></span>
+                                                        </div>
+                                                        <label for="item2">최대 판매-옥션-생활용품</label>
+                                                    </li>
+                                                    <li>
+                                                        <div class="chk_wrap">
+                                                            <input id="item3" name="item3" type="checkbox" checked>
+                                                            <span class="chk_img"></span>
+                                                        </div>
+                                                        <label for="item3">핸드폰 악세사리 : 최저 판매</label>
+                                                    </li>
+                                                    <li>
+                                                        <div class="chk_wrap">
+                                                            <input id="item3" name="item3" type="checkbox" checked>
+                                                            <span class="chk_img"></span>
+                                                        </div>
+                                                        <label for="item3">핸드폰 악세사리 : 지마켓 최대 판매</label>
+                                                    </li>
+                                                    <li>
+                                                        <div class="chk_wrap">
+                                                            <input id="item4" name="item4" type="checkbox" checked>
+                                                            <span class="chk_img"></span>
+                                                        </div>
+                                                        <label for="item4">기타</label>
+                                                    </li>
+                                                    <li>
+                                                        <div class="chk_wrap">
+                                                            <input id="item5" name="item5" type="checkbox" checked>
+                                                            <span class="chk_img"></span>
+                                                        </div>
+                                                        <label for="item5">모바일 관련</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="group_line">
+                                                <label for="searchTenderSet">비교일</label>
+                                                <div class="search_compare"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="group_line">
+                                                <label for="searchTenderSet">기준일</label>
+                                                <div class="search_standard"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="btn_group">
+                                        <li><button class="btn basic md btn_search_go" type="button">상세검색</button></li>
+                                        <li><button class="btn second md btn_reset" type="button">초기화</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="title_area">
+                                <h3 class="headline left">
+                                    비교일: <span class="date_com">0000-00-00</span>
+                                    <span class="compare">비교</span>
+                                    기준일: <span class="date_stand">0000-00-00</span>
+                                </h3>
+                                <ul class="date_info left">
+                                    <li>전일(D-1): <span>2020-01-27</span></li>
+                                    <li>전주(D-7): <span>2020-01-21</span></li>
+                                    <li>2주(D-14): <span>2020-01-14</span></li>
+                                    <li>전월(D-30): <span>2019-12-29</span></li>
+                                </ul>
+                            </div>
+                            <div class="top_wrap">
+                                <ul class="sale_manage">
+                                    <li>
+                                        <div class="btn_group">
+                                            <button class="btn basic btn_add" type="button">그룹추가</button>
+                                            <button class="btn second btn_del" type="button">삭제</button>
+                                        </div>
+                                    </li>
+                                    <li><button class="btn_custom_report" type="button">사용자 지정 보기</button></li>
+                                </ul>
+                                <div class="result_sort">
+                                    <dl class="search_result">
+                                        <dt>검색결과</dt>
+                                        <dd class="comma">1000 건</dd>
+                                    </dl>
+                                    <div class="select_box">
+                                        <label for="listBundle">100개</label>
+                                        <select id="listBundle">
+                                            <option value="10">10개</option>
+                                            <option value="20">20개</option>
+                                            <option value="50">50개</option>
+                                            <option value="100" selected="">100개</option>
+                                        </select>
+                                    </div>
+                                    <div class="result_manage">
+                                        <button class="btn basic" type="button">엑셀다운</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ebaySale" class="grid_wrap">
+                                <div class="grid_header">
+                                    <div class="fixed_group">
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">그룹명</div>
+                                        </div>
+                                    </div>
+                                    <div class="scrolled">
+                                        <div class="grid_row">
+                                            <div class="grid_cell">상품수</div>
+                                            <div class="grid_cell">비교일 판매량</div>
+                                            <div class="grid_cell">기준일 판매량</div>
+                                            <div class="grid_cell">전일(D-1)</div>
+                                            <div class="grid_cell">전주(D-7)</div>
+                                            <div class="grid_cell">2주(D-14)</div>
+                                            <div class="grid_cell">전월(D-30)</div>
+                                            <div class="grid_cell">가격 변경</div>
+                                            <div class="grid_cell">배송비 변경</div>
+                                            <div class="grid_cell">상품명 변경</div>
+                                            <div class="grid_cell">검색실패</div>
+                                            <div class="grid_cell">상세</div>
+                                            <div class="grid_cell">상품추가</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid_body">
+                                    <div class="fixed_group"><div class="grid_row"></div></div>
+                                    <div class="scrolled">
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">
+                                                <div class="chk_wrap">
+                                                    <input type="checkbox"><span class="chk_img"></span>
+                                                </div>
+                                            </div>
+                                            <div class="grid_cell fixed">
+                                                <button class="btn_graph on" type="button">그래프 보기</button>
+                                            </div>
+                                            <div class="grid_cell fixed">지마켓</div>
+                                            <div class="grid_cell fixed">
+                                                <span class="comma">2000</span>건
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">884000</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="top"><span class="comma">984000</span>개</div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3900</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">33100</span>개<br /><strong class="dec">(<span class="comma">-32140</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3100</span>개<br /><strong class="equal">(0)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">73900</span>개<br /><strong class="inc">(<span class="comma">+2500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell right">2회</div>
+                                            <div class="grid_cell right">0회</div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell"><a href="판매이력상세.html" class="btn second btn_detail">상세</a></div>
+                                            <div class="grid_cell"><button class="btn second btn_product_add" type="button">추가</button></div>
+                                        </div>
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">
+                                                <div class="chk_wrap">
+                                                    <input type="checkbox"><span class="chk_img"></span>
+                                                </div>
+                                            </div>
+                                            <div class="grid_cell fixed">
+                                                <button class="btn_graph on" type="button">그래프 보기</button>
+                                            </div>
+                                            <div class="grid_cell fixed"><span>옥션</span></div>
+                                            <div class="grid_cell fixed">
+                                                <span class="comma">2000</span>건
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">884000</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="top"><span class="comma">984000</span>개</div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3900</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">33100</span>개<br /><strong class="dec">(<span class="comma">-32140</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3100</span>개<br /><strong class="equal">(0)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">73900</span>개<br /><strong class="inc">(<span class="comma">+2500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell right">2회</div>
+                                            <div class="grid_cell right">0회</div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell"><button class="btn second btn_detail" type="button">상세</button></div>
+                                            <div class="grid_cell"><button class="btn second btn_product_add" type="button">추가</button></div>
+                                        </div>
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">
+                                                <div class="chk_wrap">
+                                                    <input type="checkbox"><span class="chk_img"></span>
+                                                </div>
+                                            </div>
+                                            <div class="grid_cell fixed">
+                                                <button class="btn_graph" type="button">그래프 보기</button>
+                                            </div>
+                                            <div class="grid_cell fixed"><span>핸드폰</span></div>
+                                            <div class="grid_cell fixed">
+                                                <span class="comma">2000</span>건
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">884000</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="top"><span class="comma">984000</span>개</div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3900</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">33100</span>개<br /><strong class="dec">(<span class="comma">-32140</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3100</span>개<br /><strong class="equal">(0)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">73900</span>개<br /><strong class="inc">(<span class="comma">+2500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell right">2회</div>
+                                            <div class="grid_cell right">0회</div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell"><button class="btn second btn_detail" type="button">상세</button></div>
+                                            <div class="grid_cell"><button class="btn second btn_product_add" type="button">추가</button></div>
+                                        </div>
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">
+                                                <div class="chk_wrap">
+                                                    <input type="checkbox"><span class="chk_img"></span>
+                                                </div>
+                                            </div>
+                                            <div class="grid_cell fixed">
+                                                <button class="btn_graph on" type="button">그래프 보기</button>
+                                            </div>
+                                            <div class="grid_cell fixed"><span>악세사리</span></div>
+                                            <div class="grid_cell fixed">
+                                                <span class="comma">2000</span>건
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">884000</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="top"><span class="comma">984000</span>개</div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3900</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">33100</span>개<br /><strong class="dec">(<span class="comma">-32140</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3100</span>개<br /><strong class="equal">(0)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">73900</span>개<br /><strong class="inc">(<span class="comma">+2500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell right">2회</div>
+                                            <div class="grid_cell right">0회</div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell"><button class="btn second btn_detail" type="button">상세</button></div>
+                                            <div class="grid_cell"><button class="btn second btn_product_add" type="button">추가</button></div>
+                                        </div>
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">
+                                                <div class="chk_wrap">
+                                                    <input type="checkbox"><span class="chk_img"></span>
+                                                </div>
+                                            </div>
+                                            <div class="grid_cell fixed">
+                                                <button class="btn_graph" type="button">그래프 보기</button>
+                                            </div>
+                                            <div class="grid_cell fixed"><span>기타</span></div>
+                                            <div class="grid_cell fixed">
+                                                <span class="comma">2000</span>건
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">884000</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="top"><span class="comma">984000</span>개</div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3900</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">33100</span>개<br /><strong class="dec">(<span class="comma">-32140</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3100</span>개<br /><strong class="equal">(0)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">73900</span>개<br /><strong class="inc">(<span class="comma">+2500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell right">2회</div>
+                                            <div class="grid_cell right">0회</div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell"><button class="btn second btn_detail" type="button">상세</button></div>
+                                            <div class="grid_cell"><button class="btn second btn_product_add" type="button">추가</button></div>
+                                        </div>
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">
+                                                <div class="chk_wrap">
+                                                    <input type="checkbox"><span class="chk_img"></span>
+                                                </div>
+                                            </div>
+                                            <div class="grid_cell fixed">
+                                                <button class="btn_graph" type="button">그래프 보기</button>
+                                            </div>
+                                            <div class="grid_cell fixed"><span>최저판매</span></div>
+                                            <div class="grid_cell fixed">
+                                                <span class="comma">2000</span>건
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">884000</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="top"><span class="comma">984000</span>개</div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3900</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">33100</span>개<br /><strong class="dec">(<span class="comma">-32140</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3100</span>개<br /><strong class="equal">(0)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">73900</span>개<br /><strong class="inc">(<span class="comma">+2500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell right">2회</div>
+                                            <div class="grid_cell right">0회</div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell"><button class="btn second btn_detail" type="button">상세</button></div>
+                                            <div class="grid_cell"><button class="btn second btn_product_add" type="button">추가</button></div>
+                                        </div>
+                                        <div class="grid_row">
+                                            <div class="grid_cell fixed">
+                                                <div class="chk_wrap">
+                                                    <input type="checkbox"><span class="chk_img"></span>
+                                                </div>
+                                            </div>
+                                            <div class="grid_cell fixed">
+                                                <button class="btn_graph" type="button">그래프 보기</button>
+                                            </div>
+                                            <div class="grid_cell fixed"><span>최저</span></div>
+                                            <div class="grid_cell fixed">
+                                                <span class="comma">2000</span>건
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">884000</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="top"><span class="comma">984000</span>개</div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3900</span>개<br /><strong class="inc">(<span class="comma">+1500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">33100</span>개<br /><strong class="dec">(<span class="comma">-32140</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">3100</span>개<br /><strong class="equal">(0)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">
+                                                <div class="mid"><span class="comma">73900</span>개<br /><strong class="inc">(<span class="comma">+2500</span>)</strong></div>
+                                            </div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell right">2회</div>
+                                            <div class="grid_cell right">0회</div>
+                                            <div class="grid_cell right">1회</div>
+                                            <div class="grid_cell"><button class="btn second btn_detail" type="button">상세</button></div>
+                                            <div class="grid_cell"><button class="btn second btn_product_add" type="button">추가</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 임시 페이지네이션 -->
+                            <div class="pagination-container">
+                                <div class="pagination">
+                                    <a class="first"><img src="../images/pofol/diad/wave/icon/arrow_first_page.png" alt="처음으로"></a>
+                                    <a class="prev"><img src="../images/pofol/diad/wave/icon/arrow_prev_page.png" alt="이전으로"></a>
+                                    <a class="active" href="#">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">7</a>
+                                    <a href="#">8</a>
+                                    <a href="#">9</a>
+                                    <a href="#">10</a>
+                                    <a class="next"><img src="../images/pofol/diad/wave/icon/arrow_next_page.png" alt="다음으로"></a>
+                                    <a class="last"><img src="../images/pofol/diad/wave/icon/arrow_last_page.png" alt="마지막으로"></a>
+                                </div>
+                            </div>
+                            <!-- // 임시 페이지네이션 -->
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="sale_graph">
+                            <h3 class="headline">그룹별 판매량 변동</h3>
+                            <div id="ebaySaleChange" class="chart_line"></div>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="sale_graph">
+                            <h3 class="headline">그룹별 누적 판매량</h3>
+                            <div id="ebaySaleAccrue" class="chart_line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Container  -->
+        </div>
+    </div>
+
+    <!-- PopUp 그룹추가 -->
+    <div class="pop_wrap group_add">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>그룹추가</h3>
+                    <button class="close" type="button"><img src="../images/pofol/diad/wave/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <div class="group_line">
+                        <div class="line">
+                            <label class="label_title" for="groupName">그룹명</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="pop_footer">
+                    <ul class="btn_group">
+                        <li><button class="btn basic btn_save" type="button">저장</button></li>
+                        <li><button class="btn second btn_close" type="button">닫기</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // PopUp 그룹추가 -->
+
+    <!-- PopUp 사용자 지정 보기 -->
+    <div class="pop_wrap custom_report no_pin">
+        <div class="pop_inner">
+            <div class="pop_win">
+                <div class="pop_header">
+                    <h3>사용자 지정 보기</h3>
+                    <button class="close" type="button"><img src="../images/pofol/diad/wave/icon/pop_close.png" alt="닫기"></button>
+                </div>
+                <div class="pop_body">
+                    <div class="group_line">
+                        <p class="pop_head_notice">※ 사용자 지정 보기는 선택한 항목만 모아 보기가 가능합니다.</p>
+                    </div>
+                    <ul id="gridAlign" class="group_line grid_align">
+                        <li class="ghost"></li>
+                    </ul>
+                </div>
+                <div class="pop_footer">
+                    <ul class="btn_group">
+                        <li><button class="btn basic btn_column_align" type="button">확인</button></li>
+                        <li><button class="btn second btn_align_reset" type="button">초기화</button></li>
+                    </ul>
+                    <div class="full_chk">
+                        <div class="chk_wrap">
+                            <input id="customListAllChk" class="chk_all" name="customListAllChk" type="checkbox"><span class="chk_img"></span>
+                        </div>
+                        <label for="customListAllChk">모두체크</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // PopUp 사용자 지정 보기 -->
+
+    <script src="../js/diad/wave/modernizr-2.6.2.js"></script>
+    <script src="../js/diad/wave/sale-ui.js"></script>
+    <script src="../js/diad/wave/grid-dragndrop.js"></script>
+    <script src="../js/diad/wave/plugins/jqueryui/jquery-ui.js"></script>
+    <script src="../js/diad/wave/plugins/amchart/core.js"></script>
+    <script src="../js/diad/wave/plugins/amchart/charts.js"></script>
+    <script src="../js/diad/wave/plugins/amchart/themes/wave.js"></script>
+    <script src="../js/diad/wave/plugins/amchart/themes/animated.js"></script>
+    <script src="../js/diad/wave/graph/saleGraph.js"></script>
+    <script>
+        $(function(){
+            // 팝업 - 그룹추가
+            $('.sale_manage .btn_add').on('click', function(){
+                var popGroupAdd = new PopUp(this,'.group_add','.group_add .close, .group_add .btn_close');
+            });
+
+            // 그룹 삭제
+            $('.sale_manage .btn_del').on('click', function(){
+                var $chkItem = $("#ebaySale input:checkbox"),
+                    chkUseYn = $chkItem.is(":checked");
+
+                if (chkUseYn) {
+                    //checkBox Value 가져오기
+                    var selectedIDs = new Array();
+                    $chkItem.each(function () {
+                        if ($(this).prop('checked')) {
+                            selectedIDs.push("'" + $(this).val() + "'");
+                        }
+                    });
+
+                    $('body').popConfirm({
+                        text: '그룹을 삭제 하겠습니까?',
+                        confirmText: '삭제',
+                        btnChk: function (isConfirm) {
+                            if (isConfirm) {
+                                // 로딩 시작
+                                loadingBar.playLoad();
+
+                                //form submit
+                                $.ajax({
+                                    type: "POST",
+                                    url: "",
+                                    contentType: "",
+                                    data: { },
+                                    success: iOnSuccess,
+                                    failure: iOnFailure,
+                                    error: function (response) {
+                                        $('body').popAlert(response.responseText);
+                                        // 로딩 종료
+                                        loadingBar.stopLoad();
+                                    }
+                                });
+                            }
+                        }
+                    });
+                }
+                else {
+                    $('body').popAlert("삭제 하실 그룹을 선택해주세요.");
+                }
+            });
+
+            // 사용자 지정 보기 버튼 모두 선택
+           var customAllChk = new CustomAllBtnSelect('.custom_report', '#gridAlign');
+
+            // 사용자 지정 보기 초기화 - 모두체크 체크하기
+            $('.btn_align_reset').on('click', function () {
+                $('.full_chk .chk_all').prop('checked', true);
+            });
+        });
+        $(window).on('load', function(){
+            // 콤마
+            comma();
+
+            // 상세검색 열기 드롭메뉴
+            var dropEbayHistory = new DropLayer('.btn_detail_search','.detail_search  .detail_option','.btn_search_go');
+
+            // 상세검색 조회그룹 모두선택 - 체크박스
+            var detailSearchViewGroupAllChk = new AllChkSelect('.group_line', '.select_list');
+
+            // 상세검색 비교일, 기준일 달력
+            var date = new Date();
+                date.setDate(date.getDate()-1);
+
+            // 상세검색 달력 초기 셋팅
+            $('.search_compare').datepicker('setDate', formatConvert._convert(new Date(), -1));
+            $('.search_standard').datepicker('setDate', new Date());
+
+            var searchDateCompare = $('.search_compare').datepicker({
+                dateFormat: 'yy-mm-dd',
+                changeMonth: true,
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                yearSuffix: '년',
+                todayHighlight: true,
+                maxDate: date
+            });
+            var searchDateStandard = $('.search_standard').datepicker({
+                dateFormat: 'yy-mm-dd',
+                changeMonth: true,
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                yearSuffix: '년',
+                todayHighlight: true,
+                maxDate: new Date(),
+                onSelect: function () {
+                    searchDateCompare.datepicker('option', 'maxDate',  formatConvert._convert(getDate(this.value), -1) );
+                }
+            });
+
+            // 상세검색 초기화
+            $('.detail_search .btn_reset').on('click', function(){
+                var detailSearchChkReset = new ChkAllReset('.detail_option','.divide');
+
+                $('.search_compare').datepicker({
+                    maxDate: date,
+                    setDate: new Date()
+                });
+
+                $('.search_standard').datepicker('setDate', new Date());
+            });
+
+            // 판매이력 타이틀 초기 비교일, 기준일
+            $('.date_com').text(formatConvert._convert(date, 0));
+            $('.date_stand').text(formatConvert._convert(date, 1));
+
+            // 판매이력 너비 배열, 그리드
+            var initArr = [
+                {
+                    "Index": 0,
+                    "Title": "그룹명",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "groupName",
+                    "Width": 170
+                }, {
+                    "Index": 1,
+                    "Title": "상품수",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "productCount",
+                    "Width": 74
+                }, {
+                    "Index": 2,
+                    "Title": "비교일 판매량",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "salesVolume",
+                    "Width": 108
+                }, {
+                    "Index": 3,
+                    "Title": "기준일 판매량",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "salesVolume",
+                    "Width": 108
+                }, {
+                    "Index": 4,
+                    "Title": "전일(D-1)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay1",
+                    "Width": 101
+                }, {
+                    "Index": 5,
+                    "Title": "전주(D-7)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay7",
+                    "Width": 101
+                }, {
+                    "Index": 6,
+                    "Title": "2주(D-14)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay30",
+                    "Width": 101
+                }, {
+                    "Index": 7,
+                    "Title": "전월(D-30)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay30",
+                    "Width": 101
+                }, {
+                    "Index": 8,
+                    "Title": "가격 변경",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "priceChange",
+                    "Width": 90
+                }, {
+                    "Index": 9,
+                    "Title": "배송비 변경",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "priceDeliverChange",
+                    "Width": 92
+                }, {
+                    "Index": 10,
+                    "Title": "상품명 변경",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "productNameChange",
+                    "Width": 92
+                }, {
+                    "Index": 11,
+                    "Title": "검색실패",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "searchFail",
+                    "Width": 90
+                }, {
+                    "Index": 12,
+                    "Title": "상세",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "detailInfo",
+                    "Width": 81
+                }, {
+                    "Index": 13,
+                    "Title": "추가",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "productAdd",
+                    "Width": 81
+                }
+            ];
+
+            var arr = [
+                {
+                    "Index": 0,
+                    "Title": "그룹명",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "groupName",
+                    "Width": 160
+                }, {
+                    "Index": 1,
+                    "Title": "상품수",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "productCount",
+                    "Width": 79
+                }, {
+                    "Index": 2,
+                    "Title": "비교일 판매량",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "salesVolume",
+                    "Width": 108
+                }, {
+                    "Index": 3,
+                    "Title": "기준일 판매량",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "salesVolume",
+                    "Width": 108
+                }, {
+                    "Index": 4,
+                    "Title": "전일(D-1)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay1",
+                    "Width": 95
+                }, {
+                    "Index": 5,
+                    "Title": "전주(D-7)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay7",
+                    "Width": 95
+                }, {
+                    "Index": 6,
+                    "Title": "2주(D-14)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay30",
+                    "Width": 100
+                }, {
+                    "Index": 7,
+                    "Title": "전월(D-30)",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "dDay30",
+                    "Width": 100
+                }, {
+                    "Index": 8,
+                    "Title": "가격 변경",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "priceChange",
+                    "Width": 88
+                }, {
+                    "Index": 9,
+                    "Title": "배송비 변경",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "priceDeliverChange",
+                    "Width": 92
+                }, {
+                    "Index": 10,
+                    "Title": "상품명 변경",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "productNameChange",
+                    "Width": 92
+                }, {
+                    "Index": 11,
+                    "Title": "검색실패",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "searchFail",
+                    "Width": 88
+                }, {
+                    "Index": 12,
+                    "Title": "상세",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "detailInfo",
+                    "Width": 95
+                }, {
+                    "Index": 13,
+                    "Title": "추가",
+                    "View": true,
+                    "Fixed": false,
+                    "Name": "productAdd",
+                    "Width": 95
+                }
+            ];
+
+            var gridEbaySale = new TableGridAlign('ebaySale', initArr, arr, function () {
+                $('#ebaySale .grid_header .scrolled .grid_row').prepend('<div style="width:45px;" class="grid_cell" name="chkbox"><div class="chk_wrap"><input class="chk_all" type="checkbox"><span class="chk_img"></span></div></div><div style="width:62px;" class="grid_cell" name="graphView">그래프</div>');
+            });
+
+            // 테이블 모두선택 - 체크박스
+            var tenderManageAllChk = new AllChkSelect('.grid_wrap', '.grid_body');
+
+            // 팝업 - 사용자 지정 보기
+            $('.btn_custom_report').on('click', function(e){
+                var popCustomReport = new PopUp(this,'.custom_report','.custom_report .close');
+            });
+
+            // 그래프 생성
+
+            // 렌덤 데이터 뽑기 - 나중에 실제 데이터로 교체하고 삭제
+            var saleChangeData = [];
+            var saleAccrueData = [];
+            function groupData() {
+                var group1 = 3870;
+                var group2 = 3270;
+                var group3 = 2790;
+                var group4 = 2470;
+                var group5 = 2100;
+                var group6 = 1700;
+                var group7 = 1250;
+
+                for (var i = 0; i < 30; i++) {
+                    group1 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+                    group2 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+                    group3 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+                    group4 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+                    group5 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+                    group6 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+                    group7 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+
+                    saleChangeData.push({
+                        date: formatConvert._convert(new Date(2019, 0, i),0),
+                        group1: group1,
+                        group2: group2,
+                        group3: group3,
+                        group4: group4,
+                        group5: group5,
+                        group6: group6,
+                        group7: group7
+                    });
+                }
+                for (var i = 0; i < 365; i++) {
+                    group1 += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 50);
+                    group2 += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 50);
+                    group3 += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 50);
+                    group4 += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 50);
+                    group5 += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 50);
+                    group6 += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 50);
+                    group7 += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random() * 50);
+
+                    saleAccrueData.push({
+                        date: formatConvert._convert(new Date(2019, 0, i),0),
+                        group1: group1,
+                        group2: group2,
+                        group3: group3,
+                        group4: group4,
+                        group5: group5,
+                        group6: group6,
+                        group7: group7
+                    });
+                }
+                return saleChangeData, saleAccrueData;
+            }
+            groupData();
+            // -- 렌덤 데이터 뽑기 - 나중에 실제 데이터로 교체하고 삭제
+
+            // 그룹별 판매량 변동 (id, data)
+            var ebayChangeGraph = new GroupGraph("ebaySaleChange", saleChangeData);
+
+            // 그룹별 누적 판매량
+            var ebayAccrueGraph = new GroupGraph("ebaySaleAccrue", saleAccrueData);
+
+            $(".sale_history .btn_graph").on('click', function(){
+                var i = $(".sale_history .btn_graph").index(this);
+                    onCnt = $(".sale_history .btn_graph.on").length;
+
+                if ($(this).hasClass('on') === false) {
+                    if (onCnt < 6) {
+                        $(this).addClass('on');
+
+                        ebayChangeGraph.graphAdd(i);
+                        ebayAccrueGraph.graphAdd(i);
+                    } else {
+                        $('body').popAlert("그래프는 최대 5개 까지 선택 할 수 있습니다.");
+                    }
+                } else {
+                    $(this).removeClass('on');
+
+                    ebayChangeGraph.graphDel(i);
+                    ebayAccrueGraph.graphDel(i);
+                }
+            });
+        });
+
+        // 지정할 수 있는 날짜 제한
+        function getDate(val) {
+            var date;
+            try {
+                date = $.datepicker.parseDate('yy-mm-dd', val);
+            } catch (error) {
+                date = null;
+            }
+            return date;
+        }
+    </script>
+</body>
+</html>
