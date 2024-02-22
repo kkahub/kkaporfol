@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>롯데글로벌로지스 관리자</title>
+        <link rel="shortcut icon" href="../images/pofol/lottelogis/favicon.ico" type="image/x-icon" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bootstrap/plugins/fontawesome-free/css/all.min.css" />
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <!-- iCheck -->
+        <link rel="stylesheet" href="../bootstrap/plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bootstrap/css/adminlte.css" />
+        <!-- Custom Style -->
+        <link rel="stylesheet" href="../css/lottelogis/styles.min.css" />
+    </head>
+    <body>
+        <div class="wrapper d-flex">
+            <!-- LNB -->
+            <aside class="main-sidebar sidebar-light-danger elevation-2 sidebar-focused">
+                <div class="content-header">
+                    <a href="#">
+                        <h1 class="text-center py-3">LGLHOME</h1>
+                    </a>
+                    <div class="d-flex justify-content-between pt-3 pb-2">
+                        <p class="user_name">홍길동</p>
+                        <p class="user_ip">123.123.132.123</p>
+                    </div>
+                    <button class="btn btn-line-point btn-block" type="button">로그아웃</button>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar pt-1 px-3">
+                    <nav class="mt-2">
+                        <ul class="nav nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <li class="nav-item menu-open">
+                                <a href="#" class="nav-link">
+                                    <p>
+                                        <i class="right fas fa-angle-left"></i>
+                                        LGLHOME
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item menu-open">
+                                        <a href="#" class="nav-link">
+                                            <p>
+                                                <i class="right fas fa-angle-left"></i>
+                                                홈페이지 관리
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item menu-open">
+                                                <a href="#" class="nav-link">
+                                                    <p><i class="right fas fa-angle-left"></i>고객지원 관리</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>공지사항</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>전자공고</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>고객의 소리</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>윤리 HOT-LINE</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>안전 HOT-LINE</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>홍보관예약관리</p></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item menu-open">
+                                                <a href="#" class="nav-link">
+                                                    <p><i class="right fas fa-angle-left"></i>게시판관리</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>PR</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>ESG NEWS</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>지속가능경영보고서</p></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item menu-open">
+                                                <a href="#" class="nav-link">
+                                                    <p><i class="right fas fa-angle-left"></i>팝업 관리</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>메인TOP배너</p></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"><p>메인 팝업</p></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item menu-open">
+                                        <a href="#" class="nav-link">
+                                            <p><i class="right fas fa-angle-left"></i>admin 관리</p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link"><p>관리자 관리</p></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link active"><p>메뉴 관리</p></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link"><p>로그 이력</p></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.Sidebar -->
+            </aside>
+            <!-- /.LNB -->
+
+            <!-- Container -->
+            <div class="content-wrapper">
+                <!-- Content Header -->
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">메뉴 관리</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item">admin 관리</li>
+                                    <li class="breadcrumb-item active">메뉴 관리(HOME0220)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.Content Header -->
+
+                <!-- Content -->
+                <section class="content">
+                    <div class="container-fluid menu-control-wrap menu_write">
+                        <div class="row">
+                            <!-- 메뉴 정렬 -->
+                            <!-- 
+                                모든 메뉴 비활성화가 필요할 경우 아래 section 태그에 disabled 클래스 추가합니다.
+                                ex : <section class="menu-control disabled">
+                            -->
+                            <section class="menu-control disabled">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">메뉴</h3>
+
+                                        <!-- 메뉴 정렬 버튼 -->
+                                        <!-- 등록 화면일 때는 메뉴 정렬 버튼 숨김처리입니다. 수정 화면일 때는 노출입니다 -->
+                                        <div class="card-tools">
+                                            <button type="button" class="btn btn-sm btn-line-main btn-up">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-line-main btn-down">
+                                                <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                        </div>
+                                        <!-- /.메뉴 정렬 버튼 -->
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="menu-sorting">
+                                            <ul class="nav flex-column" role="menu">
+                                                <li class="nav-item menu-open">
+                                                    <a href="#" class="nav-link">
+                                                        <p>
+                                                            <i class="right fas fa-angle-left"></i>
+                                                            홈페이지 관리
+                                                        </p>
+                                                    </a>
+                                                    <ul class="nav nav-treeview">
+                                                        <li class="nav-item menu-open">
+                                                            <a href="#" class="nav-link">
+                                                                <p><i class="right fas fa-angle-left"></i>고객지원 관리</p>
+                                                            </a>
+                                                            <ul class="nav nav-treeview">
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>공지사항</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link active"><p>전자공고</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>고객의 소리</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>윤리 HOT-LINE</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>안전 HOT-LINE</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>홍보관예약관리</p></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-item menu-open">
+                                                            <a href="#" class="nav-link">
+                                                                <p><i class="right fas fa-angle-left"></i>게시판관리</p>
+                                                            </a>
+                                                            <ul class="nav nav-treeview">
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>PR</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>ESG NEWS</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>지속가능경영보고서</p></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-item menu-open">
+                                                            <a href="#" class="nav-link">
+                                                                <p><i class="right fas fa-angle-left"></i>팝업 관리</p>
+                                                            </a>
+                                                            <ul class="nav nav-treeview">
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>메인TOP배너</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link"><p>메인 팝업</p></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- /.메뉴 정렬 -->
+                            <!-- 메뉴 관리 -->
+                            <section class="col-lg-12">
+                                <div class="card">
+                                    <form action="">
+                                        <div class="card-header d-flex justify-content-end">
+                                            <div class="btn-wrap">
+                                                <button type="submit" class="btn btn-sm btn-point">등록</button>
+                                                <button type="submit" class="btn btn-sm btn-point">저장</button>
+                                                <button type="button" class="btn btn-sm btn-sub">취소</button>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <!-- 메뉴 수정 -->
+                                                <div class="card card-line">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">메뉴 수정</h3>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table no-border-top">
+                                                                <colgroup>
+                                                                    <col width="14%" />
+                                                                    <col width="36%" />
+                                                                    <col width="14%" />
+                                                                    <col width="36%" />
+                                                                </colgroup>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>메뉴명 <span class="require-text">*</span></th>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="form-control" id="MenuTitle" placeholder="" />
+                                                                            </div>
+                                                                        </td>
+                                                                        <th>메뉴 ID <span class="require-text">*</span></th>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="form-control" id="MenuURL" placeholder="" />
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>메뉴 URL</th>
+                                                                        <td colspan="3">
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="form-control" id="MenuURL" placeholder="" />
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>접근 권한</th>
+                                                                        <td colspan="3">
+                                                                            <div class="form-group d-flex">
+                                                                                <div class="icheck-danger">
+                                                                                    <input type="checkbox" id="RightView" />
+                                                                                    <label for="RightView">조회</label>
+                                                                                </div>
+                                                                                <div class="icheck-danger">
+                                                                                    <input type="checkbox" id="RightWrite" />
+                                                                                    <label for="RightWrite">등록</label>
+                                                                                </div>
+                                                                                <div class="icheck-danger">
+                                                                                    <input type="checkbox" id="RightModify" />
+                                                                                    <label for="RightModify">수정</label>
+                                                                                </div>
+                                                                                <div class="icheck-danger">
+                                                                                    <input type="checkbox" id="RightDel" />
+                                                                                    <label for="RightDel">삭제</label>
+                                                                                </div>
+                                                                                <div class="icheck-danger">
+                                                                                    <input type="checkbox" id="RightDown" />
+                                                                                    <label for="RightDown">다운로드</label>
+                                                                                </div>
+                                                                                <div class="icheck-danger">
+                                                                                    <input type="checkbox" id="RightPrint" />
+                                                                                    <label for="RightPrint">출력</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>사용여부 <span class="require-text">*</span></th>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12 form-group">
+                                                                                    <div class="select-arrow">
+                                                                                        <select class="custom-select">
+                                                                                            <option selected>선택</option>
+                                                                                            <option>Y</option>
+                                                                                            <option>N</option>
+                                                                                        </select>
+                                                                                        <i class="fa fa-chevron-down"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <th>정렬 순서</th>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>최초 생성일</th>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <th>최초 생성자</th>
+                                                                        <td>홍길동(20123456)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>최종 수정일</th>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <th>최종 수정자</th>
+                                                                        <td>홍길동(20123456)</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.메뉴 수정 -->
+                                                <!-- 접근권한 관리자 목록 -->
+                                                <div class="card card-line">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">접근권한 관리자 목록</h3>
+                                                        <div class="card-tools">
+                                                            <button
+                                                                type="button"
+                                                                class="btn btn-sm btn-line-point"
+                                                                data-toggle="modal"
+                                                                data-target="#modal-manager-add"
+                                                            >
+                                                                관리자 수정
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <!-- 테이블  -->
+                                                            <table class="table no-border-top text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>번호</th>
+                                                                        <th>ID</th>
+                                                                        <th>성명</th>
+                                                                        <th>조회</th>
+                                                                        <th>등록</th>
+                                                                        <th>수정</th>
+                                                                        <th>삭제</th>
+                                                                        <th>다운로드</th>
+                                                                        <th>출력</th>
+                                                                        <th>권한 부여일</th>
+                                                                        <th>권한 수정일</th>
+                                                                        <th>권한 수정자</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <!-- 없음 -->
+                                                                    <tr>
+                                                                        <td valign="top" colspan="12" class="dataTables_empty">설정된 관리자가 없습니다.</td>
+                                                                    </tr>
+                                                                    <!-- /.없음 -->
+                                                                    <tr>
+                                                                        <td>5</td>
+                                                                        <td class="text-left">20123456</td>
+                                                                        <td>홍길동</td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check disabled"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>홍길동(20123456)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>4</td>
+                                                                        <td class="text-left">20123456</td>
+                                                                        <td>홍길동</td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check disabled"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>홍길동(20123456)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3</td>
+                                                                        <td class="text-left">20123456</td>
+                                                                        <td>홍길동</td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check disabled"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>홍길동(20123456)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td class="text-left">20123456</td>
+                                                                        <td>유유관순</td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check disabled"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>홍길동(20123456)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td class="text-left">20123456</td>
+                                                                        <td>유유관순</td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check disabled"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check checked"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <p class="check-option"><span class="check"></span></p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>2023-11-10 13:00:00</td>
+                                                                        <td>홍길동(20123456)</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!-- /.테이블  -->
+                                                        </div>
+                                                        <!-- 페이지네이션 -->
+                                                        <ul class="pagination justify-content-center">
+                                                            <li class="paginate_button page-item previous disabled">
+                                                                <a class="page-link disabled" href="#"><i class="fa fa-chevron-left"></i></a>
+                                                            </li>
+                                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                            <li class="paginate_button page-item next">
+                                                                <a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <!-- /.페이지네이션 -->
+                                                    </div>
+                                                </div>
+                                                <!-- /.접근권한 관리자 목록 -->
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                            <!-- /.메뉴 관리 -->
+                        </div>
+                    </div>
+                </section>
+                <!-- /.Content -->
+            </div>
+            <!-- /.Container -->
+
+            <!-- Modal : 관리자 추가 -->
+            <div class="modal fade" id="modal-manager-add">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">관리자 추가</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal">
+                                <div class="dual-list-wrap d-flex justify-content-between align-items-start">
+                                    <div class="dual-list-inner">
+                                        <p class="menu-desc">관리자 목록(<span class="count">0</span>)</p>
+                                        <button type="button" class="btn btn-line-light btn-send-right">
+                                            <i class="fa fa-chevron-right"></i>
+                                            <i class="fa fa-chevron-right"></i>
+                                        </button>
+                                        <ul class="dual-list dual-list-left">
+                                            <li><button type="button">김영희 (01234567)</button></li>
+                                            <li><button type="button">김철수 (01234567)</button></li>
+                                            <li><button type="button">유유관순 (01234567)</button></li>
+                                            <li><button type="button">홍길동 (01234567)</button></li>
+                                            <li><button type="button">이순신 (01234567)</button></li>
+                                            <li><button type="button">김철수 (01234567)</button></li>
+                                            <li><button type="button">유유관순 (01234567)</button></li>
+                                            <li><button type="button">홍길동 (01234567)</button></li>
+                                            <li><button type="button">이순신 (01234567)</button></li>
+                                            <li><button type="button">김철수 (01234567)</button></li>
+                                            <li><button type="button">유유관순 (01234567)</button></li>
+                                            <li><button type="button">홍길동 (01234567)</button></li>
+                                            <li><button type="button">이순신 (01234567)</button></li>
+                                            <li><button type="button">김영희 (01234567)</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dual-list-inner">
+                                        <p class="menu-desc">선택 관리자(<span class="count">0</span>)</p>
+                                        <button type="button" class="btn btn-line-light btn-send-left">
+                                            <i class="fa fa-chevron-left"></i>
+                                            <i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <ul class="dual-list dual-list-right"></ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-main" data-dismiss="modal">닫기</button>
+                            <button type="button" class="btn btn-point" data-dismiss="modal">저장</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.Modal : 관리자 추가 -->
+
+            <!-- Loading -->
+            <div class="loading-wrap justify-content-center align-items-center">
+                <div class="loading-inner">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                    <p>처리중</p>
+                </div>
+            </div>
+            <!-- Loading -->
+        </div>
+
+        <!-- jQuery -->
+        <script src="../bootstrap/plugins/jquery/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../bootstrap/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../bootstrap/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bootstrap/js/adminlte.min.js"></script>
+        <!-- Custom JS -->
+        <script src="../js/lottelogis/common.js"></script>
+
+        <script>
+            $(function () {
+                // Dual List
+                dualList();
+            });
+
+            $(window).on("load", function () {
+                // Loading
+                $(".loading-wrap").hide();
+
+                // Menu Sort
+                $(".menu-control").on("click", ".btn-down, .btn-up", function () {
+                    const $menu = $(".menu-control .nav-link.active").parent();
+                    const index = $menu.index();
+                    const $prevMenu = $menu.siblings().eq(index - 1);
+                    const $nextMenu = $menu.siblings().eq(index);
+
+                    if ($(this).hasClass("btn-down")) {
+                        $menu.insertAfter($nextMenu);
+                    } else if ($(this).hasClass("btn-up") && index !== 0) {
+                        $menu.insertBefore($prevMenu);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -57,12 +57,23 @@
       "skills": ["Vue.js", "grid js 개발", "Vanilla js", "SCSS"],
       "participation": "웹디자인/퍼블리싱 100%",
       "url": {
-        "service": ["https://service.diad.co.kr"],
-        "sample": [""]
+        "service": ["https://service.diad.co.kr"]
       }
     },
     {
       "id": "5",
+      "title": "롯데글로벌로지스 - 관리자",
+      "view": "images/pofol/pofol_img31.png",
+      "alt": "롯데글로벌로지스 - 관리자",
+      "skills": ["SCSS", "Bootstrap", "ES6"],
+      "participation": "퍼블리싱 100%",
+      "url": {
+        "sample": ["/html/lotteglogisVoice.html", "/html/lotteglogisMenu.html"]
+      },
+      "desc": "실제 작업 기간 2주 정도의 짧은 기간 안에 완성하기 위해 부트스트랩을 활용했습니다.\\n PC와 노트북 화면을 반응형으로 지원합니다."
+    },
+    {
+      "id": "6",
       "title": "퍼스트몰 - 라이브",
       "view": "images/pofol/pofol_img38.png",
       "alt": "퍼스트몰 - 라이브",
@@ -75,7 +86,7 @@
       }
     },
     {
-      "id": "6",
+      "id": "7",
       "title": "이셀러스 - 메세징서비스",
       "view": "images/pofol/pofol_img37.png",
       "alt": "이셀러스 - 메세징서비스",
@@ -87,7 +98,7 @@
       }
     },
     {
-      "id": "7",
+      "id": "8",
       "title": "퍼스트몰 - 디자인 32",
       "view": "images/pofol/pofol_img36.png",
       "alt": "퍼스트몰 디자인 32",
@@ -98,7 +109,7 @@
       }
     },
     {
-      "id": "8",
+      "id": "9",
       "title": "퍼스트몰 - 디자인 31",
       "view": "images/pofol/pofol_img35.png",
       "alt": "퍼스트몰 디자인 31",
@@ -109,7 +120,7 @@
       }
     },
     {
-      "id": "9",
+      "id": "10",
       "title": "퍼스트몰 - 디자인 30",
       "view": "images/pofol/pofol_img34.png",
       "alt": "퍼스트몰 디자인 30",
@@ -120,7 +131,7 @@
       }
     },
     {
-      "id": "10",
+      "id": "11",
       "title": "이셀러스",
       "view": "images/pofol/pofol_img33.png",
       "alt": "이셀러스 화면",
@@ -131,7 +142,7 @@
       }
     },
     {
-      "id": "11",
+      "id": "12",
       "title": "가비아CNS 마케팅센터 모바일",
       "view": "images/pofol/pofol_img29.png",
       "alt": "가비아CNS 마케팅센터 다이애드 모바일 화면",
@@ -143,7 +154,7 @@
       }
     },
     {
-      "id": "12",
+      "id": "13",
       "title": "가비아CNS 마케팅센터",
       "view": "images/pofol/pofol_img28.png",
       "alt": "가비아CNS 마케팅센터 다이애드 화면",
@@ -155,7 +166,7 @@
       }
     },
     {
-      "id": "13",
+      "id": "14",
       "title": "가비아CNS 마케팅센터 Admin",
       "view": "images/pofol/pofol_img30.png",
       "alt": "가비아CNS 마케팅센터 Admin 화면",
@@ -167,7 +178,7 @@
       }
     },
     {
-      "id": "14",
+      "id": "15",
       "title": "이셀러스 미니샵 - 트렌디형",
       "view": "images/pofol/pofol_img27.png",
       "alt": "이셀러스 미니샵 - 트렌디형",
@@ -178,7 +189,7 @@
       }
     },
     {
-      "id": "15",
+      "id": "16",
       "title": "이셀러스 미니샵 - 스토리형",
       "view": "images/pofol/pofol_img26.png",
       "alt": "이셀러스 미니샵 - 스토리형",
@@ -189,7 +200,7 @@
       }
     },
     {
-      "id": "16",
+      "id": "17",
       "title": "이셀러스 미니샵 - 심플형",
       "view": "images/pofol/pofol_img25.png",
       "alt": "이셀러스 미니샵 - 심플형",
@@ -200,7 +211,7 @@
       }
     },
     {
-      "id": "17",
+      "id": "18",
       "title": "ADCORE 2017 - KTH",
       "view": "images/pofol/pofol_img24.png",
       "alt": "ADCORE 2017 화면",
@@ -212,7 +223,7 @@
       }
     },
     {
-      "id": "18",
+      "id": "19",
       "title": "MEGALINE",
       "view": "images/pofol/pofol_img23.png",
       "alt": "MEGALINE 화면",
@@ -223,7 +234,7 @@
       }
     },
     {
-      "id": "19",
+      "id": "20",
       "title": "BYPAIR APP",
       "view": "images/pofol/pofol_img20.png",
       "alt": "BYPAIR APP 화면",
@@ -234,7 +245,7 @@
       }
     },
     {
-      "id": "20",
+      "id": "21",
       "title": "DB-Stars",
       "view": "images/pofol/pofol_img13.png",
       "alt": "DB-Stars 화면",
@@ -246,7 +257,7 @@
       }
     },
     {
-      "id": "21",
+      "id": "22",
       "title": "SolGuest Global",
       "view": "images/pofol/pofol_img22.png",
       "alt": "SolGuest Global PC 화면",
@@ -257,7 +268,7 @@
       }
     },
     {
-      "id": "22",
+      "id": "23",
       "title": "SolGuest Global 모바일",
       "view": "images/pofol/pofol_img21.png",
       "alt": "SolGuest Global 모바일 화면",
@@ -268,7 +279,7 @@
       }
     },
     {
-      "id": "23",
+      "id": "24",
       "title": "Booketing",
       "view": "images/pofol/pofol_img19.png",
       "alt": "Booketing 화면",
@@ -279,7 +290,7 @@
       }
     },
     {
-      "id": "24",
+      "id": "25",
       "title": "데이터스토어 2016 모바일",
       "view": "images/pofol/pofol_img18.png",
       "alt": "데이터스토어 2016 모바일 화면",
@@ -290,7 +301,7 @@
       }
     },
     {
-      "id": "25",
+      "id": "26",
       "title": "데이터스토어 2016",
       "view": "images/pofol/pofol_img17.png",
       "alt": "데이터스토어 2016 화면",
@@ -302,7 +313,7 @@
       }
     },
     {
-      "id": "26",
+      "id": "27",
       "title": "북틀 APP",
       "view": "images/pofol/pofol_img16.png",
       "alt": "북틀 APP 화면",
@@ -315,7 +326,7 @@
       }
     },
     {
-      "id": "27",
+      "id": "28",
       "title": "ShiftNovel",
       "view": "images/pofol/pofol_img15.png",
       "alt": "ShiftNovel 화면",
@@ -326,7 +337,7 @@
       }
     },
     {
-      "id": "28",
+      "id": "29",
       "title": "Clinic&Trip",
       "view": "images/pofol/pofol_img14.png",
       "alt": "Clinic&Trip 화면",
@@ -337,7 +348,7 @@
       }
     },
     {
-      "id": "29",
+      "id": "30",
       "title": "ADCORE 2016 - KTH",
       "view": "images/pofol/pofol_img12.png",
       "alt": "ADCORE 2016 화면",
@@ -348,7 +359,7 @@
       }
     },
     {
-      "id": "30",
+      "id": "31",
       "title": "CLiP 서비스 통계 - KTH",
       "view": "images/pofol/pofol_img10.png",
       "alt": "CLiP 서비스 통계 화면",
@@ -359,7 +370,7 @@
       }
     },
     {
-      "id": "31",
+      "id": "32",
       "title": "데이터스토어 2015 모바일",
       "view": "images/pofol/pofol_img11.png",
       "alt": "데이터스토어 2015 모바일 화면",
@@ -370,7 +381,7 @@
       }
     },
     {
-      "id": "32",
+      "id": "33",
       "title": "데이터스토어 2015",
       "view": "images/pofol/pofol_img09.png",
       "alt": "데이터스토어 2015 화면",
@@ -382,7 +393,7 @@
       }
     },
     {
-      "id": "33",
+      "id": "34",
       "title": "ADCORE 2015 - KTH",
       "view": "images/pofol/pofol_img08.png",
       "alt": "ADCORE 2015 화면",
@@ -393,7 +404,7 @@
       }
     },
     {
-      "id": "34",
+      "id": "35",
       "title": "KKA Portfolio 2015",
       "view": "images/pofol/pofol_img07.png",
       "alt": "KKA Portfolio 2015 화면",
@@ -404,7 +415,7 @@
       }
     },
     {
-      "id": "35",
+      "id": "36",
       "title": "엄마맘 어린이집",
       "view": "images/pofol/pofol_img06.png",
       "alt": "엄마맘 어린이집 화면",
@@ -415,7 +426,7 @@
       }
     },
     {
-      "id": "36",
+      "id": "37",
       "title": "KKA Portfolio 2014",
       "view": "images/pofol/pofol_img05.png",
       "alt": "KKA Portfolio 2014 화면",
@@ -426,7 +437,7 @@
       }
     },
     {
-      "id": "37",
+      "id": "38",
       "title": "1973JJ",
       "view": "images/pofol/pofol_img04.png",
       "alt": "1973JJ 화면",
@@ -437,7 +448,7 @@
       }
     },
     {
-      "id": "38",
+      "id": "39",
       "title": "삼성전자 온라인 종합몰 협력사",
       "view": "images/pofol/pofol_img03.png",
       "alt": "삼성전자 온라인 종합몰 협력사 화면",
@@ -450,7 +461,7 @@
       }
     },
     {
-      "id": "39",
+      "id": "40",
       "title": "데코르떼",
       "view": "images/pofol/pofol_img02.png",
       "alt": "데코르떼 화면",
@@ -461,7 +472,7 @@
       }
     },
     {
-      "id": "40",
+      "id": "41",
       "title": "시보니",
       "view": "images/pofol/pofol_img01.png",
       "alt": "시보니 화면",
