@@ -86,10 +86,10 @@ export default function ModalContent(props: ModalProps) {
             )}
             {subject.url.sample && (
               <ul className="sitepath">
-                {subject.url.sample.map((sample) => (
+                {subject.url.sample.map((sample, i) => (
                   <li key="sample">
                     <Link href={sample} target="_blank">
-                      Sample Page
+                      Sample Page {i + 1}
                     </Link>
                   </li>
                 ))}
