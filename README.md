@@ -1,5 +1,19 @@
 ## 김근애 포트폴리오 사이트
 
-> 현재 Next.js, react.js, typescript 등으로 제작 중입니다.
->
-> [https://kkahub.github.io/kkaporfol/](https://kkahub.github.io/kkaporfol/)
+[배포 사이트>>](https://kkahub.github.io/kkaporfol/)
+
+<br/><br/>
+
+## Key Skills
+
+- **View** : React.js(v18), Next.js
+- **Build Tool** : Webpack
+- **CSS** : SASS(SCSS), styled-components, 반응형
+- **Javascript** : ES6, Typescript
+- **State Management** : Redux, Redux-toolkit
+- **Database** : Firebase
+- **Coding Convention** : Husky, lint-staged, ESLint, Prettier
+- **Configuration Management** : Git, Github
+- **ECT** : MUI (Material UI), Swiper, Lodash
+
+  <br/><br/>

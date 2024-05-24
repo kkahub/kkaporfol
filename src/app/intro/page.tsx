@@ -194,7 +194,7 @@ export default function Intro() {
                     <h2>Javascript</h2>
                     <ul className="pill_group">
                       <li>ES6</li>
-                      <li>typescript</li>
+                      <li>Typescript</li>
                     </ul>
                   </motion.li>
                   <motion.li variants={swiperFade} custom={1.3}>
