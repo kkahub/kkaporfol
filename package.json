@@ -47,7 +47,7 @@
     "json-server": "^1.0.0-alpha.23",
     "lint-staged": "^14.0.1",
     "lodash": "^4.17.21",
-    "next": "^14.0.2",
+    "next": "^14.2.3",
     "next-redux-wrapper": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
