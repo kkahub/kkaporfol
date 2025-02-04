@@ -9,6 +9,19 @@ const repository = "https://kkahub.github.io/kkaporfol";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
+  productionBrowserSourceMaps: true,
+  webpack: (config, options) => {
+    if (options.dev) {
+      Object.defineProperty(config, "devtool", {
+        get() {
+          return "source-map";
+        },
+        // set() {},
+      });
+    }
+
+    return config;
+  },
   sassOptions: {
     includePaths: [path.join(__dirname, "src/styles")],
   },
