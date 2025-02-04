@@ -11,15 +11,17 @@ const nextConfig = {
   reactStrictMode: false,
   productionBrowserSourceMaps: true,
   webpack: (config, options) => {
+    let sourceMap = "source-map";
     if (options.dev) {
       Object.defineProperty(config, "devtool", {
         get() {
-          return "source-map";
+          return sourceMap;
         },
-        // set() {},
+        set() {
+          sourceMap = "source-map";
+        },
       });
     }
-
     return config;
   },
   sassOptions: {
