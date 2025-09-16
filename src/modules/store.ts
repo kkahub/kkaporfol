@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { searchReducer } from "@modules/searchSlice";
-import { chartReducer } from "@modules/chartSlice";
 import { createLogger } from "redux-logger";
+
+import { chartReducer } from "@modules/chartSlice";
+import { searchReducer } from "@modules/searchSlice";
 
 const logger = createLogger();
 
@@ -12,7 +13,7 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }).concat(logger),
-  devTools: process.env.NODE_ENV !== "production",
+  devTools: process.env.CURRENT_ENV !== "production",
 });
 
 export type RootState = ReturnType<typeof store.getState>;

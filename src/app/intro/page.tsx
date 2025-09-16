@@ -1,15 +1,18 @@
 "use client";
 
-import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
-import Link from "next/link";
-import { motion, Variants, AnimatePresence } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import useResize from "@hooks/useResize";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "../../styles/swiper.scss";
+import "swiper/css/pagination";
+
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+
+import { AnimatePresence, motion, Variants } from "framer-motion";
+import Link from "next/link";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import useResize from "@hooks/useResize";
 
 const swiperFade: Variants = {
   show: (i) => {
@@ -17,21 +20,10 @@ const swiperFade: Variants = {
     return {
       opacity: 1,
       scale: 1,
-      transition: {
-        delay,
-        duration: 1,
-        ease: [0, 0.71, 0.2, 1.01],
-      },
+      transition: { delay, duration: 1, ease: [0, 0.71, 0.2, 1.01] },
     };
   },
-  hide: {
-    opacity: 0,
-    scale: 0.95,
-    transition: {
-      duration: 0.1,
-      delay: 1,
-    },
-  },
+  hide: { opacity: 0, scale: 0.95, transition: { duration: 0.1, delay: 1 } },
 };
 
 const draw: Variants = {
@@ -46,13 +38,7 @@ const draw: Variants = {
       },
     };
   },
-  hide: {
-    pathLength: 0,
-    opacity: 0,
-    transition: {
-      delay: 1,
-    },
-  },
+  hide: { pathLength: 0, opacity: 0, transition: { delay: 1 } },
 };
 
 export default function Intro() {
@@ -81,10 +67,7 @@ export default function Intro() {
         id="slider"
         modules={[Autoplay, Navigation, Pagination]}
         pagination={{ clickable: true }}
-        navigation={{
-          prevEl: navPrevRef.current,
-          nextEl: navNextRef.current,
-        }}
+        navigation={{ prevEl: navPrevRef.current, nextEl: navNextRef.current }}
         onBeforeInit={(s: any) => {
           const swiper = s;
           swiper.params.navigation.prevEl = navPrevRef.current;
@@ -92,10 +75,7 @@ export default function Intro() {
           swiper.navigation.init();
           swiper.navigation.update();
         }}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
         speed={1000}
         loop
         onSlideChange={(swiper) => {
