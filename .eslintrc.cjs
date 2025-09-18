@@ -1,22 +1,21 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser', // TypeScript 지원
+  parser: '@typescript-eslint/parser',
   parserOptions: {ecmaVersion: 'latest', sourceType: 'module'},
   extends: [
-    'next/core-web-vitals', // ✅ react, react-hooks 규칙 포함
+    'next/core-web-vitals',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'prettier', // prettier와 충돌 방지
+    'prettier',
   ],
   plugins: [
     '@typescript-eslint',
-    'import', // ✅ 정렬/정리용
+    'import',
   ],
   rules: {
-    // 🔹 import 정렬 규칙
     'import/order': [
       'error',
       {
@@ -32,9 +31,11 @@ module.exports = {
         alphabetize: {order: 'asc', caseInsensitive: true},
       },
     ],
-
-    // 🔹 필요 없는 규칙 예시 (원한다면 켜도 됨)
-    'react/react-in-jsx-scope': 'off', // Next.js에서는 불필요
-    '@typescript-eslint/no-unused-vars': ['warn'],
+    '@typescript-eslint/no-unused-vars': ['error'],
+    "react/jsx-filename-extension": ["warn", { extensions: [".ts", ".tsx"] }], // 경고표시, 파일 확장자를 .ts나 .tsx 모두 허용함
+		"no-useless-catch": "off", // 불필요한 catch 못쓰게 하는 기능 끔
+		"react/jsx-props-no-spreading": "off",
+		"no-unused-vars": "off", // 타입스크립트 사용시 interface의 변수명을 eslint가 잡지 않도록 함.
+		"@typescript-eslint/no-explicit-any": "off",
   },
 };
