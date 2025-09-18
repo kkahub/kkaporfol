@@ -1,9 +1,12 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { BasicFade } from "@styles/motion";
+
 import { motion } from "framer-motion";
+import Image from "next/image";
+
+import { BasicFade } from "@styles/motion";
+
 import SkillSet from "../../data/skill.json";
 
 export default function Skill() {

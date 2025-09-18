@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+
 import PortfolioList from "../../data/portfolio.json";
 
 type OnClickModal = (i: string) => void;

@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import PortfolioList from "../data/portfolio.json";
 
 interface PortfolioType {

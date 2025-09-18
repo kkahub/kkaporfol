@@ -7,17 +7,19 @@ import React, {
   useEffect,
   useCallback,
 } from "react";
+
 import * as d3 from "d3";
-import useResize from "@hooks/useResize";
 import { motion } from "framer-motion";
-import { BasicFade } from "@styles/motion";
-import styled from "styled-components";
+import style from "styled-components";
+
+import { DataProps } from "@/app/preview/chart/types";
+import useResize from "@hooks/useResize";
 import { sortData } from "@modules/chartSlice";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
-import { DataProps } from "@/app/preview/chart/types";
+import { BasicFade } from "@styles/motion";
 
 // 툴팁  스타일
-const Tooltip = styled.div`
+const Tooltip = style.div`
   opacity: 0;
   position: absolute;
   padding: 10px;
@@ -69,7 +71,8 @@ export default function BarChart(props: { data: DataProps[] }) {
   const tooltipRef = useRef(null);
 
   // 컬러 설정
-  const xMax: any = d3.max(chartSortData, (d) => d.population as number);
+  const xMax: number =
+    d3.max(chartSortData, (d) => d.population as number) ?? 0;
   const colorScale = d3.scaleLinear().domain([0, xMax]).range([0.3, 1]);
 
   const drawBarChart = useCallback(() => {

@@ -1,8 +1,9 @@
 import "../styles/globals.scss";
 import { Metadata } from "next";
+
+import GoogleAnalytics from "@components/googleAnalytics";
 import Header from "@components/layout/Header";
 import Providers from "@modules/provider";
-import GoogleAnalytics from "@components/googleAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kkahub.github.io/kkaporfol"),

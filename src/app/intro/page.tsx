@@ -9,6 +9,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Link from "next/link";
+import type { Swiper as SwiperClass } from "swiper";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -68,12 +69,18 @@ export default function Intro() {
         modules={[Autoplay, Navigation, Pagination]}
         pagination={{ clickable: true }}
         navigation={{ prevEl: navPrevRef.current, nextEl: navNextRef.current }}
-        onBeforeInit={(s: any) => {
+        onBeforeInit={(s: SwiperClass) => {
           const swiper = s;
-          swiper.params.navigation.prevEl = navPrevRef.current;
-          swiper.params.navigation.nextEl = navNextRef.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
+          if (
+            swiper.params.navigation &&
+            typeof swiper.params.navigation === "object" &&
+            swiper.navigation
+          ) {
+            swiper.params.navigation.prevEl = navPrevRef.current;
+            swiper.params.navigation.nextEl = navNextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }
         }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         speed={1000}

@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useLayoutEffect } from "react";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
-import { BasicFade } from "@styles/motion";
+
 import useResize from "@hooks/useResize";
+import { BasicFade } from "@styles/motion";
 
 export default function Header() {
   const pathname = usePathname();

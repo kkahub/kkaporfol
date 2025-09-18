@@ -1,7 +1,13 @@
 "use client";
 
 import React, { useState, useCallback } from "react";
+
+import Pagination from "@mui/material/Pagination";
+import { motion, AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+
+import { useAppDispatch, useAppSelector } from "@modules/hooks";
 import {
   setKeyword,
   searchList,
@@ -9,12 +15,9 @@ import {
   setPage,
   setSliceList,
 } from "@modules/searchSlice";
-import { useAppDispatch, useAppSelector } from "@modules/hooks";
-import Pagination from "@mui/material/Pagination";
-import { motion, AnimatePresence } from "framer-motion";
 import { BasicFade } from "@styles/motion";
+
 // eslint-disable-next-line import/newline-after-import
-import dynamic from "next/dynamic";
 const Modal = dynamic(() => import("@components/modal/modal-contents"));
 
 export default function Portfolio() {
