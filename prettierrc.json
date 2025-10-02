@@ -4,7 +4,7 @@
   // 홑따옴표를 쓸건지 설정. 기본값은 쌍따옴표. 코딩을 하면서 홑따옴표를 썼다면 강제로 쌍따옴표로 변경. (default: false)
   "jsxSingleQuote": true,
   // JSX의 마지막 `>`를 다음 줄로 내릴지 여부
-  "bracketSameLine": true,
+  "bracketSameLine": false,
   // 홑따옴표를 쓸건지 설정. 기본값은 쌍따옴표. 코딩을 하면서 홑따옴표를 썼다면 강제로 쌍따옴표로 변경. (default: false)
   // "singleQuote": true,
   // 탭 너비 (default: 2)

@@ -1,26 +1,17 @@
 import { motion, Variants } from "framer-motion";
 
 const skills = [
-  { title: "View", items: ["React.js", "Next.js"], custom: 1 },
-  { title: "State Management", items: ["Redux", "Redux-toolkit"], custom: 1.1 },
-  { title: "Javascript", items: ["ES6", "Typescript"], custom: 1.2 },
-  {
-    title: "CSS",
-    items: ["SASS(SCSS)", "styled-components", "반응형"],
-    custom: 1.3,
-  },
-  { title: "Build Tool", items: ["Webpack"], custom: 1.4 },
+  { title: "View", items: ["React.js", "Next.js"] },
+  { title: "State Management", items: ["Redux", "Redux-toolkit"] },
+  { title: "Javascript", items: ["ES6", "Typescript"] },
+  { title: "CSS", items: ["SASS(SCSS)", "styled-components", "반응형"] },
+  { title: "Build Tool", items: ["Webpack"] },
   {
     title: "Coding Convention",
     items: ["Husky", "lint-staged", "ESLint", "Prettier"],
-    custom: 1.5,
   },
-  { title: "Configuration Management", items: ["Git", "Github"], custom: 1.6 },
-  {
-    title: "그 외",
-    items: ["MUI (Material UI)", "Swiper", "Lodash"],
-    custom: 1.8,
-  },
+  { title: "Configuration Management", items: ["Git", "Github"] },
+  { title: "그 외", items: ["MUI (Material UI)", "Swiper", "Lodash"] },
 ];
 
 const delay = 0.1;
@@ -32,10 +23,10 @@ export default function SkillList({ variants }: { variants: Variants }) {
         <motion.li
           key={title}
           variants={variants}
+          initial="hide"
+          animate="show"
+          exit="hide"
           custom={1 + index * delay}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
         >
           <h2>{title}</h2>
           <ul className="pill_group">
