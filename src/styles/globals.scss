@@ -1,14 +1,14 @@
-@import "_variables.scss"; // 변수
-@import "_mixins.scss"; // 믹스인
+@use "_variables.scss"; // 변수
+@use "_mixins.scss"; // 믹스인
 
-@import "_fonts.scss"; // 폰트설정
-@import "_reset.scss"; // 초기화
+@use "_fonts.scss"; // 폰트설정
+@use "_reset.scss"; // 초기화
 
-@import "_mq.scss"; //미디어쿼리
+@use "_mq.scss"; //미디어쿼리
 
-@import "_pagination.scss"; // 페이지네이션
+@use "_pagination.scss"; // 페이지네이션
 
-@import "_layout.scss"; // 기본 레이아웃
-@import "_common.scss"; // 공통 스타일
+@use "_layout.scss"; // 기본 레이아웃
+@use "_common.scss"; // 공통 스타일
 
-@import "_styles.scss";
+@use "_styles.scss";

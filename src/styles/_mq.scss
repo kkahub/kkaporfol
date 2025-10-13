@@ -1,4 +1,8 @@
-﻿$sm-w: 320px;
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+
+$sm-w: 320px;
 $md-w: 640px;
 $lg-w: 930px;
 $w-w: 1330px;
@@ -23,13 +27,13 @@ $breakpoints: (
 /// @param {String} $breakpoint - 브레이크포인트
 /// @requires $breakpoints
 @mixin respond-to($breakpoint) {
-    $raw-query: map-get($breakpoints, $breakpoint);
+    $raw-query: map.get($breakpoints, $breakpoint);
 
     @if $raw-query {
         $query: if(
-            type-of($raw-query) == "string",
-            unquote($raw-query),
-            inspect($raw-query)
+            meta.type-of($raw-query) == "string",
+            string.unquote($raw-query),
+            meta.inspect($raw-query)
         );
 
         @media #{$query} {

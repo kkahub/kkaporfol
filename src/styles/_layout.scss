@@ -1,3 +1,6 @@
+@use "mq";
+@use "variables";
+
 // 로딩
 .load {
 	position: absolute;
@@ -18,7 +21,7 @@
 body,
 html {
 	height: 100%;
-	font-family: $t-basic;
+	font-family: variables.$t-basic;
 }
 #wrap,
 #header,
@@ -42,7 +45,7 @@ $header-h: 60px;
 	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 	background: rgba(0, 0, 0, 0.6);
 
-	@include respond-to("small") {
+	@include mq.respond-to("small") {
 		padding: 0 10px;
 	}
 	.inner {
@@ -58,10 +61,10 @@ $header-h: 60px;
 		a {
 			letter-spacing: 0.1em;
 
-			@include respond-to("small") {
+			@include mq.respond-to("small") {
 				font-size: 28px;
 			}
-			@include respond-to("medium") {
+			@include mq.respond-to("medium") {
 				font-size: 34px;
 			}
 		}
@@ -70,7 +73,7 @@ $header-h: 60px;
 		height: 100%;
 
 		&.on {
-			@include respond-to("small") {
+			@include mq.respond-to("small") {
 				display: table;
 				position: fixed;
 				top: 0;
@@ -79,7 +82,7 @@ $header-h: 60px;
 				height: 100%;
 				background: rgba(0, 0, 0, 0.9);
 			}
-			@include respond-to("medium") {
+			@include mq.respond-to("medium") {
 				display: table;
 				position: fixed;
 				top: 0;
@@ -88,7 +91,7 @@ $header-h: 60px;
 				height: 100%;
 				background: rgba(0, 0, 0, 0.9);
 			}
-			@include respond-to("large") {
+			@include mq.respond-to("large") {
 				display: block;
 				position: relative;
 				width: auto;
@@ -112,13 +115,13 @@ $header-h: 60px;
 			}
 
 			.gnb {
-				@include respond-to("small") {
+				@include mq.respond-to("small") {
 					display: table-cell;
 				}
-				@include respond-to("medium") {
+				@include mq.respond-to("medium") {
 					display: table-cell;
 				}
-				@include respond-to("large") {
+				@include mq.respond-to("large") {
 					display: block;
 				}
 			}
@@ -137,14 +140,14 @@ $header-h: 60px;
 		margin: 10px 0;
 		padding: 10px;
 
-		@include respond-to("small") {
+		@include mq.respond-to("small") {
 			display: block;
 			right: 10px;
 		}
-		@include respond-to("medium") {
+		@include mq.respond-to("medium") {
 			display: block;
 		}
-		@include respond-to("large") {
+		@include mq.respond-to("large") {
 			display: none;
 		}
 
@@ -170,18 +173,18 @@ $header-h: 60px;
 	}
 
 	.gnb {
-		@include respond-to("small") {
+		@include mq.respond-to("small") {
 			float: none;
 			display: none;
 			vertical-align: middle;
 		}
-		@include respond-to("medium") {
+		@include mq.respond-to("medium") {
 			float: none;
 			display: none;
 			vertical-align: middle;
 			height: 100%;
 		}
-		@include respond-to("large") {
+		@include mq.respond-to("large") {
 			display: block;
 			float: right;
 		}
@@ -192,15 +195,15 @@ $header-h: 60px;
 			height: $header-h;
 			text-align: center;
 
-			@include respond-to("small") {
+			@include mq.respond-to("small") {
 				display: block;
 				margin: 0;
 			}
-			@include respond-to("medium") {
+			@include mq.respond-to("medium") {
 				display: block;
 				margin: 0;
 			}
-			@include respond-to("large") {
+			@include mq.respond-to("large") {
 				display: inline-flex;
 				align-items: flex-start;
 				justify-content: center;
@@ -215,13 +218,13 @@ $header-h: 60px;
 				font-weight: bold;
 				letter-spacing: 0.5px;
 
-				@include respond-to("small") {
+				@include mq.respond-to("small") {
 					display: inline-block;
 				}
-				@include respond-to("medium") {
+				@include mq.respond-to("medium") {
 					display: inline-block;
 				}
-				@include respond-to("large") {
+				@include mq.respond-to("large") {
 					display: block;
 				}
 				&::after {
@@ -249,18 +252,18 @@ $header-h: 60px;
 			display: none;
 			padding: 7px 0;
 
-			@include respond-to("small") {
+			@include mq.respond-to("small") {
 				position: static;
 				background: transparent;
 			}
-			@include respond-to("medium") {
+			@include mq.respond-to("medium") {
 				position: static;
 				background: transparent;
 			}
-			@include respond-to("large") {
+			@include mq.respond-to("large") {
 				position: absolute;
 				top: 60px;
-				background: $c-dim;
+				background: variables.$c-dim;
 			}
 
 			&.show {
@@ -286,24 +289,24 @@ $header-h: 60px;
 					font-weight: 600;
 
 					&::before {
-						@include respond-to("small") {
+						@include mq.respond-to("small") {
 							content: "- ";
 						}
-						@include respond-to("medium") {
+						@include mq.respond-to("medium") {
 							content: "- ";
 						}
-						@include respond-to("large") {
+						@include mq.respond-to("large") {
 							content: "";
 						}
 					}
 					&::after {
-						@include respond-to("small") {
+						@include mq.respond-to("small") {
 							content: " -";
 						}
-						@include respond-to("medium") {
+						@include mq.respond-to("medium") {
 							content: " -";
 						}
-						@include respond-to("large") {
+						@include mq.respond-to("large") {
 							content: "";
 						}
 					}
@@ -326,17 +329,17 @@ $header-h: 60px;
 .inner {
 	margin: 0 auto;
 
-	@include respond-to("small") {
+	@include mq.respond-to("small") {
 		width: 100%;
 	}
-	@include respond-to("medium") {
+	@include mq.respond-to("medium") {
 		width: 100%;
 	}
-	@include respond-to("large") {
-		width: $lg-w;
+	@include mq.respond-to("large") {
+		width: mq.$lg-w;
 	}
-	@include respond-to("wide") {
-		width: $w-w;
+	@include mq.respond-to("wide") {
+		width: mq.$w-w;
 	}
 }
 
@@ -352,16 +355,16 @@ $header-h: 60px;
 	.inner {
 		text-align: center;
 
-		@include respond-to("small") {
+		@include mq.respond-to("small") {
 			padding: 30px 5px;
 		}
-		@include respond-to("medium") {
+		@include mq.respond-to("medium") {
 			padding: 30px 10px;
 		}
-		@include respond-to("large") {
+		@include mq.respond-to("large") {
 			padding: 40px 0;
 		}
-		@include respond-to("wide") {
+		@include mq.respond-to("wide") {
 			padding: 50px 0;
 		}
 
@@ -372,11 +375,11 @@ $header-h: 60px;
 			padding: 0 3px;
 			border-bottom: 6px solid #85b6a5;
 
-			@include respond-to("small") {
+			@include mq.respond-to("small") {
 				height: 29px;
 				font-size: 30px;
 			}
-			@include respond-to("medium") {
+			@include mq.respond-to("medium") {
 				height: 40px;
 				font-size: 42px;
 			}
@@ -414,13 +417,13 @@ $header-h: 60px;
 	position: relative;
 
 	.content {
-		@include respond-to("small") {
+		@include mq.respond-to("small") {
 			margin: 15px auto 0;
 		}
-		@include respond-to("medium") {
+		@include mq.respond-to("medium") {
 			margin: 20px auto 0;
 		}
-		@include respond-to("large") {
+		@include mq.respond-to("large") {
 			margin: 35px auto 0;
 		}
 	}

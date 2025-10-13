@@ -1,3 +1,7 @@
+@use "mixins";
+@use "mq";
+@use "variables";
+
 /* Intro */
 .visual_group {
   position: relative;
@@ -15,16 +19,16 @@
   }
 
   .visual1 {
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       background: url('../../public/images/visual_bg1_m.jpg') right top/cover;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       background: url('../../public/images/visual_bg1_m.jpg') right top/cover;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       background: url('../../public/images/visual_bg1.jpg') center top/cover;
     }
-    @include respond-to('wide') {
+    @include mq.respond-to('wide') {
       background: url('../../public/images/visual_bg1.jpg') center top/cover;
     }
   }
@@ -55,10 +59,10 @@
       letter-spacing: 1px;
       line-height: 1.2;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         font-size: 24px;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         font-size: 34px;
       }
 
@@ -67,10 +71,10 @@
         font-size: 56px;
         justify-content: space-between;
 
-        @include respond-to('small') {
+        @include mq.respond-to('small') {
           font-size: 44px;
         }
-        @include respond-to('medium') {
+        @include mq.respond-to('medium') {
           font-size: 56px;
         }
       }
@@ -85,14 +89,14 @@
     text-align: center;
 
     .visual_inner {
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         min-height: 500px;
         margin-top: 20px;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         min-height: auto;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
       }
     }
     .btn {
@@ -103,13 +107,13 @@
   .skill_list {
     width: 500px;
 
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       margin-top: 20px;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       margin-top: 20px;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       margin-top: 30px;
     }
 
@@ -119,15 +123,15 @@
       color: #fff;
       line-height: 1;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         display: block;
         padding: 2px 10px;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         display: block;
         padding: 3px 12px;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         display: flex;
         padding: 5px 12px;
       }
@@ -137,13 +141,13 @@
       color: #fff;
       white-space: nowrap;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         display: none;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         display: none;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         display: block;
         padding-right: 20px;
       }
@@ -171,15 +175,15 @@
     img {
       margin-bottom: 25px;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         width: 200px;
         height: auto;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         width: 200px;
         height: 200px;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         width: 240px;
         height: 240px;
       }
@@ -187,13 +191,13 @@
   }
 
   .profile_con {
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       min-width: 100%;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       min-width: 380px;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       min-width: 440px;
     }
 
@@ -202,11 +206,11 @@
       text-align: left;
 
       li {
-        @include respond-to('small') {
+        @include mq.respond-to('small') {
           margin-bottom: 10px;
           font-size: 15px;
         }
-        @include respond-to('medium') {
+        @include mq.respond-to('medium') {
           margin-bottom: 25px;
           font-size: 18px;
         }
@@ -215,10 +219,10 @@
         display: inline-block;
         font-weight: bold;
 
-        @include respond-to('small') {
+        @include mq.respond-to('small') {
           width: 110px;
         }
-        @include respond-to('medium') {
+        @include mq.respond-to('medium') {
           width: 140px;
         }
       }
@@ -247,16 +251,16 @@
       > img {
         margin-bottom: 10px;
 
-        @include respond-to('small') {
+        @include mq.respond-to('small') {
           display: none;
         }
-        @include respond-to('medium') {
+        @include mq.respond-to('medium') {
           display: none;
         }
-        @include respond-to('large') {
+        @include mq.respond-to('large') {
           display: inline-block;
         }
-        @include respond-to('wide') {
+        @include mq.respond-to('wide') {
           display: inline-block;
         }
       }
@@ -266,16 +270,16 @@
       overflow: hidden;
       margin: 0 auto;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         width: 90%;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         width: 90%;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         width: 290px;
       }
-      @include respond-to('wide') {
+      @include mq.respond-to('wide') {
         width: 290px;
       }
 
@@ -288,7 +292,7 @@
         background-position: right bottom;
         background-repeat: no-repeat;
 
-        @include respond-to('small') {
+        @include mq.respond-to('small') {
           height: 20px;
           background-size: 550px;
         }
@@ -306,16 +310,16 @@
         font-weight: bold;
         text-align: center;
 
-        @include respond-to('small') {
+        @include mq.respond-to('small') {
           padding: 20px 0 5px;
           background-size: 550px;
           font-size: 20px;
         }
-        @include respond-to('medium') {
+        @include mq.respond-to('medium') {
           padding: 15px 0 10px;
           font-size: 20px;
         }
-        @include respond-to('large') {
+        @include mq.respond-to('large') {
           padding: 20px 0;
           font-size: 22px;
         }
@@ -327,17 +331,17 @@
         line-height: 150%;
         word-break: break-all;
 
-        @include respond-to('small') {
+        @include mq.respond-to('small') {
           height: auto;
           background-size: 490px 47px;
         }
-        @include respond-to('medium') {
+        @include mq.respond-to('medium') {
           height: 85px;
         }
-        @include respond-to('large') {
+        @include mq.respond-to('large') {
           height: 85px;
         }
-        @include respond-to('wide') {
+        @include mq.respond-to('wide') {
           height: 85px;
         }
       }
@@ -355,17 +359,17 @@
     position: relative;
     margin-top: 5px;
 
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       padding-right: 12px;
       margin-bottom: 10px;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       padding-right: 12px;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       padding-right: 10px;
     }
-    @include respond-to('wide') {
+    @include mq.respond-to('wide') {
       padding-right: 20px;
     }
 
@@ -380,16 +384,16 @@
       width: 40px;
       font-size: 0;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         right: 12px;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         right: 12px;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         right: 10px;
       }
-      @include respond-to('wide') {
+      @include mq.respond-to('wide') {
         right: 20px;
       }
 
@@ -398,7 +402,7 @@
         display: block;
         height: 36px;
         font-size: 32px;
-        color: $c-sub;
+        color: variables.$c-sub;
         line-height: 34px;
         transform: scaleX(-1);
       }
@@ -417,15 +421,15 @@
       box-shadow: 0 0 5px rgba(62, 105, 132, 0.4);
       font-size: 0;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         width: 95%;
         padding-left: 110px;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         width: 95%;
         padding-left: 110px;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         width: 290px;
         padding-left: 0;
       }
@@ -444,21 +448,21 @@
     background: #e9e9e9;
     text-align: center;
 
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       position: absolute;
       width: 110px;
       height: 100%;
       border-right: 1px solid #e9e9e9;
       border-bottom: 0;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       position: absolute;
       width: 110px;
       height: 100%;
       border-right: 1px solid #e9e9e9;
       border-bottom: 0;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       position: relative;
       width: inherit;
       height: 290px;
@@ -479,26 +483,26 @@
     color: #000;
     min-height: 85px;
 
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       min-height: auto;
       padding: 15px;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       min-height: auto;
       padding: 15px;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       min-height: 85px;
       padding: 17px;
     }
     h3 {
-      @include ellipsis;
+      @include mixins.ellipsis;
       width: 100%;
       font-size: 18px;
       line-height: 160%;
     }
     .keyword {
-      @include ellipsis;
+      @include mixins.ellipsis;
     }
   }
   .keyword {
@@ -509,7 +513,7 @@
       height: 17px;
       margin: 1px 3px 2px 0;
       padding: 0 8px;
-      border: 1px solid $c-key;
+      border: 1px solid variables.$c-key;
       border-radius: 9px;
       font-size: 11px;
       line-height: 17px;
@@ -517,11 +521,11 @@
   }
   .sitepath {
     a {
-      @include ellipsis;
+      @include mixins.ellipsis;
       display: inline-block;
       width: 100%;
       font-size: 16px;
-      color: $c-pre;
+      color: variables.$c-pre;
       text-decoration: underline;
     }
   }
@@ -532,10 +536,10 @@
     overflow-y: auto;
     max-height: calc(100vh - 80px);
 
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       flex-wrap: wrap;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       flex-wrap: nowrap;
     }
 
@@ -545,20 +549,20 @@
       justify-content: center;
       padding-right: 20px;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         width: 100%;
         margin: 20px 0 30px;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         width: 40%;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         width: 310px;
       }
 
       img {
         max-width: 100%;
-        border: 1px solid $c-line;
+        border: 1px solid variables.$c-line;
       }
     }
     .content_wrap {
@@ -566,17 +570,17 @@
       min-height: 330px;
       text-align: left;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         width: 100%;
         padding: 0;
         border-left: 0;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         width: 60%;
-        border-left: 1px solid $c-line;
+        border-left: 1px solid variables.$c-line;
         padding: 0 20px;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         width: 410px;
       }
     }
@@ -628,7 +632,7 @@
         right: 0;
         width: 11px;
         height: 2px;
-        background: $c-txt;
+        background: variables.$c-txt;
         transform: rotate(45deg);
       }
       &::after {
@@ -638,15 +642,15 @@
         right: 0;
         width: 11px;
         height: 2px;
-        background: $c-txt;
+        background: variables.$c-txt;
         transform: rotate(-45deg);
       }
       &:hover {
-        color: $c-sub;
+        color: variables.$c-sub;
 
         &::before,
         &::after {
-          background: $c-sub;
+          background: variables.$c-sub;
         }
       }
     }
@@ -659,30 +663,30 @@
 
   .title_desc {
     b::after {
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         content: '';
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         content: ' : ';
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         content: ' : ';
       }
-      @include respond-to('wide') {
+      @include mq.respond-to('wide') {
         content: ' : ';
       }
     }
     a {
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         display: block;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         display: inline-block;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         display: inline-block;
       }
-      @include respond-to('wide') {
+      @include mq.respond-to('wide') {
         display: inline-block;
       }
     }
@@ -693,16 +697,16 @@
     align-items: center;
     padding: 0 10px;
 
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       display: block;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       display: flex;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       display: flex;
     }
-    @include respond-to('wide') {
+    @include mq.respond-to('wide') {
       display: flex;
     }
 
@@ -712,19 +716,19 @@
     .pill_group {
       flex-wrap: wrap;
 
-      @include respond-to('small') {
+      @include mq.respond-to('small') {
         padding: 5px 0;
         justify-content: center;
       }
-      @include respond-to('medium') {
+      @include mq.respond-to('medium') {
         padding: 5px 0;
         justify-content: flex-start;
       }
-      @include respond-to('large') {
+      @include mq.respond-to('large') {
         padding: 0;
         justify-content: flex-start;
       }
-      @include respond-to('wide') {
+      @include mq.respond-to('wide') {
         padding: 0;
         justify-content: flex-start;
       }
@@ -751,16 +755,16 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    @include respond-to('small') {
+    @include mq.respond-to('small') {
       width: 90%;
     }
-    @include respond-to('medium') {
+    @include mq.respond-to('medium') {
       width: 90%;
     }
-    @include respond-to('large') {
+    @include mq.respond-to('large') {
       width: 90%;
     }
-    @include respond-to('wide') {
+    @include mq.respond-to('wide') {
       width: 800px;
     }
 

@@ -1,3 +1,5 @@
+@use "variables";
+
 /* 믹스인 */
 // 컨텐츠 박스 기본 설정
 @mixin area {
@@ -89,26 +91,26 @@
 	line-height: 100%;
 }
 @mixin btn-basic {
-	border: 1px solid $c-key;
-	background: $c-key;
+	border: 1px solid variables.$c-key;
+	background: variables.$c-key;
 	color: #fff;
 
 	&:hover {
-		border: 1px solid $c-sub;
-		background: $c-sub;
+		border: 1px solid variables.$c-sub;
+		background: variables.$c-sub;
 	}
 }
 @mixin btn-second {
-	border: 1px solid $c-btn-line;
-	color: $c-btn-line;
+	border: 1px solid variables.$c-btn-line;
+	color: variables.$c-btn-line;
 
 	&:hover {
-		background: $c-btn-line;
-		color: $c-txt;
+		background: variables.$c-btn-line;
+		color: variables.$c-txt;
 	}
 }
 @mixin btn-warn {
-	border: 1px solid $c-warn;
-	background: $c-warn;
+	border: 1px solid variables.$c-warn;
+	background: variables.$c-warn;
 	color: #fff;
 }
