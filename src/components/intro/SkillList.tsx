@@ -1,5 +1,7 @@
 import { motion, Variants } from "framer-motion";
 
+import type { introSkillType } from "../../types/intro";
+
 const skills = [
   { title: "View", items: ["React.js", "Next.js"] },
   { title: "State Management", items: ["Redux", "Redux-toolkit"] },
@@ -20,22 +22,34 @@ export default function SkillList({ variants }: { variants: Variants }) {
   return (
     <ul className="skill_list">
       {skills.map(({ title, items }, index) => (
-        <motion.li
+        <SkillItem
           key={title}
+          title={title}
+          items={items}
+          index={index}
           variants={variants}
-          initial="hide"
-          animate="show"
-          exit="hide"
-          custom={1 + index * delay}
-        >
-          <h2>{title}</h2>
-          <ul className="pill_group">
-            {items.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </motion.li>
+        />
       ))}
     </ul>
+  );
+}
+
+export function SkillItem({ title, items, index, variants }: introSkillType) {
+  return (
+    <motion.li
+      key={title}
+      variants={variants}
+      initial="hide"
+      animate="show"
+      exit="hide"
+      custom={1 + index * delay}
+    >
+      <h2>{title}</h2>
+      <ul className="pill_group">
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </motion.li>
   );
 }

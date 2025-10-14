@@ -9,7 +9,7 @@ import { BasicFade } from "@styles/motion";
 
 import SkillSet from "../../data/skill.json";
 
-export default function Skill() {
+export default function SkillPage() {
   return (
     <>
       <motion.h2

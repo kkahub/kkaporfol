@@ -1,6 +1,6 @@
-@use "mixins";
-@use "mq";
-@use "variables";
+@use 'mixins';
+@use 'mq';
+@use 'variables';
 
 /* Intro */
 .visual_group {
@@ -217,6 +217,7 @@
       }
       b {
         display: inline-block;
+        padding-right: 10px;
         font-weight: bold;
 
         @include mq.respond-to('small') {

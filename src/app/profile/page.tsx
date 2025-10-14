@@ -5,9 +5,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import ProfileList from "@/components/profile/ProfileList";
 import { BasicFade } from "@styles/motion";
 
-export default function Profile() {
+export default function ProfilePage() {
   return (
     <>
       <motion.h2
@@ -35,40 +36,7 @@ export default function Profile() {
           </motion.div>
         </div>
         <div className="profile_con">
-          <motion.ul variants={BasicFade}>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={1.2}
-            >
-              <b>Name</b> 김근애
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={1.6}
-            >
-              <b>E-Main</b> oceco@naver.com
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={1.8}
-            >
-              <b>Web Designer</b> 2012.04~
-            </motion.li>
-            <motion.li
-              variants={BasicFade}
-              initial="hide"
-              animate="show"
-              custom={2}
-            >
-              <b>Web Publisher</b> 2014.04~
-            </motion.li>
-          </motion.ul>
+          <ProfileList />
         </div>
       </div>
     </>

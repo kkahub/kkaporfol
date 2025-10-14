@@ -12,7 +12,7 @@ import { BasicFade } from "@styles/motion";
 
 import { DataProps } from "./types";
 
-export default function Chart() {
+export default function ChartPage() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {

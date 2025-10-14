@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { BasicFade } from "@styles/motion";
 
-export default function Preview() {
+export default function PreviewPage() {
   return (
     <section id="Preview" className="preview">
       <div className="inner">

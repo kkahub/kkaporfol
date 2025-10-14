@@ -20,7 +20,7 @@ import { BasicFade } from "@styles/motion";
 // eslint-disable-next-line import/newline-after-import
 const Modal = dynamic(() => import("@components/modal/modal-contents"));
 
-export default function Portfolio() {
+export default function PortfolioPage() {
   const dispatch = useAppDispatch();
   const searchData = useAppSelector((state) => state.searchReducer);
 
@@ -53,9 +53,7 @@ export default function Portfolio() {
     modalOpen(i);
   };
   const keyModal = (e: React.KeyboardEvent<HTMLElement>, i: string) => {
-    if (e.key === "Enter") {
-      modalOpen(i);
-    }
+    if (e.key === "Enter") modalOpen(i);
   };
 
   return (
