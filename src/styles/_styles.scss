@@ -202,10 +202,14 @@
     }
 
     ul {
-      display: inline-block;
+      width: fit-content;
+      margin: 0 auto;
       text-align: left;
 
       li {
+        display: flex;
+        width: fit-content;
+
         @include mq.respond-to('small') {
           margin-bottom: 10px;
           font-size: 15px;
@@ -216,15 +220,16 @@
         }
       }
       b {
-        display: inline-block;
+        flex-shrink: 0;
+        display: block;
         padding-right: 10px;
         font-weight: bold;
 
         @include mq.respond-to('small') {
-          width: 110px;
+          width: 130px;
         }
         @include mq.respond-to('medium') {
-          width: 140px;
+          width: 150px;
         }
       }
     }
