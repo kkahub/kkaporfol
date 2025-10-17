@@ -2,58 +2,68 @@
   "skills": [
     {
       "id": "1",
-      "title": "HTML",
-      "desc": "HTML4.01, HTML5등 DOCTYPE을 이해하고 문서에 맞춰 작업이 가능합니다."
-    },
-    {
-      "id": "2",
-      "title": "CSS",
-      "desc": "css1부터 css3 최신 스타일 까지 다양한 프로퍼티를 알고 SCSS, styled-components 등 사용합니다."
-    },
-    {
-      "id": "3",
-      "title": "반응형웹/모바일",
-      "desc": "UI/UX를 생각하며 다양한 기기, 브라우저에 최적화된 퍼블리싱을 합니다. 유동적으로 변화하는 반응형웹도 제작이 가능하며\nBootstrap, 워드프레스의 경험이 있습니다."
-    },
-    {
-      "id": "4",
-      "title": "웹 표준/접근성",
-      "desc": "웹 표준/접근성에 대해 이해하고 다양한 종류와 버전에 따른 브라우저에 맞게 마크업합니다."
-    },
-    {
-      "id": "5",
       "title": "Javascript",
       "desc": "함수, 메소드, 클래스, 프로토타입 등 절차지향/객체지향을 이해합니다. 그리고 ES6에 let, const, Arrow Function, async, await, fetch 등 활용합니다."
     },
     {
-      "id": "6",
-      "title": "jQuery",
-      "desc": "다양한 메소드를 사용해 기능을 구현합니다. 또한 항상 웹속도와 효율을 고려하며 자바스크립트와 함께 활용하고 있습니다.\n플러그인 API 활용, 수정이 가능합니다."
-    },
-    {
-      "id": "7",
+      "id": "2",
       "title": "Vue",
-      "desc": "babel과 함께 프로젝트에 필요한 Vue 기초 지식이 있습니다. es6-promise polyfill, VeeValidate, vue-paginate 라이브러리경험이 있습니다."
+      "desc": "양방향 바인딩이 가능한 Vue를 이해하고 프로젝트를 제작 할 수 있습니다. SFC 문법에도 익숙하며 VueUse와 validate, pagination, unplugin-vue-router 등 vue 전용 다양한 라이브러리 경험이 있습니다."
     },
     {
-      "id": "8",
+      "id": "3",
       "title": "React",
-      "desc": "대표적인 SPA 라이브러리로 component를 제작 할 수 있습니다. 또한 redux, redux-toolkit을 이용해 상태관리 합니다."
+      "desc": "최신 19버전 까지 파악하고 있습니다. "
     },
     {
-      "id": "9",
+      "id": "4",
       "title": "Next.js",
       "desc": "SEO와 성능 향상 등 강점을 가진 SSR, SSG가 가능한 Next.js로 개발 가능합니다."
     },
     {
-      "id": "10",
+      "id": "5",
       "title": "Typescript",
       "desc": "명확한 자료 타입을 위해 상황에 맞는 타입 선언, 제네릭 타입, 인터페이스 등을 사용합니다."
     },
     {
+      "id": "6",
+      "title": "상태관리",
+      "desc": "Redux, redux-toolkit, Zustand, Tanstack-query(React-query), Pinia로 전역 관리, 데이터 관리를 하며 action, dispatch, store의 개념을 이해하고 있습니다."
+    },
+    {
+      "id": "7",
+      "title": "CI/CD",
+      "desc": "Firebase로 기본적인 데이터 구조 작성 및 배포가 가능합니다. 빌드를 위해 SPA의 vite, next.js등 config 설정이 가능합니다."
+    },
+    {
+      "id": "8",
+      "title": "HTML",
+      "desc": "HTML4.01, HTML5등 DOCTYPE을 이해하고 문서에 맞춰 작업이 가능합니다."
+    },
+    {
+      "id": "9",
+      "title": "CSS",
+      "desc": "css1 부터 최신 css 까지 모두 파악하고 있으며 SCSS, styled-components 등 사용합니다."
+    },
+    {
+      "id": "10",
+      "title": "반응형웹/모바일/하이브리드앱",
+      "desc": "UI/UX를 생각하며 다양한 기기, 브라우저에 최적화된 개발을 합니다. 유동적으로 변화하는 반응형웹도 제작이 가능하며\niOS대응에도 경험이 많습니다. Bootstrap, 워드프레스도의 경험이 있습니다."
+    },
+    {
       "id": "11",
+      "title": "웹 표준/접근성",
+      "desc": "웹 표준/접근성에 대해 이해하고 다양한 종류와 버전에 따른 브라우저에 맞게 마크업합니다."
+    },
+    {
+      "id": "12",
+      "title": "jQuery",
+      "desc": "다양한 메소드를 사용해 기능을 구현합니다. 또한 항상 웹속도와 효율을 고려하며 자바스크립트와 함께 활용하고 있습니다.\n플러그인 API 활용, 수정이 가능합니다."
+    },
+    {
+      "id": "13",
       "title": "기타",
-      "desc": "Git 형상관리툴에 대한 기초스킬(SVN, GitLab, GitHub).\nwebpack, babel, gulp 사용.\n액셀 기초"
+      "desc": "Git 형상관리툴 활용(SVN, GitLab, GitHub).\nwebpack, babel, gulp 사용.\n액셀 기초"
     }
   ]
 }
