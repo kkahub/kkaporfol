@@ -11,7 +11,6 @@
 - **CSS** : SASS(SCSS), styled-components, 반응형
 - **Javascript** : ES6, Typescript
 - **State Management** : Redux, Redux-toolkit
-- **Database** : Firebase
 - **Coding Convention** : Husky, lint-staged, ESLint, Prettier
 - **Configuration Management** : Git, Github
 - **ECT** : MUI (Material UI), Swiper, Lodash

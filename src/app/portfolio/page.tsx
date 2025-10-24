@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 
 import Pagination from "@mui/material/Pagination";
 import { motion, AnimatePresence } from "framer-motion";
@@ -21,6 +21,10 @@ import { BasicFade } from "@styles/motion";
 const Modal = dynamic(() => import("@components/modal/modal-contents"));
 
 export default function PortfolioPage() {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const [modalIndex, setModalIndex] = useState<string>("0");
+
   const dispatch = useAppDispatch();
   const searchData = useAppSelector((state) => state.searchReducer);
 
@@ -43,8 +47,18 @@ export default function PortfolioPage() {
     dispatch(setSliceList());
   };
 
-  const [showModal, setShowModal] = useState<boolean>(false);
-  const [modalIndex, setModalIndex] = useState<string>("0");
+  useEffect(() => {
+    if (isLoading) {
+      // dispatch(setPage(1));
+      // dispatch(setTotalPage());
+      // dispatch(setSliceList());
+      setIsLoading(false);
+      console.log("로딩상태2: ", isLoading);
+    }
+    dispatch(setSliceList());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchData.result]);
+
   const modalOpen = (i: string) => {
     setShowModal(!showModal);
     setModalIndex(i);
@@ -55,6 +69,14 @@ export default function PortfolioPage() {
   const keyModal = (e: React.KeyboardEvent<HTMLElement>, i: string) => {
     if (e.key === "Enter") modalOpen(i);
   };
+
+  if (isLoading) {
+    return (
+      <div className="wrap_loading">
+        <div className="loading"></div>
+      </div>
+    );
+  }
 
   return (
     <>
