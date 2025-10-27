@@ -24,6 +24,7 @@ export default function PortfolioPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [modalIndex, setModalIndex] = useState<string>("0");
+  const [lastSearchKeyword, setLastSearchKeyword] = useState<string>("");
 
   const dispatch = useAppDispatch();
   const searchData = useAppSelector((state) => state.searchReducer);
@@ -41,23 +42,23 @@ export default function PortfolioPage() {
   };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(searchList());
-    dispatch(setPage(1));
-    dispatch(setTotalPage());
-    dispatch(setSliceList());
+    console.log(searchData.result);
+    if (!isLoading && searchData.keyword !== lastSearchKeyword) {
+      setIsLoading(true);
+      setLastSearchKeyword(searchData.keyword);
+      dispatch(searchList());
+    }
   };
 
+  // searchList 완료 후 후속 처리
   useEffect(() => {
     if (isLoading) {
-      // dispatch(setPage(1));
-      // dispatch(setTotalPage());
-      // dispatch(setSliceList());
+      dispatch(setPage(1));
+      dispatch(setTotalPage());
+      dispatch(setSliceList());
       setIsLoading(false);
-      console.log("로딩상태2: ", isLoading);
     }
-    dispatch(setSliceList());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchData.result]);
+  }, [searchData.result, isLoading, dispatch]);
 
   const modalOpen = (i: string) => {
     setShowModal(!showModal);
@@ -70,14 +71,6 @@ export default function PortfolioPage() {
     if (e.key === "Enter") modalOpen(i);
   };
 
-  if (isLoading) {
-    return (
-      <div className="wrap_loading">
-        <div className="loading"></div>
-      </div>
-    );
-  }
-
   return (
     <>
       <motion.h2
@@ -87,7 +80,7 @@ export default function PortfolioPage() {
         animate="show"
         custom={0.2}
       >
-        PORTFOLIO
+        {/* PORTFOLIO */}
       </motion.h2>
       <motion.p
         className="title_desc"
@@ -112,6 +105,7 @@ export default function PortfolioPage() {
               type="text"
               name="keyword"
               placeholder="제목으로 검색하기"
+              value={searchData.keyword}
               onChange={searchValChange}
             />
             <button className="btn_search" type="submit">
@@ -119,68 +113,76 @@ export default function PortfolioPage() {
             </button>
           </motion.div>
           {/* Portfolio List */}
-          {searchData.sliceList.length > 0 && (
+          {isLoading ? (
+            <div className="wrap_loading">
+              <div className="loading"></div>
+            </div>
+          ) : (
             <>
-              <motion.ul className="list_wrap portfolio_wrap grid">
-                <AnimatePresence>
-                  {searchData.sliceList.map((portfolio, index) => (
-                    <motion.li
-                      className={`item${portfolio.id} grid-item`}
-                      key={portfolio.id}
-                      variants={BasicFade}
-                      initial="hide"
-                      animate="show"
-                      exit="hide"
-                      custom={index}
-                    >
-                      <div
-                        className="list_con"
-                        tabIndex={index}
-                        onClick={() => onClickModal(portfolio.id)}
-                        onKeyDown={(e) => keyModal(e, portfolio.id)}
-                        role="button"
-                      >
-                        <div className="thum_wrap">
-                          <Image
-                            className="responsive_size"
-                            src={portfolio.view}
-                            alt={portfolio.alt}
-                            fill
-                          />
-                        </div>
-                        <div className="info_wrap">
-                          <h3> {portfolio.title} </h3>
-                          {portfolio.skills && (
-                            <ul className="keyword">
-                              {portfolio.skills.map((skill) => (
-                                <li className="pill" key={skill}>
-                                  {skill}
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-                      </div>
-                    </motion.li>
-                  ))}
-                </AnimatePresence>
-              </motion.ul>
-              {/* Pagination */}
-              <Pagination
-                count={searchData.totalPage}
-                defaultPage={1}
-                page={searchData.page}
-                boundaryCount={6}
-                variant="outlined"
-                color="primary"
-                sx={{ margin: 2 }}
-                onChange={handlePage}
-              />
-              {/* //Pagination  */}
+              {searchData.sliceList.length > 0 && (
+                <>
+                  <motion.ul className="list_wrap portfolio_wrap grid">
+                    <AnimatePresence>
+                      {searchData.sliceList.map((portfolio, index) => (
+                        <motion.li
+                          className={`item${portfolio.id} grid-item`}
+                          key={portfolio.id}
+                          variants={BasicFade}
+                          initial="hide"
+                          animate="show"
+                          exit="hide"
+                          custom={index}
+                        >
+                          <div
+                            className="list_con"
+                            tabIndex={index}
+                            onClick={() => onClickModal(portfolio.id)}
+                            onKeyDown={(e) => keyModal(e, portfolio.id)}
+                            role="button"
+                          >
+                            <div className="thum_wrap">
+                              <Image
+                                className="responsive_size"
+                                src={portfolio.view}
+                                alt={portfolio.alt}
+                                fill
+                              />
+                            </div>
+                            <div className="info_wrap">
+                              <h3> {portfolio.title} </h3>
+                              {portfolio.skills && (
+                                <ul className="keyword">
+                                  {portfolio.skills.map((skill) => (
+                                    <li className="pill" key={skill}>
+                                      {skill}
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </div>
+                          </div>
+                        </motion.li>
+                      ))}
+                    </AnimatePresence>
+                  </motion.ul>
+                  {/* Pagination */}
+                  <Pagination
+                    count={searchData.totalPage}
+                    defaultPage={1}
+                    page={searchData.page}
+                    boundaryCount={6}
+                    variant="outlined"
+                    color="primary"
+                    sx={{ margin: 2 }}
+                    onChange={handlePage}
+                  />
+                  {/* //Pagination  */}
+                </>
+              )}
+              {searchData.sliceList.length === 0 && (
+                <div className="no_data">검색 결과가 없습니다.</div>
+              )}
             </>
-          )}
-          {searchData.sliceList.length === 0 && (
-            <div className="no_data">검색 결과가 없습니다.</div>
           )}
           {/* //Portfolio List */}
         </form>

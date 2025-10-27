@@ -43,15 +43,14 @@ export const searchSlice = createSlice({
     }),
     searchList: (state: SearchType) => ({
       ...state,
-      result: PortfolioList.portfolios.filter((item) => {
-        if (state.keyword === "") {
-          return item;
-        }
-        if (item.title.toLowerCase().includes(state.keyword)) {
-          return item;
-        }
-        return null;
-      }),
+      result: PortfolioList.portfolios
+        .filter((item) => {
+          if (state.keyword === "") {
+            return true;
+          }
+          return item.title.toLowerCase().includes(state.keyword);
+        })
+        .sort((a, b) => Number(b.id) - Number(a.id)),
     }),
     setTotalPage: (state) => ({
       ...state,
