@@ -3,38 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import PortfolioList from "../../data/portfolio.json";
-
-type OnClickModal = (i: string) => void;
-
-interface ModalProps {
-  onClickModal: OnClickModal;
-  modalIndex: string;
-}
-interface PortfolioType {
-  id: string;
-  title: string;
-  view: string;
-  alt: string;
-  skills?: string[];
-  participation: string;
-  url: { sample?: string[]; service?: string[] };
-  desc?: string;
-}
+import type { ModalProps } from "../../types/portfolio";
 
 export default function ModalContent(props: ModalProps) {
-  const { onClickModal, modalIndex } = props;
-  const index: number = Number(modalIndex) - 1;
-  const subject: PortfolioType = PortfolioList.portfolios[index];
+  const { onClickModal, modalItem } = props;
 
   return (
     <div className="modal_dim">
       <div className="modal_layer">
         <div className="modal_header">
-          <h2 className="modal_title">{subject.title}</h2>
+          <h2 className="modal_title">{modalItem.title}</h2>
           <button
             className="modal_close"
-            onClick={() => onClickModal(modalIndex)}
+            onClick={() => onClickModal(modalItem)}
             type="button"
           >
             &#9587;
@@ -44,16 +25,17 @@ export default function ModalContent(props: ModalProps) {
           <div className="img_wrap">
             <Image
               className="responsive_size"
-              src={subject.view}
-              alt={subject.alt}
+              src={modalItem.view}
+              alt={modalItem.alt}
               fill
+              priority
             />
           </div>
           <div className="content_wrap">
-            <h2 className="modal_title">{subject.title}</h2>
-            {subject.desc && (
+            <h2 className="modal_title">{modalItem.title}</h2>
+            {modalItem.desc && (
               <p className="desc">
-                {subject.desc?.split("\\n").map((desc) => (
+                {modalItem.desc?.split("\\n").map((desc) => (
                   <span key={desc}>
                     {desc}
                     <br />
@@ -61,10 +43,10 @@ export default function ModalContent(props: ModalProps) {
                 ))}
               </p>
             )}
-            {subject.skills && <h3>핵심 기술</h3>}
-            {subject.skills && (
+            {modalItem.skills && <h3>핵심 기술</h3>}
+            {modalItem.skills && (
               <ul className="keyword">
-                {subject.skills.map((skill) => (
+                {modalItem.skills.map((skill) => (
                   <li className="pill" key={skill}>
                     {skill}
                   </li>
@@ -72,11 +54,11 @@ export default function ModalContent(props: ModalProps) {
               </ul>
             )}
             <h3>참여도</h3>
-            <p className="use_skill">{subject.participation}</p>
+            <p className="use_skill">{modalItem.participation}</p>
             <h3>사이트 보기</h3>
-            {subject.url.service && (
+            {modalItem.url.service && (
               <ul className="sitepath">
-                {subject.url.service.map((service) => (
+                {modalItem.url.service.map((service) => (
                   <li key={service}>
                     <Link href={service} target="_blank">
                       {service}
@@ -85,10 +67,10 @@ export default function ModalContent(props: ModalProps) {
                 ))}
               </ul>
             )}
-            {subject.url.sample && (
+            {modalItem.url.sample && (
               <ul className="sitepath">
-                {subject.url.sample.map((sample, i) => (
-                  <li key="sample">
+                {modalItem.url.sample.map((sample, i) => (
+                  <li key={sample}>
                     <Link href={sample} target="_blank">
                       Sample Page {i + 1}
                     </Link>

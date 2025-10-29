@@ -17,13 +17,17 @@ import {
 } from "@modules/searchSlice";
 import { BasicFade } from "@styles/motion";
 
+import type { PortfolioType } from "../../types/portfolio";
+
 // eslint-disable-next-line import/newline-after-import
 const Modal = dynamic(() => import("@components/modal/modal-contents"));
 
 export default function PortfolioPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
-  const [modalIndex, setModalIndex] = useState<string>("0");
+  const [modalItem, setModalItem] = useState<PortfolioType>(
+    {} as PortfolioType,
+  );
   const [lastSearchKeyword, setLastSearchKeyword] = useState<string>("");
 
   const dispatch = useAppDispatch();
@@ -42,7 +46,7 @@ export default function PortfolioPage() {
   };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(searchData.result);
+
     if (!isLoading && searchData.keyword !== lastSearchKeyword) {
       setIsLoading(true);
       setLastSearchKeyword(searchData.keyword);
@@ -60,15 +64,18 @@ export default function PortfolioPage() {
     }
   }, [searchData.result, isLoading, dispatch]);
 
-  const modalOpen = (i: string) => {
+  const modalOpen = (item: PortfolioType) => {
     setShowModal(!showModal);
-    setModalIndex(i);
+    setModalItem(item);
   };
-  const onClickModal = (i: string) => {
-    modalOpen(i);
+  const onClickModal = (item: PortfolioType) => {
+    modalOpen(item);
   };
-  const keyModal = (e: React.KeyboardEvent<HTMLElement>, i: string) => {
-    if (e.key === "Enter") modalOpen(i);
+  const keyModal = (
+    e: React.KeyboardEvent<HTMLElement>,
+    item: PortfolioType,
+  ) => {
+    if (e.key === "Enter") modalOpen(item);
   };
 
   return (
@@ -136,8 +143,8 @@ export default function PortfolioPage() {
                           <div
                             className="list_con"
                             tabIndex={index}
-                            onClick={() => onClickModal(portfolio.id)}
-                            onKeyDown={(e) => keyModal(e, portfolio.id)}
+                            onClick={() => onClickModal(portfolio)}
+                            onKeyDown={(e) => keyModal(e, portfolio)}
                             role="button"
                           >
                             <div className="thum_wrap">
@@ -146,6 +153,7 @@ export default function PortfolioPage() {
                                 src={portfolio.view}
                                 alt={portfolio.alt}
                                 fill
+                                priority
                               />
                             </div>
                             <div className="info_wrap">
@@ -187,9 +195,7 @@ export default function PortfolioPage() {
           {/* //Portfolio List */}
         </form>
       </div>
-      {showModal && (
-        <Modal onClickModal={onClickModal} modalIndex={modalIndex} />
-      )}
+      {showModal && <Modal onClickModal={onClickModal} modalItem={modalItem} />}
     </>
   );
 }
