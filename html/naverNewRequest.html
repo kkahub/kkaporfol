@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>비공동 단지정보 신규요청</title>
+        <link rel="stylesheet" href="../css/naver/complex_request.css">
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="../js/naver/common.js"></script>
+    </head>
+
+    <body>
+        <div class="pop_wrap pop_complex_new">
+            <form name="formComplexNewRequest" method="post" action="">
+                <div class="pop_header">
+                    <div class="headline">
+                        <h2 class="title">신규등록 요청</h2>
+                    </div>
+                    <button class="btn_close" type="button"><span class="text_blind">닫기</span></button>
+                </div>
+                <div class="pop_content">
+                    <div class="headline">
+                        <h3 class="title">신규등록</h3>
+                        <p class="desc">신규등록을 요청하시면 절차를 거쳐서 부동산 단지 서비스에 등록됩니다 <span class="text_red">(* 필수정보)</span></p>
+                    </div>
+                    <div class="form_table">
+                        <table>
+                            <caption>비공동 단지정보 신규요청</caption>
+                            <colgroup>
+                                <col style="width: 112px;">
+                                <col style="width: 264px;">
+                                <col style="width: 112px;">
+                                <col style="width: 264px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>건물유형 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="wrap_radio">
+                                            <input id="Type1" type="radio" name="buildingType" checked>
+                                            <label for="Type1">연립</label>
+                                            <input id="Type2" type="radio" name="buildingType">
+                                            <label for="Type2">다세대</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주소 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="form_line wrap_select_address">
+                                            <select class="selectbox">
+                                                <option value="" selected>시/도</option>
+                                                <option value="">서울시</option>
+                                                <option value="">경기도</option>
+                                            </select>
+                                            <select class="selectbox">
+                                                <option value="" selected>시/군/구</option>
+                                                <option value="">서초구</option>
+                                                <option value="">강남구</option>
+                                            </select>
+                                            <select class="selectbox">
+                                                <option value="" selected>읍/면/동</option>
+                                                <option value="">방배본동</option>
+                                                <option value="">방배1동</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_line detail_address">
+                                            <div class="wrap_radio">
+                                                <input id="Address1" type="radio" name="buildingAddress" checked>
+                                                <label for="Address1">일반</label>
+                                                <input id="Address2" type="radio" name="buildingAddress">
+                                                <label for="Address2">산</label>
+                                                <input id="Address3" type="radio" name="buildingAddress">
+                                                <label id="Address3" for="Address3">블록</label>
+                                            </div>
+                                            <div class="street_number">
+                                                <input class="input_num" type="number" name="streetAddress1">
+                                                -
+                                                <input class="input_num" type="number" name="streetAddress2">
+                                            </div>
+                                            <input class="rest_address" type="text" name="detailAddress" placeholder="상세주소를 입력해 주세요">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>건물명 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="wrap_text_limit">
+                                            <input class="limit_value" type="text" name="buildingName" placeholder="건물명을 입력해 주세요" maxlength="40">
+                                            <p class="text_limit"><span class="text_count">0</span>/40byte</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>총동수</th>
+                                    <td>
+                                        <input class="input_num" type="number">
+                                    </td>
+                                    <th>세대수</th>
+                                    <td>
+                                        <input class="input_num" type="number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>시작층/최고층</th>
+                                    <td>
+                                        <input class="input_num" type="number">
+                                        /
+                                        <input class="input_num" type="number">
+                                    </td>
+                                    <th>주차대수</th>
+                                    <td>
+                                        <input class="input_num" type="number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>임대여부 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="form_line">
+                                            <div class="wrap_radio">
+                                                <input id="Address1" type="radio" name="rentYN" checked>
+                                                <label for="Address1">N</label>
+                                                <input id="Address2" type="radio" name="rentYN">
+                                                <label for="Address2">Y</label>
+                                            </div>
+                                            <small class="refer">* 건물 전체를 임대사업으로 사용중일 경우 임대여부 Y로 체크해 주세요.</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>요청내용 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="wrap_text_limit">
+                                            <textarea class="limit_value" name="requestContent" placeholder="요청내용을 입력해 주세요.&#10;&#10;* 건축물대장이 미생성된 경우 사업개요, 세대별 면적정보, 면적별 세대수, ​동호배치도 등의 자료를 첨부하여 주셔야 개설이 가능합니다." maxlength="2000"></textarea>
+                                            <p class="text_limit"><span class="text_count">0</span>/2000</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>첨부파일</th>
+                                    <td colspan="3">
+                                        <div class="form_line">
+                                            <div class="wrap_file">
+                                                <input class="file" type="file" name="file" id="file">
+                                                <label class="btn btn_line_gray300" for="file">파일첨부</label>
+                                            </div>
+                                            <small class="refer">* 첨부파일은 5개 / 용량 최대 5M (jpg. jpeg, png, gif, pdf)</small>
+                                        </div>
+                                        <ul class="file_list"></ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>E-Mail <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="form_line">
+                                            <div class="wrap_email">
+                                                <input type="text" name="email">
+                                                @
+                                                <div class="email_option">
+                                                    <select class="selectbox">
+                                                        <option value="" selected>선택하세요</option>
+                                                        <option value="">naver.com</option>
+                                                        <option value="">gmail.com</option>
+                                                        <option value="">hanmail.net</option>
+                                                        <option value="">yahoo.co.kr</option>
+                                                        <option value="">nate.com</option>
+                                                        <option value="direct">직접입력</option>
+                                                    </select>
+                                                    <input class="email_write" type="text" name="emailWrite">
+                                                </div>
+                                            </div>
+                                            <small class="refer">* 입력하신 E-Mail로 처리 결과 답변 드립니다.</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="wrap_agreement">
+                        <div class="headline">
+                            <h3 class="title">개인정보 수집 · 이용 동의서​</h3>
+                        </div>
+                        <p class="desc">
+                            프롭티어㈜는 아래와 같은 목적으로 귀하의 개인정보를 수집이용하고자 합니다.<br />
+                            내용을 충분히 숙지하신 후 동의 여부를 결정해 주시기 바랍니다.
+                        </p>
+                        <div class="form_table align_center">
+                            <table>
+                                <caption>개인정보 수집·이용 동의서​</caption>
+                                <colgroup>
+                                    <col style="width: 240px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>수집·이용 목적​</th>
+                                        <td>단지정보 신규등록 처리 결과 안내 메일 발송​</td>
+                                    </tr>
+                                    <tr>
+                                        <th>수집·이용 항목​</th>
+                                        <td>E-mail 주소</td>
+                                    </tr>
+                                    <tr>
+                                        <th>보유·이용 기간​</th>
+                                        <td><strong class="text_primary">수집일로부터 3개월까지</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="warn_notice">
+                            위 개인정보 수집·이용에 대한 동의를 거부하실 수 있습니다. 다만, 본 동의는 단지정보 신규등록 요청 처리결과 안내 메일 발송을 위한<br />
+                            필수 요건으로 동의를 거부하실 경우 서비스 이용에 제한이 있을 수 있습니다.
+                        </p>
+                        <div class="wrap_checkbox">
+                            <input id="privacy" type="checkbox" name="privacy">
+                            <label for="privacy"><span class="text_red">(필수)</span> 동의합니다.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop_footer">
+                    <div class="wrap_btn">
+                        <button class="btn btn_primary">등록 요청</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

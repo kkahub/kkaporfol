@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>비공동 단지정보 수정요청</title>
+        <link rel="stylesheet" href="../css/naver/complex_request.css">
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="../js/common.js"></script>
+    </head>
+
+    <body>
+        <div class="pop_wrap pop_complex_modify">
+            <form name="formComplexModufyRequest" method="post" action="">
+                <div class="pop_header">
+                    <div class="headline">
+                        <h2 class="title">상세정보 수정요청</h2>
+                    </div>
+                    <button class="btn_close" type="button"><span class="text_blind">닫기</span></button>
+                </div>
+                <div class="pop_content">
+                    <div class="headline">
+                        <h3 class="title">상세정보 수정</h3>
+                        <p class="desc">수정이 필요한 항목에 수정값을 입력해 주세요. 수정요청을 하시면 절차를 거쳐서 부동산 단지 서비스에 적용됩니다. <span class="text_red">(* 필수정보)</span></p>
+                    </div>
+                    <div class="form_table">
+                        <table>
+                            <caption>비공동 단지 주소 수정</caption>
+                            <colgroup>
+                                <col style="width: 112px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>주소 <span class="required">*</span></th>
+                                    <td>
+                                        <div class="form_line">
+                                            <div class="wrap_select_address">
+                                                <select class="selectbox">
+                                                    <option value="" selected>시/도</option>
+                                                    <option value="">서울시</option>
+                                                    <option value="">경기도</option>
+                                                </select>
+                                                <select class="selectbox">
+                                                    <option value="" selected>시/군/구</option>
+                                                    <option value="">서초구</option>
+                                                    <option value="">강남구</option>
+                                                </select>
+                                                <select class="selectbox">
+                                                    <option value="" selected>읍/면/동</option>
+                                                    <option value="">방배본동</option>
+                                                    <option value="">방배1동</option>
+                                                </select>
+                                            </div>
+                                            <div class="detail_address">
+                                                <select class="selectbox">
+                                                    <option value="" selected>개구리 1단지</option>
+                                                    <option value="">개구리 2단지</option>
+                                                    <option value="">개구리 3단지</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 
+                        ** input, select, textarea 기존 데이터 값과 수정값이 달라지는 경우 강조하기 위해
+                        *   각각 input, select, textarea에 input_modify 클래스 추가 부탁드립니다. 
+                     -->
+                    <div class="form_table change_modify">
+                        <table>
+                            <caption>비공동 단지정보 수정요청</caption>
+                            <colgroup>
+                                <col style="width: 112px;">
+                                <col style="width: 264px;">
+                                <col style="width: 112px;">
+                                <col style="width: 264px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>건물명</th>
+                                    <td>
+                                        <div class="wrap_text_limit">
+                                            <input class="limit_value" type="text" name="buildingName" value="가나다라마" maxlength="40">
+                                            <p class="text_limit"><span class="text_count">0</span>/40byte</p>
+                                        </div>
+                                    </td>
+                                    <th>총동수</th>
+                                    <td>
+                                        <input class="input_num" type="number" value="2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>세대수</th>
+                                    <td>
+                                        <input class="input_num" type="number" value="10">
+                                    </td>
+                                    <th>시작층/최고층</th>
+                                    <td>
+                                        <input class="input_num" type="number" value="3">
+                                        /
+                                        <input class="input_num" type="number" value="20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>난방방식</th>
+                                    <td>
+                                        <select class="selectbox" name="heatSystem">
+                                            <option value="" selected>중앙난방</option>
+                                            <option value="">개별난방</option>
+                                        </select>
+                                    </td>
+                                    <th>난방연료</th>
+                                    <td>
+                                        <select class="selectbox" name="heatFuel">
+                                            <option value="" selected>도시가스</option>
+                                            <option value="">열병합</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>용적률</th>
+                                    <td>
+                                        <div class="form_line">
+                                            <input class="input_num" type="number" value="80">&nbsp;%
+                                        </div>
+                                    </td>
+                                    <th>건폐율</th>
+                                    <td>
+                                        <div class="form_line">
+                                            <input class="input_num" type="number" value="80">&nbsp;%
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주차대수</th>
+                                    <td>
+                                        <div class="form_line">
+                                            <input class="input_num" type="number" value="5">&nbsp;대
+                                        </div>
+                                    </td>
+                                    <th>승강기대수</th>
+                                    <td>
+                                        <div class="form_line">
+                                            <input class="input_num" type="number" value="2">&nbsp;대
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>시공사</th>
+                                    <td>
+                                        <div class="wrap_text_limit">
+                                            <input class="limit_value" type="text" name="buildingName" value="㈜프롭티어" maxlength="40">
+                                            <p class="text_limit"><span class="text_count">0</span>/40byte</p>
+                                        </div>
+                                    </td>
+                                    <th>사용승인일</th>
+                                    <td>
+                                        <div class="form_line">
+                                            <input type="number" value="19951212">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>요청내용 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="wrap_text_limit">
+                                            <textarea class="limit_value" name="requestContent" maxlength="2000">내용</textarea>
+                                            <p class="text_limit"><span class="text_count">0</span>/2000</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>첨부파일</th>
+                                    <td colspan="3">
+                                        <div class="form_line">
+                                            <div class="wrap_file">
+                                                <input class="file" type="file" name="file" id="file">
+                                                <label class="btn btn_line_gray300" for="file">파일첨부</label>
+                                            </div>
+                                            <small class="refer">* 첨부파일은 5개 / 용량 최대 5M (jpg. jpeg, png, gif, pdf)</small>
+                                        </div>
+                                        <ul class="file_list"></ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>E-Mail <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="form_line">
+                                            <div class="wrap_email">
+                                                <input type="text" name="email">
+                                                @
+                                                <div class="email_option">
+                                                    <select class="selectbox">
+                                                        <option value="" selected>선택하세요</option>
+                                                        <option value="">naver.com</option>
+                                                        <option value="">gmail.com</option>
+                                                        <option value="">hanmail.net</option>
+                                                        <option value="">yahoo.co.kr</option>
+                                                        <option value="">nate.com</option>
+                                                        <option value="direct">직접입력</option>
+                                                    </select>
+                                                    <input class="email_write" type="text" name="emailWrite">
+                                                </div>
+                                            </div>
+                                            <small class="refer">* 입력하신 E-Mail로 처리 결과 답변 드립니다.</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="wrap_agreement">
+                        <div class="headline">
+                            <h3 class="title">개인정보 수집 · 이용 동의서​​</h3>
+                        </div>
+                        <p class="desc">
+                            프롭티어㈜는 아래와 같은 목적으로 귀하의 개인정보를 수집이용하고자 합니다.<br />
+                            내용을 충분히 숙지하신 후 동의 여부를 결정해 주시기 바랍니다.
+                        </p>
+                        <div class="form_table align_center">
+                            <table>
+                                <caption>개인정보 수집·이용 동의서​</caption>
+                                <colgroup>
+                                    <col style="width: 240px;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>수집·이용 목적​</th>
+                                        <td>단지정보 상세정보 수정 요청 처리 결과 안내 메일 발송​</td>
+                                    </tr>
+                                    <tr>
+                                        <th>수집·이용 항목​</th>
+                                        <td>E-mail 주소</td>
+                                    </tr>
+                                    <tr>
+                                        <th>보유·이용 기간​</th>
+                                        <td><strong class="text_primary">수집일로부터 3개월까지</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="warn_notice">
+                            위 개인정보 수집·이용에 대한 동의를 거부하실 수 있습니다. 다만, 본 동의는 단지정보 상세정보 수정 요청 처리결과 안내 메일 발송을 위한<br />
+                            필수 요건으로 동의를 거부하실 경우 서비스 이용에 제한이 있을 수 있습니다.
+                        </p>
+                        <div class="wrap_checkbox">
+                            <input id="privacy" type="checkbox" name="privacy">
+                            <label for="privacy"><span class="text_red">(필수)</span> 동의합니다.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop_footer">
+                    <div class="wrap_btn">
+                        <button class="btn btn_primary">수정 요청</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
