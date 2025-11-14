@@ -199,7 +199,7 @@
   width: 20px;
   height: 20px;
   padding: 0;
-  background: url('/image/ico_caution_gry_italic.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/ico_caution_gry_italic.svg') no-repeat center;
 }
 .wrap-tooltip .tooltip {
   position: absolute;
@@ -229,7 +229,7 @@
   width: 20px;
   height: 8px;
   border: 0;
-  background: url('/image/tooltip_angle.svg') no-repeat center / 20px;
+  background: url('../../images/pofol/aipartner/tooltip_angle.svg') no-repeat center / 20px;
 }
 
 /* 테이블 */
@@ -308,7 +308,7 @@
 }
 .no-data p {
   padding-top: 66px;
-  background: url('/image/icon_caution_fill_gry.svg') no-repeat center top / 42px;
+  background: url('../../images/pofol/aipartner/icon_caution_fill_gry.svg') no-repeat center top / 42px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
@@ -356,7 +356,7 @@
 .tag.naver {
   padding: 1px 8px 1px 24px;
   border: 1px solid #ccc;
-  background: #fff url('/image/icon_type_naver.svg') no-repeat left 7px center / 14px;
+  background: #fff url('../../images/pofol/aipartner/icon_type_naver.svg') no-repeat left 7px center / 14px;
   font-size: 16px;
   line-height: 17px;
   color: #666;
@@ -407,10 +407,10 @@
   background-color: #e3e3e3;
 }
 .swiper-button .swiper-button-prev {
-  background: url('/image/angle_prev_bk.svg') no-repeat center / 12px;
+  background: url('../../images/pofol/aipartner/angle_prev_bk.svg') no-repeat center / 12px;
 }
 .swiper-button .swiper-button-next {
-  background: url('/image/angle_next_bk.svg') no-repeat center / 12px;
+  background: url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 12px;
 }
 .wrap-guest .full-swiper {
   overflow: hidden;
@@ -487,7 +487,7 @@
   height: 32px;
   padding: 0;
   border-radius: 99px;
-  background: url('/image/icon_popup_close_round.svg') no-repeat center / 12px;
+  background: url('../../images/pofol/aipartner/icon_popup_close_round.svg') no-repeat center / 12px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -555,13 +555,13 @@
   height: 24px;
 }
 .wrap-main .tab-menu-nav .tab-item .ico-property-state {
-  background: url('/image/icon_property_state.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_property_state.svg') no-repeat center;
 }
 .wrap-main .tab-menu-nav .tab-item .ico-property-share {
-  background: url('/image/icon_property_share.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_property_share.svg') no-repeat center;
 }
 .wrap-main .tab-menu-nav .tab-item .ico-property-graph {
-  background: url('/image/icon_property_graph.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_property_graph.svg') no-repeat center;
 }
 .wrap-main .tab-content {
   display: none;
@@ -596,7 +596,7 @@
   padding: 12px 56px 12px 42px;
   border: 1px solid #ccc;
   border-radius: 12px;
-  background: url(/image/icon_spot_org.svg) no-repeat left 12px center / 24px;
+  background: url(../../images/pofol/aipartner/icon_spot_org.svg) no-repeat left 12px center / 24px;
 }
 .home .btn-select[class*='btn-']:hover {
   background-color: #fffaf5;
@@ -612,7 +612,7 @@
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background: url(/image/icon_arrow_down_gr.svg) no-repeat center / 24px;
+  background: url(../../images/pofol/aipartner/icon_arrow_down_gr.svg) no-repeat center / 24px;
 }
 .home .btn-select .region-item {
   display: flex;
@@ -641,7 +641,7 @@
   display: block;
   width: 16px;
   height: 16px;
-  background: url(/image/angle_next_bk.svg) no-repeat center / 9px;
+  background: url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat center / 9px;
   filter: brightness(3.5);
 }
 .home .btn-select.active {
@@ -688,7 +688,7 @@
   display: block;
   width: 16px;
   height: 16px;
-  background: url(/image/angle_next_bk.svg) no-repeat center / 12px;
+  background: url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat center / 12px;
   filter: brightness(3);
 }
 .home .select-area .region-item strong {
@@ -829,7 +829,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background: url('/image/icon_plus_wh_bld.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_plus_wh_bld.svg') no-repeat center;
 }
 
 /* 매물현황 - 주취급단지 매물관리 */
@@ -846,7 +846,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('/image/icon_clock_org.svg') no-repeat center / 18px;
+  background: url('../../images/pofol/aipartner/icon_clock_org.svg') no-repeat center / 18px;
   filter: grayscale(100%);
 }
 .complex-manage .wrap-btn {
@@ -899,7 +899,7 @@
 .complex-manage .wrap-btn .range.up::after {
   content: '건';
   padding-right: 18px;
-  background: url(/image/icon_range_up.svg) no-repeat right center;
+  background: url(../../images/pofol/aipartner/icon_range_up.svg) no-repeat right center;
 }
 .complex-manage .wrap-btn .range.down {
   color: #006fff;
@@ -907,7 +907,7 @@
 .complex-manage .wrap-btn .range.down::after {
   content: '건';
   padding-right: 18px;
-  background: url(/image/icon_range_down.svg) no-repeat right center;
+  background: url(../../images/pofol/aipartner/icon_range_down.svg) no-repeat right center;
 }
 .complex-manage .banner-highlight {
   display: flex;
@@ -917,7 +917,7 @@
   margin-bottom: 16px;
   padding: 16px 20px;
   border-radius: 12px;
-  background: #f0f6ff url(/image/angle_next_bk.svg) no-repeat right 26px center / 14px;
+  background: #f0f6ff url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat right 26px center / 14px;
   font-size: 16px;
   line-height: 24px;
   color: #333;
@@ -930,19 +930,19 @@
 }
 .complex-manage .banner-highlight .down {
   padding-left: 26px;
-  background: url(/image/icon_range_down.svg) no-repeat left center / 22px;
+  background: url(../../images/pofol/aipartner/icon_range_down.svg) no-repeat left center / 22px;
 }
 .complex-manage .table-wrap .count {
   display: inline-flex;
 }
 .complex-manage .table-wrap .count.up {
   padding-right: 24px;
-  background: url(/image/icon_range_up.svg) no-repeat right center / 20px;
+  background: url(../../images/pofol/aipartner/icon_range_up.svg) no-repeat right center / 20px;
   color: #fd1202;
 }
 .complex-manage .table-wrap .count.down {
   padding-right: 24px;
-  background: url(/image/icon_range_down.svg) no-repeat right center / 20px;
+  background: url(../../images/pofol/aipartner/icon_range_down.svg) no-repeat right center / 20px;
   color: #006fff;
 }
 .complex-manage .pop-monitoring-ad {
@@ -1045,7 +1045,7 @@
   transform: translateX(-50%) rotate(180deg);
   width: 20px;
   height: 8px;
-  background: url('/image/tooltip_angle.svg') no-repeat center / 20px;
+  background: url('../../images/pofol/aipartner/tooltip_angle.svg') no-repeat center / 20px;
 }
 .state-activity .doughnut-tooltip:has(.detail-count) {
   visibility: visible;
@@ -1177,7 +1177,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('/image/icon_reload_blue500.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_reload_blue500.svg') no-repeat center;
 }
 .joint-brokerage .control-wrap .wrap-tab {
   width: 188px;
@@ -1280,7 +1280,7 @@
   width: 20px;
   height: 20px;
   margin-right: 8px;
-  background: url('/image/ico_caution_gry_italic.svg') no-repeat center / 20px;
+  background: url('../../images/pofol/aipartner/ico_caution_gry_italic.svg') no-repeat center / 20px;
 }
 .joint-brokerage .table-property-find .property-name {
   flex-direction: column;
@@ -1321,7 +1321,7 @@
   flex-shrink: 0;
   width: 34px;
   height: 34px;
-  background: url(/image/icon_xbtn_bk.svg) no-repeat center / 46px;
+  background: url(../../images/pofol/aipartner/icon_xbtn_bk.svg) no-repeat center / 46px;
   filter: contrast(3);
 }
 .popup-share-request .alert-msg {
@@ -1458,13 +1458,13 @@
   overflow: hidden;
 }
 .ranking-list li:nth-child(1) .rank {
-  background: url('/image/icon_rank1.svg') no-repeat center top;
+  background: url('../../images/pofol/aipartner/icon_rank1.svg') no-repeat center top;
 }
 .ranking-list li:nth-child(2) .rank {
-  background: url('/image/icon_rank2.svg') no-repeat center top;
+  background: url('../../images/pofol/aipartner/icon_rank2.svg') no-repeat center top;
 }
 .ranking-list li:nth-child(3) .rank {
-  background: url('/image/icon_rank3.svg') no-repeat center top;
+  background: url('../../images/pofol/aipartner/icon_rank3.svg') no-repeat center top;
 }
 .ranking-list .ranking-item .title {
   flex: 1;
@@ -1527,7 +1527,7 @@
   display: block;
   width: 16px;
   height: 16px;
-  background: url('/image/icon_range_up.svg') no-repeat center / 16px;
+  background: url('../../images/pofol/aipartner/icon_range_up.svg') no-repeat center / 16px;
 }
 
 /* 부동산 데이터 - 주취급단지 실거래가 */
@@ -1552,7 +1552,7 @@
 }
 .estate-transaction .wrap-transaction-vary .no-data {
   height: 424px;
-  background: url('/image/no_data_transaction_vary.png') no-repeat center;
+  background: url('../../images/pofol/aipartner/no_data_transaction_vary.png') no-repeat center;
 }
 .estate-transaction .min-max {
   display: flex;
@@ -1629,7 +1629,7 @@
 .estate-transaction .chart-info .legend .ico-graph-line {
   width: 19px;
   height: 11px;
-  background: url('/image/icon_legend_line.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_legend_line.svg') no-repeat center;
 }
 .estate-transaction .chart-info .legend .ico-graph-bar {
   width: 12px;
@@ -1752,7 +1752,7 @@
 }
 .wrap-same-transaction .no-data {
   height: 296px;
-  background: url('/image/no_data_same_transaction.png') no-repeat center;
+  background: url('../../images/pofol/aipartner/no_data_same_transaction.png') no-repeat center;
 }
 .wrap-same-transaction .table-wrap .sub-table.mono tbody tr {
   cursor: default;
@@ -1822,7 +1822,7 @@
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background: url('/image/angle_next_bk.svg') no-repeat center / 12px;
+  background: url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 12px;
   transform: rotate(90deg);
 }
 .wrap-same-transaction .btn-more-load.last .ico-angle {
@@ -1866,35 +1866,35 @@
 }
 .estate-tip-list .swiper-slide.contract a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_contract.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_contract.svg');
 }
 .estate-tip-list .swiper-slide.ephoto a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_ephoto.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_ephoto.svg');
 }
 .estate-tip-list .swiper-slide.property-ad a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_ad.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_ad.svg');
 }
 .estate-tip-list .swiper-slide.property-helper a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_helper.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_helper.svg');
 }
 .estate-tip-list .swiper-slide.ad-monitoring a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_monitoring.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_monitoring.svg');
 }
 .estate-tip-list .swiper-slide.share-estate a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_share.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_share.svg');
 }
 .estate-tip-list .swiper-slide.care a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_care.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_care.svg');
 }
 .estate-tip-list .swiper-slide.ai-assistant a {
   background-color: #fff;
-  background-image: url('/image/estate_tip_assistant.svg');
+  background-image: url('../../images/pofol/aipartner/estate_tip_assistant.svg');
 }
 .estate-tip-list .swiper-slide.contract a:hover {
   background-color: #39b151;
@@ -2054,7 +2054,7 @@
   height: 56px;
   border-radius: 99px;
   border: 1px solid #e3e3e3;
-  background-image: url(/image/home_no_profile.svg);
+  background-image: url(../../images/pofol/aipartner/home_no_profile.svg);
 }
 .wrap-my .wrap-photo:has(img) {
   background: #fff;
@@ -2114,7 +2114,7 @@
   height: 20px;
   border-radius: 99px;
   border: 1px solid #e3e3e3;
-  background: #fff url(/image/ico_photo_setting.svg) no-repeat center;
+  background: #fff url(../../images/pofol/aipartner/ico_photo_setting.svg) no-repeat center;
 }
 .wrap-my .btn-logout {
   flex-shrink: 0;
@@ -2259,7 +2259,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background: url('/image/icon_inquiry_org.svg') no-repeat center / 24px;
+  background: url('../../images/pofol/aipartner/icon_inquiry_org.svg') no-repeat center / 24px;
 }
 
 /* 이실장 알림 */
@@ -2330,10 +2330,10 @@
   flex-shrink: 0;
   width: 15px;
   height: 15px;
-  background: url(/image/icon_new_red.svg) no-repeat center / 15px;
+  background: url(../../images/pofol/aipartner/icon_new_red.svg) no-repeat center / 15px;
 }
 .wrap-alarm .alarm-list .read .ico-new {
-  background: url(/image/icon_new_gry.svg) no-repeat center / 15px;
+  background: url(../../images/pofol/aipartner/icon_new_gry.svg) no-repeat center / 15px;
 }
 .wrap-alarm .alarm-list .date {
   font-size: 14px;
@@ -2445,11 +2445,11 @@
 }
 .ui-datepicker-prev {
   left: 0;
-  background: url('/image/angle_prev_bk.svg') no-repeat center / 12px;
+  background: url('../../images/pofol/aipartner/angle_prev_bk.svg') no-repeat center / 12px;
 }
 .ui-datepicker-next {
   right: 0;
-  background: url('/image/angle_next_bk.svg') no-repeat center / 12px;
+  background: url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 12px;
 }
 .ui-datepicker-prev:hover,
 .ui-datepicker-next:hover {
@@ -2558,7 +2558,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('/image/icon_arrow_down_bk.svg') no-repeat center / 24px;
+  background: url('../../images/pofol/aipartner/icon_arrow_down_bk.svg') no-repeat center / 24px;
   filter: contrast(3);
 }
 .scheduler:has(.calendar-picker.active) .fc .fc-toolbar-title::after {
@@ -2600,10 +2600,10 @@
   border-radius: 8px;
 }
 .scheduler .fc-prev-button.fc-button-primary {
-  background: #fff url('/image/angle_prev_bk.svg') no-repeat center / 9px;
+  background: #fff url('../../images/pofol/aipartner/angle_prev_bk.svg') no-repeat center / 9px;
 }
 .scheduler .fc-next-button.fc-button-primary {
-  background: #fff url('/image/angle_next_bk.svg') no-repeat center / 9px;
+  background: #fff url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 9px;
 }
 .scheduler .fc-button-group .fc-icon {
   display: none;
@@ -2630,7 +2630,7 @@
   display: block;
   width: 18px;
   height: 18px;
-  background: url('/image/icon_plus_bl.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_plus_bl.svg') no-repeat center;
 }
 
 /* 오늘 할 일 - 주간 */
@@ -2690,7 +2690,7 @@
   transform: translateX(-50%);
   width: 29px;
   height: 24px;
-  background: url('/image/tooltip_today.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/tooltip_today.svg') no-repeat center;
 }
 .scheduler .fc-theme-standard th .wrap-day-header:hover {
   border: 2px solid #ff7b00;
@@ -3152,10 +3152,10 @@
   opacity: 1;
 }
 .swiper-controller .swiper-button-prev {
-  background: url(/image/angle_prev_bk.svg) no-repeat 7px center / 10px;
+  background: url(../../images/pofol/aipartner/angle_prev_bk.svg) no-repeat 7px center / 10px;
 }
 .swiper-controller .swiper-button-next {
-  background: url(/image/angle_next_bk.svg) no-repeat 3px center / 10px;
+  background: url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat 3px center / 10px;
 }
 .guest-top-slider .swiper-pagination-fraction {
   display: flex;
@@ -3272,7 +3272,7 @@
   display: block;
   width: 18px;
   height: 18px;
-  background: url('/image/icon_plus_bk.svg') no-repeat center / 20px;
+  background: url('../../images/pofol/aipartner/icon_plus_bk.svg') no-repeat center / 20px;
   filter: contrast(3);
 }
 
@@ -3328,7 +3328,7 @@
   right: 49px;
   width: 140px;
   height: 140px;
-  background: url(/image/guest_rokect.svg) no-repeat;
+  background: url(../../images/pofol/aipartner/guest_rokect.svg) no-repeat;
 }
 .rocket-send .card .logo {
   padding-bottom: 32px;
@@ -3397,11 +3397,11 @@
   height: 100%;
 }
 .rocket-send .sum .ico-plus {
-  background: url(/image/icon_plus_bk.svg) no-repeat center / 29px;
+  background: url(../../images/pofol/aipartner/icon_plus_bk.svg) no-repeat center / 29px;
   filter: contrast(2);
 }
 .rocket-send .sum .ico-equal {
-  background: url(/image/icon_equal_gry800.svg) no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_equal_gry800.svg) no-repeat center;
 }
 .rocket-send .result {
   border: 2px solid #232ea3;
@@ -3510,16 +3510,16 @@
   word-break: keep-all;
 }
 .service-function .list-card .contract a {
-  background: url(/image/estate_tip_contract.svg) no-repeat 24px 24px / 100px;
+  background: url(../../images/pofol/aipartner/estate_tip_contract.svg) no-repeat 24px 24px / 100px;
 }
 .service-function .list-card .share-estate a {
-  background: url(/image/estate_tip_share.svg) no-repeat 24px 24px / 100px;
+  background: url(../../images/pofol/aipartner/estate_tip_share.svg) no-repeat 24px 24px / 100px;
 }
 .service-function .list-card .property-helper a {
-  background: url(/image/estate_tip_helper.svg) no-repeat 24px 24px / 100px;
+  background: url(../../images/pofol/aipartner/estate_tip_helper.svg) no-repeat 24px 24px / 100px;
 }
 .service-function .list-card .ad-monitoring a {
-  background: url(/image/estate_tip_monitoring.svg) no-repeat 24px 24px / 100px;
+  background: url(../../images/pofol/aipartner/estate_tip_monitoring.svg) no-repeat 24px 24px / 100px;
 }
 .service-function .list-card .more {
   flex-shrink: 0;
@@ -3571,14 +3571,14 @@
   display: block;
   width: 32px;
   height: 32px;
-  background: url(/image/check_navy500.svg) no-repeat;
+  background: url(../../images/pofol/aipartner/check_navy500.svg) no-repeat;
 }
 .service-function .guest-table .ico-x {
   display: block;
   width: 24px;
   height: 24px;
   margin: 0 auto;
-  background: url(/image/icon_xbtn_bk.svg) no-repeat center / 34px;
+  background: url(../../images/pofol/aipartner/icon_xbtn_bk.svg) no-repeat center / 34px;
   filter: brightness(1.4);
 }
 
@@ -3660,11 +3660,11 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('/image/icon_star_fill.svg') no-repeat center / 21px;
+  background: url('../../images/pofol/aipartner/icon_star_fill.svg') no-repeat center / 21px;
   filter: brightness(1.22);
 }
 .service-review .star-score .half {
-  background: url('/image/icon_star_half.svg') no-repeat center;
+  background: url('../../images/pofol/aipartner/icon_star_half.svg') no-repeat center;
   filter: none;
 }
 .service-review .estate-name {
@@ -3728,7 +3728,7 @@
   right: 32px;
   width: 24px;
   height: 24px;
-  background: url(/image/about/web/popup/popup_close.png) no-repeat 0 0;
+  background: url(../../images/pofol/aipartner/about/web/popup/popup_close.png) no-repeat 0 0;
   text-indent: -9999px;
 }
 .popContentWrap .popTit {
@@ -3904,7 +3904,7 @@
   height: 17px;
   margin-left: 4px;
   margin-top: -2px;
-  background: url(/image/about/web/info.png) no-repeat center center;
+  background: url(../../images/pofol/aipartner/about/web/info.png) no-repeat center center;
   vertical-align: middle;
 }
 .counselInfoPopup .conTit .info:hover + .infoText {
@@ -4091,7 +4091,7 @@
   width: 15px;
   height: 12px;
   margin-top: -6px;
-  background: url(/image/about/web/check.png) no-repeat center center !important;
+  background: url(../../images/pofol/aipartner/about/web/check.png) no-repeat center center !important;
 }
 .counselInfoPopup .checkBox input:checked + .labelInfo:before {
   background-color: #ff951a;
@@ -4135,7 +4135,7 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background-image: url(/image/ms_bg_ver01.svg);
+  background-image: url(../../images/pofol/aipartner/ms_bg_ver01.svg);
   opacity: 0.5;
 }
 .pwdChangePopup .inputPassword .visibleOnIcon {

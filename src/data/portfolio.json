@@ -2,23 +2,33 @@
   "portfolios": [
     {
       "id": "44",
-      "title": "이실장 - 프롭티어",
-      "view": "images/pofol/pofol_img43.png",
-      "alt": "부동산 중개 플랫폼 이실장",
-      "skills": ["chart.js", "fullcalendar.js", "html", "css"],
-      "participation": "웹퍼블리싱 100%",
+      "title": "이실장 부동산 APP - 프롭티어│SK디스커버리",
+      "view": "images/pofol/pofol_img44.png",
+      "alt": "",
+      "skills": [
+        "React",
+        "Next.js",
+        "TanStack-Query",
+        "Zustand",
+        "Typescript",
+        "scss"
+      ],
+      "participation": "프론트엔드10% / 웹퍼블리싱 60%",
       "url": {
-        "service": ["https://www.aipartner.com/home"],
+        "service": [
+          "https://play.google.com/store/apps/details?id=kr.co.proptier.town&hl=ko&gl=KR&utm_source=apac_med",
+          "https://apps.apple.com/kr/app/%EC%9D%B4%EC%8B%A4%EC%9E%A5-%EC%82%AC%EC%A7%84%EC%9C%BC%EB%A1%9C-%EC%B0%BE%EB%8A%94-%EB%B6%80%EB%8F%99%EC%82%B0-%EC%95%B1/id6736497502"
+        ],
         "sample": [
-          "/html/aipartner/aipartnerMainGuest.html",
-          "/html/aipartner/aipartnerMainLogin.html"
+          "/html/aipartnerMainGuest.html",
+          "/html/aipartnerMainLogin.html"
         ]
       },
       "desc": ""
     },
     {
       "id": "43",
-      "title": "이실장 - 프롭티어",
+      "title": "이실장(공인중개사) - 프롭티어│SK디스커버리",
       "view": "images/pofol/pofol_img43.png",
       "alt": "부동산 중개 플랫폼 이실장",
       "skills": ["chart.js", "fullcalendar.js", "html", "css"],
@@ -26,8 +36,8 @@
       "url": {
         "service": ["https://www.aipartner.com/home"],
         "sample": [
-          "/html/aipartner/aipartnerMainGuest.html",
-          "/html/aipartner/aipartnerMainLogin.html"
+          "/html/aipartnerMainGuest.html",
+          "/html/aipartnerMainLogin.html"
         ]
       },
       "desc": "레거시 코드가 많고 활용성이 떨어지는 메인 페이지 개선이 가장 최근 작업입니다.\\n이실장 메인에서는 부동산 실거래가 데이터를 표현하기 위해 chart.js를 활용해 커스텀 차트를 제작했습니다.\\n아파트아이 협업 서비스 오픈, 매물 서비스, 집찍고 서비스 등 다양한 신규 작업을 했습니다.\\n 그리고 오류 수정 및 유지보수성 업무도 같이 하며 이실장의 전반적인 모든 업무에 참여했습니다."
