@@ -199,7 +199,7 @@
   width: 20px;
   height: 20px;
   padding: 0;
-  background: url('../../images/pofol/aipartner/ico_caution_gry_italic.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/ico_caution_gry_italic.svg) no-repeat center;
 }
 .wrap-tooltip .tooltip {
   position: absolute;
@@ -229,7 +229,7 @@
   width: 20px;
   height: 8px;
   border: 0;
-  background: url('../../images/pofol/aipartner/tooltip_angle.svg') no-repeat center / 20px;
+  background: url(../../images/pofol/aipartner/tooltip_angle.svg) no-repeat center / 20px;
 }
 
 /* 테이블 */
@@ -308,7 +308,7 @@
 }
 .no-data p {
   padding-top: 66px;
-  background: url('../../images/pofol/aipartner/icon_caution_fill_gry.svg') no-repeat center top / 42px;
+  background: url(../../images/pofol/aipartner/icon_caution_fill_gry.svg) no-repeat center top / 42px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
@@ -356,7 +356,7 @@
 .tag.naver {
   padding: 1px 8px 1px 24px;
   border: 1px solid #ccc;
-  background: #fff url('../../images/pofol/aipartner/icon_type_naver.svg') no-repeat left 7px center / 14px;
+  background: #fff url(../../images/pofol/aipartner/icon_type_naver.svg) no-repeat left 7px center / 14px;
   font-size: 16px;
   line-height: 17px;
   color: #666;
@@ -407,10 +407,10 @@
   background-color: #e3e3e3;
 }
 .swiper-button .swiper-button-prev {
-  background: url('../../images/pofol/aipartner/angle_prev_bk.svg') no-repeat center / 12px;
+  background: url(../../images/pofol/aipartner/angle_prev_bk.svg) no-repeat center / 12px;
 }
 .swiper-button .swiper-button-next {
-  background: url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 12px;
+  background: url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat center / 12px;
 }
 .wrap-guest .full-swiper {
   overflow: hidden;
@@ -421,6 +421,15 @@
   width: 1280px;
   margin: 0 auto;
   padding: 20px 0 30px;
+}
+.wrap-guest .fit-swiper{
+  overflow: hidden;
+  width: calc(1280px + 28px);
+  margin: -20px auto -30px;
+  padding: 20px 14px 30px;
+}
+.wrap-guest .fit-swiper .swiper{
+  overflow: initial;
 }
 
 /* 탑 배너 영역 */
@@ -487,7 +496,7 @@
   height: 32px;
   padding: 0;
   border-radius: 99px;
-  background: url('../../images/pofol/aipartner/icon_popup_close_round.svg') no-repeat center / 12px;
+  background: url(../../images/pofol/aipartner/icon_popup_close_round.svg) no-repeat center / 12px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -555,13 +564,13 @@
   height: 24px;
 }
 .wrap-main .tab-menu-nav .tab-item .ico-property-state {
-  background: url('../../images/pofol/aipartner/icon_property_state.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_property_state.svg) no-repeat center;
 }
 .wrap-main .tab-menu-nav .tab-item .ico-property-share {
-  background: url('../../images/pofol/aipartner/icon_property_share.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_property_share.svg) no-repeat center;
 }
 .wrap-main .tab-menu-nav .tab-item .ico-property-graph {
-  background: url('../../images/pofol/aipartner/icon_property_graph.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_property_graph.svg) no-repeat center;
 }
 .wrap-main .tab-content {
   display: none;
@@ -829,7 +838,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background: url('../../images/pofol/aipartner/icon_plus_wh_bld.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_plus_wh_bld.svg) no-repeat center;
 }
 
 /* 매물현황 - 주취급단지 매물관리 */
@@ -846,7 +855,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../../images/pofol/aipartner/icon_clock_org.svg') no-repeat center / 18px;
+  background: url(../../images/pofol/aipartner/icon_clock_org.svg) no-repeat center / 18px;
   filter: grayscale(100%);
 }
 .complex-manage .wrap-btn {
@@ -1045,7 +1054,7 @@
   transform: translateX(-50%) rotate(180deg);
   width: 20px;
   height: 8px;
-  background: url('../../images/pofol/aipartner/tooltip_angle.svg') no-repeat center / 20px;
+  background: url(../../images/pofol/aipartner/tooltip_angle.svg) no-repeat center / 20px;
 }
 .state-activity .doughnut-tooltip:has(.detail-count) {
   visibility: visible;
@@ -1177,7 +1186,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../../images/pofol/aipartner/icon_reload_blue500.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_reload_blue500.svg) no-repeat center;
 }
 .joint-brokerage .control-wrap .wrap-tab {
   width: 188px;
@@ -1280,7 +1289,7 @@
   width: 20px;
   height: 20px;
   margin-right: 8px;
-  background: url('../../images/pofol/aipartner/ico_caution_gry_italic.svg') no-repeat center / 20px;
+  background: url(../../images/pofol/aipartner/ico_caution_gry_italic.svg) no-repeat center / 20px;
 }
 .joint-brokerage .table-property-find .property-name {
   flex-direction: column;
@@ -1458,13 +1467,13 @@
   overflow: hidden;
 }
 .ranking-list li:nth-child(1) .rank {
-  background: url('../../images/pofol/aipartner/icon_rank1.svg') no-repeat center top;
+  background: url(../../images/pofol/aipartner/icon_rank1.svg) no-repeat center top;
 }
 .ranking-list li:nth-child(2) .rank {
-  background: url('../../images/pofol/aipartner/icon_rank2.svg') no-repeat center top;
+  background: url(../../images/pofol/aipartner/icon_rank2.svg) no-repeat center top;
 }
 .ranking-list li:nth-child(3) .rank {
-  background: url('../../images/pofol/aipartner/icon_rank3.svg') no-repeat center top;
+  background: url(../../images/pofol/aipartner/icon_rank3.svg) no-repeat center top;
 }
 .ranking-list .ranking-item .title {
   flex: 1;
@@ -1527,7 +1536,7 @@
   display: block;
   width: 16px;
   height: 16px;
-  background: url('../../images/pofol/aipartner/icon_range_up.svg') no-repeat center / 16px;
+  background: url(../../images/pofol/aipartner/icon_range_up.svg) no-repeat center / 16px;
 }
 
 /* 부동산 데이터 - 주취급단지 실거래가 */
@@ -1552,7 +1561,7 @@
 }
 .estate-transaction .wrap-transaction-vary .no-data {
   height: 424px;
-  background: url('../../images/pofol/aipartner/no_data_transaction_vary.png') no-repeat center;
+  background: url(../../images/pofol/aipartner/no_data_transaction_vary.png) no-repeat center;
 }
 .estate-transaction .min-max {
   display: flex;
@@ -1629,7 +1638,7 @@
 .estate-transaction .chart-info .legend .ico-graph-line {
   width: 19px;
   height: 11px;
-  background: url('../../images/pofol/aipartner/icon_legend_line.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_legend_line.svg) no-repeat center;
 }
 .estate-transaction .chart-info .legend .ico-graph-bar {
   width: 12px;
@@ -1752,7 +1761,7 @@
 }
 .wrap-same-transaction .no-data {
   height: 296px;
-  background: url('../../images/pofol/aipartner/no_data_same_transaction.png') no-repeat center;
+  background: url(../../images/pofol/aipartner/no_data_same_transaction.png) no-repeat center;
 }
 .wrap-same-transaction .table-wrap .sub-table.mono tbody tr {
   cursor: default;
@@ -1822,7 +1831,7 @@
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background: url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 12px;
+  background: url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat center / 12px;
   transform: rotate(90deg);
 }
 .wrap-same-transaction .btn-more-load.last .ico-angle {
@@ -1866,35 +1875,35 @@
 }
 .estate-tip-list .swiper-slide.contract a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_contract.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_contract.svg);
 }
 .estate-tip-list .swiper-slide.ephoto a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_ephoto.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_ephoto.svg);
 }
 .estate-tip-list .swiper-slide.property-ad a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_ad.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_ad.svg);
 }
 .estate-tip-list .swiper-slide.property-helper a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_helper.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_helper.svg);
 }
 .estate-tip-list .swiper-slide.ad-monitoring a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_monitoring.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_monitoring.svg);
 }
 .estate-tip-list .swiper-slide.share-estate a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_share.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_share.svg);
 }
 .estate-tip-list .swiper-slide.care a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_care.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_care.svg);
 }
 .estate-tip-list .swiper-slide.ai-assistant a {
   background-color: #fff;
-  background-image: url('../../images/pofol/aipartner/estate_tip_assistant.svg');
+  background-image: url(../../images/pofol/aipartner/estate_tip_assistant.svg);
 }
 .estate-tip-list .swiper-slide.contract a:hover {
   background-color: #39b151;
@@ -2259,7 +2268,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background: url('../../images/pofol/aipartner/icon_inquiry_org.svg') no-repeat center / 24px;
+  background: url(../../images/pofol/aipartner/icon_inquiry_org.svg) no-repeat center / 24px;
 }
 
 /* 이실장 알림 */
@@ -2445,11 +2454,11 @@
 }
 .ui-datepicker-prev {
   left: 0;
-  background: url('../../images/pofol/aipartner/angle_prev_bk.svg') no-repeat center / 12px;
+  background: url(../../images/pofol/aipartner/angle_prev_bk.svg) no-repeat center / 12px;
 }
 .ui-datepicker-next {
   right: 0;
-  background: url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 12px;
+  background: url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat center / 12px;
 }
 .ui-datepicker-prev:hover,
 .ui-datepicker-next:hover {
@@ -2558,7 +2567,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../../images/pofol/aipartner/icon_arrow_down_bk.svg') no-repeat center / 24px;
+  background: url(../../images/pofol/aipartner/icon_arrow_down_bk.svg) no-repeat center / 24px;
   filter: contrast(3);
 }
 .scheduler:has(.calendar-picker.active) .fc .fc-toolbar-title::after {
@@ -2600,10 +2609,10 @@
   border-radius: 8px;
 }
 .scheduler .fc-prev-button.fc-button-primary {
-  background: #fff url('../../images/pofol/aipartner/angle_prev_bk.svg') no-repeat center / 9px;
+  background: #fff url(../../images/pofol/aipartner/angle_prev_bk.svg) no-repeat center / 9px;
 }
 .scheduler .fc-next-button.fc-button-primary {
-  background: #fff url('../../images/pofol/aipartner/angle_next_bk.svg') no-repeat center / 9px;
+  background: #fff url(../../images/pofol/aipartner/angle_next_bk.svg) no-repeat center / 9px;
 }
 .scheduler .fc-button-group .fc-icon {
   display: none;
@@ -2630,7 +2639,7 @@
   display: block;
   width: 18px;
   height: 18px;
-  background: url('../../images/pofol/aipartner/icon_plus_bl.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_plus_bl.svg) no-repeat center;
 }
 
 /* 오늘 할 일 - 주간 */
@@ -2690,7 +2699,7 @@
   transform: translateX(-50%);
   width: 29px;
   height: 24px;
-  background: url('../../images/pofol/aipartner/tooltip_today.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/tooltip_today.svg) no-repeat center;
 }
 .scheduler .fc-theme-standard th .wrap-day-header:hover {
   border: 2px solid #ff7b00;
@@ -3272,7 +3281,7 @@
   display: block;
   width: 18px;
   height: 18px;
-  background: url('../../images/pofol/aipartner/icon_plus_bk.svg') no-repeat center / 20px;
+  background: url(../../images/pofol/aipartner/icon_plus_bk.svg) no-repeat center / 20px;
   filter: contrast(3);
 }
 
@@ -3660,11 +3669,11 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url('../../images/pofol/aipartner/icon_star_fill.svg') no-repeat center / 21px;
+  background: url(../../images/pofol/aipartner/icon_star_fill.svg) no-repeat center / 21px;
   filter: brightness(1.22);
 }
 .service-review .star-score .half {
-  background: url('../../images/pofol/aipartner/icon_star_half.svg') no-repeat center;
+  background: url(../../images/pofol/aipartner/icon_star_half.svg) no-repeat center;
   filter: none;
 }
 .service-review .estate-name {
@@ -3717,7 +3726,7 @@
   width: 720px;
   height: auto;
   max-height: calc(100vh - 112px);
-  padding: 32px;
+  padding: 32px 0 32px 32px;
   border-radius: 40px;
   background: #fff;
   box-sizing: border-box;
@@ -3728,7 +3737,7 @@
   right: 32px;
   width: 24px;
   height: 24px;
-  background: url(../../images/pofol/aipartner/about/web/popup/popup_close.png) no-repeat 0 0;
+  background: url(../../images/pofol/aipartner/popup/popup_close.png) no-repeat 0 0;
   text-indent: -9999px;
 }
 .popContentWrap .popTit {
@@ -3738,7 +3747,7 @@
   font-weight: 700;
 }
 .popContentWrap .tabArea {
-  margin: 0 -32px;
+  margin: 0 0 0 -32px;
   border-bottom: 1px solid #dedfe5;
 }
 .popContentWrap .tabArea ul {
@@ -3762,10 +3771,10 @@
 .popContentWrap .tabCon {
   display: none;
   margin-top: 24px;
-  margin-right: -15px;
+  margin-right: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: calc(100vh - 300px);
+  max-height: calc(100vh - 307px);
 }
 .popContentWrap .tabCon.current {
   display: block;
@@ -3904,7 +3913,7 @@
   height: 17px;
   margin-left: 4px;
   margin-top: -2px;
-  background: url(../../images/pofol/aipartner/about/web/info.png) no-repeat center center;
+  background: url(../../images/pofol/aipartner/popup/info.png) no-repeat center center;
   vertical-align: middle;
 }
 .counselInfoPopup .conTit .info:hover + .infoText {
@@ -4091,7 +4100,7 @@
   width: 15px;
   height: 12px;
   margin-top: -6px;
-  background: url(../../images/pofol/aipartner/about/web/check.png) no-repeat center center !important;
+  background: url(../../images/pofol/aipartner/popup/check.png) no-repeat center center !important;
 }
 .counselInfoPopup .checkBox input:checked + .labelInfo:before {
   background-color: #ff951a;

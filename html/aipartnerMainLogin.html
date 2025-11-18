@@ -17,6 +17,7 @@
         <script charset="utf-8" type="text/javascript" src="../js/plugin/fullcalendar/index.global.min.js"></script>
         <script charset="utf-8" type="text/javascript" src="../js/plugin/fullcalendar/locales-all.global.min.js"></script>
         <script charset="utf-8" type="text/javascript" src="../js/plugin/chartjs/chart.min.js"></script>
+        <script charset="utf-8" type="text/javascript" src="../js/aipartner/app.js"></script>
         <script charset="utf-8" type="text/javascript" src="../js/aipartner/guide.js"></script>
     </head>
 
@@ -24,72 +25,101 @@
         <div id="wrap" class="headerFixed">
             <header>
                 <div class="header-top divide-box">
-                    <a href="http://local-portal-web.thebiz.kr:8001/news/list" class="GTM_login_menu gnb_news">매일경제 뉴스</a>
-                    <a href="http://local-portal-web.thebiz.kr:8001/notice" class="GTM_center">고객센터</a>
-                    <a href="javascript:;" class="alarm GTM_gnb_alarm_notify" aria-pressed="false">알림<span class="alarmCount"></span></a>
+                    <a href="https://www.aipartner.com/news/list" class="GTM_login_menu gnb_news">매일경제 뉴스</a>
+                    <a href="https://www.aipartner.com/notice" class="GTM_center">고객센터</a>
+                    <a href="javascript:;" class="alarm GTM_gnb_alarm_notify notify" aria-pressed="false">알림<span class="alarmCount d-block">10</span></a>
                     <div class="alarmLayerWrap">
                         <div class="layerInner">
                             <div class="alarmTitle">
-                                <h1 class="title">알림 리스트 <span class="newAlarmCount"></span></h1>
-                                <button type="button" class="checkAll disabled" id="topAllread" disabled="disabled">모두 읽음 표시</button>
+                                <h1 class="title">알림 리스트 <span class="newAlarmCount">10</span></h1>
+                                <button type="button" class="checkAll" id="topAllread">모두 읽음 표시</button>
                             </div>
                             <div class="alarmListWrap popScrollArea">
                                 <ul class="alarmList top_ainotice">
-                                    <li class="item none"><i class="YJicon"></i><span>알림이 없습니다.</span></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 103동 1803호 월세 4억/110만원 계약 후 2년 경과 7일전 (23.11.24)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 202동 1404호 전세 10억 5,000만원 계약 후 2년 경과 90일전 (24.02.15)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 213동 2303호 월세 3억/260만원 계약 후 2년 경과 180일전 (24.05.15)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 218동 802호 전세 10억 6,000만원 계약 후 2년 경과 7일전 (23.11.24)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 506동 1302호 월세 1억 5,000만원/108만원 계약 후 2년 경과 90일전 (24.02.15)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 307동 2202호 전세 9억 5,000만원 계약 후 2년 경과 7일전 (23.11.24)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 310동 1604호 월세 1억 9,700만원/24만원 계약 후 2년 경과 7일전 (23.11.24)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 310동 901호 전세 5억 8,350만원 계약 후 2년 경과 7일전 (23.11.24)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 406동 1704호 전세 12억 계약 후 2년 경과 (23.11.17)</p>
+                                        </a></li>
+                                    <li class="item"><a href="javascript:;" class="itemLink alarmConfirm" read="false"><span class="category">만기알림</span>
+                                            <p class="subject">[만기알림] 헬리오시티 301동 804호 전세 11억 계약 후 2년 경과 7일전 (23.11.24)</p>
+                                        </a></li>
                                 </ul>
                             </div>
                             <div class="alarmMore">
-                                <a href="http://local-portal-web.thebiz.kr:8001/ai/ainotice">알림 전체보기 <i class="SYicon"></i></a>
+                                <a href="https://www.aipartner.com/ai/ainotice">알림 전체보기 <i class="SYicon"></i></a>
                             </div>
                         </div>
                     </div>
                     <a href="javascript:;" class="user GTM_gnb_profile" aria-pressed="false">
                         <span class="userPhoto" id="setMyInfo" aria-disabled="true"></span>
-                        <span class="userName GTM_login_GNB_username"><b class="fw-b">계정관리</b></span>
+                        <span class="userName GTM_login_GNB_username"><b class="fw-b" style="color: black">계정관리</b></span>
                         <i class="icon-arrow"></i>
                     </a>
                     <div class="userLayerWrap">
                         <div class="layerInner">
                             <div class="layer-top">
-                                <a href="http://local-portal-web.thebiz.kr:8001/member/myinfo" class="btn-default gnb_profile_info_g">내 정보</a>
-                                <button type="button" class="logOut GTM_login_GNB_username_logout" data-integrated="Y" data-url="/api/web/logout" data-url-callback="/home" data-url-sso="http://local-portal-web.thebiz.kr:8001/sso/logout">로그아웃</button>
+                                <a href="https://www.aipartner.com/member/myinfo" class="btn-default gnb_profile_info_g">내 정보</a>
+                                <button type="button" class="logOut totalLogOut GTM_login_GNB_username_logout" data-integrated="N" data-url="https://www.aipartner.com/api/web/logout" data-url-callback="https://www.aipartner.com/home" data-url-sso="https://www.aipartner.com/sso/logout">로그아웃</button>
                             </div>
                             <div class="userInfo">
                                 <span class="userPhoto GTM_login_GNB_username_photo" id="setMyInfo" aria-disabled="true"></span>
-                                <h1 class="userName">김근애</h1>
+                                <h1 class="userName">이실장</h1>
                             </div>
 
                             <div class="agentInfo">
                                 <h5 class="title">중개업소 정보</h5>
-                                <p class="info"><span class="info-tit">상호</span><span class="name">배달</span></p>
-                                <p class="info"><span class="info-tit">대표</span><span class="name">김근애</span></p>
-                                <p class="info consultant" id="consult_info"><span class="info-tit">담당 컨설턴트</span><span class="name">ISMSTEST-"&gt; 컨설턴트 (010-9743-5024)</span></p>
+                                <p class="info"><span class="info-tit">상호</span><span class="name">T_중개업소</span></p>
+                                <p class="info"><span class="info-tit">대표</span><span class="name">T_대표</span></p>
+                                <p class="info consultant" id="consult_info"><span class="info-tit">담당 컨설턴트</span><span class="name">한대규 컨설턴트 (010-3396-3777)</span></p>
                                 <div class="info GTM_login_GNB_username_membership">
                                     <span class="info-tit">멤버십</span>
                                     <div class="divide-box">
-                                        <a href="/member/membership"><span class="channel"><i class="icon ai"></i>이실장플러스</span></a>
-                                        <a href="/member/membership"><span class="service">Basic 이용중</span></a>
+                                        <a href="https://www.aipartner.com/member/membership"><span class="channel"><i class="icon mk"></i>매경부동산</span></a>
+                                        <a href="https://www.aipartner.com/member/membership"><span class="service">Basic 이용중</span></a>
                                     </div>
                                 </div>
                                 <p class="info GTM_login_GNB_username_charge">
                                     <span class="info-tit">충전금</span>
-                                    <a href="/member/credit"><span class="pay">176,070 원</span></a>
+                                    <a href="https://www.aipartner.com/member/credit"><span class="pay">390,900 원</span></a>
                                 </p>
                             </div>
 
                             <div class="menu-div">
                                 <div class="lorg-box">
-                                    <a href="http://local-portal-web.thebiz.kr:8001/member/membership" class="tit gnb_profile_payment_g">결제관리<i class="icon-arrow icon-right"></i></a>
+                                    <a href="https://www.aipartner.com/member/membership" class="tit gnb_profile_payment_g">결제관리<i class="icon-arrow icon-right"></i></a>
                                     <div class="divide-box">
-                                        <a href="http://local-portal-web.thebiz.kr:8001/member/membership" class="GTM_login_GNB_username_bottom_membership"><i class="icon-diamond-bk"></i>멤버십</a>
-                                        <a href="http://local-portal-web.thebiz.kr:8001/member/credit" class="GTM_login_GNB_username_charge"><i class="icon-card-bk"></i>충전금</a>
-                                        <a href="http://local-portal-web.thebiz.kr:8001/member/coupon" class="GTM_login_GNB_username_bottom_coupon"><i class="icon-coupon-bk"></i>쿠폰</a>
+                                        <a href="https://www.aipartner.com/member/membership" class="GTM_login_GNB_username_bottom_membership"><i class="icon-diamond-bk"></i>멤버십</a>
+                                        <a href="https://www.aipartner.com/member/credit" class="GTM_login_GNB_username_charge"><i class="icon-card-bk"></i>충전금</a>
+                                        <a href="https://www.aipartner.com/member/coupon" class="GTM_login_GNB_username_bottom_coupon"><i class="icon-coupon-bk"></i>쿠폰</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="buttonWrap">
-                                <a class="button GTM_member_agent" href="http://local-portal-web.thebiz.kr:8001/member/agent">멤버관리</a>
-                                <a class="button GTM_member_set" href="http://local-portal-web.thebiz.kr:8001/member/alimtalk">환경설정</a>
+                                <a class="button GTM_member_agent" href="https://www.aipartner.com/member/agent">멤버관리</a>
+                                <a class="button GTM_member_set" href="https://www.aipartner.com/member/alimtalk">환경설정</a>
                             </div>
                         </div>
                     </div>
@@ -97,33 +127,21 @@
 
                 <div class="header-wrap">
                     <div class="menu-wrap">
-                        <a href="http://local-portal-web.thebiz.kr:8001/home" class="logo GTM_login_logo">AI실장</a>
+                        <a href="https://www.aipartner.com/home" class="logo GTM_login_logo">AI실장</a>
                         <ul class="main-menu-wrap">
-                            <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/field/complex" class="GTM_field">임장활동</a></li>
-                            <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/offerings/ad_list" class="GTM_offerings">매물관리</a></li>
-                            <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/ephoto" class="GTM_photo">사진관리</a></li>
-                            <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/customer/list" class="GTM_customer">고객관리</a></li>
-                            <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/contract/list" class="GTM_contract">계약관리</a></li>
-                            <li class="menu" aria-selected="false">
-                                <a href="http://local-portal-web.thebiz.kr:8001/safecare/gnb_safecare" class="safe-care gnb_g">
-                                    <i class="gnb-badge-care"></i>
-                                    <div class="rolling">
-                                        <div class="roll">
-                                            <img src="../images/pofol/aipartner/gnb_text_care.svg" alt="안심케어">
-                                            <img src="../images/pofol/aipartner/gnb_text_premium.svg" alt="프리미엄">
-                                            <img src="../images/pofol/aipartner/gnb_text_care.svg" alt="안심케어">
-                                            <img src="../images/pofol/aipartner/gnb_text_premium.svg" alt="프리미엄">
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/field/complex" class="GTM_field">임장활동</a></li>
+                            <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/offerings/ad_list" class="GTM_offerings">매물관리</a></li>
+                            <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/ephoto" class="GTM_photo photo-menu">사진관리</a></li>
+                            <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/customer/list" class="GTM_customer">고객관리</a></li>
+                            <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/contract/list" class="GTM_contract">계약관리</a></li>
+                            <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/safecare/list" class="gnb_g has-new">금융/생활서비스</a></li>
                             <li class="family-service">
                                 <div class="site">
-                                    <a href="javascript:void(0);" class="site-ainet" data-url="https://dev.aipartner.net/integrated/business" data-type="Net"><img src="../images/pofol/aipartner/logo_ainet.svg" alt="이실장넷 로고"></a>
+                                    <a href="javascript:void(0);" class="site-ainet" data-url="" data-type="Net"><img src="../images/pofol/aipartner/logo_ainet.svg" alt="이실장넷 로고"></a>
                                     <div class="tooltip tooltip-line" style="display: none;">중개사님의 모임, 공동중개는 이실장넷!</div>
                                 </div>
                                 <div class="site">
-                                    <a href="javascript:void(0);" class="site-aiplus" data-url="https://dwww.aipartner.plus/integrated/business" data-type="Plus"><img src="../images/pofol/aipartner/logo_aiplus.svg" alt="이실장플러스 로고"></a>
+                                    <a href="javascript:void(0);" class="site-aiplus" data-url="" data-type="Plus"><img src="../images/pofol/aipartner/logo_aiplus.svg" alt="이실장플러스 로고"></a>
                                     <div class="tooltip tooltip-line" style="display: block;">광고매물과 단지리포트 이실장플러스</div>
                                 </div>
                             </li>
@@ -131,45 +149,45 @@
                         <div class="sub-menu-wrap">
                             <div class="inner">
                                 <ul class="line">
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/field/complex/occupy" class="GTM_field_occupy">점유상태</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/field/complex/hosil" class="GTM_field_hosil">내 관리 호실</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/field/alarmStatus" class="GTM_field_alarm">임장알림</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/field/complex/occupy" class="GTM_field_occupy">점유상태</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/field/complex/hosil" class="GTM_field_hosil">내 관리 호실</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/field/alarmStatus" class="GTM_field_alarm">임장알림</a></li>
                                 </ul>
                                 <ul class="line">
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/offerings/list" class="GTM_offerings_list">매물장</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/offerings/ad_list" class="GTM_offerings_ad_list">매물광고</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/monitoring/monitoring" class="GTM_offerings_monitoring">네이버 모니터링</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/joint/joint_list" class="has-new GTM_offerings_joint_list">공동중개</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/offerings/list" class="GTM_offerings_list">매물장</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/offerings/ad_list" class="GTM_offerings_ad_list">매물광고</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/monitoring/monitoring" class="GTM_offerings_monitoring">네이버 모니터링</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/joint/joint_list" class="GTM_offerings_joint_list">공동중개</a></li>
                                 </ul>
                                 <ul class="line">
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/ephoto" class="GTM_photo">사진첩</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/ephoto" class="GTM_photo">사진첩</a></li>
                                 </ul>
                                 <ul class="line">
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/customer/list" class="GTM_customer_list">내 고객</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/ai/schedule" class="GTM_customer_schedule">일정관리</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/customer/counselList" class="GTM_customer_counselList">AI전화비서</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/customer/matchedList" class="GTM_customer_matchedList">맞춤매물</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/customer/apti_intro" class="has-new apti GTM_customer_apti">고객문의<img class="tag-apti" src="../images/pofol/aipartner/tag_apti.svg" alt="아파트아이"></a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/customer/list" class="GTM_customer_list">내 고객</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/ai/schedule" class="GTM_customer_schedule">일정관리</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/customer/counselList" class="GTM_customer_counselList">AI전화비서</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/customer/matchedList" class="GTM_customer_matchedList">맞춤매물</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/customer/apti_intro" class="apti GTM_customer_apti">고객문의<img class="tag-apti" src="../images/pofol/aipartner/tag_apti.svg" alt="아파트아이"></a></li>
                                 </ul>
                                 <ul class="line">
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/contract/list" class="GTM_contract_list">계약 리스트</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/contract/loanList" class="GTM_contract_check">대출내역 조회</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/contract/list" class="GTM_contract_list">계약 리스트</a></li>
                                 </ul>
                                 <ul class="line">
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/safecare/service_info" class="premium care_guide_g">서비스 소개</a></li>
-                                    <li class="menu" aria-selected="false"><a href="http://local-portal-web.thebiz.kr:8001/safecare/list" class="care_apply_g">신청 내역</a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/safecare/service_info" class="premium care_guide_g has-new">안심케어 서비스 소개<i></i></a></li>
+                                    <li class="menu" aria-selected="false"><a href="https://www.aipartner.com/safecare/list" class="premium care_guide_g has-new">안심케어 신청 내역<i></i></a></li>
+
                                 </ul>
                             </div>
                             <div class="sub-area">
                                 <div class="banner-wrap">
-                                    <a href="https://cardevent.aipartner.com/lotte/digi-loca" target="_blank">
-                                        <img class="gnb_banner_g" src="../images/pofol/aipartner/header_banner_loca.svg" alt="네이버 매물 광고비 10만원 무료 충전 바로받기">
+                                    <a href="https://cdn.aipartner.com/about/about_npay_biz.pdf" download="『Npay biz 신한통장』 안내장" target="_blank">
+                                        <img class="gnb_banner_g" src="../images/pofol/aipartner/header_banner_npay_biz.png" alt="네이버에서 사업한다면 잔액한도 없는 최대 연 2.3% 금리! Npay biz 신한통장">
                                     </a>
                                 </div>
                                 <ul class="help">
-                                    <li><a class="gnb_help_g" href="http://local-portal-web.thebiz.kr:8001/help/faq">도움말<i class="icon-info-bk"></i></a></li>
-                                    <li><a class="gnb_movieguide_g" href="http://local-portal-web.thebiz.kr:8001/help/movie_guide">영상가이드<i class="icon-play-bk"></i></a></li>
-                                    <li><a class="gnb_online_g" href="http://local-portal-web.thebiz.kr:8001/help/online">온라인 문의<i class="icon-bubble-square"></i></a></li>
+                                    <li><a class="gnb_help_g" href="https://www.aipartner.com/help/faq">도움말<i class="icon-info-bk"></i></a></li>
+                                    <li><a class="gnb_movieguide_g" href="https://www.aipartner.com/help/movie_guide">영상가이드<i class="icon-play-bk"></i></a></li>
+                                    <li><a class="gnb_online_g" href="https://www.aipartner.com/help/online">온라인 문의<i class="icon-bubble-square"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -185,23 +203,23 @@
                             <div class="swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="javascript:;">
-                                            <img src="../images/pofol/aipartner/sample_main_slide_banner03.png" alt="중개사를 위한 AI파트너, 이실장을 소개합니다! 이실장 200% 활용법! 지금 바로 확인해보세요">
+                                        <a href="https://www.aipartner.com/notice/685" target="_blank">
+                                            <img src="../images/pofol/aipartner/sample_main_slide_banner03.jpg" alt="매일 광고 재등록 불편하시죠? 더블로켓은 자동 재광고에 노출도 더블! 1번 등록하면 네이버에 2건 노출돼요.">
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="javascript:;">
-                                            <img src="../images/pofol/aipartner/sample_main_slide_banner04.png" alt="중개사를 위한 AI파트너, 이실장을 소개합니다! 이실장 200% 활용법! 지금 바로 확인해보세요">
+                                        <a href="https://www.aipartner.com/ephoto" target="_blank">
+                                            <img src="../images/pofol/aipartner/sample_main_slide_banner04.jpg" alt="카톡, 메일, USB 다 필요 없습니다. 매물 사진 완결판, 집찍고">
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="javascript:;">
-                                            <img src="../images/pofol/aipartner/sample_main_slide_banner05.svg" alt="중개사를 위한 AI파트너, 이실장을 소개합니다! 이실장 200% 활용법! 지금 바로 확인해보세요">
+                                        <a href="https://www.aipartner.com/safecare/service_info" target="_blank">
+                                            <img src="../images/pofol/aipartner/sample_main_slide_banner05.jpg" alt="이실장 안심케어로 거래 신뢰도 UP! 문의가 끊이지 않는 이유, 직접 확인하세요!">
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="javascript:;">
-                                            <img src="../images/pofol/aipartner/sample_main_slide_banner06.svg" alt="중개사를 위한 AI파트너, 이실장을 소개합니다! 이실장 200% 활용법! 지금 바로 확인해보세요">
+                                        <a href="https://www.aipartner.com/notice/688" target="_blank">
+                                            <img src="../images/pofol/aipartner/sample_main_slide_banner06.png" alt="안심 동참 인터뷰 1화. 고객의 불안을 해결해 줄 수 있다면 안심케어 안내해야죠! -분당 일등부동산 정재덕 대표님-">
                                         </a>
                                     </div>
                                 </div>
@@ -247,7 +265,7 @@
                                             <a class="btn btn-line-lgry" href="/offerings/ad_list">
                                                 신고매물 미처리<strong class="count">999</strong>
                                             </a>
-                                            <a class="btn btn-bg-dorg" href="/offerings/ad_regist"><i class="ico-plus"></i>광고 등록</a>
+                                            <a class="btn btn-bg-dorg" href="https://www.aipartner.com/offerings/ad_regist"><i class="ico-plus"></i>광고 등록</a>
                                         </div>
                                     </section>
                                     <section class="section complex-manage">
@@ -332,7 +350,7 @@
                                                         </td>
                                                     </tr> -->
                                                     <!-- skeleton -->
-                                                    <tr>
+                                                    <!-- <tr>
                                                         <td colspan="8">
                                                             <div class="skeleton"></div>
                                                         </td>
@@ -361,7 +379,7 @@
                                                         <td colspan="8">
                                                             <div class="skeleton"></div>
                                                         </td>
-                                                    </tr>
+                                                    </tr> -->
                                                     <tr>
                                                         <td><i class="cp mk">M</i></td>
                                                         <td><span class="tag sell">매매</span></td>
@@ -1087,7 +1105,7 @@
                                             </table>
                                         </div>
 
-                                        <a class="btn-line-gry btn-net-go" href="javascript:;" target="_blank">
+                                        <a class="btn-line-gry btn-net-go" href="https://www.aipartner.net" target="_blank">
                                             <img src="../images/pofol/aipartner/logo_ainet.svg" alt="이실장넷">에서 더 많은 매물 보기
                                         </a>
                                     </section>
@@ -1556,7 +1574,7 @@
                                         <div class="swiper">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide contract">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="introducePropertyPop">
                                                         <h3 class="tip-title">계약관리</h3>
                                                         <p class="tip-desc">
                                                             이실장에서는 복잡하고 다양한<br>
@@ -1566,7 +1584,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide property-ad">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="adPopup">
                                                         <h3 class="tip-title">매물 광고</h3>
                                                         <p class="tip-desc">
                                                             무제한 원가전송, 무료 로켓 등록까지 언제 어디서나 편리하게 매물 광고 관리하기
@@ -1575,7 +1593,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide property-helper">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="helpPopup">
                                                         <h3 class="tip-title">임장도우미</h3>
                                                         <p class="tip-desc">
                                                             새로운 거래나 변동사항 생기면 즉시 알려주고, 점유형태, 등기 정보 등 임장활동 지원
@@ -1584,7 +1602,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide share-estate">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="jointPopup">
                                                         <h3 class="tip-title">공동중개</h3>
                                                         <p class="tip-desc">
                                                             동네 중개사와 함께하는 안전한 매물공유 커뮤니티​
@@ -1593,7 +1611,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide ephoto">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="cloudPopup">
                                                         <h3 class="tip-title">집찍고</h3>
                                                         <p class="tip-desc">
                                                             매물 사진 찍고 카톡 전송 없이 바로 간편하게 등록하는 법!
@@ -1602,7 +1620,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide ad-monitoring">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="monitoringPopup">
                                                         <h3 class="tip-title">매물광고 모니터링</h3>
                                                         <p class="tip-desc">
                                                             매일 달라지는 우리 동네 매물현황, 신규, 삭제 매물 부터 내 매물 순위까지 한눈에​
@@ -1611,7 +1629,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide care">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="introduceCarePop">
                                                         <h3 class="tip-title">안심케어</h3>
                                                         <p class="tip-desc">
                                                             부동산 거래사고 걱정 끝!<br>
@@ -1622,7 +1640,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide ai-assistant">
-                                                    <a href="javascript:;">
+                                                    <a href="javascript:;" class="mainV2-guideItem" data-pop-id="aiPopup">
                                                         <h3 class="tip-title">AI 전화비서​</h3>
                                                         <p class="tip-desc">
                                                             전화 통화 기록, 요약, 검색까지 이제 고객에게만 집중!
@@ -1877,8 +1895,428 @@
                         </div>
                     </div>
                 </div>
+                <!-- 팝업 -->
+                <div class="popupWrap" aria-hidden="true">
+                    <!-- 계약관리 -->
+                    <div class="popContentWrap propertyPopup" aria-hidden="true" id="introducePropertyPop">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">계약서 공부 연동</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="property-tab1">공부 열람</li>
+                                    <li class="tab" data-tab="property-tab2">자동 작성</li>
+                                </ul>
+                            </div>
+                            <div id="property-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">이실장에서는 복잡하고 다양한 공부가 1분만에 자동으로 열람!</p>
+                                <p class="stepTit">계약서를 작성하실 주소를 입력하고</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/property_tab01_01.jpg" alt=""></p>
+                                <p class="stepTit">열람을 원하는 공부만 선택하면</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/property_tab01_02.jpg" alt=""></p>
+                                <p class="stepTit">선택한 공부를 이실장이 알아서 열람해 드려요.</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/property_tab01_03.jpg" alt=""></p>
+                            </div>
+                            <div id="property-tab2" class="tabCon">
+                                <p class="stepTit">계약서와 확인·설명서에 필요한 데이터를 알아서 척척 입력</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/property_tab02_01.jpg" alt=""></p>
+                                <p class="stepTit">열람한 공부를 직접 보면서 계약서 작성도 가능해요!</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/property_tab02_02.jpg" alt=""></p>
+                                <p class="stepTit">계약서 출력 전! 공부데이터와 비교하고 끝까지 안전하게</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/property_tab02_03.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 안심케어 -->
+                    <div class="popContentWrap carePopup" aria-hidden="true" id="introduceCarePop">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">안심케어 프리미엄</p>
+                            <div class="tabArea"></div>
+                            <div class="tabCon firstContent current">
+                                <p class="conTxt">안심케어 프리미엄 상품 가입 중개사님께 주어지는 혜택!</p>
+                                <ul class="wrap-care-article">
+                                    <li class="care-article blue">
+                                        <h3 class="title">안심 계약서 작성</h3>
+                                        <p class="desc">
+                                            이실장 계약관리시스템을 활용해
+                                            <strong>11여가지 공부 데이터<br>연동</strong>으로 계약서를 작성하실 수 있으며 (멤버십 혜택)<br>
+                                            서비스 신청 후 전문가가 추가로 꼼꼼히 검토해드려요.
+                                        </p>
+                                    </li>
+                                    <li class="care-article orange">
+                                        <h3 class="title">등기변동 사건 모니터링</h3>
+                                        <p class="desc">
+                                            계약일부터 잔금일까지
+                                            <strong>120여가지 등기사건변동<br>모두 모니터</strong>
+                                            하고​ 변동사항이 확인되면<br>
+                                            알림톡으로 전달해드려요.
+                                        </p>
+                                    </li>
+                                    <li class="care-article purple">
+                                        <h3 class="title">법률 상담 서비스</h3>
+                                        <p class="desc">
+                                            ​계약 당사자간 분쟁 등 계약 중 발생하는 돌발이슈도<br>
+                                            <strong>​부동산 전문 변호사님과 상담하고 빠르게 해결</strong>해요.
+                                        </p>
+                                        <p class="info">* ​단, 소송 진행 시는 별도 협의 필요</p>
+                                    </li>
+                                    <li class="care-article green">
+                                        <h3 class="title">권리보험 서비스</h3>
+                                        <p class="desc">
+                                            매도인이 진짜 집주인이 아닌 경우​ 혹은<br>
+                                            고객이 소유권을 취득한 이후에도 소유권을 잃게 되는 경우​<br>
+                                            <strong>권리보험</strong>을 통해 고객의 실손금을 보상해 드려요.
+                                        </p>
+                                        <p class="info">* 보상기준은 보험상품의 보통약관 및 서비스 신청 조건에 따름</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 매물광고 -->
+                    <div class="popContentWrap adPopup" aria-hidden="true" id="adPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">매물광고</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="ad-tab1">무제한 원가전송</li>
+                                    <li class="tab" data-tab="ad-tab2">로켓등록 무료</li>
+
+                                </ul>
+                            </div>
+                            <div id="ad-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">네이버부동산 매물 등록이 무제한, 원가 결제로 비용 부담까지 줄일 수 있어요<br>(BASIC 이상 멤버쉽 구독 시) </p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ad_tab01_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ad_tab01_02.png" alt=""></p>
+                            </div>
+                            <div id="ad-tab2" class="tabCon">
+                                <p class="conTxt">등기부등본이 필요 없는 로켓등록 서비스가 무제한 무료!<br>야간에도, 주말에도 빠르게 노출되어, 광고효과 UP!<br>(BASIC 이상 멤버쉽 구독 시)</p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ad_tab02_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ad_tab02_02.png" alt=""></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- AI 전화비서 -->
+                    <div class="popContentWrap aiPopup" aria-hidden="true" id="aiPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">AI 전화비서</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="ai-tab1">기록</li>
+                                    <li class="tab" data-tab="ai-tab2">요약</li>
+                                    <li class="tab" data-tab="ai-tab3">검색</li>
+                                </ul>
+                            </div>
+                            <div id="ai-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">고객과의 통화내용은 이실장이 메신저처럼 기록해줘요</p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepTxt">고객별로 과거부터 현재까지 모든 상담 내역을 확인할 수 있어요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ai_tab01_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepTxt">확인하고 싶은 상담내역만 누르면 통화 내용은 물론 녹음파일도 확인이 가능해요 </p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ai_tab01_02.png" alt=""></p>
+                            </div>
+                            <div id="ai-tab2" class="tabCon">
+                                <p class="conTxt">고객과 통화 중 중요한 키워드만 쏙쏙, 요약 정리해줘요 </p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ai_tab02_01.png" alt=""></p>
+                            </div>
+                            <div id="ai-tab3" class="tabCon">
+                                <p class="conTxt">오래 된 통화는 키워드로 검색하고, 통화내용도 들어볼 수 있어요</p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepTxt">키워드만 입력하면, 쉽게 검색이 가능해요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ai_tab03_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepTxt">통화내용이 궁금하신가요? 녹음파일로도 확인이 가능해요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/ai_tab03_02.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 디지털 매물장 -->
+                    <div class="popContentWrap digitalPopup" aria-hidden="true" id="digitalPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">디지털 매물장</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="dg-tab1">고객 관리</li>
+                                    <li class="tab" data-tab="dg-tab2">매물 찾기</li>
+                                    <li class="tab" data-tab="dg-tab3">매물 추천</li>
+                                </ul>
+                            </div>
+                            <div id="dg-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">매물장 관리는 이제 그만!<br>고객정보, 상담내역, 일정 등이 자동으로 통합 관리되요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/digital_tab01_01.png" alt=""></p>
+                            </div>
+                            <div id="dg-tab2" class="tabCon">
+                                <p class="conTxt">고객이 원하는 매물도, 새로운 매물도 이실장이 알아서 척척 찾아줘요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/digital_tab02_01.png" alt=""></p>
+                            </div>
+                            <div id="dg-tab3" class="tabCon">
+                                <p class="conTxt">고객 추천 매물은 카톡으로 쉽게 보내세요<br>매물을 찾고 보고서를 만드는 건 이실장이 할께요</p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepTxt">저장된 고객 정보에 따라 이실장이 맞춤 매물을 추천해줄 뿐만 아니라, 간편하게 카카오톡으로 보낼 수 있어요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/digital_tab03_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepTxt">추천 매물 보고서를 고객이 카카오톡으로 편리하게 받을 수 있어요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/digital_tab03_02.png" alt=""></p>
+                                <p class="stepTit">Step 3</p>
+                                <p class="stepTxt">매물 종류, 거래유형, 가격 등 기본정보 부터 매물 세부정보와 단지 정보도 휴대폰에서 간단하게 확인이 가능해요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/digital_tab03_03.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 네이버 모니터링 -->
+                    <div class="popContentWrap monitoringPopup" aria-hidden="true" id="monitoringPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">네이버 모니터링</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="mo-tab1">전체매물현황</li>
+                                    <li class="tab" data-tab="mo-tab2">내 매물분석</li>
+                                </ul>
+                            </div>
+                            <div id="mo-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">매일 달라지는 네이버부동산 우리 동네 매물 현황, <br>새로 등록되거나 삭제된 매물을 이실장이 확인해서 알려드려요</p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepTxt">내가 관리하는 단지에서 네이버 광고중인 모든 매물을 확인 할 수 있어요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/monitoring_tab01_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepTxt">새로 올라온 매물을 한눈에 확인할 수 있을뿐만 아니라,<br>면적/거래유형, 중개업소 등 조건에 맞춰 검색도 가능해요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/monitoring_tab01_02.png" alt=""></p>
+                                <p class="stepTit">Step 3</p>
+                                <p class="stepTxt">네이버 광고 매물 리스트에서 사라진 매물도 확인 가능해요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/monitoring_tab01_03.png" alt=""></p>
+                            </div>
+                            <div id="mo-tab2" class="tabCon">
+                                <p class="conTxt">찾기 힘든 지도속 내 매물!<br>리스트로 편리하게 보고 노출순위도 쉽게 확인해요</p>
+                                <p class="stepTit ft_bld">네이버 모니터링</p>
+                                <p class="stepTxt">하나 하나 묶어서 찾아야 하는 내 매물 불편하지 않으셨나요?</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/monitoring_tab02_01.png" alt=""></p>
+                                <p class="stepTit ft_bld">이실장</p>
+                                <p class="stepTxt">내 매물의 네이버 노출순위를 리스트로 편리하게 확인할 수 있어요</p>
+                                <p class="stepImg ml"><img src="../images/pofol/aipartner/popup/monitoring_tab02_02.png" alt=""></p>
+                                <p class="stepTxt">타 중개업소의 노출 순위도 한눈에 확인이 가능해요</p>
+                                <p class="stepImg ml"><img src="../images/pofol/aipartner/popup/monitoring_tab02_03.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 임장 도우미 -->
+                    <div class="popContentWrap helpPopup" aria-hidden="true" id="helpPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">임장 도우미</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="help-tab1">임장활동 지원</li>
+                                    <li class="tab" data-tab="help-tab2">변동사항 알림</li>
+                                </ul>
+                            </div>
+                            <div id="help-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">이실장에서는 현장 확인이 필요없는 온라인 임장활동이 가능해요</p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepTxt">내가 관리하는 아파트 단지의 개별호실별 점유형태, 등기정보 등이 한눈에 확인 가능해요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/help_tab01_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepTxt">각 개별호실을 클릭하면 고객/점유 정보부터 시세, 등기현황까지 확인이 가능해요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/help_tab01_02.png" alt=""></p>
+                            </div>
+                            <div id="help-tab2" class="tabCon">
+                                <p class="conTxt">새로운 거래나 등기변동이 생기면 즉시 알려줘요</p>
+                                <p class="stepTit">Step 1</p>
+                                <p class="stepTxt">등기/만기 등 받고 싶은 정보를 간편하게 설정 해주세요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/help_tab02_01.png" alt=""></p>
+                                <p class="stepTit">Step 2</p>
+                                <p class="stepTxt">등기/만기 변동사항 발생시 실시간 카카오 알림톡으로 보내 드려요</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/help_tab02_02.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 집찍고 사진관리 -->
+                    <div class="popContentWrap cloudPopup" aria-hidden="true" id="cloudPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">집찍고 사진관리</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="cloud-tab1">사진 옮기기</li>
+                                    <li class="tab" data-tab="cloud-tab2">사진 편집</li>
+                                    <li class="tab" data-tab="cloud-tab3">사진 정리</li>
+                                </ul>
+                            </div>
+                            <div id="cloud-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">손쉽게 휴대폰 사진 PC로 옮기기</p>
+                                <p class="stepTit">방법 1. 매물 현장에선?</p>
+                                <p class="stepTxt">집찍고 앱 카메라로 촬영 후 저장하면 끝!</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_01.png" alt=""></p>
+                                <p class="stepTit">방법 2. 휴대폰 속 사진을 옮길 땐?</p>
+                                <p class="stepTxt">올리기 메뉴에서 사진을 선택해서 업로드!</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_02.png" alt=""></p>
+                                <p class="stepTit">방법 3. 방문이 힘들 땐?</p>
+                                <p class="stepTxt">고객에게 사진요청 링크로 받으면 정리까지 한번에!</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_03.png" alt=""></p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_04.png" alt=""></p>
+                                <a href="https://www.aipartner.com/help/faq?seq=296" target="_blank" class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_banner1.png" alt=""></a>
+                                <p class="stepTit">올리기 꿀팁!</p>
+                                <p class="stepTxt">폴더를 지정해서 올리면 따로 정리하지 않아도 사진 폴더 정리 끝!</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_05.png" alt=""></p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_06.png" alt=""></p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_07.png" alt=""></p>
+                                <a href="https://www.aipartner.com/help/faq?seq=299" target="_blank" class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_01_banner2.png" alt=""></a>
+                            </div>
+                            <div id="cloud-tab2" class="tabCon">
+                                <p class="stepTit co_bk">집찍고 앱에서 사진 편집</p>
+                                <p class="conTxt">AI로 물건 지우기, 밝기 조절, 모자이크</p>
+                                <div class="d-flex">
+                                    <div class="flex1">
+                                        <p class="stepTit">1단계</p>
+                                        <p class="stepTxt">편집할 사진 선택하기</p>
+                                    </div>
+                                    <div class="flex1">
+                                        <p class="stepTit">2단계</p>
+                                        <p class="stepTxt">편집으로 이동하기</p>
+                                    </div>
+                                </div>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_02_01_ver2.png" alt="편집할 사진 선택하기 / 편집으로 이동하기"></p>
+                                <p class="stepTit">3단계</p>
+                                <p class="stepTxt">원하는 편집 메뉴 사용하여 사진 편집하면 끝!</p>
+                                <div class="stepImg pos_relative">
+                                    <img src="../images/pofol/aipartner/popup/cloud_tab_02_02_ver2.png" alt="원하는 편집 메뉴 사용하여 사진 편집하면 끝!">
+                                    <div class="import_gif1"></div>
+                                    <div class="import_gif2"></div>
+                                </div>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_02_03_ver2.png" alt="밝기 조절, 모자이크"></p>
+                                <a href="https://www.aipartner.com/help/faq?seq=294" target="_blank" class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_02_banner.png" alt=""></a>
+                            </div>
+                            <div id="cloud-tab3" class="tabCon">
+                                <p class="conTxt">언제 어디서든 손쉬운 사진첩 정리</p>
+                                <p class="stepTit">날짜, 주소, 폴더별 정리</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_03_01.png" alt=""></p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_03_02.png" alt=""></p>
+                                <p class="stepTit">집찍고 이실장 연동</p>
+                                <p class="stepTxt">이실장 PC에서도 날짜, 주소, 폴더별 손쉬운 사진관리</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_03_03.png" alt=""></p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_03_04.png" alt=""></p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_03_05.png" alt=""></p>
+                                <a href="https://www.aipartner.com/help/faq?seq=295" target="_blank" class="stepImg"><img src="../images/pofol/aipartner/popup/cloud_tab_03_banner.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 공동중개알림 -->
+                    <div class="popContentWrap jointPopup" aria-hidden="true" id="jointPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popContent">
+                            <p class="popTit">공동중개 알림 안내</p>
+                            <div class="tabArea">
+                                <ul>
+                                    <li class="tab current" data-tab="jo-tab1">공동중개 알림이란?</li>
+                                    <li class="tab" data-tab="jo-tab2">이실장넷 소개</li>
+                                </ul>
+                            </div>
+                            <div id="jo-tab1" class="tabCon firstContent current">
+                                <p class="conTxt">
+                                    이실장넷 커뮤니티에서 ‘중개사님이 작성하신 손님 또는 매물을 구하는 게시글에 대한 알림’으로 중개사님의 부동산 거래를 도와드리는 서비스입니다.
+                                    <small class="notie">* 이실장넷 커뮤니티에서 공동중개 게시글은 중개사회원만 작성 할 수 있어요.</small>
+                                </p>
+                                <p class="stepTit">01. 매물광고 페이지 우측에서 공동중개 알림을 바로 확인할 수 있어요.</p>
+                                <p class="stepTxt">손님 또는 매물을 구하는 내용을 확인하고 현업의 중개사분들과 공동중개를 진행해보세요! 알림을 클릭하면 해당 알림의 상세 내용 확인이 가능해요.</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/joint_tab01_01.png" alt=""></p>
+                                <p class="stepTit">공동중개 메뉴에서는 모든 알림을 확인할 수 있어요.</p>
+                                <p class="stepTxt">마찬가지로, 알림을 클릭하면 해당 알림의 상세 내용 확인이 가능해요.</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/joint_tab01_02.png" alt=""></p>
+                                <p class="stepTit">02. 공동중개 상세 내용은 이실장넷에서 확인 가능해요.</p>
+                                <p class="stepTxt">이실장넷의 상세페이지에서 공동중개의 자세한 내용과 중개사님의 전화번호를 바로 확인할 수 있어요. 전화 연락을 통해 빠르게 거래를 진행해보세요!</p>
+                                <p class="stepImg"><img src="../images/pofol/aipartner/popup/joint_tab01_03.png" alt=""></p>
+                            </div>
+                            <div id="jo-tab2" class="tabCon">
+                                <div class="joint-banner">
+                                    <img src="../images/pofol/aipartner/popup/joint_tab02_banner.png" alt="">
+                                </div>
+                                <ul class="joint-intro">
+                                    <li>
+                                        <img src="../images/pofol/aipartner/popup/joint_tab02_01.png" alt="전국 이실장 중개사와 함께하는 구합니다 서비스. 필요한 정보만 간단히 작성하고 빠르게 매물을 구해보세요! 이실장 중개사 회원들에게 알림으로 공유되어요.">
+                                    </li>
+                                    <li>
+                                        <img src="../images/pofol/aipartner/popup/joint_tab02_02.png" alt="언제, 어디서나 모바일로 바로 확인. 손님 맞이하느라 밖에 계실때도 실시간 알림으로 확인하고 연락할 수 있어요!">
+                                    </li>
+                                    <li>
+                                        <img src="../images/pofol/aipartner/popup/joint_tab02_03.png" alt="중개사라면 누구나 안전하게 공동중개. 지인 중개사분들과 함께 모임을 만들어보세요. 우리끼리 매물공유도 언제나 가능해요!">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 상담 팝업 -->
+                    <div class="popContentWrap counselInfoPopup" aria-hidden="true" id="counselInfoPopup">
+                        <button class="btnPopClose">닫기</button>
+                        <div class="popHeader">
+                            <p class="popTit">원활한 상담을 위해<br>아래 정보를 입력해주세요.</p>
+                        </div>
+                        <div class="popContent scrollArea">
+                            <form id="counselForm" action="https://www.aipartner.com/api/web/nonlogin/nonlogin/inquiry" onsubmit="return false;" autocomplete="off">
+                                <div class="infoBox">
+                                    <p class="conTit">중개사무소 정보 <i class="info"></i><span class="infoText">중개사님의 성명 검색을 통해 국가공간정보포털 부동산중개업에 등록된 정보를 선택하세요. 중개사무소가 검색되지 않을 경우 [중개사무소 개업 준비중] 체크박스를 선택하거나, 1800-6950으로 문의주세요.</span></p>
+                                    <div class="inputBox">
+                                        <input name="companyName" type="text" placeholder="대표, 소속공인중개사, 중개보조원의 성명">
+                                    </div>
+                                    <!-- 검색시 드롭다운 리스트 노출 -->
+                                    <div id="companyList" class="autoSearch" data-url="https://www.aipartner.com/api/web/nonlogin/nonlogin/searchCompany" style="display: none;">
+                                        <ul class="scrollArea"></ul>
+                                    </div>
+                                    <!-- 주소 선택 시  -->
+                                    <p class="addressInfo" style="display: none;">
+                                        주소 : <span class="companyAddr"></span><br>
+                                        등록번호 : <span class="companyJurirno"></span><br>
+                                        중개사명: <span class="companyBroker">null null</span><br>
+                                    </p>
+                                    <div class="checkBox">
+                                        <input type="checkbox" id="ingCheck" name="readyOpen" value="">
+                                        <label for="ingCheck" class="labelInfo">중개사무소 개업 준비중입니다.</label>
+                                    </div>
+                                </div>
+                                <div class="infoBox">
+                                    <p class="conTit">휴대폰번호</p>
+                                    <div class="inputBox">
+                                        <input type="text" name="tel" maxlength="11" placeholder="연락 받을 수 있는 휴대폰 번호">
+                                    </div>
+                                </div>
+                                <div class="agreeBox">
+                                    <p class="conTit">개인정보 제공 동의</p>
+                                    <div class="checkBox">
+                                        <input type="checkbox" id="essentialCheck" name="personAgree" value="">
+                                        <label for="essentialCheck" class="labelInfo">(필수) 개인정보의 수집·이용에 동의합니다.</label>
+                                    </div>
+                                    <div class="agreeContent">
+                                        <p class="tit">개인정보 수집 · 이용 동의</p>
+                                        <p class="txt">항목 : 중개사성명, 휴대폰번호, 중개업소상호명, 중개업소소재지 / 목적 : 이실장 서비스 상담신청 / 보유·이용 기간 : 3개월</p>
+                                    </div>
+                                    <div class="checkBox">
+                                        <input type="checkbox" id="choiceCheck" name="marketingAgree" value="">
+                                        <label for="choiceCheck" class="labelInfo">(선택) 개인정보의 홍보·마케팅 이용에 동의합니다.</label>
+                                    </div>
+                                    <div class="agreeContent">
+                                        <p class="tit">홍보·마케팅 동의</p>
+                                        <p class="txt">항목 : 중개사성명, 휴대폰번호, 중개업소상호명, 중개업소소재지 / 목적 : 이실장 서비스 관련 홍보·마케팅 (카카오톡 알림톡, DM, SMS, LMS, MMS 및 E-mail) / 보유·이용 기간 : 3개월</p>
+                                    </div>
+                                    <p class="announce">* 상기 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 다만 필수 항목에 대한 수집 및 이용 동의를 거부하실 경우, 이실장 서비스 상담 및 안내에 어려움이 있을 수 있습니다.</p>
+                                </div>
+                                <button type="button" class="btnRegister" disabled="">접수하기</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="scrollTopBtn" style="display: block;"><a href="#">goTop</a></div>
 
         <footer>
             <div class="notice-wrap">
@@ -2233,6 +2671,18 @@
                         nextEl: ".estate-tip-nav .swiper-button-next",
                         prevEl: ".estate-tip-nav .swiper-button-prev",
                     }
+                });
+
+                // 팝업
+                $('.estate-tip-list .swiper-slide').on('click', 'a', function () {
+                    const id = $(this).data('pop-id');
+                    $(`.popupWrap, ${'#' + id}`).attr('aria-hidden', 'false');
+                    $('body').addClass('popupView');
+                });
+                $('.btnPopClose').on('click', function () {
+                    $(this).closest('.popContentWrap').attr('aria-hidden', 'true');
+                    $('.popupWrap').attr('aria-hidden', 'true');
+                    $('body').removeClass('popupView');
                 });
 
                 // 부동산데이터 - 실거래가 차트
@@ -2693,12 +3143,72 @@
             });
 
             document.addEventListener('DOMContentLoaded', function () {
+                // 오늘
+                const todayData = new Date().toISOString().split('T')[0]; // 오늘 날짜로 설정
+                const today = new Date(todayData);
+
                 // 오늘 할일
                 const calendarWeekEl = document.querySelector('.scheduler-week');
                 const calendarTodayEl = document.querySelector('.scheduler-today');
                 let calendarSelectDate = null;
 
                 // 하단 타임라인 캘린더
+                // 임시 데이터
+                const schedulerOriginData = [
+                    { title: '긴급 미팅, 정부 정책 변경으로 인한 계약 날짜 논의', start: 'T10:00:00', filter: '상담' },
+                    { title: '매물 대량 업데이트 예정', start: 'T09:02:00', filter: '기타' },
+                    { title: '매도인과 매수인 안내하기', start: 'T09:02:00', filter: '기타' },
+                    { title: '📞매도인 안내 전화하기', start: 'T10:00:00', filter: '상담' },
+                    { title: '📞매수인 안내 전화하기', start: 'T10:30:00', filter: '상담' },
+                    { title: '📜서류 준비', start: 'T09:00:00', filter: '기타' },
+                    { title: '모든 상담전화 정책 안내하기', start: '', filter: '상담' },
+                    { title: '회의📒', start: 'T09:00:00', filter: '상담' },
+                    { title: '📣계약일', start: 'T10:00:00', filter: '계약' },
+                    { title: '세대 방문 및 공지', start: 'T10:15:00', filter: '방문' },
+                    { title: '홍길동 상담. 임대사업자 물건 및 급매 물건만 매수하고 싶어함.', start: 'T10:00:00', filter: '방문' },
+                    { title: '저녁식사 약속', start: 'T17:30:00', filter: '기타' },
+                    { title: '회의', start: 'T20:00:00', filter: '기타' },
+                    { title: '📣중도금 입금 요청!', start: 'T11:00:00', filter: '중도금' },
+                    { title: '📣중도금 확인 요청!', start: 'T11:00:00', filter: '중도금' },
+                    { title: '매물 대량 업데이트 하기', start: 'T09:02:00', filter: '기타' },
+                    { title: '저녁식사 약속', start: 'T17:30:00', filter: '중도금' },
+                    { title: '홍길동 임장', start: 'T15:30:00', filter: '방문' },
+                    { title: '매도, 매수자 방문 요청하기', start: 'T17:30:00', filter: '기타' },
+                    { title: '잔금 확인', start: 'T13:27:00', filter: '잔금' },
+                ];
+                const schedulerCreateDate = [
+                    today.getDate() - 9,
+                    today.getDate() - 7,
+                    today.getDate() - 5,
+                    today.getDate() - 1,
+                    today.getDate() - 1,
+                    today.getDate() - 1,
+                    today.getDate(),
+                    today.getDate(),
+                    today.getDate(),
+                    today.getDate(),
+                    today.getDate(),
+                    today.getDate(),
+                    today.getDate() + 3,
+                    today.getDate() + 5,
+                    today.getDate() + 5,
+                    today.getDate() + 5,
+                    today.getDate() + 7,
+                    today.getDate() + 9,
+                    today.getDate() + 9,
+                    today.getDate() + 14,
+                ]
+                const schedulerData = schedulerOriginData.map((item, index) => {
+                    const eventSetDate = new Date(todayData);
+                    eventSetDate.setDate(Number(schedulerCreateDate[index]));
+                    const eventDate = eventSetDate.toISOString().split('T')[0];
+
+                    return {
+                        title: item.title,
+                        start: eventDate + item.start,
+                        filter: item.filter
+                    };
+                });
                 const schedulerToday = new FullCalendar.Calendar(calendarTodayEl, {
                     locale: 'ko',
                     initialView: 'timeGridDay',
@@ -2714,25 +3224,7 @@
                     },
                     headerToolbar: false,
                     height: 'auto',
-                    events: [
-                        { title: '15일 스케쥴..', start: '2025-07-15T09:02:00', filter: '기타' },
-                        { title: '16일 스케쥴', start: '2025-07-16T09:02:00', filter: '기타' },
-                        { title: '금요일인줄 알았지?😏', start: '2025-07-17T09:02:00', filter: '기타' },
-                        { title: '20일 스케쥴', start: '2025-07-20T09:02:00', filter: '기타' },
-                        { title: '21일 스케쥴', start: '2025-07-21T09:02:00', filter: '기타' },
-                        { title: '22일 스케쥴', start: '2025-07-22T09:00:00', filter: '중도금' },
-                        { title: '미팅 길동 상담 및 방문 및 계약홍길동 상담 및 ', start: '2025-07-24', filter: '상담' },
-                        { title: '중도금 입금 요청!', start: '2025-07-24', filter: '중도금' },
-                        { title: '회의📒', start: '2025-07-24T09:00:00', filter: '잔금' },
-                        { title: '회의2', start: '2025-07-24T10:00:00', filter: '계약' },
-                        { title: '홍길동 상담 및 방문 및 계약홍길동 상담 및 방문 및 계약홍길동 상담 및 방문 및 계약', start: '2025-07-24T10:00:00', filter: '방문' },
-                        { title: '회의222', start: '2025-07-24T20:00:00', filter: '계약' },
-                        { title: '25일 점심식사', start: '2025-07-25T12:30:00', filter: '방문' },
-                        { title: '간식', start: '2025-07-25T15:30:00', filter: '방문' },
-                        { title: '저녁식사', start: '2025-07-25T17:30:00', filter: '중도금' },
-                        { title: '약속2', start: '2025-07-27T17:30:00', filter: '기타' },
-                        { title: '다음주!', start: '2025-07-29T13:27:00', filter: '방문' },
-                    ],
+                    events: schedulerData,
                     eventDidMount: function (info) {
                         const { event, el } = info;
 
@@ -2808,8 +3300,6 @@
                     },
                     datesSet: function (info) {
                         const start = info.start;
-                        const todayData = new Date().toISOString().split('T')[0]; // 오늘 날짜로 설정
-                        const today = new Date(todayData);
                         const year = start.getFullYear().toString().slice(-2);
                         const month = start.getMonth() + 1;
                         const customTitle = `${year}년 ${month}월`;
