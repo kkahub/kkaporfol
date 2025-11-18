@@ -265,7 +265,7 @@
                                             <a class="btn btn-line-lgry" href="/offerings/ad_list">
                                                 신고매물 미처리<strong class="count">999</strong>
                                             </a>
-                                            <a class="btn btn-bg-dorg" href="/offerings/ad_regist"><i class="ico-plus"></i>광고 등록</a>
+                                            <a class="btn btn-bg-dorg" href="https://www.aipartner.com/offerings/ad_regist"><i class="ico-plus"></i>광고 등록</a>
                                         </div>
                                     </section>
                                     <section class="section complex-manage">
@@ -3155,37 +3155,43 @@
                 // 하단 타임라인 캘린더
                 // 임시 데이터
                 const schedulerOriginData = [
-                    { title: '15일 스케쥴..', start: 'T09:02:00', filter: '기타' },
-                    { title: '16일 스케쥴', start: 'T09:02:00', filter: '기타' },
-                    { title: '금요일인줄 알았지?😏', start: 'T09:02:00', filter: '기타' },
-                    { title: '20일 스케쥴', start: 'T09:02:00', filter: '기타' },
-                    { title: '21일 스케쥴', start: 'T09:02:00', filter: '기타' },
-                    { title: '22일 스케쥴', start: 'T09:00:00', filter: '중도금' },
-                    { title: '미팅 길동 상담 및 방문 및 계약홍길동 상담 및 ', start: '', filter: '상담' },
-                    { title: '중도금 입금 요청!', start: '', filter: '중도금' },
-                    { title: '회의📒', start: 'T09:00:00', filter: '잔금' },
-                    { title: '회의2', start: 'T10:00:00', filter: '계약' },
-                    { title: '홍길동 상담 및 방문 및 계약홍길동 상담 및 방문 및 계약홍길동 상담 및 방문 및 계약', start: 'T10:00:00', filter: '방문' },
-                    { title: '회의222', start: 'T20:00:00', filter: '계약' },
-                    { title: '25일 점심식사', start: 'T12:30:00', filter: '방문' },
-                    { title: '간식', start: 'T15:30:00', filter: '방문' },
-                    { title: '저녁식사', start: 'T17:30:00', filter: '중도금' },
-                    { title: '약속2', start: 'T17:30:00', filter: '기타' },
-                    { title: '다음주!', start: 'T13:27:00', filter: '방문' },
+                    { title: '긴급 미팅, 정부 정책 변경으로 인한 계약 날짜 논의', start: 'T10:00:00', filter: '상담' },
+                    { title: '매물 대량 업데이트 예정', start: 'T09:02:00', filter: '기타' },
+                    { title: '매도인과 매수인 안내하기', start: 'T09:02:00', filter: '기타' },
+                    { title: '📞매도인 안내 전화하기', start: 'T10:00:00', filter: '상담' },
+                    { title: '📞매수인 안내 전화하기', start: 'T10:30:00', filter: '상담' },
+                    { title: '📜서류 준비', start: 'T09:00:00', filter: '기타' },
+                    { title: '모든 상담전화 정책 안내하기', start: '', filter: '상담' },
+                    { title: '회의📒', start: 'T09:00:00', filter: '상담' },
+                    { title: '📣계약일', start: 'T10:00:00', filter: '계약' },
+                    { title: '세대 방문 및 공지', start: 'T10:15:00', filter: '방문' },
+                    { title: '홍길동 상담. 임대사업자 물건 및 급매 물건만 매수하고 싶어함.', start: 'T10:00:00', filter: '방문' },
+                    { title: '저녁식사 약속', start: 'T17:30:00', filter: '기타' },
+                    { title: '회의', start: 'T20:00:00', filter: '기타' },
+                    { title: '📣중도금 입금 요청!', start: 'T11:00:00', filter: '중도금' },
+                    { title: '📣중도금 확인 요청!', start: 'T11:00:00', filter: '중도금' },
+                    { title: '매물 대량 업데이트 하기', start: 'T09:02:00', filter: '기타' },
+                    { title: '저녁식사 약속', start: 'T17:30:00', filter: '중도금' },
+                    { title: '홍길동 임장', start: 'T15:30:00', filter: '방문' },
+                    { title: '매도, 매수자 방문 요청하기', start: 'T17:30:00', filter: '기타' },
+                    { title: '잔금 확인', start: 'T13:27:00', filter: '잔금' },
                 ];
-                const schedulerDate = [
+                const schedulerCreateDate = [
+                    today.getDate() - 9,
                     today.getDate() - 7,
                     today.getDate() - 5,
+                    today.getDate() - 1,
+                    today.getDate() - 1,
+                    today.getDate() - 1,
                     today.getDate(),
                     today.getDate(),
                     today.getDate(),
                     today.getDate(),
                     today.getDate(),
-                    today.getDate() + 1,
-                    today.getDate() + 1,
-                    today.getDate() + 1,
-                    today.getDate() + 2,
+                    today.getDate(),
                     today.getDate() + 3,
+                    today.getDate() + 5,
+                    today.getDate() + 5,
                     today.getDate() + 5,
                     today.getDate() + 7,
                     today.getDate() + 9,
@@ -3193,13 +3199,15 @@
                     today.getDate() + 14,
                 ]
                 const schedulerData = schedulerOriginData.map((item, index) => {
-                    console.log(schedulerDate[index])
+                    const eventSetDate = new Date(todayData);
+                    eventSetDate.setDate(Number(schedulerCreateDate[index]));
+                    const eventDate = eventSetDate.toISOString().split('T')[0];
 
-                    // return {
-                    //     title: item.title,
-                    //     start: todayData.setDate(schedulerDate[index]) + item.start,
-                    //     filter: item.filter
-                    // };
+                    return {
+                        title: item.title,
+                        start: eventDate + item.start,
+                        filter: item.filter
+                    };
                 });
                 const schedulerToday = new FullCalendar.Calendar(calendarTodayEl, {
                     locale: 'ko',
@@ -3216,25 +3224,7 @@
                     },
                     headerToolbar: false,
                     height: 'auto',
-                    events: [
-                        { title: '15일 스케쥴..', start: '2025-07-15T09:02:00', filter: '기타' },
-                        { title: '16일 스케쥴', start: '2025-07-16T09:02:00', filter: '기타' },
-                        { title: '금요일인줄 알았지?😏', start: '2025-07-17T09:02:00', filter: '기타' },
-                        { title: '20일 스케쥴', start: '2025-07-20T09:02:00', filter: '기타' },
-                        { title: '21일 스케쥴', start: '2025-07-21T09:02:00', filter: '기타' },
-                        { title: '22일 스케쥴', start: '2025-07-22T09:00:00', filter: '중도금' },
-                        { title: '미팅 길동 상담 및 방문 및 계약홍길동 상담 및 ', start: '2025-07-24', filter: '상담' },
-                        { title: '중도금 입금 요청!', start: '2025-07-24', filter: '중도금' },
-                        { title: '회의📒', start: '2025-07-24T09:00:00', filter: '잔금' },
-                        { title: '회의2', start: '2025-07-24T10:00:00', filter: '계약' },
-                        { title: '홍길동 상담 및 방문 및 계약홍길동 상담 및 방문 및 계약홍길동 상담 및 방문 및 계약', start: '2025-07-24T10:00:00', filter: '방문' },
-                        { title: '회의222', start: '2025-07-24T20:00:00', filter: '계약' },
-                        { title: '25일 점심식사', start: '2025-07-25T12:30:00', filter: '방문' },
-                        { title: '간식', start: '2025-07-25T15:30:00', filter: '방문' },
-                        { title: '저녁식사', start: '2025-07-25T17:30:00', filter: '중도금' },
-                        { title: '약속2', start: '2025-07-27T17:30:00', filter: '기타' },
-                        { title: '다음주!', start: '2025-07-29T13:27:00', filter: '방문' },
-                    ],
+                    events: schedulerData,
                     eventDidMount: function (info) {
                         const { event, el } = info;
 
@@ -3271,9 +3261,6 @@
                         }
                     }
                 });
-
-                const schedulerStartEdit = schedulerToday.events;
-                console.log(schedulerStartEdit)
 
                 // 상단 주간 네비게이션 캘린더
                 const schedulerWeek = new FullCalendar.Calendar(calendarWeekEl, {
