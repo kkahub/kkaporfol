@@ -3,13 +3,13 @@
 import React, { useState, useCallback, useEffect } from "react";
 
 import Pagination from "@mui/material/Pagination";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 
+import PortfolioList from "@/components/portfolio/PortfolioList";
+import SearchBar from "@/components/portfolio/SearchBar";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
 import {
-  setKeyword,
   searchList,
   setTotalPage,
   setPage,
@@ -41,9 +41,6 @@ export default function PortfolioPage() {
     [dispatch],
   );
 
-  const searchValChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(setKeyword(e.target.value.toLowerCase()));
-  };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -101,24 +98,8 @@ export default function PortfolioPage() {
       </motion.p>
       <div className="content">
         <form onSubmit={onSubmit}>
-          <motion.div
-            className="search_wrap"
-            variants={BasicFade}
-            initial="hide"
-            animate="show"
-            custom={0.4}
-          >
-            <input
-              type="text"
-              name="keyword"
-              placeholder="제목으로 검색하기"
-              value={searchData.keyword}
-              onChange={searchValChange}
-            />
-            <button className="btn_search" type="submit">
-              검색
-            </button>
-          </motion.div>
+          <SearchBar />
+
           {/* Portfolio List */}
           {isLoading ? (
             <div className="wrap_loading">
@@ -126,54 +107,12 @@ export default function PortfolioPage() {
             </div>
           ) : (
             <>
-              {searchData.sliceList.length > 0 && (
+              {searchData.sliceList.length > 0 ? (
                 <>
-                  <motion.ul className="list_wrap portfolio_wrap grid">
-                    <AnimatePresence>
-                      {searchData.sliceList.map((portfolio, index) => (
-                        <motion.li
-                          className={`item${portfolio.id} grid-item`}
-                          key={portfolio.id}
-                          variants={BasicFade}
-                          initial="hide"
-                          animate="show"
-                          exit="hide"
-                          custom={index}
-                        >
-                          <div
-                            className="list_con"
-                            tabIndex={index}
-                            onClick={() => onClickModal(portfolio)}
-                            onKeyDown={(e) => keyModal(e, portfolio)}
-                            role="button"
-                          >
-                            <div className="thum_wrap">
-                              <Image
-                                className="responsive_size"
-                                src={portfolio.view}
-                                alt={portfolio.alt}
-                                fill
-                                priority
-                              />
-                            </div>
-                            <div className="info_wrap">
-                              <h3> {portfolio.title} </h3>
-                              {portfolio.skills && (
-                                <ul className="keyword">
-                                  {portfolio.skills.map((skill) => (
-                                    <li className="pill" key={skill}>
-                                      {skill}
-                                    </li>
-                                  ))}
-                                </ul>
-                              )}
-                            </div>
-                          </div>
-                        </motion.li>
-                      ))}
-                    </AnimatePresence>
-                  </motion.ul>
-                  {/* Pagination */}
+                  <PortfolioList
+                    onClickModal={onClickModal}
+                    keyModal={keyModal}
+                  />
                   <Pagination
                     count={searchData.totalPage}
                     defaultPage={1}
@@ -184,10 +123,8 @@ export default function PortfolioPage() {
                     sx={{ margin: 2 }}
                     onChange={handlePage}
                   />
-                  {/* //Pagination  */}
                 </>
-              )}
-              {searchData.sliceList.length === 0 && (
+              ) : (
                 <div className="no_data">검색 결과가 없습니다.</div>
               )}
             </>
