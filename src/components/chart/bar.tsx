@@ -12,7 +12,7 @@ import * as d3 from "d3";
 import { motion } from "framer-motion";
 import style from "styled-components";
 
-import { DataProps } from "@/app/preview/chart/types";
+import { DataProps } from "@/types/chart";
 import useResize from "@hooks/useResize";
 import { sortData } from "@modules/chartSlice";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
@@ -152,11 +152,7 @@ export default function BarChart(props: { data: DataProps[] }) {
           .style("opacity", 1)
           .style(
             "left",
-            `${
-              (xScale(d.translations.kor.common) as number) +
-              xScale.bandwidth() +
-              5
-            }px`,
+            `${(xScale(d.translations.kor.common) as number) + xScale.bandwidth() + 5}px`,
           )
           .style("top", `${yScale(d.population)}px`);
         d3.select(e.target).transition().duration(200).style("opacity", 0.6);
