@@ -73,7 +73,7 @@
   },
   "lint-staged": {
     "*.{js, jsx,ts,tsx}": [
-      "eslint --cache --fix",
+      "eslint --fix",
       "prettier --write"
     ],
     "*.{json,js,ts,jsx,tsx,html}": [
