@@ -23,7 +23,7 @@ export const asyncCountries = createAsyncThunk(
   async (payload, thunkAPI) => {
     try {
       const response = await axios.get(
-        "https://restcountries.com/v3.1/all?fields=translations,population",
+        "https://restcountries.com/v3.1/all?fields=translations,population,cca2",
       );
       return thunkAPI.fulfillWithValue(response.data);
     } catch (error) {

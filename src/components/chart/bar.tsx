@@ -61,6 +61,8 @@ export default function BarChart(props: { data: DataProps[] }) {
     (state) => state.chartReducer.selectCountries,
   );
 
+  console.log("selectCountries:", selectCountries);
+
   useEffect(() => {
     dispatch(sortData(chartSortData));
     setChartSortData(chartSortData);
@@ -207,7 +209,7 @@ export default function BarChart(props: { data: DataProps[] }) {
       <ul className="bar_legend">
         {selectCountries.length > 0 &&
           selectCountries.map((item: DataProps) => (
-            <li key={item.population}>
+            <li key={item.cca2}>
               <svg className="color_table" width={14} height={14}>
                 <rect
                   className="color_table_rect"

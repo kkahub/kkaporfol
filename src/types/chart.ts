@@ -43,4 +43,5 @@ export interface DataProps {
     };
   };
   population: number;
+  cca2: string;
 }
