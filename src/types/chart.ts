@@ -43,5 +43,10 @@ export interface DataProps {
     };
   };
   population: number;
-  cca2: string;
+  name: CountryFullName;
+}
+
+export interface CountryFullName {
+  official: string;
+  [key: string]: unknown;
 }

@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import BarChart from "@/components/chart/bar";
+import BarChart from "@/components/chart/Bar";
 import { DataProps } from "@/types/chart";
 import { asyncCountries } from "@modules/chartSlice";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";

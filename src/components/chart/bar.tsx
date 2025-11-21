@@ -116,6 +116,25 @@ export default function BarChart(props: { data: DataProps[] }) {
     // 툴팁
     const tooltip = d3.select(tooltipRef.current);
 
+    function tooltipDraw(e: React.MouseEvent<HTMLElement>, d: DataProps) {
+      const target = e.target as HTMLElement;
+      tooltip
+        .html(
+          `<p>국가 : ${
+            d.translations.kor.common
+          }</p><p>인구수 : ${d.population.toLocaleString()}명</p>`,
+        )
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+        .style(
+          "left",
+          `${(xScale(d.translations.kor.common) as number) + xScale.bandwidth() + 5}px`,
+        )
+        .style("top", `${yScale(d.population)}px`);
+      d3.select(target).transition().duration(200).style("opacity", 0.6);
+    }
+
     // 막대 그래프 그리기
     svg.selectAll(".bar_group").remove();
     svg
@@ -141,23 +160,13 @@ export default function BarChart(props: { data: DataProps[] }) {
         return height > 2 ? height : 2;
       })
       .style("fill", (d) => d3.interpolateGnBu(colorScale(d.population)))
+      .on("click", (e, d) => {
+        if (windowSize >= 1000) return;
+        tooltipDraw(e, d);
+      })
       .on("mouseenter", (e, d) => {
         if (windowSize < 1000) return;
-        tooltip
-          .html(
-            `<p>국가 : ${
-              d.translations.kor.common
-            }</p><p>인구수 : ${d.population.toLocaleString()}명</p>`,
-          )
-          .transition()
-          .duration(200)
-          .style("opacity", 1)
-          .style(
-            "left",
-            `${(xScale(d.translations.kor.common) as number) + xScale.bandwidth() + 5}px`,
-          )
-          .style("top", `${yScale(d.population)}px`);
-        d3.select(e.target).transition().duration(200).style("opacity", 0.6);
+        tooltipDraw(e, d);
       })
       .on("mouseleave", (e) => {
         if (windowSize < 1000) return;
@@ -177,6 +186,7 @@ export default function BarChart(props: { data: DataProps[] }) {
     margin.left,
     margin.top,
   ]);
+
   useEffect(() => {
     setChartWidth(windowSize > 1000 ? 800 : windowSize * 0.9);
     setChartHeight(windowSize > 1000 ? 500 : 350);
@@ -209,7 +219,7 @@ export default function BarChart(props: { data: DataProps[] }) {
       <ul className="bar_legend">
         {selectCountries.length > 0 &&
           selectCountries.map((item: DataProps) => (
-            <li key={item.cca2}>
+            <li key={item.name.official}>
               <svg className="color_table" width={14} height={14}>
                 <rect
                   className="color_table_rect"
