@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "sitemap": "next-sitemap  --config next-sitemap.config.js",
     "predeploy": "next build && next-sitemap && type NUL > out/.nojekyll && git add .",
-    "deploy": "gh-pages -d out --dotfiles",
+    "deploy": "gh-pages -d out --dotfiles -b gh-pages",
     "json": "json-server --watch src/data/portfolio.json --port 3001",
     "analyze": "cross-env ANALYZE=true next build"
   },
