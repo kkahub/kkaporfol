@@ -1,40 +1,41 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
+import { asyncCountries } from "@modules/chartSlice";
+import { useAppDispatch, useAppSelector } from "@modules/hooks";
+import { BasicFade } from "@styles/motion";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 import BarChart from "@/components/chart/Bar";
 import { DataProps } from "@/types/chart";
-import { asyncCountries } from "@modules/chartSlice";
-import { useAppDispatch, useAppSelector } from "@modules/hooks";
-import { BasicFade } from "@styles/motion";
 
 export default function Chart() {
   const dispatch = useAppDispatch();
+  const { countries, total } = useAppSelector((state) => state.chartReducer);
+  const [randomChartData, setRandomChartData] = useState<DataProps[]>([]);
+  const count = 7;
 
   useEffect(() => {
     dispatch(asyncCountries());
   }, [dispatch]);
 
-  // 랜덤 국가 선택
-  const countriesSelect: number[] = [];
-  const countriesList: DataProps[] = [];
-  const count = 7;
-  const total = useAppSelector((state) => state.chartReducer.total);
-  const chartData = useAppSelector((state) => {
-    while (countriesSelect.length < count) {
-      const random: number = Math.floor(Math.random() * total);
-      countriesSelect.push(random);
+  useEffect(() => {
+    if (total > 0 && countries.length > 0) {
+      const selectedIndices = new Set<number>();
+      while (selectedIndices.size < count) {
+        const random: number = Math.floor(Math.random() * total);
+        selectedIndices.add(random);
+      }
+
+      const countriesList: DataProps[] = Array.from(selectedIndices)
+        .map((num) => countries[num])
+        .filter(Boolean); // filter out undefined if index is bad
+
+      setRandomChartData(countriesList);
     }
-    if (countriesList.length < count) {
-      countriesSelect.map((num) =>
-        countriesList.push(state.chartReducer.countries[num]),
-      );
-    }
-    return countriesList;
-  });
+  }, [countries, total]);
 
   return (
     <>
@@ -112,7 +113,7 @@ export default function Chart() {
       >
         <b>Github</b>
         <Link
-          href="https://github.com/kkahub/kkaporfol/blob/main/src/components/chart/bar.tsx"
+          href="https://github.com/kkahub/kkaporfol/blob/main/src/components/chart/Bar.tsx"
           target="_blank"
           rel="noopener noreferrer"
           passHref
@@ -121,8 +122,7 @@ export default function Chart() {
           코드 소스 보기
         </Link>
       </motion.p>
-
-      {chartData[0] !== undefined && <BarChart data={chartData} />}
+      {randomChartData.length > 0 && <BarChart data={randomChartData} />}
     </>
   );
 }

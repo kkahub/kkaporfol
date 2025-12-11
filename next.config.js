@@ -30,17 +30,30 @@ const nextConfig = (phase) => {
   return {
     reactStrictMode: false,
     productionBrowserSourceMaps: true,
-    webpack: (config, options) => {
-      let sourceMap = "source-map";
-      if (options.dev) {
-        Object.defineProperty(config, "devtool", {
-          get() {
-            return sourceMap;
-          },
-          set() {
-            sourceMap = "source-map";
-          },
-        });
+    webpack: (config, { dev }) => {
+      if (dev) {
+        const styleRules = config.module.rules.find(rule =>
+          rule.oneOf?.find(oneOf => oneOf.use?.includes?.('sass-loader')),
+        );
+
+        if (styleRules) {
+          const sassLoader = styleRules.oneOf.find(oneOf =>
+            oneOf.use?.includes?.('sass-loader'),
+          );
+
+          if (sassLoader) {
+            const sassLoaderIndex = sassLoader.use.findIndex(use =>
+              use.loader?.includes('sass-loader'),
+            );
+
+            if (sassLoaderIndex > -1) {
+              sassLoader.use[sassLoaderIndex].options = {
+                ...sassLoader.use[sassLoaderIndex].options,
+                sourceMap: true,
+              };
+            }
+          }
+        }
       }
       return config;
     },
@@ -59,7 +72,9 @@ const nextConfig = (phase) => {
     basePath: !debug ? "/kkaporfol" : "", // 빌드 시 경로 : 데브 시 경로
     assetPrefix: !debug ? `${repository}/` : "", // production 일때 prefix 경로
     // trailingSlash: true, //  빌드 시 폴더 구조 동일
-    output: "export"
+    output: "export",
+    cacheComponents: false,
+    turbopack: {},
   }
 };
 

@@ -8,15 +8,15 @@ import React, {
   useCallback,
 } from "react";
 
+import useResize from "@hooks/useResize";
+import { sortData } from "@modules/chartSlice";
+import { useAppDispatch, useAppSelector } from "@modules/hooks";
+import { BasicFade } from "@styles/motion";
 import * as d3 from "d3";
 import { motion } from "framer-motion";
 import style from "styled-components";
 
 import { DataProps } from "@/types/chart";
-import useResize from "@hooks/useResize";
-import { sortData } from "@modules/chartSlice";
-import { useAppDispatch, useAppSelector } from "@modules/hooks";
-import { BasicFade } from "@styles/motion";
 
 // 툴팁  스타일
 const Tooltip = style.div`
@@ -120,9 +120,7 @@ export default function BarChart(props: { data: DataProps[] }) {
       const target = e.target as HTMLElement;
       tooltip
         .html(
-          `<p>국가 : ${
-            d.translations.kor.common
-          }</p><p>인구수 : ${d.population.toLocaleString()}명</p>`,
+          `<p>국가 : ${d.translations.kor.common}</p><p>인구수 : ${d.population.toLocaleString()}명</p>`,
         )
         .transition()
         .duration(200)

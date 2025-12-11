@@ -7,14 +7,13 @@ import "swiper/css/pagination";
 
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 
+import SkillList from "@components/intro/SkillList";
+import useResize from "@hooks/useResize";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Link from "next/link";
 import type { Swiper as SwiperClass } from "swiper";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import SkillList from "@components/intro/SkillList";
-import useResize from "@hooks/useResize";
 
 const swiperFade: Variants = {
   show: (i) => {

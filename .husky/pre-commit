@@ -2,5 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo '코드 확인중!'
-yarn run lint:fix
+# yarn run lint:fix
 npx lint-staged
