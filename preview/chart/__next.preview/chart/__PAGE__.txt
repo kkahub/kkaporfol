@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[12039,["https://kkahub.github.io/kkaporfol/_next/static/chunks/f5347a3574251340.js","https://kkahub.github.io/kkaporfol/_next/static/chunks/cbee1dee902e7432.js","https://kkahub.github.io/kkaporfol/_next/static/chunks/25e51a12844d0ab5.js","https://kkahub.github.io/kkaporfol/_next/static/chunks/f84501e48bde9217.js","https://kkahub.github.io/kkaporfol/_next/static/chunks/4b319ab1f364fc6f.js","https://kkahub.github.io/kkaporfol/_next/static/chunks/a682717c15eb3ee4.js"],"default"]
+3:I[97367,["https://kkahub.github.io/kkaporfol/_next/static/chunks/87123bbc0e365894.js","https://kkahub.github.io/kkaporfol/_next/static/chunks/6461bdc055d8a8ad.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"tO6UDol1iObdtwGBk3Iwg","rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"https://kkahub.github.io/kkaporfol/_next/static/chunks/4b319ab1f364fc6f.js","async":true}],["$","script","script-1",{"src":"https://kkahub.github.io/kkaporfol/_next/static/chunks/a682717c15eb3ee4.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
