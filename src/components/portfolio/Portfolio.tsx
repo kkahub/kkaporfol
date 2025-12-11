@@ -2,12 +2,6 @@
 
 import React, { useState, useCallback, useEffect } from "react";
 
-import Pagination from "@mui/material/Pagination";
-import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
-
-import PortfolioList from "@/components/portfolio/PortfolioList";
-import SearchBar from "@/components/portfolio/SearchBar";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
 import {
   searchList,
@@ -15,11 +9,16 @@ import {
   setPage,
   setSliceList,
 } from "@modules/searchSlice";
+import Pagination from "@mui/material/Pagination";
 import { BasicFade } from "@styles/motion";
+import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 import type { PortfolioType } from "../../types/portfolio";
 
-// eslint-disable-next-line import/newline-after-import
+import PortfolioList from "@/components/portfolio/PortfolioList";
+import SearchBar from "@/components/portfolio/SearchBar";
+
 const Modal = dynamic(() => import("@components/modal/modal-contents"));
 
 export default function Portfolio() {

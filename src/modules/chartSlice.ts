@@ -49,21 +49,18 @@ const chartSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(asyncCountries.pending, (state) => {
-        // eslint-disable-next-line no-param-reassign
         state.isLoading = "pending";
       })
       .addCase(asyncCountries.fulfilled, (state, action) => {
-        // eslint-disable-next-line no-param-reassign
         state.isLoading = "fulfilled";
-        // eslint-disable-next-line no-param-reassign
+
         state.countries = action.payload;
-        // eslint-disable-next-line no-param-reassign
+
         state.total = action.payload.length;
       })
       .addCase(asyncCountries.rejected, (state, action) => {
-        // eslint-disable-next-line no-param-reassign
         state.isLoading = "rejected";
-        // eslint-disable-next-line no-param-reassign
+
         state.error = action.error.message;
       });
   },

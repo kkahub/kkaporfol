@@ -1,10 +1,9 @@
 import React from "react";
 
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-
 import { useAppSelector } from "@modules/hooks";
 import { BasicFade } from "@styles/motion";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 import type { PortfolioType } from "../../types/portfolio";
 

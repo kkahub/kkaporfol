@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
-
 import { BasicFade } from "@styles/motion";
+import { motion } from "framer-motion";
 
 import type { ProfileType } from "../../types/profile";
 

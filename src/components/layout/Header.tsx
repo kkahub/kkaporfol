@@ -2,12 +2,11 @@
 
 import { useState, useLayoutEffect } from "react";
 
+import useResize from "@hooks/useResize";
+import { BasicFade } from "@styles/motion";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import useResize from "@hooks/useResize";
-import { BasicFade } from "@styles/motion";
 
 export default function Header() {
   const pathname = usePathname();

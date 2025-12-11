@@ -2,9 +2,8 @@
 
 import React from "react";
 
-import { motion } from "framer-motion";
-
 import { BasicFade } from "@styles/motion";
+import { motion } from "framer-motion";
 
 import SkillList from "./SkillList";
 

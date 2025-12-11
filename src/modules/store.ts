@@ -1,8 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { createLogger } from "redux-logger";
-
 import { chartReducer } from "@modules/chartSlice";
 import { searchReducer } from "@modules/searchSlice";
+import { configureStore } from "@reduxjs/toolkit";
+import { createLogger } from "redux-logger";
 
 export type RootState = {
   chartReducer: ReturnType<typeof chartReducer>;

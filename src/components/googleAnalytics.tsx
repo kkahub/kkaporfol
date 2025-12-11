@@ -1,8 +1,7 @@
 "use client";
 
-import Script from "next/script";
-
 import * as gtag from "@lib/gtag";
+import Script from "next/script";
 
 export default function GoogleAnalytics() {
   gtag.useGtag();

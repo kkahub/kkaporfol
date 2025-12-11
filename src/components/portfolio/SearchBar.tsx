@@ -1,10 +1,9 @@
 import React from "react";
 
-import { motion } from "framer-motion";
-
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
 import { setKeyword } from "@modules/searchSlice";
 import { BasicFade } from "@styles/motion";
+import { motion } from "framer-motion";
 
 export default function SearchBar() {
   const dispatch = useAppDispatch();
