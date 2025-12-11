@@ -8,7 +8,7 @@ import { BasicFade } from "@styles/motion";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import BarChart from "@/components/chart/Bar";
+import BarChart from "@/components/chart/Bbar";
 import { DataProps } from "@/types/chart";
 
 export default function Chart() {
