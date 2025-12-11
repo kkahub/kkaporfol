@@ -1,3 +1,3 @@
 :HL["https://kkahub.github.io/kkaporfol/_next/static/chunks/8504061ac8e7cf2a.css","style"]
 :HC["https://kkahub.github.io",""]
-0:{"buildId":"tO6UDol1iObdtwGBk3Iwg","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"skill","paramType":null,"paramKey":"skill","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"hA4IKxGBZdnBWe3TmgX3A","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"skill","paramType":null,"paramKey":"skill","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
