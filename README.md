@@ -6,7 +6,7 @@
 
 ## Key Skills
 
-- **View** : React.js(v18), Next.js
+- **View** : React.js(v19), Next.js(v16)
 - **Build Tool** : Webpack
 - **CSS** : SASS(SCSS), styled-components, 반응형
 - **Javascript** : ES6, Typescript
