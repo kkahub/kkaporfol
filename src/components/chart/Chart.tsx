@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { asyncCountries } from "@modules/chartSlice";
 import { useAppDispatch, useAppSelector } from "@modules/hooks";
@@ -8,7 +8,7 @@ import { BasicFade } from "@styles/motion";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import BarChart from "@/components/chart/Bbar";
+import BarChart from "@/components/chart/Bar";
 import { DataProps } from "@/types/chart";
 
 export default function Chart() {
